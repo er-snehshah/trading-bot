@@ -1,0 +1,14 @@
+# Never commit real credentials
+.env
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor artifacts
+.vscode/
+*.swp
+*.swo
+
+# Fallback notification file (written locally when ClickUp is unconfigured)
+DAILY-SUMMARY.md
