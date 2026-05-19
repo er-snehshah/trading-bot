@@ -19,6 +19,7 @@ ROUTINES = {
     "pre-market":     ROOT / "routines" / "pre-market.md",
     "market-open":    ROOT / "routines" / "market-open.md",
     "midday":         ROOT / "routines" / "midday.md",
+    "daily-summary":  ROOT / "routines" / "daily-summary.md",
     "weekly-review":  ROOT / "routines" / "weekly-review.md",
 }
 

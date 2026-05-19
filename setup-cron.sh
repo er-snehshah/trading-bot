@@ -48,23 +48,30 @@ exec "$REPO/run-routine.sh" "$@"
 SCRIPT
 chmod +x "$PULL_RUNNER"
 
-# Build crontab lines (America/Chicago = UTC-5/UTC-6)
-# We store CRON_TZ in the crontab for clarity.
-CRON_BLOCK="# --- Trading Bot ---
-CRON_TZ=America/Chicago
-# Pre-market research: 6:00 AM CT Mon-Fri
-0 6 * * 1-5 $PULL_RUNNER pre-market
-# Market-open execution: 8:30 AM CT Mon-Fri
-30 8 * * 1-5 $PULL_RUNNER market-open
-# Midday scan: 12:00 PM CT Mon-Fri
-0 12 * * 1-5 $PULL_RUNNER midday
-# Weekly review: 3:45 PM CT Fridays only
-45 15 * * 5 $PULL_RUNNER weekly-review
+# Build crontab lines — all times UTC (server timezone)
+# EDT (Mar-Nov): ET = UTC-4  |  EST (Nov-Mar): ET = UTC-5
+# Using EDT offsets (summer). In winter, each job fires 1h later ET — adjust if needed.
+#   Pre-market  6:00 AM CT  = 11:00 UTC (CDT) / 12:00 UTC (CST)
+#   Market-open 8:30 AM CT  = 13:30 UTC (CDT) / 14:30 UTC (CST)
+#   Midday     12:00 PM CT  = 17:00 UTC (CDT) / 18:00 UTC (CST)
+#   EOD         3:00 PM CT  = 20:00 UTC (CDT) / 21:00 UTC (CST)
+#   Weekly-rev  4:00 PM CT  = 21:00 UTC (CDT) / 22:00 UTC (CST)
+CRON_BLOCK="# --- Trading Bot (UTC) ---
+# Pre-market research: 11:00 UTC Mon-Fri (6:00 AM CT / 7:00 AM ET)
+0 11 * * 1-5 $PULL_RUNNER pre-market
+# Market-open execution: 13:30 UTC Mon-Fri (8:30 AM CT / 9:30 AM ET)
+30 13 * * 1-5 $PULL_RUNNER market-open
+# Midday scan: 17:00 UTC Mon-Fri (12:00 PM CT / 1:00 PM ET)
+0 17 * * 1-5 $PULL_RUNNER midday
+# Daily summary (EOD): 20:00 UTC Mon-Fri (3:00 PM CT / 4:00 PM ET)
+0 20 * * 1-5 $PULL_RUNNER daily-summary
+# Weekly review: 21:00 UTC Fridays only (4:00 PM CT / 5:00 PM ET)
+0 21 * * 5 $PULL_RUNNER weekly-review
 # --- End Trading Bot ---"
 
 # Merge into existing crontab (idempotent)
 TMPFILE=$(mktemp)
-(crontab -l 2>/dev/null | grep -v "Trading Bot" | grep -v "run-routine" | grep -v "CRON_TZ=America/Chicago" || true) > "$TMPFILE"
+(crontab -l 2>/dev/null | grep -v "Trading Bot" | grep -v "run-routine" || true) > "$TMPFILE"
 printf "\n%s\n" "$CRON_BLOCK" >> "$TMPFILE"
 crontab "$TMPFILE"
 rm "$TMPFILE"
