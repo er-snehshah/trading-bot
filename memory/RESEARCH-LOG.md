@@ -174,3 +174,47 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. Binary catalyst tomorrow on existing 21% position; trail-stop active at $207 (HWM $230). Re-evaluate Thursday pre-market post-NVDA reaction. Patience > activity. Trades this week: 0/3.
+
+
+---
+
+## 2026-05-19 — Pre-market Research (refresh #3 — AM)
+
+> **Note:** Alpaca API blocked by network policy (403 Host not in allowlist); account state from last committed memory. Perplexity blocked (403); all market data via WebSearch fallback.
+
+### Account (last known — Alpaca unreachable)
+- Equity: ~$101,287 | Cash: $80,093 (79.1%) | Buying power: ~$181,381
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | Last close ~$221.45 | Trail-stop GTC 10% (stop ~$207, HWM ~$230)
+- NVDA premarket today: range $218.37–$230.63, last ~$222.75 → est. equity ~$102k
+
+### Market Context
+- **Oil:** WTI ~$105–106 | Brent ~$102–104 — Iran tensions persist; US proposed temporary sanctions waiver (de-escalation risk to oil)
+- **Indices:** S&P 500 futures lower in Asian trading (tech-led selloff); rates pressure dominant narrative
+- **VIX:** Closed 17.82 Mon → opened 19.25 Tue (+8%) — fear rising ahead of NVDA print
+- **Yields:** 10yr 4.60% (near 1yr high, +35bps past month); 30yr >5.0%; 40% implied prob of additional 25bps hike
+- **HD Q1 BMO (today):** EPS $3.43 adj (inline), Rev $41.77B (+5%), FY2026 guidance reaffirmed (sales +2.5–4.5%, EPS +4%). Homeowners deferring large projects. Neutral/slight positive read for housing/consumer.
+- **NVDA (AMC tomorrow May 20):** Options imply 8.65% move (±). Jensen Huang cautiously optimistic on China chip access. Vera CPUs confirmed at Anthropic/OpenAI/SpaceX/Oracle. Analyst targets raised. Consensus: Rev ~$78.4B, EPS ~$1.76, DC Rev ~$72.8B.
+- **Econ calendar:** Light — no CPI/PPI/FOMC today; BLS Metro Employment 10am ET (non-market-moving)
+
+### Sector Momentum (YTD May 2026)
+- **Leading:** Materials +22% (#1), Energy, Industrials, Consumer Staples
+- **Weakening:** Healthcare (was top performer, now rolling over per RRG)
+- **Lagging:** Technology, Communications, Consumer Discretionary, Financials
+- **Improving:** Real Estate, Utilities
+- Concentration risk: 10 names = ~78% of S&P YTD return
+
+### Trade Ideas
+1. **HOLD NVDA** — binary AMC tomorrow; +7% cushion; trail-stop $207 active. No add (position-sizing violation on binary); no trim (abandons thesis). Wait for reaction.
+2. **Materials (XLB/FCX/NEM) — watchlist.** YTD leader +22%. Add post-NVDA binary cleared Thu open. Entry: breakout above recent range; stop 7-8% below; target 2:1. Hold if Iran waiver doesn't crater WTI.
+3. **Healthcare (XLV/LLY/UNH) — watchlist.** Flight-to-safety bid; rates pressure on growth makes defensives attractive. Post-NVDA candidate if tech sells off hard.
+
+### Risk Factors
+- NVDA binary (21% exposure): 8.65% implied move; trail-stop $207 hard floor; China H20 restriction commentary wildcard
+- 10yr 4.60% / 30yr >5%: rate-driven valuation compression — bad for tech/growth
+- VIX 19.25 open: risk appetite declining; fear rising into NVDA print
+- Iran sanctions waiver headline: potential -10%+ oil; do NOT add energy pre-clarity
+- Market concentration: if top 10 names stumble (NVDA miss), broad index drags
+
+### Decision
+**HOLD.** No new trades. Sole focus is NVDA binary (AMC tomorrow May 20). Trail-stop active at $207. Trades this week: 0/3. Re-evaluate Thursday pre-market post-NVDA reaction. Patience > activity.
