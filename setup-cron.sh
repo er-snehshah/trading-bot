@@ -7,22 +7,32 @@
 set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
-PYTHON="${PYTHON:-python3}"
+# Use venv python if available, otherwise fall back to system python3
+if [[ -f "$REPO/.venv/bin/python" ]]; then
+  PYTHON="$REPO/.venv/bin/python"
+else
+  PYTHON="${PYTHON:-python3}"
+fi
 LOG_DIR="$REPO/logs"
 mkdir -p "$LOG_DIR"
 
 # Verify python + anthropic
 if ! "$PYTHON" -c "import anthropic" 2>/dev/null; then
-  echo "ERROR: anthropic package not found. Run: pip install anthropic"
+  echo "ERROR: anthropic not found. Run: python3 -m venv .venv && .venv/bin/pip install anthropic"
   exit 1
 fi
+echo "Using Python: $PYTHON"
 
 RUNNER="$REPO/run-routine.sh"
 cat > "$RUNNER" <<'SCRIPT'
 #!/usr/bin/env bash
-# Wrapper called by cron — sources .env if present, then runs agent.py
+# Wrapper called by cron — activates venv if present, sources .env if present, then runs agent.py
 set -euo pipefail
 REPO="$(cd "$(dirname "$0")" && pwd)"
+# Activate venv if it exists
+VENV="$REPO/.venv/bin/activate"
+[[ -f "$VENV" ]] && source "$VENV"
+# Load .env if present
 ENV_FILE="$REPO/.env"
 [[ -f "$ENV_FILE" ]] && { set -a; source "$ENV_FILE"; set +a; }
 ROUTINE="$1"
