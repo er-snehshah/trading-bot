@@ -137,3 +137,40 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. Binary catalyst tomorrow on existing 21% position; trail-stop active. Re-evaluate Thu pre-market after NVDA reaction. Patience > activity.
+
+
+---
+
+## 2026-05-19 — Pre-market Research (refresh #2 — AM)
+
+### Account
+- Equity: $101,287.36 | Cash: $80,093.44 (79.1%) | Buying power: $181,380.80
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | current $220.77 | +$1,287.36 (+6.47%) | trail-stop GTC 10% (stop $207, HWM $230, qty 96 / qty_available 0 — locked under stop)
+- Last equity: $101,436.16 → intraday/last session -$148.80 (-0.15%)
+
+### Market Context
+- WTI ~$103.20 (Investing.com 5/19) | Brent ~$104 (last quoted 5/8) — geopolitical premium persists; Iran/Hormuz risk remains the swing factor
+- S&P 500 futures: mixed sources (ESM6 ~7,398 prior session; one premarket print ~6,657 / +0.10% — flat-to-firm regardless of contract reference)
+- VIX: not directly quoted by Perplexity sources; May VIX settlement was yesterday → mechanics behind us, normal regime resumed (~17 presumed)
+- Today's catalysts: **HD earnings BMO (9am ET call)** = consumer/housing read; **NVDA T-1 (Wed AMC, 5pm ET)** dominates risk; AI capex narrative reaffirmed by JPM/MS 2026 outlooks
+- Earnings BMO today: Home Depot (HD); NVDA AMC tomorrow (Wed 5/20)
+- **NVDA Q1 FY27 consensus (latest):** Rev ~$78.4B (Visible Alpha $78.5B), EPS ~$1.76, Data Center rev consensus ~$72.8B (range $65.4–78.0B). China H20 export-control overhang: ~$8B lost rev guided; prior $4.5B inventory charge. Margins guided ~71.8% GAAP / 72% non-GAAP, targeting mid-70s by year-end.
+- Econ calendar: light — BLS Metro Area Employment 10am ET (Mar data, non-market-moving); no CPI/PPI/FOMC today
+- Sector momentum YTD: Energy +22% #1 | Industrials/Materials/Staples leading | Tech/Comm/Discretionary lagging quadrant — NVDA print Wed is the swing factor for tech leadership
+
+### Trade Ideas
+1. **HOLD NVDA into print (Wed AMC)** — +6.47% cushion; trail-stop $207 locks ~breakeven on the binary. Adding pre-print violates position sizing on a binary; trimming abandons the thesis we sized for. **No action.**
+2. **HD post-print reaction — watchlist only.** BMO call at 9am. Only entertain if: beat + raise + clean volume breakout, AND sized small (≤10% pre-NVDA). Default: pass — stacking risk pre-NVDA is wrong asymmetry.
+3. **Energy (OXY/XOM/XLE) — watchlist.** Still strongest YTD; WTI $103+. Do NOT initiate pre-NVDA. Revisit Thu open with cash dependent on NVDA reaction.
+
+### Risk Factors
+- NVDA Wed AMC = ~21% of equity binary; options imply ~7% move; consensus bar is high ($78B rev, mid-70s margin trajectory). Beat-but-not-blowout could still sell.
+- China H20 export-control commentary is the wildcard — any incremental restriction = guide cut risk
+- Hormuz de-escalation headline = instant -10% in oil; energy adds would be premature
+- Tech in lagging momentum quadrant — weak NVDA amplifies rotation pain
+- HD result could shift consumer/housing tape (XLY/XLF/XHB) — not a position concern but watch sector tone
+- 79% cash is intentional dry powder; no deployment pressure
+
+### Decision
+**HOLD.** No new trades. Binary catalyst tomorrow on existing 21% position; trail-stop active at $207 (HWM $230). Re-evaluate Thursday pre-market post-NVDA reaction. Patience > activity. Trades this week: 0/3.
