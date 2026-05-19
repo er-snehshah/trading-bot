@@ -174,3 +174,48 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. Binary catalyst tomorrow on existing 21% position; trail-stop active at $207 (HWM $230). Re-evaluate Thursday pre-market post-NVDA reaction. Patience > activity. Trades this week: 0/3.
+
+---
+
+## 2026-05-19 — Pre-market Research (refresh #3 — late AM)
+*Note: Alpaca API + Perplexity blocked by network policy (host not in allowlist). WebSearch fallback used for all queries.*
+
+### Account (last known — from memory, Alpaca unreachable)
+- Equity: ~$101,287 | Cash: $80,093 (79.1%) | Buying power: ~$181k
+- Daytrade count: 0 | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last ~$220 | ~+$1,287 (+6.47%) | trail-stop GTC 10% (HWM $230, floor ~$207)
+
+### Market Context
+- **WTI:** ~$106/bbl (swung $103–108 intraday); **Brent:** ~$102 (eased from $111 high Mon) — Iran/Hormuz: US proposed temporary oil-sanctions waiver; geopolitical premium persists but downside risk if deal closes
+- **S&P 500 futures:** Tech-led sell-off Monday; Nasdaq lower, Dow positive; futures edged down in Asian session — mixed/cautious tone
+- **VIX:** ~18.99 (prev close 18.43) — elevated vs prior ~17 zone; anxiety rising into NVDA binary
+- **10-yr Treasury:** ~4.62% (day range 4.56–4.63%) — multi-month high. Global bond stress: Japan 10y highest since 1997, UK 30y highest since 2008. Rising yields compress growth-stock multiples.
+- **Today's catalysts:** NVDA earnings AMC tomorrow (Wed 5/20) = dominant tape driver. Trump called off Iran strike — "serious negotiations" underway.
+- **Earnings BMO today (5/19):** ~40 reports; Home Depot (HD) BMO notable (consumer/housing read). NVDA AMC tomorrow.
+- **Econ calendar:** Light — no CPI/PPI/FOMC today. Bond market stress is the macro overhang.
+- **Sector momentum YTD:** Energy/Materials/Industrials/Staples Leading | Tech (XLK), Comm Svcs (XLC), Discretionary, Financials Lagging. TMT supplied 85% of S&P YTD return through mid-May — dangerously concentrated.
+
+### NVDA Update
+- Consensus: EPS $1.78 (+120% YoY) / Rev $79.2B (+79.5%) / Q2 guide ~$87B
+- Stock dipped -1.3% to ~$220 Monday on China export concerns (H20 delays, zero China data-center rev in guide)
+- 97% beat probability priced in; 20% monthly run = bar for upside surprise is very high
+- China commentary (H200 timeline, re-entry framework) is the single biggest wildcard — more important than the rev headline
+- Wedbush: expects beat + raise; Motley Fool/247WallSt: caution on elevated expectations
+
+### Trade Ideas
+1. **HOLD NVDA into print** — No action. Trail-stop $207 (~breakeven) is the only hedge on the binary. Adding = position-size violation + stacking risk; trimming = abandoning thesis. Let the stop do its job.
+2. **HD post-BMO reaction — pass.** Only entertain if strong beat + raise + clean volume breakout AND sized ≤10%. Default: do not add risk the day before NVDA binary.
+3. **Energy (OXY/XOM/XLE) — watchlist only.** WTI $106 supports; Iran-deal headline = instant -10% oil spike down. Do NOT initiate pre-NVDA. Revisit Thu open.
+4. **Post-NVDA rotation setup (Thu):** If NVDA beats big → Materials/Energy/Industrials stays strong, tech re-entry possible. If miss → rotate fully to leading sectors; watch for sector breakdown in tech.
+
+### Risk Factors
+- NVDA binary Wed AMC: options imply ~7% move; 97% beat priced in; China commentary could override the rev beat
+- Rising 10-yr yields (4.62%): P/E compression pressure on tech/growth names
+- VIX elevated at ~19 — nervousness building pre-event
+- Global bond stress (Japan/UK/France yields at multi-decade highs) = macro tail risk
+- Iran sanctions waiver: if deal closes → oil -10%+ instantly → energy thesis weakens
+- Nasdaq tech sell-off Monday = sector headwind; fragile tape into the print
+- 85% of S&P YTD return in 10 names = concentration risk; any rotation = sharp unwind
+
+### Decision
+**HOLD.** No new trades. Trail-stop active at $207 on NVDA; cash 79% is intentional dry powder. All deployment decisions deferred to Thursday pre-market after NVDA reaction. Trades this week: 0/3. Patience > activity.
