@@ -40,7 +40,10 @@ LOG="$REPO/logs/${ROUTINE}-$(date +%Y-%m-%d).log"
 exec >> "$LOG" 2>&1
 echo "=== $(date) ==="
 cd "$REPO"
-python3 agent.py --routine "$ROUTINE"
+# Use venv python directly to avoid system python3 override
+PYTHON_BIN="$REPO/.venv/bin/python"
+[[ ! -f "$PYTHON_BIN" ]] && PYTHON_BIN="python3"
+"$PYTHON_BIN" agent.py --routine "$ROUTINE"
 SCRIPT
 chmod +x "$RUNNER"
 
