@@ -73,30 +73,31 @@ TRADE or HOLD (default HOLD if no clear edge)
 ## 2026-05-19 — Pre-market Research
 
 ### Account
-- Equity: $101,350.72 | Cash: $80,093.44 (79%) | Buying power: $181,444.16
+- Equity: $101,345.92 | Cash: $80,093.44 (79%) | Buying power: $181,439.36
 - Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
-- NVDA: 96 sh @ avg $207.36 | current $221.43 | +$1,350.72 (+6.79%) | trail-stop GTC 10%, stop $207, HWM $230
+- NVDA: 96 sh @ avg $207.36 | current $221.38 | +$1,345.92 (+6.76%) | trail-stop GTC 10%, stop $207, HWM $230, qty_available 0 (locked under stop)
 
 ### Market Context
-- WTI ~$108.66 / Brent ~$109.76 — still elevated, Brent -1.9% from prior day
-- S&P 500 futures: mixed — ES ~7,398 (-0.37% late session); Markets Insider snapshot +0.10% premarket
-- VIX: 17.82 (May 18 close) — May VIX final settlement is today, expect noise
-- Today's catalysts: AI capex narrative intact; Iran/energy supply premium lingering; HD before-open earnings sets consumer tone
-- Earnings BMO: Home Depot (HD), Analog Devices (ADI), Baidu (BIDU), Arcos Dorados (ARCO)
-- **NVDA earnings: Wed May 20 AMC** — single biggest event of the week, hits our only position
-- Economic calendar: light today; CPI/PPI already out earlier in month; no FOMC today
-- Sector momentum YTD: Energy +22% #1; Industrials/Materials/Staples leading quadrant; Tech/Comm/Discretionary/Financials lagging quadrant per momentum map
+- WTI ~$103–104 (Robinhood prediction market) / Brent ~$110 (last fix May 12) — oil still elevated; recent EIA notes sharp 1Q26 rise on military action
+- S&P 500 futures: ESM6 last 7,398.00 (-0.37% prior session); Markets Insider snapshot +0.10% premarket — flat-to-soft
+- VIX: ~17–18 zone (May VIX final settlement was today — noise possible); not explicitly quoted in research
+- Today's catalysts: NVDA earnings T-1 (tomorrow AMC) dominates tape; AI capex narrative intact; oil/Hormuz geopolitical premium lingering
+- Earnings BMO: Home Depot (HD), Analog Devices (ADI), Baidu (BIDU), Arcos Dorados (ARCO); NVDA AMC Wed May 20
+- **NVDA earnings preview:** EPS ~$1.77, rev ~$78–80B (Citi sees +$1.4B beat); options pricing ~7% move vs 3% median realized — asymmetric expectations
+- Economic calendar: light today; no FOMC, no CPI/PPI
+- Sector momentum YTD: Energy +22% #1; Industrials/Materials/Staples leading; Tech/Comm/Discretionary/Financials lagging quadrant
 
 ### Trade Ideas
-1. **HOLD NVDA into earnings** — Up +6.79%, trail-stop at $207 caps downside to roughly breakeven. Earnings tomorrow AMC is binary; adding now is gambling, trimming now gives up the catalyst we positioned for. No action.
-2. **XLE / OXY (watchlist only)** — Energy still strongest sector YTD and oil holding >$100. Wait for confirmed pullback to 20-day before adding; do NOT chase ahead of NVDA-driven tape risk Thu morning.
-3. **HD post-earnings reaction (watchlist)** — Home Depot reports BMO; clean read on US consumer/housing. If beats + guides up and gaps cleanly above resistance with volume, could be a momentum add. Wait for tape, do not pre-position.
+1. **HOLD NVDA into earnings** — +6.76% unrealized, trail-stop GTC at $207 (HWM $230) protects to near breakeven. qty_available is 0 because the trailing stop has the shares — that's by design. Adding now = gambling; trimming = abandoning the catalyst we positioned for. **No action.**
+2. **Energy (OXY / XOM / XLE) — watchlist** — Sector still strongest YTD; oil above $100. Do not initiate today; do not stack risk into NVDA print. Revisit Thursday post-NVDA.
+3. **HD post-earnings (watchlist)** — Reports BMO; cleanest read on US consumer/housing. Only chase if beat + raise + clean breakout on volume; otherwise pass.
 
 ### Risk Factors
-- NVDA earnings Wed AMC = ~20% of equity in one binary event tomorrow. Trailing stop is our only protection.
-- VIX expiration today — pin/unpin volatility into close
-- Geopolitical: Iran energy premium can unwind quickly on any de-escalation headline
-- Tech in "lagging" momentum quadrant — a soft NVDA print would amplify sector rotation pain
+- NVDA earnings Wed AMC = ~21% of equity in one binary event tomorrow. Options imply ~7% move — trail-stop at $207 is the only hard protection.
+- VIX expiration / monthly settlement today → afternoon pin/unpin volatility
+- Geopolitical: Iran/Hormuz premium reverses fast on any de-escalation headline
+- Tech in lagging momentum quadrant — soft NVDA print would amplify rotation pain
+- Cash is 79% — fine to leave dry ahead of binary event; no rule violation
 
 ### Decision
-**HOLD.** No new trades. One material position already exposed to tomorrow's biggest catalyst; do not stack risk before that print. Trailing stop in place. Re-evaluate Thursday morning after NVDA reaction.
+**HOLD.** No new trades. Material binary event tomorrow on existing position; stacking exposure now is the wrong asymmetry. Trailing stop in place. Re-evaluate Thursday open after NVDA reaction.
