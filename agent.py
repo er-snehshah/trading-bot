@@ -30,6 +30,11 @@ MEMORY_FILES = [
     "memory/WEEKLY-REVIEW.md",
 ]
 
+ENV_VARS_REQUIRED = [
+    "ALPACA_API_KEY", "ALPACA_SECRET_KEY", "PERPLEXITY_API_KEY",
+    "CLICKUP_API_KEY", "CLICKUP_WORKSPACE_ID", "CLICKUP_CHANNEL_ID",
+]
+
 ALLOWED_BASH_PREFIXES = (
     "bash scripts/alpaca.sh ",
     "bash scripts/perplexity.sh ",
@@ -154,19 +159,48 @@ def dispatch_tool(name: str, inputs: dict) -> str:
     return f"ERROR: unknown tool {name}"
 
 
+def get_env_status() -> str:
+    lines = []
+    missing = []
+    for v in ENV_VARS_REQUIRED:
+        if os.environ.get(v, "").strip():
+            lines.append(f"  {v}: set")
+        else:
+            lines.append(f"  {v}: MISSING")
+            missing.append(v)
+    status = "\n".join(lines)
+    if missing:
+        status += f"\n  WARNING: missing vars: {', '.join(missing)}"
+    return status
+
+
 def build_system_prompt(routine_name: str, routine_text: str) -> str:
+    import datetime
+    today = datetime.date.today().isoformat()
+
     memory_context = []
     for rel in MEMORY_FILES:
         content = read_file(rel)
         memory_context.append(f"=== {rel} ===\n{content}")
 
+    env_status = get_env_status()
+
     return (
         "You are an autonomous trading bot agent managing a LIVE ~$10,000 Alpaca account.\n"
         "Hard rules: stocks only — NEVER touch options. Ultra-concise. Patience > activity.\n\n"
-        "REPO ROOT: " + str(ROOT) + "\n\n"
-        "ROUTINE: " + routine_name + "\n\n"
+        f"TODAY'S DATE: {today}\n"
+        f"REPO ROOT: {ROOT}\n\n"
+        "ENVIRONMENT VARIABLE STATUS (pre-checked — do NOT run env-check shell loops):\n"
+        f"{env_status}\n\n"
+        "If any var shows MISSING above: send one ClickUp alert naming the missing var, then stop.\n\n"
+        "TOOL USAGE RULES:\n"
+        "- Use bash_exec ONLY for: bash scripts/alpaca.sh, bash scripts/perplexity.sh,\n"
+        "  bash scripts/clickup.sh, git add/commit/push/pull, date, echo\n"
+        "- Do NOT run shell loops, variable assignments, or compound commands via bash_exec\n"
+        "- Use read_file / write_file / append_file for all memory file operations\n\n"
+        f"ROUTINE: {routine_name}\n\n"
         "ROUTINE INSTRUCTIONS:\n" + routine_text + "\n\n"
-        "CURRENT MEMORY FILES (preloaded for context):\n\n"
+        "CURRENT MEMORY FILES (preloaded — use read_file only if you need a fresh read):\n\n"
         + "\n\n".join(memory_context)
     )
 
