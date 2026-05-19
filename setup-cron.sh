@@ -8,8 +8,8 @@ set -euo pipefail
 
 REPO="$(cd "$(dirname "$0")" && pwd)"
 # Use venv python if available, otherwise fall back to system python3
-if [[ -f "$REPO/.venv/bin/python" ]]; then
-  PYTHON="$REPO/.venv/bin/python"
+if [[ -f "$REPO/venv/bin/python" ]]; then
+  PYTHON="$REPO/venv/bin/python"
 else
   PYTHON="${PYTHON:-python3}"
 fi
@@ -18,7 +18,7 @@ mkdir -p "$LOG_DIR"
 
 # Verify python + anthropic
 if ! "$PYTHON" -c "import anthropic" 2>/dev/null; then
-  echo "ERROR: anthropic not found. Run: python3 -m venv .venv && .venv/bin/pip install anthropic"
+  echo "ERROR: anthropic not found. Run: python3 -m venv venv && venv/bin/pip install anthropic"
   exit 1
 fi
 echo "Using Python: $PYTHON"
@@ -30,7 +30,7 @@ cat > "$RUNNER" <<'SCRIPT'
 set -euo pipefail
 REPO="$(cd "$(dirname "$0")" && pwd)"
 # Activate venv if it exists
-VENV="$REPO/.venv/bin/activate"
+VENV="$REPO/venv/bin/activate"
 [[ -f "$VENV" ]] && source "$VENV"
 # Load .env if present
 ENV_FILE="$REPO/.env"
@@ -41,7 +41,7 @@ exec >> "$LOG" 2>&1
 echo "=== $(date) ==="
 cd "$REPO"
 # Use venv python directly to avoid system python3 override
-PYTHON_BIN="$REPO/.venv/bin/python"
+PYTHON_BIN="$REPO/venv/bin/python"
 [[ ! -f "$PYTHON_BIN" ]] && PYTHON_BIN="python3"
 "$PYTHON_BIN" agent.py --routine "$ROUTINE"
 SCRIPT
