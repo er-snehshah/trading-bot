@@ -213,3 +213,46 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. THE binary catalyst day for the only position; trail-stop active at $207 (HWM $230). FOMC minutes 2pm is a side-show vs. NVDA AMC. Re-evaluate Thursday pre-market with post-print reaction in hand. If NVDA gaps up materially (+10% to ~$247), rule says tighten trail to 7% at +15% unrealized — flag for Thursday open. If gaps down hard, trail-stop handles exit and we reassess from cash. Patience > activity. Trades this week: 0/3.
+
+
+---
+
+## 2026-05-20 — Pre-market Research (refresh — TGT results in; WebSearch fallback)
+
+> **Note:** Alpaca API and Perplexity both returned 403 `host_not_allowed` (remote container network policy). Account state sourced from last known trade-log snapshot; market data via WebSearch fallback.
+
+### Account (last known — Alpaca blocked)
+- Equity: ~$101,650 | Cash: $80,093 (78.8%) | Buying power: ~$181,744
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last close $222.32 (May 19) | +$1,437.12 (+7.18% vs cost) | trail-stop GTC 10% (stop ~$207, HWM $230)
+- No open limit/stop orders beyond GTC trail
+
+### Market Context
+- **WTI ~$102–104** | **Brent ~$111.06** (Hormuz premium intact; no de-escalation headlines)
+- **ESM26 (S&P futures) +0.21% premarket** — prior close 7,353.61 (-0.67% on May 19); modest bid into NVDA
+- **VIX 18.17** (May 19 close) — moderate; within normal range; no fear spike
+- **NVDA premarket: ~$221.75** (vs May 19 close $222.32) — flat-to-slightly-soft; market waiting on print
+- **FOMC minutes ~1pm ET** (April 28-29 mtg; rate held 3.50–3.75%; Powell "good place to wait")
+- **TGT Q1 2026 BMO — BEAT:** comp sales +5.6% (first positive in 5 quarters), traffic +4.4%, digital +8.9%, raised FY outlook. Strong consumer read; offsets YoY EPS-decline narrative.
+- **No CPI/PPI/FOMC decision today** — only catalysts are FOMC minutes and NVDA AMC
+- **Bond yields elevated:** 10yr 4.687%, 30yr briefly >5.19% — valuation headwind on growth/tech names
+- **S&P +10% YTD** (through May 14); concentrated — 10 names supply ~78% of YTD return; thin breadth
+- Sector momentum: **Energy/Materials/Industrials/Staples leading** | Tech/Comm/Discretionary still lagging — NVDA print is the swing factor for tech leadership
+
+### Trade Ideas
+1. **HOLD NVDA into AMC print** — +7.18% cushion above cost; trail-stop $207 (≈breakeven) is the hard floor on a binary. Adding violates sizing rules on a known binary; trimming abandons thesis. **No action.**
+2. **TGT — monitor, no trade.** Beat is positive consumer signal but (a) we have NVDA binary tonight, (b) TGT lagging-sector discretionary, (c) no catalyst edge. Pass.
+3. **FOMC minutes 1pm ET** — watchlist trigger only. Hawkish surprise (cuts language removed) → VIX pop + tape weakness into NVDA print; trail handles exit if cascade. Dovish = non-event. No size change either way.
+4. **Energy (OXY/XOM/XLE) — deferred.** Brent $111, sector still #1 YTD. Pre-NVDA initiation wrong asymmetry; revisit Thursday open post-print.
+
+### Risk Factors
+- **NVDA AMC binary = ~21% equity.** Options imply ~7.6% move. Consensus bar high: EPS $1.76–1.78, Rev $78.75–79.2B (+79.5% YoY). Beat-but-not-blowout scenario (below $80B guide) could still sell the news.
+- China H20 chip access partially restored — commentary on China revenue trajectory = wildcard that can swing guidance materially
+- Hyperscaler capex tailwind ($725B for 2026, +77% YoY) supports thesis — but priced in to a degree
+- Elevated bond yields (10yr 4.687%) = multiple compression risk for high-P/E tech on any guide miss
+- FOMC minutes + NVDA = double catalyst window; sequence matters (minutes move VIX, then NVDA prints)
+- Thin breadth (10 names = 78% of S&P YTD) — idiosyncratic NVDA risk is systemic-level at current weight
+- Hormuz: no headline yet but any de-escalation = instant energy sector reversal
+
+### Decision
+**HOLD.** No new trades. Only position is NVDA into its own AMC print; trail-stop $207 is the floor. FOMC minutes 1pm ET is a secondary catalyst — watch for VIX spike but do not act. If NVDA beats big (+10%+ gap tomorrow), tighten trail to 7% per rules (+15% threshold ~$238). If gaps down, trail-stop executes and we re-assess from 79% cash. Patience > activity. Trades this week: 0/3.
