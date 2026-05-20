@@ -213,3 +213,48 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. THE binary catalyst day for the only position; trail-stop active at $207 (HWM $230). FOMC minutes 2pm is a side-show vs. NVDA AMC. Re-evaluate Thursday pre-market with post-print reaction in hand. If NVDA gaps up materially (+10% to ~$247), rule says tighten trail to 7% at +15% unrealized — flag for Thursday open. If gaps down hard, trail-stop handles exit and we reassess from cash. Patience > activity. Trades this week: 0/3.
+
+
+---
+
+## 2026-05-20 — Pre-market Research (morning refresh)
+*(Alpaca API blocked — host not in allowlist from remote container; last known state from trade log used. Perplexity blocked → WebSearch fallback.)*
+
+### Account
+- Equity: ~$101,650 (last known, May 20 overnight mark) | Cash: $80,093.44 (79%) | Buying power: ~$181,744
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last $224.55 | +$1,650 (+8.29%) | trail-stop GTC 10% (stop $207, HWM $230, qty 96 / qty_available 0)
+
+### Market Context
+- WTI ~$103.94 (CME) | Brent $111.06/bbl open (May 20) — Hormuz closure premium intact; EIA forecasts Brent ~$106 through 2Q26
+- S&P 500 futures: +0.21% premarket; Polymarket 71% probability of green open; prior close ~7,364 (S&P -day on rising yields)
+- VIX: 18.06 (range 17.66–18.36 today); up 1.35% — mild risk-off creep into NVDA binary
+- 10Y Treasury: 4.66% (near 16-month high); 30Y: ~5.2% (18-year high) — bond market stress weighing on high-multiple tech
+- Today's catalysts:
+  - **NVDA Q1 FY27 earnings AMC ~4:20–5pm ET** — dominant tape event; Rev est. $79.2B (+79.5% YoY), EPS est. $1.78 (+120% YoY); options imply ~7.6% move; hyperscaler capex +77% YoY ($725B 2026 vs $410B 2025)
+  - **FOMC April 28–29 minutes 2pm ET** — last Powell-era minutes; Apr mtg held rates at 3.50–3.75%; hawkish bias likely (CPI at 3-year high, PPI above expectations, market pricing in possible hike vs cuts)
+  - **TGT earnings BMO** — EPS est. $1.41 (vs $2.44 Q4 adj); implied move ±7%; no edge here
+- Earnings BMO: Target (TGT); AMC: Nvidia (NVDA), SMFG + 39 others
+- Economic calendar: FOMC minutes 2pm ET; existing home sales; no CPI/PPI today
+- Sector momentum YTD: Materials +22% #1 | Semis/Energy/Defense/Industrials leading | Tech cooling after AI run (NVDA print is sector swing factor)
+
+### Trade Ideas
+1. **HOLD NVDA into print** — +8.29% cushion; trail-stop $207 locks ~breakeven. Hyperscaler capex $725B (+77%) is the bull thesis; China H20 export controls + elevated bar ($79B beat needed + raise) are the risks. Trail handles downside. **No action.**
+2. **TGT reaction — pass.** $1.41 vs $2.44 Q4; ±7% implied move; no sector thesis; not worth the risk on NVDA print day.
+3. **Post-FOMC drift (2pm)** — hawkish minutes could spike yields further, pressure NVDA pre-print. Not actionable; trail handles any tape shock.
+4. **Energy (OXY/XOM/XLE) — watchlist.** WTI/Brent still elevated; sector leading YTD. Do NOT initiate pre-NVDA. Revisit Thursday open.
+
+### Risk Factors
+- **NVDA AMC = ~21% of equity binary.** Bar is high: beat + raise above $79–80B + clean China commentary. Beat-but-not-blowout could sell.
+- **Bond market stress**: 10Y near 4.7% / 30Y at 18-year high 5.2% → discount rate headwind for high-multiple tech; amplifies NVDA selloff risk
+- **FOMC minutes 2pm**: any "hike still on table" language = double-barrel (yield spike + NVDA drift into print)
+- China H20 commentary wildcard — any new restriction = guide cut risk
+- VIX 18.06 and creeping higher into binary — not extreme but moving wrong direction
+- S&P futures +0.21% flat-to-firm; doesn't mask single-stock binary risk
+
+### Decision
+**HOLD.** No new trades. Trail-stop GTC at $207 (HWM $230) is the only required action — it's already placed. FOMC minutes 2pm pre-shift is a secondary catalyst; NVDA AMC is the only thing that matters. Next decision point: Thursday pre-market post-NVDA reaction.
+- Gap up ≥+15% → tighten trail to 7% (strategy rule)
+- Gap up ≥+20% → tighten trail to 5%
+- Gap down → trail-stop handles exit; reassess from cash
+Trades this week: 0/3. Patience > activity.
