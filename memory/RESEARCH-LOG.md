@@ -174,3 +174,42 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. Binary catalyst tomorrow on existing 21% position; trail-stop active at $207 (HWM $230). Re-evaluate Thursday pre-market post-NVDA reaction. Patience > activity. Trades this week: 0/3.
+
+
+---
+
+## 2026-05-20 — Pre-market Research (NVDA print day)
+
+### Account
+- Equity: $101,650.24 | Cash: $80,093.44 (78.8%) | Buying power: $181,743.68
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last $224.55 | +$1,650.24 (+8.29%) | trail-stop GTC 10% (stop $207, HWM $230, qty 96 / qty_available 0)
+- Last equity: $101,272.00 → +$378.24 (+0.37%) overnight mark
+
+### Market Context
+- WTI ~$103.94 (CME, 5/19 PM) | Brent ~$110.08 (Fortune, 5/18) — Hormuz premium intact
+- ESM26 7,385.50 +0.10% premarket (Barchart 5/20) — flat-to-firm; prior close 7,364
+- VIX: ~17.82 last (5/18 Investing.com); May settle 17.08 — calm tape into binary
+- **NVDA premarket: ~$220.14–220.78** (vs Alpaca lastday $224.55) → -1.7% to -2.0% drift pre-print; volume 3.5M (below 30d avg 4.9M)
+- Today's catalysts: **NVDA Q1 FY27 AMC 5pm ET** + **FOMC April 28–29 minutes 2pm ET** (Powell's last) + **TGT BMO** (7am CT call)
+- Earnings BMO: Target (TGT) — consensus EPS $1.65 (vs $2.28 yr-ago, big YoY decline expected); Lowe's not confirmed today
+- Econ calendar: FOMC minutes 2pm ET (April mtg held funds rate 3.50–3.75%, Powell "good place to wait"); existing home sales likely
+- **NVDA preview:** Street rev ~$79.1B / EPS ~$1.78; guide on table is $78B±2% so bar is "beat AND raise above $79–80"; DC >90% of rev; GM ~75%±50bps; H20/China cited as headwind; implied move ~7.6%; competition concerns from Google TPU / AWS Trainium have been pressuring shares
+- Sector momentum YTD: Energy #1 (~+20%) | Industrials/Staples leading | **Tech -4.4% YTD** still in lagging quadrant — NVDA is the swing factor for tech leadership
+
+### Trade Ideas
+1. **HOLD NVDA into print** — +8.29% cushion; trail-stop $207 (HWM $230) locks ~breakeven on the binary. Premarket -1.7%/-2% is normal pre-print de-risking. Adding now violates sizing on a binary; trimming abandons the thesis. **No action.**
+2. **FOMC minutes 2pm reaction — watchlist only.** If hawkish surprise (no cuts language), VIX pops, NVDA dips further into print → no chase; let trail handle. If dovish, broad tape lift but NVDA still the dominant overnight catalyst — irrelevant to position sizing today.
+3. **Energy (OXY/XOM/XLE) — watchlist.** Strongest sector YTD; WTI $104. Pre-NVDA initiation is wrong asymmetry. Revisit Thu open from cash-dependent stance based on NVDA reaction.
+4. **TGT post-print — pass.** Wide YoY EPS decline ($1.65 vs $2.28) sets up for noise either way; no edge, not a thesis I want pre-NVDA.
+
+### Risk Factors
+- **Binary day:** NVDA AMC = ~21% of equity on one event. Options imply ~7.6% move. Trail-stop @ $207 is the only hard floor (breakeven-ish).
+- Bar is high: $79B beat + raise above whisper needed; China H20 commentary is the wildcard
+- FOMC minutes 2pm could pre-shift tape ahead of NVDA — hawkish surprise = double-barrel risk
+- Premarket NVDA -1.7% suggests some de-risking already in price; not a thesis change
+- Tech lagging YTD (-4.4%) — soft print amplifies rotation pain
+- Hormuz de-escalation headline = instant -10% oil; energy adds remain premature
+
+### Decision
+**HOLD.** No new trades. THE binary catalyst day for the only position; trail-stop active at $207 (HWM $230). FOMC minutes 2pm is a side-show vs. NVDA AMC. Re-evaluate Thursday pre-market with post-print reaction in hand. If NVDA gaps up materially (+10% to ~$247), rule says tighten trail to 7% at +15% unrealized — flag for Thursday open. If gaps down hard, trail-stop handles exit and we reassess from cash. Patience > activity. Trades this week: 0/3.
