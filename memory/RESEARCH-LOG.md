@@ -254,3 +254,39 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No trail tightening (under +15% threshold). NVDA reaction muted post-blowout-guide — let it breathe, don't act on a mixed tape. Energy thesis degraded with oil rolling; no force. Trades this week: 0/3. Next decision point: end-of-day NVDA mark — if it rallies through $238 (+15%) intraday, tighten trail to 7% per rule.
+
+
+---
+
+## 2026-05-21 — Pre-market Research (refresh — WebSearch fallback, Perplexity/Alpaca network-blocked)
+
+### Account
+- Live Alpaca API blocked by network policy — using May 20 EOD as baseline
+- Equity: ~$101,276 est. | Cash: $80,093.44 (79.1%) | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | intraday range $216.25–$226.94 | current ~$220.66 | unrealized ~+$1,277 (+6.40%) | trail-stop GTC 10%, stop $207, HWM $230
+- Daytrade count: 0 | PDT: false | Trades this week: 0/3
+
+### Market Context
+- **WTI:** $98.52–$99.96 (today's range, confirmed WebSearch) — below $100 for first time in weeks
+- **Brent:** $105.11–$106.56 (prev close $105.48) — Iran de-escalation "final stages" compressing Hormuz premium
+- **Iran-US deal:** Trump "final stages" of negotiations; MOU framework would open Strait of Hormuz + 30-day nuclear negotiation window → WTI could drop -10–15% on any announcement
+- **S&P 500:** Closed Wed 7,432.97 (+1.08%); Nasdaq +1.54% on NVDA beat + Iran optimism. ES futures Thu AM: +0.09% premarket — flat open
+- **VIX:** 18.06 close May 20 (month range 16.18–21.56, avg 17.98) — elevated vs prior week; Moody's/yield tension keeping floor elevated
+- **Treasury yields (macro risk):** 10yr 4.65% (16-month high hit 4.70% Tue); 30yr briefly >5.0% (18-year high) — Moody's US credit downgrade Aaa→Aa1 driving term premium expansion
+- **WMT Q1 FY27 (BMO today):** Earnings call 7am CT; consensus $0.65 EPS / $174B rev / ~3.9% US comp-ex-fuel. Results not yet confirmed in search — watch tape at open
+- **Sector momentum (mid-May aggregator):** Leading: XLP, XLI, XLB, XLE | Lagging: XLK, XLC, XLY, XLF | Improving: XLRE, XLU — tech still lagging on momentum metrics despite driving most of YTD return via TMT concentration
+
+### Trade Ideas
+1. **HOLD NVDA.** Intraday $216–$227 range; current ~$220.66 = +6.40% unrealized. Still below +15% threshold ($238.46). Trail at $207 is ~6.2% below current — adequate buffer. Muted reaction to blowout print: do not chase, do not add.
+2. **WMT reaction — watchlist only.** Consumer staples in leading momentum quadrant. Only consider if beat + raise + clean volume breakout on open. Size ≤10% if triggered. Default: pass.
+3. **Energy (OXY/XOM/XLE) — OFF list.** WTI at $99 and Iran deal "final stages" = imminent reversal risk. Rule #9 applies.
+
+### Risk Factors
+- Moody's downgrade + 30yr >5% = valuation headwind for growth/tech; multiple compression risk if yield spike resumes
+- Iran deal closing → WTI -10–15% instantly; energy sector would gap down; no exposure (correct)
+- NVDA day range $216–$227 — if it closes below $216 today, trail at $207 is ~4% away; watch
+- WMT miss on guidance (tariff/consumer spending) could drag XLP/staples leadership
+- VIX at 18 = elevated; any macro surprise hits harder from here
+
+### Decision
+**HOLD.** Confirmed: no new trades, no trail tightening. Macro backdrop (yields, Moody's) adds headwind; Iran deal risk is the dominant oil/energy variable. Patience > activity. Watch NVDA close — tighten trail to 7% only if/when unrealized exceeds +15% ($238.46).
