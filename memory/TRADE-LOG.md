@@ -29,3 +29,13 @@
 | NVDA   | 96     | $207.36 | $223.52 | +1.32%  | +$1,551.36 (+7.79%) | $207 (10% trail, HWM $230) |
 
 **Notes:** NVDA print day. Quiet session into the AMC catalyst — NVDA closed +1.32% to $223.52, lifting unrealized P&L to +7.79% on the ~21% binary position. Trail-stop $207 (HWM $230) remains the only hard floor; qty_available 0 by design (shares reserved by the GTC). Zero trades today — stacking exposure pre-print is the wrong asymmetry; cash 78.9% is intentional dry powder for the post-print reaction. FOMC April minutes (2pm) passed without redirecting the tape. Trades this week: 0/3. Next decision point: Thursday pre-market with NVDA reaction in hand — if up materially (+15%+ unrealized = ~$238), tighten trail to 7% per rule; if down hard, trail handles exit and we reassess sector entries from cash.
+
+
+### May 21 — EOD Snapshot (Thursday)
+**Portfolio:** $101,166.40 | **Cash:** $80,093.44 (79.2%) | **Day P&L:** -$384.96 (-0.38%) | **Phase P&L:** +$1,166.40 (+1.17% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L      | Stop                       |
+|--------|--------|---------|---------|---------|---------------------|----------------------------|
+| NVDA   | 96     | $207.36 | $219.51 | -1.77%  | +$1,166.40 (+5.86%) | $207 (10% trail, HWM $230) |
+
+**Notes:** NVDA reaction day — print was a beat ($82B rev) + raise ($91B Q2 guide vs $87.4B cons), but the tape gave back the overnight pop intraday. NVDA closed -1.77% to $219.51, trimming unrealized to +5.86% from +7.79% yesterday. Still well above trail-stop $207 (HWM $230); no management action — under the +15% threshold ($238.46) that would trigger a 7% trail tighten. Zero trades today; energy thesis remains degraded (WTI rolled $103→$99) so I'm not forcing the watchlist. Cash 79.2% — intentional dry powder, no rule pressure to deploy. Trades this week: 0/3. Next decision point: Friday open — if NVDA pushes through $238 intraday tighten trail; otherwise hold and close the week.
