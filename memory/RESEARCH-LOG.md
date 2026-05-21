@@ -213,3 +213,44 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. THE binary catalyst day for the only position; trail-stop active at $207 (HWM $230). FOMC minutes 2pm is a side-show vs. NVDA AMC. Re-evaluate Thursday pre-market with post-print reaction in hand. If NVDA gaps up materially (+10% to ~$247), rule says tighten trail to 7% at +15% unrealized — flag for Thursday open. If gaps down hard, trail-stop handles exit and we reassess from cash. Patience > activity. Trades this week: 0/3.
+
+
+---
+
+## 2026-05-21 — Pre-market Research (Thursday — NVDA reaction day)
+
+### Account
+- Equity: $101,505.29 | Cash: $80,093.44 (78.9%) | Buying power: $181,598.73
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | current $223.10 | +$1,511.04 (+7.59%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
+- Last equity: $101,546.56 → -$41.27 overnight (essentially flat)
+
+### Market Context
+- **NVDA Q1 FY27 print (Wed AMC 5/20):** Rev $82B (vs ~$78B guide / consensus ~$79.1B) — BEAT; **Q2 FY27 guide $91B ±2% vs $87.4B consensus** — RAISE; non-GAAP GM 75% guided; record FCF $49B. Initial AH reaction: **-1.26% to $220.66** (MarketBeat), some sources cited ~-3%. Mixed data-center metrics flagged as the soft spot despite blowout headline guide.
+- NVDA premarket / current mark: ~$223.10 (vs lastday $223.47) — recovered to ~flat. Reaction is MUTED, not the +15%/+20% gap-up needed to trigger trail tightening.
+- **ES futures Wed +0.96%, NQ +1.57%** — broad tape liked the guide; today's session opens with that pop already in price
+- WTI ~$99 (CME 5/20) | Brent ~$110.08 (Fortune 5/18) — oil rolled off from $103-104 toward $99; Polymarket noted ~5% WTI drop on de-escalation hopes. Energy sector reflation thesis is weaker than a week ago.
+- VIX: not directly quoted; presumed mid-teens given +1% NQ day; normal regime
+- Today's catalysts:
+  - **Earnings BMO:** Walmart (WMT), Deere (DE), Ross Stores (ROST), BJ's, Copart, Ralph Lauren — consumer/retail read
+  - **Earnings AMC:** Workday (WDAY), Take-Two (TTWO), Deckers (DECK), Zoom, NIO
+  - **Econ 8:30am ET:** Initial Claims (cons ~210K, prior 211K), Philly Fed Index, Continuing Claims
+  - **10:00am ET:** Existing Home Sales, Leading Economic Index
+- Sector momentum YTD (latest aggregator): **XLK ~+24%** (tech recovering on NVDA tailwind) | **XLE ~+10%** | SPX ~+17% — leadership picture is more mixed than 2 weeks ago; energy lost its #1 status as oil rolled.
+
+### Trade Ideas
+1. **HOLD NVDA — no trail tightening yet.** Unrealized +7.59% is BELOW the +15% threshold ($238.46) that would trigger 7% trail. Stop stays at $207 (HWM $230, ~7% below current). Reaction was muted (blowout guide but mixed DC metrics) — no thesis change, no management action.
+2. **Energy (OXY/XOM/XLE) — REMOVING from watchlist priority.** WTI rolled from $103→$99 on de-escalation; XLE YTD lead has compressed; the asymmetric setup that flagged this sector is degraded. Pass — don't force a thesis on a fading sector (Rule #9).
+3. **WMT/DE post-print reaction — watchlist only.** Consumer read matters but reaction trades aren't my edge; would need a clean breakout on volume + a clear sector follow-on. Default pass.
+4. **Tech follow-on (MSFT/AVGO/MU)** — NVDA's $91B guide is bullish for the AI infra complex. But I'm ALREADY long the cleanest expression at ~21% of equity through NVDA. Adding correlated tech compounds single-factor risk. Pass.
+
+### Risk Factors
+- NVDA mixed AH reaction (-1.26% on a blowout guide) signals expectations bar was high; if today opens red, position could give back gains toward trail
+- Trail-stop @ $207 is still ~7% below current $223 — would trigger only on a real reversal, not a soft open
+- Oil rolling = energy adds would have been late; correctly held off
+- Walmart/Deere prints could shift consumer/industrial tape; not a position concern
+- Initial Claims uptick (211K) signals labor softening — watch for trend if cracks appear
+- Cash 78.9% is still intentional dry powder; no rule pressure to deploy
+
+### Decision
+**HOLD.** No new trades. No trail tightening (under +15% threshold). NVDA reaction muted post-blowout-guide — let it breathe, don't act on a mixed tape. Energy thesis degraded with oil rolling; no force. Trades this week: 0/3. Next decision point: end-of-day NVDA mark — if it rallies through $238 (+15%) intraday, tighten trail to 7% per rule.
