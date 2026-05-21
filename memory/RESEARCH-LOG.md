@@ -213,3 +213,42 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. THE binary catalyst day for the only position; trail-stop active at $207 (HWM $230). FOMC minutes 2pm is a side-show vs. NVDA AMC. Re-evaluate Thursday pre-market with post-print reaction in hand. If NVDA gaps up materially (+10% to ~$247), rule says tighten trail to 7% at +15% unrealized — flag for Thursday open. If gaps down hard, trail-stop handles exit and we reassess from cash. Patience > activity. Trades this week: 0/3.
+
+---
+
+## 2026-05-21 — Pre-market Research (post-NVDA print; Iran deal risk)
+
+### Account (estimated — Alpaca API blocked by network policy; last known May 20 EOD)
+- Equity: ~$100,575 est. | Cash: $80,093 (79.6%) | Buying power: ~$160k est.
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | premarket ~$213.35 (-4.6% from $223.52 close) | +$575 (+2.87%)
+- Trail-stop: GTC 10% trail, HWM $230 → stop $207 — INTACT, not triggered
+- Day P&L est.: ~-$976 (-0.96%) on NVDA premarket softness
+- Phase P&L est.: ~+$575 (+0.57% vs $100k baseline)
+- Note: All Perplexity + Alpaca API calls blocked (403 host_not_allowed). All data via WebSearch fallback.
+
+### Market Context
+- **WTI:** ~$99.38 (+0.38%) | **Brent:** ~$106.10 (+0.62%) — both well off $118 Brent peak; Hormuz premium unwinding on Iran-US deal progress
+- **ES (S&P futures):** +0.09% premarket; S&P 500 closed +1.08% at 7,432.97 yesterday on Iran optimism
+- **VIX:** 17.44 (closed -3.43% yesterday) — calm tape; range 16.18–21.56 past month
+- **NVDA post-print:** Revenue $81.6B (+85% YoY, beat $79.2B est) | EPS $1.87 (beat $1.77 est) | DC rev $75.2B (+92% YoY) | Q2 guide $89.1–92.8B (beat $87.3B est) | Dividend raised $0.01→$0.25; $80B buyback auth. Stock reaction: AH -0.13% ($214.93); premarket $213.35 (-0.87%) — "sell the news" despite massive beat
+- **WMT BMO:** EPS $0.61 (beat $0.58), Rev $165.6B +4% YoY — slight beat; stock -0.64% premarket. E-commerce +22%, first profitable globally. Soft tape reaction = consumer confidence headwind already priced
+- **Iran-US deal:** Negotiations reported "in final stages" — Trump/Tehran moving toward Hormuz agreement. Brent already -$12 from $118 peak. If deal finalizes: rapid -$15–20 further oil selloff expected
+- **Today's econ:** 8:30 AM — Jobless Claims + Housing Starts/Permits + Philly Fed Mfg | 9:45 AM — PMI Composite Flash | No CPI/PPI/FOMC
+- **Sector momentum YTD:** Energy +22% (was #1, now at risk) | Industrials/Staples leading | Tech cooling after AI-driven run | NVDA print is swing factor for tech leadership; AI momentum concentrated in 10 names supplying ~78% of YTD S&P return
+
+### Trade Ideas
+1. **HOLD NVDA** — Blowout beat confirms AI capex thesis. "Sell the news" premarket -4.6% is normal after high-expectation binary. Trail-stop $207 (HWM $230) intact with $6/sh cushion. Tighten trail to 7% ONLY if/when NVDA reaches +15% from entry (~$238.46). No add — already at ~21% equity; sizing cap reached. No trim — thesis fully validated. **Action: None. Monitor open.**
+2. **AI Infrastructure watchlist (AVGO / MRVL / MSFT)** — NVDA Q2 guide of $89–93B is extremely bullish for entire AI data-center ecosystem. If NVDA stabilizes at $210–215 intraday and tech sector confirms strength, a small second position (≤15% equity) in AVGO or MRVL is actionable. Entry only after NVDA finds support; catalyst = NVDA Q2 guide + AI capex reacceleration. Stop: 10% trail. Target: 20%+ (2:1 min). Max position: $15k. **Watchlist — not yet.**
+3. **Energy AVOID** — Iran-US Hormuz deal in final stages invalidates the core energy thesis (risk premium). WTI already -15% from peak. Any deal announcement = instant -$15–20 oil. XOM/OXY/XLE: DO NOT initiate. Prior watchlist item explicitly retired. Exit sector entirely.
+
+### Risk Factors
+- "Sell the news" on NVDA — could cascade lower intraday if $210 support doesn't hold; trail-stop $207 is the backstop
+- Iran deal could finalize any session → oil -10–15% flash move; no energy exposure is correct
+- Jobless Claims / Philly Fed at 8:30 ET could shift rate expectations if surprise
+- 79.6% cash = underdeplyed vs 75–85% target; however binary NVDA reaction + Iran uncertainty = patience is correct posture
+- Momentum factor extremely concentrated (top 10 names = 78% of S&P YTD) — crowded trade; reversal velocity can be severe
+- WMT soft premarket despite beat = broad consumer weakness signal; avoid consumer discretionary
+
+### Decision
+**HOLD / WATCHLIST.** No new trades today. NVDA position intact above $207 trail-stop — massive beat validates thesis, "sell the news" reaction is not a thesis change. Energy thesis explicitly retired on Iran deal risk. AI infrastructure (AVGO/MRVL) enters watchlist for first post-NVDA entry IF intraday support confirms. Re-evaluate at market open; if NVDA holds $210–215 on high volume, size into one AI adjacent position (≤15% equity) this session. Trades this week: 0/3 — one slot available if setup confirms. Patience > activity.
