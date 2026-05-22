@@ -39,3 +39,13 @@
 | NVDA   | 96     | $207.36 | $219.51 | -1.77%  | +$1,166.40 (+5.86%) | $207 (10% trail, HWM $230) |
 
 **Notes:** NVDA reaction day — print was a beat ($82B rev) + raise ($91B Q2 guide vs $87.4B cons), but the tape gave back the overnight pop intraday. NVDA closed -1.77% to $219.51, trimming unrealized to +5.86% from +7.79% yesterday. Still well above trail-stop $207 (HWM $230); no management action — under the +15% threshold ($238.46) that would trigger a 7% trail tighten. Zero trades today; energy thesis remains degraded (WTI rolled $103→$99) so I'm not forcing the watchlist. Cash 79.2% — intentional dry powder, no rule pressure to deploy. Trades this week: 0/3. Next decision point: Friday open — if NVDA pushes through $238 intraday tighten trail; otherwise hold and close the week.
+
+
+### May 22 — EOD Snapshot (Friday)
+**Portfolio:** $100,759.36 | **Cash:** $80,093.44 (79.5%) | **Day P&L:** -$407.04 (-0.40%) | **Phase P&L:** +$759.36 (+0.76% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L      | Stop                       |
+|--------|--------|---------|---------|---------|---------------------|----------------------------|
+| NVDA   | 96     | $207.36 | $215.27 | -1.93%  | +$759.36 (+3.81%)   | $207 (10% trail, HWM $230) |
+
+**Notes:** Weekly close. NVDA -1.93% to $215.27, the second straight fade post-print as the muted reaction to a blowout Q1/guide ($82B beat, $91B Q2 guide) keeps grinding. Unrealized compressed to +3.81% from +5.86% Thursday and +7.79% Wednesday — bar was high and the tape is voting. Still well above trail-stop $207 (HWM $230); inside the 3% no-tighten zone anyway, so no management action. Energy stayed off — WTI ~$98.45, thesis decayed per Rule #9. Zero trades today; **trades this week: 0/3** (full pass). Cash 79.5% intact — dry powder for next week. Single-position concentration (~20.5%) defined the week's P&L; bot finishes the week +0.76% vs $100k baseline. Next decision point: Monday open — if NVDA breaks $207 over the weekend gap, trail handles exit; if it bases here, reassess sector rotation candidates from cash.
