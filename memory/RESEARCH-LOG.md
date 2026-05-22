@@ -254,3 +254,41 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No trail tightening (under +15% threshold). NVDA reaction muted post-blowout-guide — let it breathe, don't act on a mixed tape. Energy thesis degraded with oil rolling; no force. Trades this week: 0/3. Next decision point: end-of-day NVDA mark — if it rallies through $238 (+15%) intraday, tighten trail to 7% per rule.
+
+
+---
+
+## 2026-05-22 — Pre-market Research (Friday)
+
+### Account
+- Equity: $101,213.44 | Cash: $80,093.44 (79.1%) | Buying power: $181,306.88
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | current $220.00 | +$1,213.44 (+6.10%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
+- Last equity: $101,166.40 → +$47.04 overnight (essentially flat)
+
+### Market Context
+- **WTI ~$98.45** (Investing.com 5/22) — continuing to roll from $99 prior day; Hormuz/geopolitical premium continues to bleed
+- Brent: no fresh quote (last reference $116 on 5/1, stale); directionally softer alongside WTI
+- **S&P 500 futures (ESM6): ~7,482.75 +0.22%** (CME late-session 5/21) — near record highs; one snapshot showed +0.10% premarket
+- VIX: not directly quoted by Perplexity; presumed mid-teens given +1% NQ Wed + flat tape; calm regime
+- Today's catalysts:
+  - **Earnings BMO:** Booz Allen (BAH), Global Ship Lease (GSL) — no mega-cap catalysts; Q1 earnings season effectively winding down
+  - **Macro 10:00am ET:** University of Michigan Consumer Sentiment (final May) — the day's main data point
+  - ECB Lane speech overnight (low US impact)
+- **NVDA follow-through:** Wed AMC print was Rev $82B beat + $91B Q2 guide vs $87.4B cons; AH reaction muted (-1.3% to -3% range); Thu intraday gave back to $219.51 close; this morning ~$220, recovered slightly. **Reaction remains muted on a blowout — bar was high.**
+- Sector momentum YTD: **XLE Energy #1 (+22-26%)** but **the oil reflation thesis is degrading as WTI rolls** | XLI Industrials leading (+11.4% 6mo) | **XLK Tech in lagging quadrant** (+4.7% 6mo) despite NVDA tailwind | XLF Financials lagging (-2% 6mo)
+
+### Trade Ideas
+1. **HOLD NVDA — no management action.** Unrealized +6.10% sits well below the +15% threshold ($238.46) that would trigger 7% trail tightening. Stop $207 (HWM $230) remains ~6% below current $220 — still inside the 3% no-tighten zone if I tried anyway. Reaction to a blowout guide is muted; that's information (high bar / mixed DC commentary), but not a thesis break. **No action.**
+2. **Energy — STAYING OUT.** WTI now ~$98.45, down from $103-104 a week ago; sector thesis is decaying in real time per Rule #9 (don't force thesis on rolling sector). XLE retains YTD lead but momentum has shifted. Pass.
+3. **No new positions Friday.** Light Friday session, weekly close mechanics, no clean catalyst-driven setup in the universe I track. UMich sentiment is not a single-name trigger. Patience > activity.
+
+### Risk Factors
+- NVDA muted reaction on a blowout = expectations bar elevated; further fade pressure possible. Trail-stop @ $207 (~6% below current) is the hard floor.
+- Oil rolling toward $95-98 zone would invalidate any latent energy adds — correctly avoided
+- Friday near-ATH tape with UMich Sentiment as the only macro print = low-event-density day; thin reaction risk
+- Single-position concentration: ~21% in NVDA. If today is the EOD entry day where weekly review pulls a baseline, log will reflect that exposure
+- 79.1% cash is intentional dry powder; zero pressure to deploy on a low-catalyst Friday
+
+### Decision
+**HOLD.** No new trades. No trail tightening (under +15% threshold; current price within 3% no-touch buffer of stop anyway). Energy thesis decayed — staying out per Rule #9. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday open with weekly review in hand; reassess from current cash-heavy position.
