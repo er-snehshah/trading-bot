@@ -258,37 +258,40 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ---
 
-## 2026-05-22 — Pre-market Research (Friday)
+## 2026-05-22 — Pre-market Research (Friday) [UPDATED — WebSearch fallback; Alpaca + Perplexity blocked by network policy]
 
 ### Account
-- Equity: $101,213.44 | Cash: $80,093.44 (79.1%) | Buying power: $181,306.88
+- **Live Alpaca API blocked** (host_not_allowed network policy) — using Thu EOD baseline
+- Thu EOD: Equity $101,166.40 | Cash $80,093.44 (79.2%) | Buying power ~$181,000
 - Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
-- NVDA: 96 sh @ avg $207.36 | current $220.00 | +$1,213.44 (+6.10%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
-- Last equity: $101,166.40 → +$47.04 overnight (essentially flat)
+- NVDA: 96 sh @ avg $207.36 | Thu close $219.51 | **premarket ~$216.22 (-1.50%)** | trail-stop GTC 10% (stop $207, HWM $230)
+- Estimated premarket unrealized: +$829 (+4.16%) — well below +15% trigger ($238.46)
 
 ### Market Context
-- **WTI ~$98.45** (Investing.com 5/22) — continuing to roll from $99 prior day; Hormuz/geopolitical premium continues to bleed
-- Brent: no fresh quote (last reference $116 on 5/1, stale); directionally softer alongside WTI
-- **S&P 500 futures (ESM6): ~7,482.75 +0.22%** (CME late-session 5/21) — near record highs; one snapshot showed +0.10% premarket
-- VIX: not directly quoted by Perplexity; presumed mid-teens given +1% NQ Wed + flat tape; calm regime
-- Today's catalysts:
-  - **Earnings BMO:** Booz Allen (BAH), Global Ship Lease (GSL) — no mega-cap catalysts; Q1 earnings season effectively winding down
-  - **Macro 10:00am ET:** University of Michigan Consumer Sentiment (final May) — the day's main data point
-  - ECB Lane speech overnight (low US impact)
-- **NVDA follow-through:** Wed AMC print was Rev $82B beat + $91B Q2 guide vs $87.4B cons; AH reaction muted (-1.3% to -3% range); Thu intraday gave back to $219.51 close; this morning ~$220, recovered slightly. **Reaction remains muted on a blowout — bar was high.**
-- Sector momentum YTD: **XLE Energy #1 (+22-26%)** but **the oil reflation thesis is degrading as WTI rolls** | XLI Industrials leading (+11.4% 6mo) | **XLK Tech in lagging quadrant** (+4.7% 6mo) despite NVDA tailwind | XLF Financials lagging (-2% 6mo)
+- **WTI**: $96.35 (Thu close, -2% on Iran de-escalation bets); **Brent**: $102.58 (Thu close); Brent bouncing +1.89% Fri morning to $104.52 — Iran deal priced as 78% likely (Polymarket), oil oscillating on headline risk
+- **S&P 500 futures**: +0.39% premarket — positive open expected; near all-time highs
+- **VIX**: 16.76 (Thu close, -3.9%) — calm, mid-teens; normal regime
+- **Kevin Warsh sworn in as Fed Chair today** (replacing Powell) — headline macro event; Warsh historically more hawkish; watch for any opening remarks
+- **NVDA premarket -1.50%**: Post-earnings fade continues; AH reaction muted despite Q1 beat ($81.6B vs $79.2B est / EPS $1.87 vs $1.78 est) and $91B Q2 guide vs $87.4B cons. Baird raised PT to $500, RBC to $270. NVDA +11% MTD, +20% YTD — but reaction to blowout signals high bar priced in
+- **Today's catalysts:**
+  - BMO earnings: Booz Allen (BAH), Global Ship Lease (GSL) — no market-moving names; earnings season winding down
+  - **10:00am ET: UMich Consumer Sentiment Final May** — consensus 48.2 vs prior 49.8 (near record low); Current Conditions 47.8; inflation/buying-power concerns driving weakness
+  - Fed Gov Waller speech; Baker Hughes rig count (2pm)
+- **Sector momentum YTD (updated):** XLB Materials #1 (+22%) breaking out | XLI Industrials leading | XLE Energy leading (but oil range-bound) | XLK Tech / XLC Comms / XLY Cons Disc / XLF Financials = **Lagging** | XLV Healthcare weakening
 
 ### Trade Ideas
-1. **HOLD NVDA — no management action.** Unrealized +6.10% sits well below the +15% threshold ($238.46) that would trigger 7% trail tightening. Stop $207 (HWM $230) remains ~6% below current $220 — still inside the 3% no-tighten zone if I tried anyway. Reaction to a blowout guide is muted; that's information (high bar / mixed DC commentary), but not a thesis break. **No action.**
-2. **Energy — STAYING OUT.** WTI now ~$98.45, down from $103-104 a week ago; sector thesis is decaying in real time per Rule #9 (don't force thesis on rolling sector). XLE retains YTD lead but momentum has shifted. Pass.
-3. **No new positions Friday.** Light Friday session, weekly close mechanics, no clean catalyst-driven setup in the universe I track. UMich sentiment is not a single-name trigger. Patience > activity.
+1. **HOLD NVDA — no action.** Premarket -1.50% (~$216) puts unrealized at +4.16%, well below the +15% tightening trigger ($238.46). Trail-stop $207 is ~4% below current — adequate cushion. Thesis intact (AI infra supercycle), but market is saying bar was very high. No tightening, no add, no trim. Watch intraday: if rallies through $238.46, tighten trail to 7% per rule.
+2. **Energy (XLE/OXY) — WATCH LIST ONLY, not actionable today.** Brent bouncing this morning (+1.89%), but WTI rolled hard Thu. Iran deal at 78% Polymarket = oil headline risk in both directions. Sector still Leading but thesis too volatile for Friday entry. Revisit Monday with oil stability check.
+3. **Materials (XLB/FCX/NEM) — add to Monday watchlist.** #1 sector YTD (+22%), breaking out of long-term consolidation. Not a Friday entry, but this is now the primary sector rotation candidate to replace the energy thesis. Research over weekend.
+4. **No new Friday positions.** Warsh wild card, UMich near record low, NVDA pressuring tech, light catalyst day. Patience > activity.
 
 ### Risk Factors
-- NVDA muted reaction on a blowout = expectations bar elevated; further fade pressure possible. Trail-stop @ $207 (~6% below current) is the hard floor.
-- Oil rolling toward $95-98 zone would invalidate any latent energy adds — correctly avoided
-- Friday near-ATH tape with UMich Sentiment as the only macro print = low-event-density day; thin reaction risk
-- Single-position concentration: ~21% in NVDA. If today is the EOD entry day where weekly review pulls a baseline, log will reflect that exposure
-- 79.1% cash is intentional dry powder; zero pressure to deploy on a low-catalyst Friday
+- **Warsh Fed Chair**: First public remarks as chair could reset rate expectations; hawkish tone = broad selloff, tech hit hardest
+- **UMich at near record low (48.2)**: Consumer confidence deteriorating — macro headwind if trend extends
+- NVDA -1.50% premarket on a blowout guide = expectations bar extremely elevated; continued fade could approach trail-stop $207 if broader tape weakens
+- Iran deal (78% Polymarket): If talks break down, oil reverses hard → energy re-inflates but damages consumer names
+- Momentum extreme: Invesco S&P Momentum ETF +30% over 7 weeks (record) — historical reversion signal; concentration risk in the 10 names driving 78% of SPX YTD return
+- 79.2% cash — no pressure to deploy; positioning is correct for uncertain Friday
 
 ### Decision
-**HOLD.** No new trades. No trail tightening (under +15% threshold; current price within 3% no-touch buffer of stop anyway). Energy thesis decayed — staying out per Rule #9. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday open with weekly review in hand; reassess from current cash-heavy position.
+**HOLD.** No new trades. No trail tightening (under +15% threshold; $216 premarket). Energy thesis oscillating — staying out per Rule #9. Materials emerging as next rotation candidate — do weekend research. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday pre-market with weekly review in hand — assess NVDA EOD, oil direction, Warsh remarks, and XLB/Materials setup.
