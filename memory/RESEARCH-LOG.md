@@ -260,35 +260,38 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ## 2026-05-22 — Pre-market Research (Friday)
 
-### Account
-- Equity: $101,213.44 | Cash: $80,093.44 (79.1%) | Buying power: $181,306.88
-- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
-- NVDA: 96 sh @ avg $207.36 | current $220.00 | +$1,213.44 (+6.10%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
-- Last equity: $101,166.40 → +$47.04 overnight (essentially flat)
+_API note: Alpaca paper-api and Perplexity both returned 403 "Host not in allowlist" from this cloud environment. Used last known state from May 21 EOD trade log + WebSearch fallback for all market data._
+
+### Account (last known — May 21 EOD; live Alpaca inaccessible)
+- Equity: ~$101,166.40 | Cash: $80,093.44 (79.2%) | Daytrade count: 0 | PDT: false
+- NVDA: 96 sh @ avg $207.36 | Thu close $219.51 | premarket ~$223.18 (+1.67%) | trail-stop GTC 10% (stop $207, HWM $230)
+- Trades this week: 0/3
 
 ### Market Context
-- **WTI ~$98.45** (Investing.com 5/22) — continuing to roll from $99 prior day; Hormuz/geopolitical premium continues to bleed
-- Brent: no fresh quote (last reference $116 on 5/1, stale); directionally softer alongside WTI
-- **S&P 500 futures (ESM6): ~7,482.75 +0.22%** (CME late-session 5/21) — near record highs; one snapshot showed +0.10% premarket
-- VIX: not directly quoted by Perplexity; presumed mid-teens given +1% NQ Wed + flat tape; calm regime
+- **WTI: $96.35** (settled Thu -2%) | **Brent: $102.58** (settled Thu -2%) — Iran peace deal optimism accelerating the geopolitical-premium bleed; WTI down from $103+ a week ago
+- **S&P 500: closed 7,445.72 Thu (+0.17%)** — second consecutive advance; **futures +0.39% Friday premarket** (~78% probability of green open)
+- **VIX: ~16.76** (closed Thu, -3.9%); opened ~17.58 Friday — calm-to-slightly-elevated; not a fear signal
+- **Treasury yields elevated:** 2yr >4.0%, 10yr >4.50%, 30yr >5.0% — persistent headwind to equity multiples
 - Today's catalysts:
-  - **Earnings BMO:** Booz Allen (BAH), Global Ship Lease (GSL) — no mega-cap catalysts; Q1 earnings season effectively winding down
-  - **Macro 10:00am ET:** University of Michigan Consumer Sentiment (final May) — the day's main data point
-  - ECB Lane speech overnight (low US impact)
-- **NVDA follow-through:** Wed AMC print was Rev $82B beat + $91B Q2 guide vs $87.4B cons; AH reaction muted (-1.3% to -3% range); Thu intraday gave back to $219.51 close; this morning ~$220, recovered slightly. **Reaction remains muted on a blowout — bar was high.**
-- Sector momentum YTD: **XLE Energy #1 (+22-26%)** but **the oil reflation thesis is degrading as WTI rolls** | XLI Industrials leading (+11.4% 6mo) | **XLK Tech in lagging quadrant** (+4.7% 6mo) despite NVDA tailwind | XLF Financials lagging (-2% 6mo)
+  - **Earnings BMO:** No mega-cap catalysts; Q1 earnings season winding down
+  - **Macro 10:00am ET:** UMich Consumer Sentiment (final May) — prelim near June 2022 trough; gas prices + tariff concerns dominant; year-ahead inflation 4.5% (down from 4.7% prelim)
+  - **Macro driver:** Iran peace deal optimism = oil rolling + equity bid; key geopolitical variable
+  - **Notable:** Baird raises NVDA PT to $500 (street-high) post Q1 beat; Figma beat+raise +15%; Ackman/Pershing Square taking MSFT stake
+- **NVDA premarket:** Thu range $217.93-$227.40; ATH closing price $235.74 on May 14; premarket Fri range $220.50-$226.13 (+1.67%)
+- **Sector rotation YTD:** XLB Materials ~+22% (#1); XLI Industrials leading; **XLK Tech + XLF Financials in lagging quadrant** per momentum analysis
 
 ### Trade Ideas
-1. **HOLD NVDA — no management action.** Unrealized +6.10% sits well below the +15% threshold ($238.46) that would trigger 7% trail tightening. Stop $207 (HWM $230) remains ~6% below current $220 — still inside the 3% no-tighten zone if I tried anyway. Reaction to a blowout guide is muted; that's information (high bar / mixed DC commentary), but not a thesis break. **No action.**
-2. **Energy — STAYING OUT.** WTI now ~$98.45, down from $103-104 a week ago; sector thesis is decaying in real time per Rule #9 (don't force thesis on rolling sector). XLE retains YTD lead but momentum has shifted. Pass.
-3. **No new positions Friday.** Light Friday session, weekly close mechanics, no clean catalyst-driven setup in the universe I track. UMich sentiment is not a single-name trigger. Patience > activity.
+1. **HOLD NVDA — no management action.** Premarket ~$223.18; unrealized ~+7.6% — below +15% threshold ($238.46) for trail tightening. HWM $230 intact; stop $207 ~6.5% below current. Baird $500 PT is a long-term call, not a day-trade trigger. Let it breathe.
+2. **Energy — CONFIRMED OUT.** WTI $96.35, down from $103+ last week. Iran deal optimism = continued unwind of geopolitical premium. Rule #9 executed correctly — no latent energy ideas.
+3. **No new positions Friday.** No mega-cap earnings BMO, UMich is a sentiment read not a single-name trigger, yields headwind to adding tech. Patience > activity.
+4. **Watchlist for next week:** XLB Materials (FCX/NEM/XLB) and XLI Industrials — leading YTD; confirm sector momentum holds into Monday before acting.
 
 ### Risk Factors
-- NVDA muted reaction on a blowout = expectations bar elevated; further fade pressure possible. Trail-stop @ $207 (~6% below current) is the hard floor.
-- Oil rolling toward $95-98 zone would invalidate any latent energy adds — correctly avoided
-- Friday near-ATH tape with UMich Sentiment as the only macro print = low-event-density day; thin reaction risk
-- Single-position concentration: ~21% in NVDA. If today is the EOD entry day where weekly review pulls a baseline, log will reflect that exposure
-- 79.1% cash is intentional dry powder; zero pressure to deploy on a low-catalyst Friday
+- NVDA premarket recovery (+1.67%) doesn't resolve the "muted reaction to a blowout" pattern — bar remains high; further consolidation likely before next leg
+- Iran deal optimism could reverse on any headline — oil spikes, futures gap down
+- UMich near June 2022 trough: soft consumer confidence + elevated inflation expectations; if final print disappoints, rate-sensitive names sell off
+- Treasury yields (30yr >5%) are a ceiling on P/E expansion — no tailwind to adding new equity exposure
+- Single-position concentration: ~21% NVDA; 79.2% cash is correct given elevated yield environment
 
 ### Decision
-**HOLD.** No new trades. No trail tightening (under +15% threshold; current price within 3% no-touch buffer of stop anyway). Energy thesis decayed — staying out per Rule #9. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday open with weekly review in hand; reassess from current cash-heavy position.
+**HOLD.** No new trades. No trail tightening (below +15% threshold; within 3% no-tighten buffer of stop). Energy correctly avoided as oil rolls through $96. Close the week clean. Trades this week: 0/3. **Next decision point: Monday pre-market — check NVDA vs $238.46 trail-tighten trigger; reassess XLB/XLI setup with weekend news flow cleared.**
