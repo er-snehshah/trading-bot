@@ -292,3 +292,64 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No trail tightening (under +15% threshold; current price within 3% no-touch buffer of stop anyway). Energy thesis decayed — staying out per Rule #9. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday open with weekly review in hand; reassess from current cash-heavy position.
+
+---
+
+## 2026-05-23 — Pre-market Research (Weekend — Tuesday 5/26 prep)
+*(Alpaca API blocked by network policy — used Fri EOD snapshot. Perplexity blocked — WebSearch fallback.)*
+
+### Account
+- Equity: ~$100,759.36 | Cash: $80,093.44 (79.5%) | Buying power: ~$180,852
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | Fri close $215.27 | ~$215.33 weekend | +$759.36 (+3.81%) | trail-stop GTC 10% (stop $207, HWM $230, qty_available 0)
+- Note: **Memorial Day Mon 5/25 — market closed. First trading day is Tue 5/26.**
+- New week: 0/3 trades used.
+
+### Market Context
+- **WTI ~$97** (rolling from $98.45 Fri; down from $103 last week) | **Brent ~$103.54** — geopolitical premium bleeding as Iran nuclear negotiations progress; energy reflation thesis degraded
+- **S&P 500:** Near ATH; S&P Equal Weight and DJIA both fresh ATH Fri; Manufacturing PMI 55.3 (beat 53.8, highest since May 2022) = strong macro backdrop
+- **VIX: 16.70** (closed 5/22) — calm, complacent
+- **Kevin Warsh sworn in as Fed Chair 5/22** — hawkish; rates likely on hold through 2026+; inflation still above 2%; rate cuts unlikely this year; market not pricing cuts
+- **Today's catalysts:** Iran nuclear talks (3-day holiday weekend) — oil swing factor; SpaceX IPO filing confirmed (June 12, $1.75T valuation on Nasdaq) — mega risk-appetite event ahead
+- **Earnings week of 5/26:** AZO (AutoZone), ZS (Zscaler) Tue 5/26 AMC — no mega-cap BMO catalysts
+- **Economic calendar:** Light week; next big release TBD. No imminent CPI/FOMC. Warsh era at Fed = new communication style = volatility risk
+- **Sector momentum YTD:** Materials +22% #1 (breakout, inflation hedge + AI copper demand) | Industrials +13% (XLI ATH; Manufacturing PMI tailwind) | Consumer Staples leading | Energy degrading (WTI rolling) | **Tech lagging** (XLK, XLC, XLY, XLF all in lagging quadrant) — NVDA is the outlier tech name
+
+### Watchlist / Trade Ideas
+
+1. **FCX (Freeport-McMoRan) — Materials, primary watch for Tue open**
+   - Catalyst: Materials #1 sector (+22% YTD); copper demand structural (AI data centers, EV, renewables); Manufacturing PMI 55.3 = strongest in 4 years; supply-constrained commodity
+   - Entry: Tue 5/26 open — check quote, verify spread <$0.30
+   - Stop: 10% trailing GTC
+   - Target: +20% (tighten to 7% at +15%)
+   - Position: ≤20% equity (~$20k / FCX price = shares); max $20k
+   - R:R: ~2:1
+
+2. **NUE (Nucor) — Materials, backup if FCX spread wide**
+   - Catalyst: Same sector play; steel + recycled metals; Berkshire stake (conviction signal); US manufacturing recovery + infra spending; lower commodity purity than FCX = smoother ride
+   - Entry: Tue open; size ≤20%
+   - Stop: 10% trail GTC
+   - Target: +18–20%
+
+3. **HOLD NVDA — no action**
+   - Unrealized +3.81%; well below +15% tighten threshold ($238.46)
+   - $215 is ~3.9% above trail-stop $207 — not in no-tighten zone per se but tightening would move stop to <3% below price anyway, and unrealized is under threshold
+   - Muted reaction to blowout Q1/guide = high bar acknowledged; not a thesis break
+   - If NVDA fades toward $207 on Tue open, trail-stop handles exit; no panic add
+   - If NVDA gaps up above $230 (new HWM), trail auto-advances; watch for +15% at $238.46
+
+### Risk Factors
+- **NVDA fade risk:** $215 is only ~$8 above trail-stop $207; continued post-print fade could trigger exit — trail handles it but would leave us 100% cash and searching for re-entry
+- **Kevin Warsh hawkish surprise:** Any early rate-hike signal = VIX spike, sell growth/tech
+- **Iran de-escalation over holiday weekend:** WTI could gap down hard Tue open; energy stays sidelined; also tests overall market thesis
+- **Memorial Day holiday gap:** Thin liquidity Tue open — risk of gap-up or gap-down on weekend news; wait 15-30 min before entering any new position
+- **SpaceX IPO (June 12):** Major risk-appetite event; could pull capital from speculative/growth names in weeks ahead
+- **Materials already +22% YTD:** Entry into a leading sector that has run hard; need clean breakout, not a chase
+
+### Decision
+**HOLD — Tuesday watchlist set.** No trades today (weekend/holiday). On Tue 5/26 open:
+1. Verify NVDA above $207 trail-stop — if triggered pre-open, reassess from cash.
+2. Wait 15-30 min for holiday gap to settle.
+3. If FCX/NUE shows clean breakout on volume with tight spread → initiate 1 position (≤20%).
+4. Default: HOLD if Tue open is choppy/gap-heavy — patience > activity.
+Trades this week: 0/3 (new week).
