@@ -292,3 +292,57 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No trail tightening (under +15% threshold; current price within 3% no-touch buffer of stop anyway). Energy thesis decayed — staying out per Rule #9. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday open with weekly review in hand; reassess from current cash-heavy position.
+
+
+---
+
+## 2026-05-24 — Pre-market Research (Sunday — Holiday Week Preview)
+
+### Account Snapshot
+- **NOTE: Alpaca API blocked (network policy in remote env) — using last known trade-log data**
+- Equity: ~$100,765 est. | Cash: $80,093.44 (79.5%) | Buying power: ~$180,187
+- Daytrade count: 0 | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last close $215.27 (Fri 5/22) | unrealized est. ~+$765 (+3.83%) | trail-stop GTC 10% (HWM $230, stop $207)
+- **Next trading day: Tuesday May 26** — Memorial Day Mon 5/25 market closed
+
+### Market Context
+- **WTI ~$96.60** | **Brent ~$103.54** — oil continuing to roll from last week's $98-99; Iran peace-talk progress bleeding the geopolitical premium; Strait of Hormuz uncertainty is the remaining floor
+- **S&P 500 futures: SPY +0.38% ~$745.50 premarket** | QQQ +0.37% ~$717.12 — risk-on tone into holiday weekend; indices near record highs
+- **VIX: 16.70** (closed Fri 5/22, -0.36%) — moderate regime, not alarming; calm tape heading into holiday
+- **New Fed Chair:** Kevin Warsh taking oath — Warsh historically more hawkish than Powell; watch for rate narrative shift and multiple-compression risk in high-P/E tech
+- **Consumer Sentiment (UMich final May): 44.8** (vs 49.8 April) — third straight monthly decline; consumer stress signal
+- **Mfg PMI: 55.3** (highest since May 2022) but **input prices jumped to 79.5** (highest since June 2022) — stagflation risk re-emerging
+- **Earnings BMO today:** None (Sunday/holiday)
+- **Earnings this week (abbreviated — Tue-Fri only):**
+  - Tue 5/26 BMO: AutoZone (AZO), Zscaler (ZS)
+  - Wed 5/27 AMC: Marvell (MRVL), Salesforce (CRM), Synopsys (SNPS), Snowflake (SNOW), Dick's Sporting Goods (DKS)
+- **Macro this week (big day = Thu 5/28 8:30am ET):**
+  - Tue 5/26: Consumer Confidence (10am), Dallas Fed
+  - Wed 5/27: New Residential Sales (10am), Richmond Fed
+  - **Thu 5/28: Initial Claims + Advance Durable Goods + GDP 2nd Release + PCE Deflator (all 8:30am)** — MAJOR volatility risk day
+- **Sector momentum YTD:** XLK Tech +25.45% (strongest, NVDA AI tailwind) | XLF Financials +4.26% (lagging) | XLE Energy degrading as oil rolls | XLI Industrials ~mid-pack
+
+### NVDA Update
+- Fiscal Q1 FY27: Rev $81.62B (beat $79.2B cons), EPS $1.87 (beat $1.78 cons), Q2 guide $91B vs $87.4B cons
+- Announced $80B buyback + 25x dividend hike — strong shareholder return signal
+- Stock reaction: -3.5% over two sessions post-print (closed Fri $215.27 vs $219.51 Thu, $223.52 Wed)
+- Trail stop $207 (HWM $230) — ~3.8% below current, safely above floor; still inside 3% no-tighten buffer
+- Muted reaction on blowout = high bar confirmed; but no thesis break — AI capex cycle intact
+
+### Trade Ideas
+1. **HOLD NVDA — no management action.** Unrealized +3.83% well below the +15% threshold ($238.46) for trail tightening. Stop $207 intact (HWM $230). Post-print fade is high-bar pricing, not thesis break. Wait for tape stabilization over holiday.
+2. **MRVL (Marvell Tech) — pre-earnings watchlist, earnings Wed 5/27 AMC.** Direct NVDA halo: custom AI silicon for hyperscalers, networking chips for AI infra. NVDA's $91B guide is a direct read-through. XLK momentum supports sector. Would need clean entry Tue 5/26 open with live quote, -10% stop, minimum 2:1 R/R to $85-95 range (estimate — need live price). PDT room: 0/3 trades used. Size: max $2k (~20% equity cap). **Watchlist only — confirm with live quote Tuesday.**
+3. **CRM (Salesforce) — secondary watchlist, earnings Wed 5/27 AMC.** AI enterprise software beneficiary; XLK tailwind. Similar setup to MRVL but lower conviction (AI cloud spend is more diffuse). Only if MRVL doesn't set up cleanly. **Lower priority — watchlist only.**
+4. **Energy (XLE/OXY/XOM) — PASS.** WTI rolling to $96.60 from $103+ last week; Iran peace progress = further downside risk. Rule #9: don't force thesis on fading sector.
+
+### Risk Factors
+- **PCE + GDP Thu 5/28 8:30am** — biggest macro event of the week; could spike VIX and reverse tech leadership; don't be over-exposed entering Wed
+- **Warsh hawkish pivot risk** — new Fed chair with more hawkish leanings could reprice rate expectations; high-multiple tech (XLK at +25% YTD) most at risk
+- **Consumer sentiment 44.8** — third straight decline signals recession risk building; discretionary sector exposure should be avoided
+- **Manufacturing input prices 79.5** — stagflation signal; if next CPI/PCE comes hot, risk-off could accelerate
+- **NVDA single-position concentration ~20.5%** — if PCE comes hot Thu, NVDA/tech takes the hit first
+- **Alpaca API inaccessible** (network policy) — cannot confirm live NVDA price or stop-order status; must verify Tuesday open manually
+- Holiday-week thin liquidity: reduced volume Tue-Fri, wider spreads, gap risk
+
+### Decision
+**HOLD. New trades: watchlist MRVL + CRM for Tuesday open review.** No preemptive orders. Confirm live NVDA price and trail-stop status on Tue 5/26 open before any action. If MRVL sets up cleanly (catalyst confirmed, entry with -10% stop, 2:1 R/R, max $2k size), it qualifies for a trade — decision point is Tuesday morning with live quotes. Do NOT enter before PCE Thu 5/28 — wait for the macro print before adding second position if possible. Trades this week: 0/3 (full budget available). Energy: out per Rule #9.
