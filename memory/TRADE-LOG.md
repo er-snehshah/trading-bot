@@ -49,3 +49,13 @@
 | NVDA   | 96     | $207.36 | $215.27 | -1.93%  | +$759.36 (+3.81%)   | $207 (10% trail, HWM $230) |
 
 **Notes:** Weekly close. NVDA -1.93% to $215.27, the second straight fade post-print as the muted reaction to a blowout Q1/guide ($82B beat, $91B Q2 guide) keeps grinding. Unrealized compressed to +3.81% from +5.86% Thursday and +7.79% Wednesday — bar was high and the tape is voting. Still well above trail-stop $207 (HWM $230); inside the 3% no-tighten zone anyway, so no management action. Energy stayed off — WTI ~$98.45, thesis decayed per Rule #9. Zero trades today; **trades this week: 0/3** (full pass). Cash 79.5% intact — dry powder for next week. Single-position concentration (~20.5%) defined the week's P&L; bot finishes the week +0.76% vs $100k baseline. Next decision point: Monday open — if NVDA breaks $207 over the weekend gap, trail handles exit; if it bases here, reassess sector rotation candidates from cash.
+
+
+### May 25 — EOD Snapshot (Monday — Memorial Day, Market Closed)
+**Portfolio:** $100,765.12 | **Cash:** $80,093.44 (79.5%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** +$765.12 (+0.77% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L      | Stop                       |
+|--------|--------|---------|---------|---------|---------------------|----------------------------|
+| NVDA   | 96     | $207.36 | $215.33 | 0.00%   | +$765.12 (+3.84%)   | $207 (10% trail, HWM $230) |
+
+**Notes:** US markets closed for Memorial Day — no session, no marks moved. NVDA flat at Friday's $215.33; trail-stop $207 (HWM $230) intact, qty_available 0 by design. Cash 79.5% unchanged. Zero trades today (impossible); **trades this week: 0/3** (week resets — Tuesday is the first trading day). Oil rolled hard over the weekend (WTI ~$91.90 per CME, ~-11% week-over-week) — energy thesis fully degraded, staying off the list. ES futures +0.61% into the holiday close suggests a bid reopen Tuesday. Next decision point: Tuesday 2026-05-26 pre-market — NVDA management (hold unless breaks $207), and a forced written add-or-skip on one AI-adjacent name (AVGO/MU/MSFT) per last week's review adjustment. PCE Friday is the only macro pivot this week.
