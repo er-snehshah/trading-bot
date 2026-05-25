@@ -336,3 +336,51 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — market closed.** No action available today. Use the day to prep Tuesday's reopen plan: NVDA hold, force a documented add-or-skip on one AI-adjacent name (AVGO/MU/MSFT), keep energy off the list. Trades this week: 0/3. Next decision point: Tuesday 2026-05-26 pre-market.
+
+---
+
+## 2026-05-25 — Week-Ahead Research Update
+*(Alpaca 403 host_not_allowed + Perplexity 403 host_not_allowed → WebSearch fallback)*
+
+### Account (last known — May 22 EOD; market closed Sat/Sun/Mon)
+- Equity: $100,759.36 | Cash: $80,093.44 (79.5%) | Daytrades: 0
+- NVDA: 96 sh @ $207.36 avg | last close $215.27 | unrealized +$759.36 (+3.81%)
+- Trail-stop GTC 10% active (HWM $230, stop $207, qty_available 0)
+- Trades this week: 0/3
+
+### Market Context
+- **US Market: CLOSED — Memorial Day. Cash session resumes Tue May 26 9:30 ET.**
+- WTI: ~**$92-95** (down ~-6% Mon on Iran deal optimism, from $98.45 Fri; cumulative -11%+ slide from $103+ ten days ago). Brent: ~$95.43 (prior close $100.21).
+- **Iran deal catalyst (major):** US/Iran signaling progress on deal despite Hormuz toll dispute. Hormuz risk premium bleeding out → oil supply expanding → WTI likely tests $88-92 zone if deal confirmed.
+- ES futures (ESM6): last close Fri $7,537 +0.61% holiday bid. Dow hit fresh ATH May 22. Cash resumes Tue.
+- VIX: **~17.26-17.44** (FRED/CBOE data). Low-volatility regime. Calm tape.
+- Fed: **Kevin Warsh taking oath as new Fed Chair** this week (hawkish lean vs. Powell; watch for tone shift on rate cuts).
+
+### Economic Calendar — Week of May 26-29
+- **Tue 5/27:** Consumer Confidence (10am) | AZO, ZS earnings
+- **Wed 5/28:** New Home Sales (10am) | **MRVL, CRM, SNPS, SNOW** earnings AMC
+- **Thu 5/29:** **GDP Q1 2nd estimate (8:30am) + April PCE Deflator (8:30am) + Initial Claims + Durable Goods** | DELL, COST, DLTR, ADSK, MDB earnings
+- No FOMC meeting this week
+
+### NVDA Update
+- Last $215.27 (+3.81% unrealized). Trail $207 (HWM $230). Inside 3% no-tighten buffer.
+- Analyst consensus: buy/strong buy. PT range $180-$500 (consensus ~$300 cited). 25x dividend hike, $80B buyback announced.
+- Post-print muted reaction persists (high expectations bar). No management action until $238.46 (+15% threshold) or trail breach.
+
+### Trade Ideas
+1. **NVDA — HOLD, no action.** Trail handles downside; await $238+ to tighten.
+2. **MRVL (Marvell) — watch post-earnings Wed AMC.** Q1 FY27 guide $2.4B (+27% YoY); AI ASIC data center theme; stock up 179% YTD on AI hype — valuation elevated. If print beats and stock reacts positively Thu morning, evaluate add as second position (AI semi, ~$2k position).
+3. **Energy — STAY OUT.** WTI $92-95 and falling on Iran deal. Thesis gone per Rule #9. XLE = no-touch.
+4. **Warsh/rates wildcard:** Hawkish Fed Chair rhetoric could lift yields → tech/growth multiple compression. Size carefully Tue.
+5. **PCE Thursday:** Hot print = sell signal across growth. Don't be max-deployed going into Thu 8:30am.
+
+### Risk Factors
+- Iran deal confirmation → WTI sub-$90 → energy sector continues rolling (correctly avoided)
+- Kevin Warsh hawkish tone → yields spike → tech/growth multiples compress → NVDA trail at risk
+- PCE Thursday (hot) = inflation re-ignition narrative; dangerous if overexposed
+- Dense earnings Wed-Thu (MRVL, CRM, DELL, COST): binary risk, thin margin for error
+- Single-position concentration ~20.5% NVDA; trail-stop at $207 is the only hard floor
+- Reopen-gap risk Tue: holiday futures bid +0.61% could mean gap-up open or fade
+
+### Decision
+**HOLD — market closed.** No new trades possible today. **Tuesday plan:** hold NVDA, force written add-or-skip decision on MRVL (post-print Thu) or AVGO/MU. Do not pre-position before PCE Thursday. Energy off the list. Trades this week: 0/3.
