@@ -292,3 +292,47 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No trail tightening (under +15% threshold; current price within 3% no-touch buffer of stop anyway). Energy thesis decayed — staying out per Rule #9. **Close the week clean.** Trades this week: 0/3. Next decision point: Monday open with weekly review in hand; reassess from current cash-heavy position.
+
+
+---
+
+## 2026-05-25 — Pre-market Research (Memorial Day — MARKET CLOSED)
+
+### Account
+- Equity: $100,765.12 | Cash: $80,093.44 (79.5%) | Buying power: $180,858.56
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last $215.33 | +$765.12 (+3.84%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
+- Last equity: $100,765.12 (flat — market closed Sat/Sun)
+
+### Market Context
+- **US STOCK MARKET CLOSED — Memorial Day.** No regular session today. E-mini S&P futures close early (4:45pm CT).
+- WTI: **~$91.90** (CME CLN6 last 5/24 PM, -4.87%) — oil continued to roll hard from Friday's $98.45; cumulative ~-11% slide over the week. Brent: ~$106 (stale, last fix 5/6). Energy thesis fully degraded — Hormuz premium has bled out.
+- ESM6 futures: **7,537.00 +0.61%** (CME 5/24) — futures bid into the holiday on the back of last week's eighth straight up session in equities. Cash session resumes Tuesday.
+- VIX: no direct quote; calm regime presumed given futures grind higher.
+- Today's catalysts: None for US equities (closed). Asia trade ran with Nikkei +2.7%, SoftBank +12%; China industrial production data overnight. No US economic releases.
+- Earnings BMO: None (market closed).
+- Economic calendar: Empty US calendar today. Week ahead: PCE inflation Friday is the main macro print.
+- Sector momentum YTD: Tech recovering on NVDA tailwind; XLE still highest YTD lead but momentum decisively rolling with crude.
+
+### NVDA Post-Print Recap (positional context)
+- Print confirmed: $82B rev (vs ~$79B consensus), $91B Q2 guide (vs $87.4B cons), GM ~75%, $49B record FCF. Analyst PTs cited $300 (Outperform).
+- Tape reaction muted — closed Friday at $215.33 (+3.84% unrealized vs. peak +7.79% Wed). Mixed DC commentary cited as the wet blanket.
+- Trail-stop $207 (HWM $230) sits ~3.8% below current — inside the no-tighten buffer (Rule #7). No management action available today regardless (market closed).
+
+### Trade Ideas
+1. **No trades possible — market closed.** Holiday.
+2. **Tuesday open watchlist (preparatory only):**
+   - **NVDA management:** if it bases here ($213-220) into Tue open, hold; if gaps below $207, trail handles exit.
+   - **AI semi follow-on** (AVGO, MU): per last week's review adjustment, force a written add-or-skip decision Tue if the tape confirms.
+   - **Industrials (CAT/DE):** still leading sector; watch for momentum continuation entries.
+   - **Energy: skip.** WTI $91.90 = thesis is gone; Rule #9.
+3. **PCE Friday is the only macro pivot this week.** Plan position-sizing accordingly — don't load up Tue/Wed and get caught flat-footed Friday morning.
+
+### Risk Factors
+- Reopen-gap risk Tuesday: ES futures +0.61% into the holiday could pull cash back at the open, or fade if Asian data weakens further.
+- Oil at $91.90 is a real macro signal — disinflationary tailwind for stocks, but also signals demand softness; cuts both ways.
+- Single-position concentration unchanged (~20.5% NVDA); cash 79.5% intact.
+- Memorial Day liquidity thin in futures; any overnight headline can move ESM6 disproportionately.
+
+### Decision
+**HOLD — market closed.** No action available today. Use the day to prep Tuesday's reopen plan: NVDA hold, force a documented add-or-skip on one AI-adjacent name (AVGO/MU/MSFT), keep energy off the list. Trades this week: 0/3. Next decision point: Tuesday 2026-05-26 pre-market.
