@@ -336,3 +336,43 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — market closed.** No action available today. Use the day to prep Tuesday's reopen plan: NVDA hold, force a documented add-or-skip on one AI-adjacent name (AVGO/MU/MSFT), keep energy off the list. Trades this week: 0/3. Next decision point: Tuesday 2026-05-26 pre-market.
+
+---
+
+## 2026-05-26 — Pre-market Research (Tuesday Reopen)
+*(Perplexity fallback → WebSearch — remote container IP not in Perplexity allowlist)*
+*(Alpaca API 403 host_not_allowed — live account data from last confirmed trade-log snapshot)*
+
+### Account
+- Equity: ~$100,765 | Cash: $80,093.44 (79.5%) | Buying power: ~$180,858
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | last known $215.33 | +$759.36 (+3.84% unrealized)
+- Trail-stop GTC 10%: qty 96, stop $207, HWM $230, qty_available 0
+- Trades this week: 0/3 (new week)
+
+### Market Context
+- **WTI:** ~$95–98 (Brent ~$100.21 May 24) — rolling hard from $103+ peak; energy thesis degraded per Rule #9
+- **ES futures:** +0.61% into Memorial Day (last trade May 24); tape bid on 8 straight up sessions; DJIA + SPX equal-weight at all-time highs; Iran talks optimism cited as tailwind. No Tuesday premarket quote available pre-open.
+- **VIX:** ~16.68–17.26 — low vol, calm regime; no fear signal
+- **Tuesday catalysts:** Consumer Confidence 10:00am ET (Conference Board); Dallas Fed Mfg Survey 10:30am; Philly Fed Non-Mfg 8:30am; no major macro shock expected
+- **Earnings May 26:** AutoZone (AZO) AMC, Zscaler (ZS) AMC, SQM, SMTC, MOD, BOX — none directly relevant to holdings or watchlist
+- **PCE Friday May 28** — main macro pivot this week; don't overload position risk Tue/Wed
+- **NVDA news:** Q1 beat ($81.6B rev, +85% YoY), $80B buyback, 25x dividend increase ($0.25/share), market cap $5.22T (#1 semiconductor). Post-print dip continues — stock fading despite blowout (high bar). China AI chip scrutiny + SMCI smuggling concerns cited as wet blanket.
+- **Sector momentum YTD:** XLP, XLI, XLB, XLE leading (note: XLE retains YTD rank but crude rolling undercuts thesis). XLK, XLC, XLY, XLF lagging — tech in selling-exhaustion phase. Sector rotation toward defensives/cyclicals confirmed.
+
+### Trade Ideas
+1. **NVDA — HOLD, no action pre-open.** Unrealized +3.84% well below +15% tighten threshold ($238.46). Trail-stop $207 (HWM $230) is the hard floor. Watch Tuesday open: if tape gaps above $220+ on Iran optimism + buyback news, trail holds; if gap down through $207, stop handles exit. No tighten action until price clears $238.46. **Decision: hold unchanged.**
+2. **AVGO (Broadcom) — FORCE ADD-OR-SKIP DECISION today.** AI semi follow-on per last week's review directive. AVGO reports Jun 5; no binary event near-term. Sector (XLK) is lagging YTD but AVGO has own AI infrastructure tailwind. Entry only if: tape strong at open, AVGO holding above its 20d, catalyst is AI infra demand confirmation from NVDA guide. Cost: ~$2,000 (20% of equity). **Decision: evaluate first 30min of tape — set a price alert at prior day close; if green and sector bid, enter and document.**
+3. **Industrials (XLI) — CAT or DE watch only.** XLI is leading sector YTD. No specific catalyst today; PCE Friday could redirect. **Decision: no entry this week unless a single-name catalyst emerges.**
+4. **Energy (XLE/XOM) — SKIP.** WTI $95–98, rolling from $103. Rule #9 in force.
+
+### Risk Factors
+- **NVDA post-print fade risk:** China chip scrutiny + high-bar reaction = further downside possible; trail at $207 is the protection
+- **PCE Friday:** Avoid building full position early in week; keep dry powder for post-PCE reaction
+- **Reopen gap mechanics:** ES +0.61% into holiday could gap cash open, or fade if overnight headline reverses
+- **Low VIX complacency:** ~17 = no fear priced; any geopolitical spike (Iran, Taiwan) unpriced
+- **Single-position concentration:** ~20.5% NVDA; adding AVGO brings to ~40% deployed — still inside 75-85% rule floor but adds concentration
+- **API access note:** Alpaca + Perplexity both 403 (remote container IP not in allowlists) — live position data unverifiable pre-open; verify manually via Alpaca web before placing any order
+
+### Decision
+**HOLD with conditional.** No new orders pre-open. At 9:30am open: (1) verify NVDA price via Alpaca web — confirm trail-stop is live; (2) force documented AVGO add-or-skip in first 30 minutes based on tape; (3) energy stays off. PCE Friday = max 2 new positions this week. Trades this week: 0/3.
