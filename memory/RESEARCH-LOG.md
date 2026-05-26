@@ -336,3 +336,49 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD — market closed.** No action available today. Use the day to prep Tuesday's reopen plan: NVDA hold, force a documented add-or-skip on one AI-adjacent name (AVGO/MU/MSFT), keep energy off the list. Trades this week: 0/3. Next decision point: Tuesday 2026-05-26 pre-market.
+
+
+---
+
+## 2026-05-26 — Pre-market Research (Tuesday — post-holiday reopen)
+
+### Account
+- Equity: $100,977.76 | Cash: $80,093.44 (79.3%) | Buying power: $181,071.20
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | current $217.52 | +$975.36 (+4.90%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
+- Last equity: $100,765.12 → +$212.64 (+0.21%) overnight mark (NVDA +$2.19 / +1.02% from Fri close)
+
+### Market Context
+- **WTI ~$91.94** (FxPro CL K26 live) — flat from holiday close; the $98→$92 drop late last week is holding. Brent: no clean live quote in results (last EIA STEO ref Q1 2026 ~$118 is stale). Energy reflation thesis dead.
+- **ESM6 7,548.25 +0.76%** (CME 5/25 quote, +57.25) — solid bid into the cash reopen, building on last week's 8-session run and the +0.61% holiday futures session. Near record highs.
+- VIX: not directly quoted by Perplexity; given ES futures +0.76% with no obvious shock, presumed calm low-to-mid teens.
+- Today's catalysts:
+  - **Earnings BMO:** limited per Schwab; no mega-cap prints today (Q1 season effectively over). Notable AMC: nothing standout in research.
+  - **Econ 10am ET:** New Home Sales (Apr), Consumer Confidence (May), Richmond Fed Mfg Index (May). Mid-week build to **PCE Inflation Friday** (the macro pivot).
+  - Europe PMI overnight (low single-name impact).
+- **Sector momentum YTD (refresh — important shift):** Investing.com / Quantum Trading sector-rotation note (5/18) places **XLE Energy leading** YTD but **XLK Tech in LAGGING quadrant** alongside XLF. Industrials (XLI) in Leading quadrant. This is a meaningful re-shift from last Thursday's "tech recovering on NVDA tailwind" read — semis are unwinding per same source. Confirms relative weakness even as NVDA holds gains.
+- **NVDA / semi tape:** Headline says NVDA + AI complex traded lower last week after AVGO earnings and an Oracle/OpenAI datacenter delay report. AVGO printed solid but backlog details disappointed; closed Friday ~$413. China H200 question lingers. AI infra story is fine fundamentally but tape is choppy.
+
+### Trade Ideas
+
+1. **HOLD NVDA — no management.** Unrealized +4.90% is well below +15% trail-tighten threshold ($238.46). Stop $207 (HWM $230) is ~4.8% below current $217.52 → inside the 3% no-tighten buffer? No, 4.8% is outside; but I never tightened above HWM $230 so the rule isn't triggered yet anyway. **No action.** Thesis intact (blowout guide), tape muted but no break.
+
+2. **Force-decision per last week's review: AVGO / MU / MSFT add-or-skip.**
+   - **AVGO:** Reported beat, mixed reaction, $413 area. Adding now = chasing a fade *after* the catalyst already played; bar was high and tape rejected. **SKIP.**
+   - **MU:** Earnings not imminent; no fresh single-name catalyst today. Semi unwind in progress per sector rotation note. **SKIP.**
+   - **MSFT:** No today-catalyst (the AI-nuclear story is old). Already have AI infra exposure via NVDA. Stacking correlated tech when XLK is in the LAGGING quadrant violates Rule #9 spirit. **SKIP.**
+   - **Verdict:** Force-decision = SKIP all three. Documented. Tape is telling me tech is no longer the leader; respect the rotation.
+
+3. **Industrials watchlist (CAT, DE, XLI).** XLI in Leading quadrant per latest sector data. No today-specific catalyst, but if a clean breakout setup appears intraday with volume, it's the cleanest momentum exposure given XLE thesis is dead and XLK is rolling. Default: pass today; watch for setup. No deployment without specific catalyst (Buy-Side Gate).
+
+4. **Energy: hard skip.** WTI $91.94, thesis decayed two weeks running. Rule #9 enforced.
+
+### Risk Factors
+- **Reopen-gap risk:** ES +0.76% into cash open — if there's a buy-the-open pop and fade, the day's leadership signal will be in the close, not the open. Don't chase any 9:30 spike.
+- **NVDA single-name concentration ~20.7%** of equity, single-factor risk. Trail $207 is the floor.
+- **PCE Friday** is the only macro pivot this week — a hot print would amplify the XLK lagging-quadrant move and pressure NVDA further. Sizing into Thu/Fri matters.
+- **Sector rotation evidence:** XLK in lagging quadrant + AVGO sold post-print = tech leadership questionable. Holding NVDA is correct (catalyst played, trail protects); ADDING tech is wrong asymmetry.
+- **Light catalyst day** = thin reaction risk; better to observe the post-holiday tape than to act blindly.
+
+### Decision
+**HOLD.** No new trades. No NVDA management (under +15% threshold). Force-decision on AI follow-on = documented SKIP for AVGO/MU/MSFT (tech rolling into lagging quadrant, AVGO already sold its catalyst, no edge in chasing). Industrials on passive watchlist for a future setup; energy off entirely. Trades this week: 0/3. Next decision point: Wed pre-market if NVDA breaks $207 or if a clean XLI setup appears with catalyst. Patience > activity. The behavioral nudge from last week's review (force a written decision on adding) is honored — and the answer this time is a documented skip, not paralysis.
