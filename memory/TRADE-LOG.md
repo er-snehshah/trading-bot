@@ -59,3 +59,13 @@
 | NVDA   | 96     | $207.36 | $215.33 | 0.00%   | +$765.12 (+3.84%)   | $207 (10% trail, HWM $230) |
 
 **Notes:** US markets closed for Memorial Day — no session, no marks moved. NVDA flat at Friday's $215.33; trail-stop $207 (HWM $230) intact, qty_available 0 by design. Cash 79.5% unchanged. Zero trades today (impossible); **trades this week: 0/3** (week resets — Tuesday is the first trading day). Oil rolled hard over the weekend (WTI ~$91.90 per CME, ~-11% week-over-week) — energy thesis fully degraded, staying off the list. ES futures +0.61% into the holiday close suggests a bid reopen Tuesday. Next decision point: Tuesday 2026-05-26 pre-market — NVDA management (hold unless breaks $207), and a forced written add-or-skip on one AI-adjacent name (AVGO/MU/MSFT) per last week's review adjustment. PCE Friday is the only macro pivot this week.
+
+
+### May 26 — EOD Snapshot (Tuesday — post-holiday reopen)
+**Portfolio:** $100,709.44 | **Cash:** $80,093.44 (79.5%) | **Day P&L:** -$55.68 (-0.06%) | **Phase P&L:** +$709.44 (+0.71% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L      | Stop                       |
+|--------|--------|---------|---------|---------|---------------------|----------------------------|
+| NVDA   | 96     | $207.36 | $214.86 | -0.22%  | +$720.00 (+3.62%)   | $207 (10% trail, HWM $230) |
+
+**Notes:** Quiet reopen after Memorial Day. NVDA -0.22% to $214.86, essentially flat from Friday's $215.33; unrealized compressed marginally to +3.62%. ES futures had been +0.76% pre-cash-open but the day was uneventful — bot finished -0.06% vs a soft tape. Trail-stop $207 (HWM $230) intact ~3.7% below current — inside the no-tighten buffer per Rule #7 anyway, and well under the +15% threshold ($238.46) that would trigger management. Force-decision per last week's review nudge was executed in pre-market: documented SKIP on AVGO/MU/MSFT (tech in lagging quadrant per latest rotation read, AVGO already sold its catalyst, no edge in chasing). Energy off the list (WTI ~$92). Industrials (CAT/DE/XLI) on passive watchlist but no catalyst-driven setup today. Zero trades today; **trades this week: 0/3**. Cash 79.5% intact. Next decision point: Wed pre-market — NVDA hold unless breaks $207; watch for clean XLI setup with catalyst; PCE Friday is the only macro pivot.
