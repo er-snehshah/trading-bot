@@ -382,3 +382,65 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% threshold). Force-decision on AI follow-on = documented SKIP for AVGO/MU/MSFT (tech rolling into lagging quadrant, AVGO already sold its catalyst, no edge in chasing). Industrials on passive watchlist for a future setup; energy off entirely. Trades this week: 0/3. Next decision point: Wed pre-market if NVDA breaks $207 or if a clean XLI setup appears with catalyst. Patience > activity. The behavioral nudge from last week's review (force a written decision on adding) is honored — and the answer this time is a documented skip, not paralysis.
+
+---
+
+## 2026-05-26 — Pre-market Research (Tuesday — post-Memorial Day reopen)
+
+> **Note:** Alpaca API returned `host_not_allowed` (remote container IP not in Alpaca allowlist) — account state from last known trade log. Perplexity API also blocked — all research via WebSearch fallback.
+
+### Account Snapshot (last known — 2026-05-25 holiday close)
+- **Equity:** ~$100,765.12 | **Cash:** $80,093.44 (79.5%) | **Buying power:** ~$180k
+- **Daytrade count:** 0 | **PDT:** false
+- **Positions (1):** NVDA 96 sh @ avg $207.36 | last close $215.33 | unrealized +$759.36 (+3.81%)
+- **Open orders:** GTC 10% trailing stop NVDA 96 sh, trail HWM $230, floor ~$207
+- **Trades this week:** 0/3
+
+### Market Context
+- **WTI:** ~$92.85 (−3.9% intraday at one point on Iran-talk optimism, then reversed on retaliation headlines)
+- **Brent:** ~$98.11–$99.39 (+0.89% to +3.4%) — Iran vows retaliation vs. US strikes, Hormuz premium re-lit
+- **ES futures:** +0.54% premarket; Polymarket 91% prob of higher open
+- **VIX:** ~17.26 — moderate, calm regime
+- **Catalysts today:**
+  - **Kevin Warsh takes oath as Fed Chair** (MAJOR macro event) — hawkish reputation; any White House remarks could reprice rate expectations. Wait for tape to digest.
+  - **Consumer Confidence 10am ET** — first May read; miss = risk-off signal
+  - **Philadelphia Fed Non-Mfg Survey 8:30am**, **Dallas Fed Mfg 10:30am**
+  - **Earnings BMO:** AZO (AutoZone) — consumer auto-aftermarket read
+  - **Earnings AMC:** ZS (Zscaler) — tech/cybersecurity
+  - **Week's macro pivot:** PCE Inflation Friday — do not over-deploy before it
+- **Sector rotation:**
+  - **Leading:** XLI (Industrials +29.87% 1-yr), XLP (Staples), XLB (Materials), XLE (Energy — still leading but losing edge)
+  - **Lagging:** XLK (Tech), XLC (Comms), XLY (Disc), XLF (Financials)
+  - Confirms prior read: tech lagging, industrials strongest
+
+### NVDA Update
+- Fair open estimate ~$217.17 (+0.85% vs. $215.33 close)
+- Trail-stop $207 (HWM $230) — floor ~3.8% below last close, intact
+- No new NVDA-specific catalyst today; muted post-print drift persists
+- Analyst consensus: Strong Buy, avg PT ~$295; ex-div June 4 ($0.25/sh)
+- **No management action** — under +15% tighten threshold ($238.46)
+
+### Trade Ideas
+
+1. **NVDA — HOLD.** Trail-stop is the decision-maker. No tighten trigger. No thesis break.
+
+2. **XLI / Industrials — WATCH, not today.**
+   - Sector confirmed Leading; CAT/DE cleanest single-name expressions
+   - No today-specific catalyst; Warsh + Consumer Confidence = too much macro noise for a clean entry
+   - Entry criteria (Wed/Thu if setup appears): clean breakout + volume + catalyst documented, ≤20% equity (~$2k). Stop −10%. Target 2:1 R/R.
+   - Indicative: CAT ~$375–380 on breakout; stop ~$340; target ~$420–430
+
+3. **AZO (AutoZone) — observe post-BMO print.**
+   - Reports today; auto-aftermarket = defensive consumer, not macro-sensitive
+   - If beat + raise + opens above prior high with volume → candidate for Wed add
+   - **No pre-earnings entry.** XLY in lagging quadrant — stock-specific momentum required, not sector tailwind
+
+### Risk Factors
+- **Warsh oath remarks** — hawkish pivot signal could reprice rates → tech/growth headwind, NVDA under pressure. Tape will tell by 11am.
+- **Iran oil volatility** — Brent $98-99 is geopolitical noise, not demand signal. Skip energy unless WTI sustains >$95 on supply disruption evidence.
+- **PCE Friday** — hot print = XLK lagging deepens; don't add correlated tech this week
+- **Post-holiday gap risk** — first session after 3-day weekend; don't chase 9:30 spikes
+- **Single-position concentration** — NVDA = 100% of equity exposure; trail-stop $207 is the only floor
+
+### Decision
+**HOLD.** No new trades. NVDA: hold, no management action. XLI: documented WATCH — setup not present today (macro noise, no catalyst). AZO: observe post-print, candidate for Wed/Thu if clean. Energy: WTI $92.85 with Iran spike = geopolitical noise, not structural — Rule #9 enforced, still off the list. Trades this week: 0/3. Next decision point: Wed pre-market — NVDA trail check + XLI/AZO setup evaluation after today's Warsh / Consumer Confidence tape digests.
