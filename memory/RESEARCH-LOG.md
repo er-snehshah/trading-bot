@@ -382,3 +382,46 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% threshold). Force-decision on AI follow-on = documented SKIP for AVGO/MU/MSFT (tech rolling into lagging quadrant, AVGO already sold its catalyst, no edge in chasing). Industrials on passive watchlist for a future setup; energy off entirely. Trades this week: 0/3. Next decision point: Wed pre-market if NVDA breaks $207 or if a clean XLI setup appears with catalyst. Patience > activity. The behavioral nudge from last week's review (force a written decision on adding) is honored — and the answer this time is a documented skip, not paralysis.
+
+---
+
+## 2026-05-26 — Pre-market Research (LIVE RUN — Iran war + post-holiday reopen)
+
+> **Note:** Alpaca API and Perplexity both blocked by network allowlist (403 "Host not in allowlist"). Account state from last persisted snapshot (May 25 trade log). Market data via WebSearch fallback — logged as such per workflow protocol.
+
+### Account (last known — May 25 EOD / overnight mark)
+- Equity: ~$100,977.76 | Cash: $80,093.44 (79.3%) | Buying power: ~$181,071
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA 96 sh)
+- NVDA: 96 sh @ avg $207.36 | last close $215.33 | unrealized +$765.12 (+3.81%)
+- Trail stop: GTC 10%, HWM $230, effective stop $207
+
+### Market Context
+- **WTI ~$92** (rebounding from Monday's 7% crash; near $92 Tue AM after Brent +2.35% to $98.40 on Iran strikes)
+- **Brent $98.40 +2.35%** — Iran vowed retaliation after US self-defense strikes in southern Iran (mines + missile launchers). Analysts: 70% deal / 30% escalation (Vanda Insights).
+- **ESM6 / S&P futures +0.54% premarket** — 8th consecutive weekly gain, fresh ATH momentum on Dow and S&P Equal-Weight. Polymarket 91% probability of gap-up open.
+- **VIX 16.68** — calm; market is NOT pricing Hormuz closure risk yet.
+- **Iran war headline:** US military struck southern Iran (self-defense framing — mines, missile sites). Iran vowed retaliation. Trump says talks "proceeding nicely" — but also struck military targets simultaneously. Hormuz closure risk is non-zero and unpriced by VIX.
+- **Earnings today:** AZO (AutoZone) and ZS (Zscaler) — both AMC. No large-cap BMO prints. Q1 season effectively over.
+- **Economic data (ET):** 8:30 — Philly Fed Non-Mfg; 10:00 — Consumer Confidence (May); 10:30 — Dallas Fed Mfg. New Home Sales pushed to May 27. **PCE Friday** remains the week's macro pivot.
+- **Sector momentum (updated):** XLI (Industrials), XLB (Materials), XLP (Consumer Staples), XLE (Energy) = Leading quadrant. XLK (Tech) = Lagging. Energy re-entering leading on Iran war premium — major shift from last two weeks.
+- **NVDA:** $215.33, -1.90% 24h. Huawei chip expansion (new smartphone chips fall) a mild headwind narrative. Next earnings Aug 26. Dividend ex-date Jun 4 ($0.25/sh). Thesis intact; tape muted.
+
+### Trade Ideas
+
+1. **HOLD NVDA — no management.** $215.33 is above trail-stop $207 (+3.8% buffer), below +15% tighten threshold ($238.46). No action triggered. Huawei headline is noise vs. $91B Q2 guide. Dividend ex-date Jun 4 is a small positive but not a trading catalyst.
+
+2. **Energy (XLE / XOM / CVX) — Iran war re-evaluation.** WTI $92, Brent $98 with live geopolitical risk. Hormuz closure = potential WTI spike to $120+. BUT: 70% probability of deal per analysts; VIX 16.68 says market isn't pricing closure; oil was $91.90 last week and thesis was "dead" per Rule #9 spirit. Binary outcome on diplomatic news = wrong asymmetry for a concentrated 20% position. **SKIP today.** Re-evaluate if WTI breaks $100 with Hormuz closure evidence, or if deal closes and XLE sells off providing a fade-the-spike setup.
+
+3. **XLI / Industrials (CAT, RTX, GE) — leading sector.** XLI 171.76 (near 52-week high 179.31). CAT 7.56%, GE 5.64%, RTX 4.44% top holdings. Geopolitical tensions = defense spending tailwind for RTX. No specific single-name catalyst today; tape confirmation needed. **Watchlist — no entry without catalyst.** If Consumer Confidence 10am surprises to upside and tape confirms XLI breakout with volume, revisit intraday.
+
+4. **Materials (XLB) — new entrant in leading quadrant.** No single-name catalyst identified. Watch only.
+
+### Risk Factors
+- **Iran/Hormuz binary:** escalation → oil spike → stagflation → equity selloff. De-escalation → oil fade → equity melt-up. Market is 91% pricing the melt-up; be cautious of the tail.
+- **VIX underpricing geopolitical risk** at 16.68 — if Iran escalates, VIX could spike rapidly from here.
+- **8 consecutive weekly S&P gains** = extended; any miss on Consumer Confidence or hot PCE Friday = pullback risk.
+- **NVDA concentration 20.7% of equity** — single-factor risk; trail $207 is the only hard floor.
+- **Network API restrictions:** Alpaca and Perplexity blocked this session. Cannot confirm live position, orders, or stop status. All data from persisted logs + WebSearch. Treat account state as approximate.
+
+### Decision
+**HOLD.** Iran war injects geopolitical binary risk that makes new entries wrong asymmetry today. NVDA hold unchanged — above stop, below tighten threshold. Energy re-enters leading quadrant but 70% deal probability + VIX 16.68 = market pricing optimism, not a Hormuz-spike entry. XLI is the cleanest sector; no today-catalyst to trigger Buy-Side Gate. Consumer Confidence 10am is the intraday tell — strong print + XLI momentum = check watchlist. Trades this week: 0/3. Patience > activity. Next decision point: Wed pre-market, or intraday if Consumer Confidence 10am moves tape materially.
