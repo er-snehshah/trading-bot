@@ -424,3 +424,56 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% and inside no-tighten buffer). MRVL AMC tonight is informational only. Industrials remain passive watchlist (no catalyst today). Energy off entirely. Trades this week: 0/3. Cash 79.5% intact — dry powder preserved into Friday's PCE. Next decision point: Thursday pre-market with MRVL reaction + PCE preview in hand.
+
+---
+
+### Updated Research — 2026-05-27 (Session 2, WebSearch fallback — Alpaca + Perplexity blocked by network policy)
+
+**Account (estimated):** Alpaca API blocked (`host_not_allowed`). Using yesterday EOD baseline + premarket price move.
+- Equity est. ~$100,530 | Cash: $80,093.44 | NVDA: 96 sh @ $207.36 | premarket $213.95 (-0.42% from Tue close $214.86)
+- Trail-stop GTC $207 (HWM $230) intact. Unrealized est. +3.17% (+$636). No new orders.
+
+**Macro Update — Iran War (critical context missing from Session 1):**
+- A US-Iran war has been underway since early 2026. The Strait of Hormuz was partially closed → oil spiked from ~$70s to a high of $144/bbl (North Sea Dated). Now at ~$99–110 Brent on peace deal optimism.
+- Today: Trump said Iran war will end "very quickly"; Secretary of State sees "movement" toward a deal. Brent fell ~0.41% to $99.18. WTI front-month ~$93–94.
+- If peace deal → Hormuz reopens → oil likely drops sharply → energy sector reverses hard.
+- If deal falls through → oil re-spikes toward $110–$144 range.
+
+**Market Context (confirmed/updated):**
+- **WTI:** ~$93–94 front-month (up from last week's $91.94 but well off peak $104+ pre-war)
+- **Brent:** $99.18 (-0.41%) — peace deal deflation in progress
+- **ESM6:** +0.13% premarket — quiet after 8-session win streak; near record highs
+- **VIX:** 16.59 — calm, no fear signal
+- **NVDA:** $213.95 premarket. Headline: Jensen Huang targeting $200B processor market with China as key buyer. AI sentiment positive; slight premarket drift lower doesn't signal a break.
+
+**New Catalyst — MU +19% yesterday (May 26):**
+- Micron surged 18-19% to ~$896/sh, crossing $1T market cap for first time.
+- Catalyst: UBS raised PT from $535 → $1,625 (Street high). Thesis: HBM sold out through 2026; structural AI data center demand breaks traditional memory cycles. Q2 FY2026 revenue $23.86B vs $8.05B prior year.
+- **Read-through for NVDA:** AI infrastructure demand is real and accelerating. Supports thesis that NVDA's $91B Q2 guide is achievable. Bullish for tonight's MRVL print.
+
+**Tonight's AMC Slate (major):**
+- **MRVL Q1 FY2027** — Expected $0.80 EPS, $2.40B revenue (+27% YoY). AI data center driver. If beats + bullish guide → confirms AI infra demand cycle. Thursday pre-market will be pivotal.
+- **SNOW Q1 FY2027** — Expected $1.32B revenue (+26.8% YoY). Cloud/data infra proxy.
+- **CRM, HPQ** — Additional market-moving prints tonight.
+- **ANF, BMO** — Reported pre-open; retail/banking read-through.
+
+**Sector Rotation (confirmed):**
+- XLE Energy: **Leading** (+22% YTD). BUT binary Iran/peace-deal event risk + 2-failure rule in energy → still skipping (Rule #10).
+- XLI Industrials: **Leading.** No catalyst today; passive watchlist.
+- XLK Tech: **Lagging.** Holding NVDA is correct (catalyst played, trail protects); adding tech is wrong asymmetry.
+- XLF Financials: **Lagging.**
+
+**Updated Trade Ideas:**
+1. **NVDA — HOLD, no management.** Premarket ~$213.95 (~$0.91 soft from Tue close). Trail $207 intact. Jensen Huang $200B China market news = positive long-term. MU read-through bullish. No action until +15% threshold ($238.46) or $207 break.
+2. **MRVL — watchlist for Thursday only.** Not a pre-earnings entry; that's speculative. IF tonight beats + clean next-day setup (not gapping 10%+ away), evaluate a $1,500–2,000 position Thursday AM with fresh catalyst. Fits AI infra sector + buy-side gate.
+3. **Energy (XLE/XOM/CVX) — skip.** XLE is Leading (+22% YTD) but Iran peace deal = binary oil-price event. A deal announcement could crater XLE intraday. 2-failure rule from prior energy trades also applies. Not a clean momentum setup — it's an event bet. Pass.
+4. **Industrials — passive watchlist.** No catalyst today.
+
+**Risk Factors:**
+- **Iran peace deal binary:** Announcement could send oil -10-15% instantly → XLE sells hard; could also lift S&P broadly (lower inflation). Stay positioned correctly regardless.
+- **MRVL/SNOW/CRM tonight:** Tech/cloud earnings triple-header. A miss on any headline name → tech sells off Thu morning → NVDA pressure. Trail $207 is the floor.
+- **NVDA premarket soft** (-0.42%) — not alarming but bears watching into cash open.
+- **PCE Friday** remains the macro pivot. Keeping full cash buffer ($80K) through Thursday.
+- **Alpaca API blocked in this environment:** Unable to verify live orders, position size, or trail-stop status directly. Relying on yesterday's EOD snapshot. All strategy rules assumed intact.
+
+**Decision: HOLD.** Same conclusion as Session 1, now with full geopolitical context. No new trades. NVDA hold, trail $207 intact. MRVL tonight is the key informational catalyst — a beat + constructive guide puts MRVL on the live watchlist for Thursday AM entry, not before. Energy skip (binary event risk + 2-failure rule). Industrials passive. Trades this week: 0/3. PCE Friday is the macro pivot. Cash 79.5% intact.
