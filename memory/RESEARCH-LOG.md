@@ -424,3 +424,52 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% and inside no-tighten buffer). MRVL AMC tonight is informational only. Industrials remain passive watchlist (no catalyst today). Energy off entirely. Trades this week: 0/3. Cash 79.5% intact — dry powder preserved into Friday's PCE. Next decision point: Thursday pre-market with MRVL reaction + PCE preview in hand.
+
+---
+
+## 2026-05-27 — Pre-market Research UPDATE (live data run)
+
+> **Note:** Alpaca returned HTTP 403 "Host not in allowlist" — remote container IP not whitelisted. Account state sourced from May 26 EOD snapshot. All market data via WebSearch (Perplexity also blocked at network layer). Perplexity fallback per workflow protocol.
+
+### Account (last known — May 26 EOD)
+- Equity: ~$100,709 | Cash: $80,093.44 (79.5%) | Buying power: ~$180,887
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | close $214.86 | trail-stop GTC 10% (HWM $230)
+- NVDA intraday May 27: range $212.00–$218.36, last ~$213.95 (−0.42% session); unrealized ~+$632 / +3.17%
+
+### Market Context (actuals)
+- **WTI:** $90.37–$94.68 intraday range (front-month); **Brent:** $99.18 (−0.41% day). Oil recovering from $91.94 Tuesday low on Iran risk premium.
+- **Iran:** US carried out "self-defense" strikes in southern Iran; Iran vowed retaliation. Trump says talks "proceeding nicely." Brent geopolitical bid intact — headline risk elevated.
+- **ES futures:** +0.13% premarket (essentially flat). Polymarket ~61% probability S&P opens higher. Tape near record highs; 9th consecutive up session.
+- **VIX:** 16.59 prior close; ~17.26 avg May 2026. Calm regime but Iran tail risk present.
+- **MU catalyst:** Micron +18% Tuesday, market cap hit $1T; UBS sees 100%+ upside. Semis broadly lifted — NVDA indirect beneficiary.
+- **Sector rotation (updated):** XLE Energy + XLI Industrials + XLP Staples + XLB Materials = **Leading**. XLK Tech + XLC Comms + XLY Disc + XLF Financials = **Lagging**. XLK down ~3% YTD; XLE +22% YTD. Consistent with prior two reads.
+- **⚠️ CORRECTION vs prior entry:** PCE is **tomorrow May 28** (with GDP 2nd release + Initial Claims + Durable Goods), NOT Friday. Risk window is shorter than assumed.
+
+### Earnings Today (AMC)
+- **MRVL** AMC: Q1 FY27 est $0.80 EPS / $2.40B rev. Stock ~$196 (nearly doubled YTD). AI custom silicon story — key read-through for NVDA AI infra demand Thursday.
+- **CRM** AMC: Q1 FY27 est $3.13 EPS / $11.06B rev. Down 32% YTD; options pricing 8.7% move. Agentforce narrative; miss would confirm XLK lagging-quadrant thesis.
+- **Other:** ANF, HPQ, SNOW, SNPS, A also reporting.
+- **BMO:** No mega-cap movers before open; Q1 season effectively closed.
+
+### Econ Today (May 27)
+- 10:00 ET: New Home Sales (Apr) + Richmond Fed Mfg + Consumer Confidence — mid-tier
+- **Tomorrow May 28:** PCE Deflator + GDP 2nd release + Initial Claims + Durable Goods (all 8:30 ET) — MAJOR
+
+### Trade Ideas
+
+1. **HOLD NVDA — no action.** $213.95 intraday; +3.17% unrealized. Trail-stop $207 ~3.3% below — inside 3% no-tighten buffer. Under +15% threshold ($238.46). No management warranted.
+
+2. **Energy re-eval (passive watch only).** Brent $99.18 + Iran geopolitical bid = energy reflating from the lows. XLE back in Leading quadrant (+22% YTD). We never entered (no 2-fail rule applies). Catalyst exists but: (a) Iran ceasefire progress would reverse the bid; (b) WTI still below prior $103 thesis level; (c) PCE tomorrow limits deployment window. Stays on passive radar; no entry without a clean intraday setup + confirmation that talks break down.
+
+3. **MRVL / AI infra follow-on (informational tonight).** If MRVL beats and AI demand commentary bullish → revisit XLK positioning Thursday despite sector headwinds. NVDA is the cleaner expression (already held); a new AI-adjacent add would require Tech rotation reversing — not there yet.
+
+### Risk Factors
+- **⚠️ PCE TOMORROW (May 28) — not Friday.** Compressed decision window. Deploying fresh capital today means sitting through a hot-print risk overnight. Favors holding cash.
+- **Iran geopolitical tail.** Retaliation strike / Hormuz closure scenario would spike oil and VIX simultaneously. Hard to hedge; best response is smaller position size and no new energy adds chasing the spike.
+- **MRVL / CRM AMC two-way risk.** Two major prints tonight; Thursday open could gap either direction. Over-positioning into the close is wrong asymmetry.
+- **NVDA drift.** Seven straight sessions of fading post-print; HWM $230 well above $213 current. Trail-stop $207 is the floor — it holds, but the stock isn't trending up to justify adding.
+- **Record-high tape + flat futures.** Good prints are still being sold (NVDA, AVGO patterns). Market breadth rotated; adding into the "buy everything" mood risks being the last buyer.
+
+### Decision
+**HOLD.** PCE tomorrow compresses the deployment window — no new positions today. NVDA: trail intact, no management needed. Energy: on passive radar (Brent $99 + Iran bid) but Iran ceasefire progress reverses the catalyst instantly; no entry today. MRVL/CRM AMC are informational — wait for Thursday reaction. Trades this week: 0/3. Cash 79.5% ($80K) preserved into tomorrow's PCE + GDP. **Next decision point: Thursday pre-market with MRVL/CRM reactions + PCE/GDP prints in hand.**
