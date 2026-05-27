@@ -382,3 +382,45 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% threshold). Force-decision on AI follow-on = documented SKIP for AVGO/MU/MSFT (tech rolling into lagging quadrant, AVGO already sold its catalyst, no edge in chasing). Industrials on passive watchlist for a future setup; energy off entirely. Trades this week: 0/3. Next decision point: Wed pre-market if NVDA breaks $207 or if a clean XLI setup appears with catalyst. Patience > activity. The behavioral nudge from last week's review (force a written decision on adding) is honored — and the answer this time is a documented skip, not paralysis.
+
+
+---
+
+## 2026-05-27 — Pre-market Research (Wednesday)
+
+### Account
+- Equity: $100,793.92 | Cash: $80,093.44 (79.5%) | Buying power: $180,887.36
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | current $215.63 | +$793.92 (+3.99%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
+- Last equity: $100,720.00 → +$73.92 (+0.07%) overnight (NVDA +$0.77 / +0.36% from Tue close $214.86)
+
+### Market Context
+- **WTI:** front-month ~$96–98 zone (Robinhood prediction market 5/27 brackets above $96.99 / $98.99); Feb '27 contract quotes $78.22 reflect deep contango / distant strip — front-month directionally flat-to-firm vs Tuesday's $91.94. Brent: no fresh quote. Energy reflation thesis still dead.
+- **ESM6:** 7,548.25 settle Tue (+0.61% holiday session, +0.76% in CME late tape per yesterday). No clean pre-cash quote this morning; one snapshot showed +0.10%. Tape near record highs; eighth/ninth straight up session in equities.
+- **VIX:** not directly quoted in Perplexity results; given the multi-day grind higher and no obvious shock, presumed mid-teens / calm regime.
+- **NVDA tape:** post-print pop in AH (+4–5% at one point per recap) has fully bled out — closed Tue $214.86, premarket essentially flat at $215.63. "Beat + raise but tape rejected" pattern continues; analyst commentary still constructive (Fundstrat: "unrelenting demand").
+- Today's catalysts:
+  - **Econ 10am ET:** Consumer Confidence (May), New Home Sales (Apr), Richmond Fed Mfg — mid-tier reads; build into PCE Friday
+  - **Earnings:** Light BMO (no mega-caps; Q1 season effectively closed). **MRVL AMC** (Marvell — AI semi adjacent, watch for read-through to NVDA tape into Thu).
+  - No FOMC, no CPI/PPI today
+- **Sector momentum (refresh, consistent with yesterday):** XLE Energy + XLI Industrials in **Leading** quadrant; XLK Tech + XLF Financials in **Lagging** quadrant per Investing.com rotation framework. Tech relative weakness persists despite NVDA holding gains. Industrials remain the cleanest non-energy momentum bucket.
+
+### Trade Ideas
+
+1. **HOLD NVDA — no management.** Unrealized +3.99% well below +15% trail-tighten threshold ($238.46). Stop $207 (HWM $230) ~4% below current $215.63. Rule #7 says no tightening within 3% of current price — even if I wanted to, we're inside the buffer. Thesis intact post-blowout-guide, tape muted but no break. **No action.**
+
+2. **MRVL AMC read-through (passive).** Marvell prints tonight; if AI infra demand commentary is bullish + clean reaction, it confirms NVDA tape thesis for Thu. Not a trade itself (chasing after the print is the wrong asymmetry), but informational for Thursday's force-decision rerun on AI follow-on names.
+
+3. **Industrials watchlist — still passive.** XLI in Leading quadrant; CAT/DE/ETN on radar. No catalyst-driven setup today; Buy-Side Gate requires a "specific catalyst documented in today's research log" and I don't have one. Pass; keep watching for clean breakout on volume.
+
+4. **Energy: hard skip.** Front-month WTI still $92–98 zone, well off the $103–104 highs that originally flagged the thesis. Rule #9 enforced — don't force on a fading sector.
+
+### Risk Factors
+- **PCE Friday is the macro pivot.** Sizing now should preserve room to react Thursday/Friday morning, not commit fresh capital that gets caught flat-footed by a hot print.
+- **NVDA single-name concentration ~20.5%** of equity — the only meaningful exposure. Trail $207 is the floor.
+- **Consumer Confidence 10am** is the only event-density today; thin catalyst day = chop risk, low-quality entries if forced.
+- **Tech in Lagging quadrant** persists across two consecutive sector reads — adding correlated AI infra into rolling tech leadership is wrong asymmetry, even after NVDA's clean print.
+- **Late-cycle / record-high tape** = good prints get sold (NVDA exhibit A). Patience pays more than action here.
+
+### Decision
+**HOLD.** No new trades. No NVDA management (under +15% and inside no-tighten buffer). MRVL AMC tonight is informational only. Industrials remain passive watchlist (no catalyst today). Energy off entirely. Trades this week: 0/3. Cash 79.5% intact — dry powder preserved into Friday's PCE. Next decision point: Thursday pre-market with MRVL reaction + PCE preview in hand.
