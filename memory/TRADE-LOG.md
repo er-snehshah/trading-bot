@@ -69,3 +69,13 @@
 | NVDA   | 96     | $207.36 | $214.86 | -0.22%  | +$720.00 (+3.62%)   | $207 (10% trail, HWM $230) |
 
 **Notes:** Quiet reopen after Memorial Day. NVDA -0.22% to $214.86, essentially flat from Friday's $215.33; unrealized compressed marginally to +3.62%. ES futures had been +0.76% pre-cash-open but the day was uneventful — bot finished -0.06% vs a soft tape. Trail-stop $207 (HWM $230) intact ~3.7% below current — inside the no-tighten buffer per Rule #7 anyway, and well under the +15% threshold ($238.46) that would trigger management. Force-decision per last week's review nudge was executed in pre-market: documented SKIP on AVGO/MU/MSFT (tech in lagging quadrant per latest rotation read, AVGO already sold its catalyst, no edge in chasing). Energy off the list (WTI ~$92). Industrials (CAT/DE/XLI) on passive watchlist but no catalyst-driven setup today. Zero trades today; **trades this week: 0/3**. Cash 79.5% intact. Next decision point: Wed pre-market — NVDA hold unless breaks $207; watch for clean XLI setup with catalyst; PCE Friday is the only macro pivot.
+
+
+### May 27 — EOD Snapshot (Wednesday)
+**Portfolio:** $100,500.16 | **Cash:** $80,093.44 (79.7%) | **Day P&L:** -$219.84 (-0.22%) | **Phase P&L:** +$500.16 (+0.50% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Close   | Day Chg | Unrealized P&L      | Stop                       |
+|--------|--------|---------|---------|---------|---------------------|----------------------------|
+| NVDA   | 96     | $207.36 | $212.60 | -1.05%  | +$503.04 (+2.53%)   | $207 (10% trail, HWM $230) |
+
+**Notes:** NVDA -1.05% to $212.60, third consecutive fade since the blowout print — unrealized compressed to +2.53% from +3.62% Tue, +3.81% Fri, and the +7.79% Wed peak. The "good print, bad reaction" pattern is now fully in evidence; trail-stop $207 (HWM $230) sits ~2.6% below current, inside the no-tighten buffer per Rule #7 anyway. No management action available or warranted. Tape was quiet: ES futures had been bid +0.76% pre-open but Tuesday's grind didn't carry; Wed gave back marginally on no real news. Consumer Confidence/New Home Sales were mid-tier reads, non-market-moving. MRVL AMC tonight is the AI-semi read-through into Thu — informational only, not a chase trigger. Industrials (XLI) remain on passive watchlist; energy off entirely (WTI ~$96–98 area, thesis dead). Zero trades today; **trades this week: 0/3**. Cash 79.7% intact — dry powder preserved into Friday's PCE. Next decision point: Thu pre-market with MRVL reaction in hand and PCE 24hrs out — if NVDA breaks $207 trail handles exit; otherwise hold and stay flexible into the macro print.
