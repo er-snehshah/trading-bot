@@ -424,3 +424,56 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% and inside no-tighten buffer). MRVL AMC tonight is informational only. Industrials remain passive watchlist (no catalyst today). Energy off entirely. Trades this week: 0/3. Cash 79.5% intact — dry powder preserved into Friday's PCE. Next decision point: Thursday pre-market with MRVL reaction + PCE preview in hand.
+
+
+---
+
+## 2026-05-28 — Pre-market Research (Thursday — MRVL read-through + T-1 to PCE)
+
+### Account
+- Equity: $100,318.72 | Cash: $80,093.44 (79.8%) | Buying power: $180,412.16
+- Daytrade count: 0 | PDT: false | Positions: 1 (NVDA)
+- NVDA: 96 sh @ avg $207.36 | current $210.68 | +$318.72 (+1.60%) | trail-stop GTC 10% (qty 96, stop $207, HWM $230, qty_available 0)
+- Last equity: $100,503.04 → -$184.32 (-0.18%) intraday mark; NVDA -0.90% from Wed close $212.60
+
+### Market Context
+- **WTI ~$90.49** | **Brent ~$96.36** (TradingEconomics 5/28) — modest bounce from Tue's $91.94 / Wed range, but WTI still down ~15% month-over-month. Hormuz premium fully gone. Energy thesis remains dead.
+- **ESM6 futures: ~flat/+0.10%** premarket (Markets Insider snapshot ~6,657 area; Barchart cited +0.04% ES / -0.10% NQ Wed close). Tape near record highs, multi-day uptrend stalling.
+- **VIX: 16.29** (5/27 close, -4.23%) — calm regime, well inside normal 13-20 band; no fear premium ahead of PCE.
+- **MRVL AMC print (5/27):** Rev $2.42B (slight beat), Adj EPS $0.80 vs $0.79 cons. **Stock +~7% AH** on strong AI/data-center demand outlook. Clean bullish read-through for AI-infra complex into Thursday. Snowflake also beat per Benzinga.
+- **NVDA news today:**
+  - **BofA raised PT to $320** (from $300), Buy reiterated; cites 2030 AI DC TAM raise to $1.9T from $1.4T
+  - **NVDA presents at TD Cowen TMT Conference today 10:15am ET** — potential intraday volatility catalyst
+  - Tape still in "good print, bad reaction" pattern post-Q1: closed Wed $212.60 (-1.05%), premarket $210.68
+- **Today's other catalysts:**
+  - **Earnings AMC:** Costco (COST), Dell, NetApp — Costco is the read on consumer health
+  - **Earnings BMO:** Best Buy (BBY), Dollar Tree (DLTR) — consumer discretionary read
+  - **Econ data:** Q1 GDP 2nd estimate, Initial Jobless Claims (8:30am ET); Pending Home Sales (10am)
+  - **PCE Inflation = Friday** — THE macro pivot
+- **Sector momentum:** XLE (Energy) + XLI (Industrials) in Leading quadrant; XLK (Tech) + XLF (Financials) in Lagging quadrant per consistent multi-day read. MRVL beat may modestly reverse the XLK lagging signal; one print doesn't change a sector regime.
+
+### Trade Ideas
+
+1. **HOLD NVDA — no management, but watch the trail.** Unrealized compressed to **+1.60%** (from +2.53% Wed, +7.79% peak Wed prior week). Stop $207 sits **~1.7% below current** $210.68 — inside the 3% no-tighten buffer per Rule #7 and well under +15% trail-tighten threshold ($238.46) anyway. The binary trade is now barely above breakeven; if NVDA breaks $207 today, **the trail handles the exit and locks ~breakeven**. No management action available. Possible intraday catalyst: TD Cowen presentation 10:15am ET.
+
+2. **MRVL +7% AH read-through — DOCUMENTED SKIP.** AI-infra demand confirmed by second leader; bullish data point. BUT:
+   - Chasing MRVL after a +7% AH gap = chasing into strength (wrong asymmetry)
+   - Adding any AI semi (AVGO, MU) = correlated to NVDA, compounding single-factor risk
+   - XLK still in Lagging quadrant per sector rotation; one print doesn't change regime
+   - T-1 to PCE = wrong day to add risk; a hot print Friday hits AI semis hardest
+   - **Skip all AI-infra adds.** Force-decision honored per last week's review nudge; the documented answer remains pass with explicit rationale, not paralysis.
+
+3. **Industrials (XLI/CAT/DE) — passive watchlist.** Leading quadrant persists. No today-specific catalyst on watchlist names → Buy-Side Gate fails ("specific catalyst documented"). Pass. Watch for clean breakout setups post-PCE next week.
+
+4. **Energy — hard skip.** WTI $90.49 (small bounce), Brent $96.36. Thesis decayed two-plus weeks running. Rule #9 enforced.
+
+### Risk Factors
+- **PCE Friday is THE event.** A hot print = XLK lagging-quadrant move accelerates, NVDA potentially breaks $207 trail. A cool print = AI-infra reflation, MRVL/NVDA bounce. Either way, **sizing today should preserve flexibility for Friday's open**, not commit fresh capital.
+- **NVDA trail proximity:** Stop is only ~1.7% below current price. A normal-volatility down session (1-2%) could trigger. That's the design — if the position cracks, exit is automatic and we go to ~$100k cash flat.
+- **TD Cowen NVDA presentation 10:15am ET** — could push the name either direction intraday on Jensen commentary. Informational, no chasing.
+- **Single-name concentration ~20.2%** of equity in one tech name in a Lagging-quadrant sector with a softening trail. The asymmetric ceiling on this trade has compressed materially since the print.
+- **Costco AMC** can drive XLP / consumer tape into Friday; not a position concern.
+- Cash 79.8% — dry powder intact and appropriate into the macro pivot.
+
+### Decision
+**HOLD.** No new trades. No NVDA management (under +15% threshold AND inside no-tighten buffer). MRVL beat is bullish AI-infra confirmation but **chasing it = wrong asymmetry into PCE**; documented SKIP on all AI-infra adds (NVDA correlated, XLK still lagging, T-1 to macro pivot). Industrials remain passive; energy off. Cash preserved into Friday. Trades this week: 0/3. Next decision point: Friday pre-market with PCE preview and NVDA trail status; if NVDA gaps below $207 overnight or intraday, trail handles exit and we reset from cash. Patience > activity remains the right answer with the binary thesis effectively played out and a macro print 24-30 hours away.
