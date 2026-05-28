@@ -477,3 +477,48 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% threshold AND inside no-tighten buffer). MRVL beat is bullish AI-infra confirmation but **chasing it = wrong asymmetry into PCE**; documented SKIP on all AI-infra adds (NVDA correlated, XLK still lagging, T-1 to macro pivot). Industrials remain passive; energy off. Cash preserved into Friday. Trades this week: 0/3. Next decision point: Friday pre-market with PCE preview and NVDA trail status; if NVDA gaps below $207 overnight or intraday, trail handles exit and we reset from cash. Patience > activity remains the right answer with the binary thesis effectively played out and a macro print 24-30 hours away.
+
+---
+
+## 2026-05-28 — Pre-market Refresh (Second Run — PCE Date Correction)
+
+> **Note:** Alpaca API returned 403 "Host not in allowlist" — remote container IP not on paper-account allowlist. Account snapshot carried forward from first run. Perplexity also blocked (403); WebSearch fallback used for all market data.
+
+### Account (last known — carried forward)
+- Equity: ~$100,318 | Cash: $80,093 (79.8%) | Buying power: $180,412
+- Daytrade count: 0 | Positions: 1 (NVDA 96 sh @ $207.36 avg)
+- NVDA trail-stop GTC 10% active | HWM $230 | stop ~$207
+
+### Key Correction vs. First Run
+- **PCE is TODAY (Thu May 28) at 8:30am ET — NOT Friday.** The first pre-market entry said "PCE Friday is THE event." Per BEA schedule and economic calendar: April Personal Income & Outlays (PCE) releases Thu 5/28 at 8:30am ET simultaneously with Q1 GDP 2nd estimate and Initial Claims. Risk is immediate.
+- PCE consensus: headline +0.5% MoM / +3.8-3.9% YoY; core +0.3% MoM / +3.3% YoY — well above Fed's 2% target; Morningstar flagging "energy-driven inflation rising to 3-year highs."
+
+### Market Context (WebSearch fallback — ~6:30am ET)
+- **WTI: ~$90** (+1.8% premarket from $88.39 May 27 close) | **Brent: ~$96.30**
+- Oil rebounding sharply on Iran deal uncertainty — compounding inflation read alongside PCE
+- **ES futures: -0.13% to -0.2%** (CNBC): futures explicitly cited as weighed by oil rebound + PCE uncertainty
+- **VIX: ~17.01** (May 27 close) — elevated slightly vs 16.29 yesterday; still calm but creeping
+- **BMO today:** DLTR — net sales +7.2%, comp +3.5%, EPS $1.76 (solid); BBY — est. $1.23 EPS / $8.83B rev
+- **AMC tonight:** COST, DELL, NTAP, ADSK, MDB, OKTA
+- **NVDA:** TD Cowen presentation today 10:15am ET (7:15am PT) — Jensen commentary is the intraday volatility catalyst
+- **Broader sentiment:** SPX Equal Weight + DJI both hit fresh ATH yesterday on Iran negotiation hopes (Trump: "war ends very quickly"); but today's tape pulling back on oil + PCE
+
+### NVDA Position Risk (updated)
+- Trail $207 sits ~1.5% below a ~$210 opening price — inside the 3% no-tighten buffer, no action available
+- Hot PCE print at 8:30am → rate-stay signal → growth/tech selling pressure → NVDA could trade through $207
+- If NVDA breaks $207 intraday the trail stops it automatically; we exit at ~breakeven and go 100% cash
+- Jensen at TD Cowen 10:15am is a wildcard (positive) but can't count on it offsetting macro
+
+### Trade Ideas
+1. **HOLD NVDA** — trail handles any downside. No management action available (inside buffer, under +15% threshold). Watch for automatic exit if $207 breaks.
+2. **No new entries today** — hot PCE + oil spike = wrong environment to add risk. If PCE prints cool, reassess Friday open with fresh eyes from a likely better setup.
+3. **Post-PCE rotation watch (future, not today):** if PCE cool → AI-infra reflation trade possible; if hot + NVDA exits → reassess XLI from cash with no single-name concentration.
+
+### Risk Factors
+- **PCE hot print (today 8:30am) + oil +1.8%** = twin inflationary signals; futures already -0.2%
+- **NVDA trail proximity:** ~1.5% to stop. Normal PCE-volatility move can trigger. That's the design.
+- **No Alpaca API access from this container** — cannot confirm live stop order status or actual position marks. Stop must be verified manually.
+- **TD Cowen 10:15am** — two-sided catalyst; could offset PCE if Jensen gives bullish AI demand commentary.
+
+### Decision
+**HOLD.** No new trades. PCE is TODAY (correcting first-run entry), not Friday — adds immediate urgency to NVDA trail proximity. Trail-stop $207 is the only action mechanism; if triggered, we accept ~breakeven exit and reset from cash. Trades this week: 0/3. Next decision point: post-8:30am PCE reaction — if cool and NVDA holds, hold through Jensen's TD Cowen appearance; if hot and NVDA breaks $207, trail exits and we go full cash into the weekend.
