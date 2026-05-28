@@ -13,5 +13,5 @@ Run the daily summary workflow locally.
    ### MMM DD — EOD Snapshot
    **Portfolio:** $X | **Cash:** $X (X%) | **Day P&L:** ±$X (±X%) | **Phase P&L:** ±$X (±X%)
    positions table + Notes paragraph
-7. `bash scripts/clickup.sh "EOD <date> / Portfolio: $X ..."`
+7. `bash scripts/telegram.sh "EOD <date> / Portfolio: $X ..."`
 8. `git add memory/TRADE-LOG.md && git commit -m "EOD snapshot <date>" && git push origin main`

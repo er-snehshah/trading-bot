@@ -37,4 +37,4 @@ Args: SYMBOL SHARES SIDE (buy or sell). If missing, ask for them.
 
 7. Log the trade to memory/TRADE-LOG.md with full thesis, entry, stop, target, R:R.
 
-8. `bash scripts/clickup.sh "<ticker, shares, fill price, one-line thesis>"`
+8. `bash scripts/telegram.sh "<ticker, shares, fill price, one-line thesis>"`

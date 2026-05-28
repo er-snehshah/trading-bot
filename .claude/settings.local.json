@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(@\\(\"ALPACA_API_KEY\",\"ALPACA_SECRET_KEY\",\"PERPLEXITY_API_KEY\",\"CLICKUP_API_KEY\",\"CLICKUP_WORKSPACE_ID\",\"CLICKUP_CHANNEL_ID\"\\) | ForEach-Object { if \\([System.Environment]::GetEnvironmentVariable\\($_\\)\\) { \"$_`: set\" } else { \"$_`: MISSING\" } })",
+      "Bash(bash scripts/alpaca.sh account)",
+      "Bash(bash scripts/alpaca.sh positions)",
+      "Bash(bash scripts/perplexity.sh 'S&P 500 weekly performance week ending __TRACKED_VAR__. What was the S&P 500 index return for the week of May 12 to May 16 2026? Give me the Monday open level, Friday close level, and percentage change for the week.')"
+    ]
+  }
+}

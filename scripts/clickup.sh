@@ -36,7 +36,13 @@ if [[ -z "${CLICKUP_API_KEY:-}" || -z "${CLICKUP_WORKSPACE_ID:-}" || -z "${CLICK
   exit 0
 fi
 
-payload="$(python3 -c "
+# Use py launcher (Windows) if python3 stub is unavailable
+PYTHON=python3
+if ! "$PYTHON" -c "import sys" 2>/dev/null; then
+  PYTHON="py -3"
+fi
+
+payload="$($PYTHON -c "
 import json, sys
 print(json.dumps({'type': 'message', 'content': sys.argv[1], 'content_format': 'text/md'}))
 " "$msg")"

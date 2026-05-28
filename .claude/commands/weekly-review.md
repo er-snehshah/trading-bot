@@ -45,7 +45,7 @@ Also update memory/TRADING-STRATEGY.md and call out the change in the review sec
 
 STEP 6 — Send ONE ClickUp message (always). Keep under 15 lines:
 ```
-bash scripts/clickup.sh "Week ending MMM DD
+bash scripts/telegram.sh "Week ending MMM DD
 Portfolio: \$X (±X% week, ±X% phase)
 vs S&P 500: ±X%
 Trades: N (W:X / L:Y / open:Z)

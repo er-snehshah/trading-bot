@@ -42,7 +42,7 @@ STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md:
 
 STEP 5 — Notification: silent unless genuinely urgent.
 ```
-bash scripts/clickup.sh "<one urgent line>"
+bash scripts/telegram.sh "<one urgent line>"
 ```
 
 Local mode: credentials from .env. No commit needed locally.

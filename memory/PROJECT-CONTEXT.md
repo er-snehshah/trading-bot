@@ -30,7 +30,7 @@
 ## API Wrappers
 - scripts/alpaca.sh — all Alpaca trading/account calls
 - scripts/perplexity.sh — all market research (falls back to WebSearch if key missing)
-- scripts/clickup.sh — all notifications (falls back to local file if credentials missing)
+- scripts/telegram.sh — all notifications via Telegram bot (falls back to local file if credentials missing)
 
 ## Notification Philosophy
 - Pre-market: silent unless urgent

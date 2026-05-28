@@ -8,15 +8,15 @@ DATE=$(date +%Y-%m-%d).
 IMPORTANT — ENVIRONMENT VARIABLES:
 - Every API key is ALREADY exported as a process env var: ALPACA_API_KEY,
   ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT,
-  PERPLEXITY_API_KEY, PERPLEXITY_MODEL, CLICKUP_API_KEY,
-  CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID.
+  PERPLEXITY_API_KEY, PERPLEXITY_MODEL, TELEGRAM_BOT_TOKEN,
+  TELEGRAM_CHAT_ID.
 - There is NO .env file in this repo and you MUST NOT create, write, or
   source one. The wrapper scripts read directly from the process env.
 - If a wrapper prints "KEY not set in environment" -> STOP, send one
-  ClickUp alert naming the missing var, and exit.
+  Telegram alert naming the missing var, and exit.
 - Verify env vars BEFORE any wrapper call:
-  for v in ALPACA_API_KEY ALPACA_SECRET_KEY CLICKUP_API_KEY \
-            CLICKUP_WORKSPACE_ID CLICKUP_CHANNEL_ID; do
+  for v in ALPACA_API_KEY ALPACA_SECRET_KEY \
+            TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID; do
     [[ -n "${!v:-}" ]] && echo "$v: set" || echo "$v: MISSING"
   done
 
@@ -58,7 +58,7 @@ STEP 6 — Append each trade to memory/TRADE-LOG.md (match existing format):
 Date, ticker, side, shares, entry price, stop level, thesis, target, R:R.
 
 STEP 7 — Notification only if a trade was placed:
-  bash scripts/clickup.sh "<tickers, shares, fill prices, one-line why>"
+  bash scripts/telegram.sh "<tickers, shares, fill prices, one-line why>"
 
 STEP 8 — COMMIT AND PUSH (mandatory if any trades executed):
   git add memory/TRADE-LOG.md

@@ -40,7 +40,7 @@ Append afternoon addendum to RESEARCH-LOG if relevant.
 
 STEP 7 — Notification only if action was taken:
 ```
-bash scripts/clickup.sh "<action summary>"
+bash scripts/telegram.sh "<action summary>"
 ```
 
 Local mode: credentials from .env. No commit needed locally.
