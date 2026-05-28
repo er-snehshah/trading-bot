@@ -79,3 +79,21 @@
 | NVDA   | 96     | $207.36 | $212.60 | -1.05%  | +$503.04 (+2.53%)   | $207 (10% trail, HWM $230) |
 
 **Notes:** NVDA -1.05% to $212.60, third consecutive fade since the blowout print — unrealized compressed to +2.53% from +3.62% Tue, +3.81% Fri, and the +7.79% Wed peak. The "good print, bad reaction" pattern is now fully in evidence; trail-stop $207 (HWM $230) sits ~2.6% below current, inside the no-tighten buffer per Rule #7 anyway. No management action available or warranted. Tape was quiet: ES futures had been bid +0.76% pre-open but Tuesday's grind didn't carry; Wed gave back marginally on no real news. Consumer Confidence/New Home Sales were mid-tier reads, non-market-moving. MRVL AMC tonight is the AI-semi read-through into Thu — informational only, not a chase trigger. Industrials (XLI) remain on passive watchlist; energy off entirely (WTI ~$96–98 area, thesis dead). Zero trades today; **trades this week: 0/3**. Cash 79.7% intact — dry powder preserved into Friday's PCE. Next decision point: Thu pre-market with MRVL reaction in hand and PCE 24hrs out — if NVDA breaks $207 trail handles exit; otherwise hold and stay flexible into the macro print.
+
+
+### May 28 — TRADE CLOSED: NVDA (Thursday)
+**Portfolio:** $100,494.40 | **Cash:** $100,494.40 (100%) | **Day P&L:** -$8.64 (-0.01%) | **Phase P&L:** +$494.40 (+0.49% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Exit    | Held    | Realized P&L        | Notes                      |
+|--------|--------|---------|---------|---------|---------------------|----------------------------|
+| NVDA   | 96     | $207.36 | $212.51 | 21 days | +$494.40 (+2.48%)   | Manual close — thesis review |
+
+**Trade record:**
+- Entry: ~2026-05-07 @ $207.36 avg (96 shares, $19,906.56 cost basis)
+- Exit: 2026-05-28 @ $212.51 fill (market sell, 11:39am ET)
+- Peak unrealized: +$1,551.36 (+7.79%) on 2026-05-20 (NVDA earnings day)
+- Final realized: +$494.40 (+2.48%) — left ~$1,057 on the table from peak
+
+**Reason for close:** Manual decision post-earnings-fade review. Post-catalyst fade rule triggered (5 consecutive down sessions after May 20 blowout earnings beat/raise: -1.77%, -1.93%, -0.22%, -1.05% Wed; stop proximity compressed to <3% by Thu). Trail at $207 (HWM $230) provides ~breakeven floor; T-1 to PCE Friday macro pivot. Decision: exit at +2.48% realized rather than risk trail stop triggering at $207 (+0% effective) on a hot PCE print. All cash ahead of the macro pivot.
+
+**Notes:** Portfolio now 100% cash ($100,494.40). Zero open positions. Trades this week: **1/3** (this sell closes the NVDA swing trade opened May 7). Deployment = 0% — mandatory deployment scan required next pre-market per Rule #2. Next decision point: Friday pre-market with PCE inflation data (8:30am ET) + clean slate to open new positions post-print.
