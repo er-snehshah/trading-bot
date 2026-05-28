@@ -116,3 +116,30 @@
 **Catalyst:** April PCE softer than expected (+0.4% m/m vs +0.53% cons; +3.8% YoY vs +3.9% cons) = rate-relief bid on AI/growth names. MRVL +7% AH Wed confirmed AI-infra demand. ARM leading AI chip momentum, no overnight binary risk.
 
 **Trades this week: 2/3.** Next decision point: monitor ARM trail; if HWM rises materially, trail follows. Cancel and sell at market manually if thesis breaks before stop triggers.
+
+
+### May 28 — TRADE CLOSED: ARM (Thursday — same-day stop-out)
+**Portfolio:** $99,884.01 | **Cash:** $99,884.01 (100%) | **Day P&L:** -$619.03 (-0.62%) | **Phase P&L:** -$115.99 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry   | Exit    | Held    | Realized P&L        | Notes                              |
+|--------|--------|---------|---------|---------|---------------------|------------------------------------|
+| ARM    | 57     | $346.09 | $335.38 | ~3 hrs  | -$610.47 (-3.09%)   | 4% trailing stop triggered (HWM $349.42 → stop $335.44) |
+
+**Trade record:**
+- Entry: 2026-05-28 12:25pm ET @ $346.09 (market buy, 57 sh, $19,727.13 cost)
+- Exit: 2026-05-28 3:30pm ET @ $335.38 (4% trailing stop GTC fill)
+- HWM reached: $349.42 (early afternoon spike) → trail set $335.44
+- Realized: -$610.47 (-3.09%)
+
+**Reason for close:** Trailing stop did its job. ARM ran early to $349.42 (~+1% above entry), then faded ~4% from HWM, triggering the GTC trail. Cleanest possible outcome on a thesis that didn't follow through: stop took us out at -3% rather than letting it bleed to -4% hard stop or worse on the close.
+
+**Day recap — two trades:**
+1. **NVDA closed** 11:39am ET @ $212.51 → +$494.40 (+2.48%) realized on 21-day swing
+2. **ARM opened** 12:25pm ET @ $346.09 (PCE-beat AI rotation thesis)
+3. **ARM closed** 3:30pm ET @ $335.38 → -$610.47 (-3.09%) on 4% trail
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Net day -$619.03 (-0.62%); NVDA win of $494 partially offset ARM stop-out of -$610. Both trades were rule-compliant: NVDA exit was a thesis-driven manual close pre-PCE; ARM was a fully-rules-compliant entry (PCE catalyst, leading-sector momentum read, 19.6% sizing, 4% stop in place immediately) that simply didn't work. **Trades this week: 2/3** (NVDA close + ARM round-trip). Daytrade count: 1 (ARM same-day). Portfolio 100% cash heading into Friday's session. Phase P&L now negative for the first time at -0.12%. Next decision point: Friday pre-market — clean slate, full $99,884 dry powder, deployment scan required per Rule #2. PCE already digested; watch for follow-through reads on leading sectors (XLI Industrials, XLE recovery), avoid revenge-trading into another AI/semi name after ARM stop. Patience.
