@@ -97,3 +97,22 @@
 **Reason for close:** Manual decision post-earnings-fade review. Post-catalyst fade rule triggered (5 consecutive down sessions after May 20 blowout earnings beat/raise: -1.77%, -1.93%, -0.22%, -1.05% Wed; stop proximity compressed to <3% by Thu). Trail at $207 (HWM $230) provides ~breakeven floor; T-1 to PCE Friday macro pivot. Decision: exit at +2.48% realized rather than risk trail stop triggering at $207 (+0% effective) on a hot PCE print. All cash ahead of the macro pivot.
 
 **Notes:** Portfolio now 100% cash ($100,494.40). Zero open positions. Trades this week: **1/3** (this sell closes the NVDA swing trade opened May 7). Deployment = 0% — mandatory deployment scan required next pre-market per Rule #2. Next decision point: Friday pre-market with PCE inflation data (8:30am ET) + clean slate to open new positions post-print.
+
+
+### May 28 — TRADE OPENED: ARM (Thursday)
+
+| Ticker | Shares | Entry   | Stop          | Strategy         | Catalyst                        |
+|--------|--------|---------|---------------|------------------|---------------------------------|
+| ARM    | 57     | $346.09 | 4% trail $332.16 (HWM $346) | Trailing stop exit | PCE beat + AI chip momentum |
+
+**Trade details:**
+- Entry: 2026-05-28 ~12:26pm ET @ $346.09 avg (market order)
+- Cost basis: $19,727.13 (19.6% of equity)
+- Stop: 4% trailing GTC | initial stop $332.16 | HWM $345.995 — trails price up, never moves down
+- No fixed take-profit (Alpaca OCO limitation — trailing stop handles full exit)
+- Cash after entry: ~$80,767 | Deployed: ~19.6%
+- ARM change today at entry: +14.33% from yesterday's $302.71 close
+
+**Catalyst:** April PCE softer than expected (+0.4% m/m vs +0.53% cons; +3.8% YoY vs +3.9% cons) = rate-relief bid on AI/growth names. MRVL +7% AH Wed confirmed AI-infra demand. ARM leading AI chip momentum, no overnight binary risk.
+
+**Trades this week: 2/3.** Next decision point: monitor ARM trail; if HWM rises materially, trail follows. Cancel and sell at market manually if thesis breaks before stop triggers.

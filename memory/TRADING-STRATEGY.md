@@ -2,6 +2,7 @@
 
 ## Mission
 Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
+Approach: high-frequency swing trades targeting +7% profit per trade with a hard -4% stop.
 
 ## Capital & Constraints
 - Starting capital: ~$10,000
@@ -11,29 +12,28 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 
 ## Core Rules
 1. **NO OPTIONS — ever**
-2. **75-85% deployed** = 75-85% of account equity IN open positions (not in cash).
-   - If deployed < 40% with no binary event pending → mandatory deployment scan in next pre-market. Must open a position or document in writing why no setup qualifies.
-   - If deployed < 50% at Friday weekly review with no pending binary → forced written "deploy-or-skip" decision required.
-3. **5-6 positions at a time, max 20% each** (~$2,000 per position on $10k)
-4. **10% trailing stop on every position as a real GTC order** — place immediately after fill, same session
-5. **Cut losers at -7% manually.** No hoping, no averaging down.
-6. **Tighten trail:** 7% at +15% unrealized; 5% at +20% unrealized
-7. **Never tighten within 3% of current price; never move a stop down**
-8. **Max 3 new trades per week**
-9. **Follow sector momentum.** Don't force a thesis if the sector is rolling over.
-10. **Exit a sector after 2 consecutive failed trades**
-11. **Patience means waiting for a catalyst — not avoiding deployment.** Zero trades is correct when there is no valid setup. It is wrong when 80%+ is in cash with no binary pending.
+2. **Max 5 open positions, max 20% per position**
+3. **Max 3 new trades per week**
+4. **Every trade has TWO exit orders placed immediately after fill:**
+   - Limit sell at **+7%** above entry (take profit)
+   - Stop loss at **-4%** below entry (hard cut)
+5. **Never move the stop down — ever**
+6. **Only buy on a specific catalyst** — earnings, sector breakout, macro event. No catalyst = no trade.
+7. **Only buy in leading sectors** — check sector momentum before every entry.
+8. **Exit a sector after 2 consecutive losing trades in it**
+9. **No averaging down** — if a position is losing, the stop handles it. Never add to a loser.
 
-## High Water Mark (HWM) Mechanics
-- HWM = the highest closing price since entry for the position
-- Trail stop is calculated from HWM, not from current price: `stop = HWM × (1 - trail_pct)`
-- When a new HWM is set (new closing high), recalculate the stop and record the new HWM in TRADE-LOG
-- Never move the stop down, even if HWM calculation would require it
-- Example: Entry $207.36, HWM $230.00, 10% trail → stop = $230 × 0.90 = $207.00
-- On tighten events (+15%, +20%): apply new pct to HWM at time of tighten, not to current price
+## Exit Math
+| Parameter | Value |
+|-----------|-------|
+| Take profit | +7% above entry |
+| Stop loss | -4% below entry |
+| Risk:Reward | 1.75:1 |
+| Break-even win rate | ~37% |
+| Target win rate | 50%+ |
 
 ## Buy-Side Gate (ALL must pass before any order)
-- Total positions after fill <= 6
+- Total positions after fill <= 5
 - Trades this week (including this one) <= 3
 - Position cost <= 20% of account equity
 - Position cost <= available cash
@@ -42,53 +42,61 @@ Beat the S&P 500 over the challenge window. Stocks only — no options, ever.
 - Instrument is a stock (not an option, not anything else)
 - Size calc: `shares = floor(equity × 0.20 / ask_price)` — never exceed 20%
 
-## Sell-Side Rules
-- **Unrealized loss <= -7%:** close immediately
-- **Thesis broken** (catalyst invalidated, sector rolling over): close even if not at -7%
-- **Post-catalyst fade rule:** if position fades 3+ consecutive sessions after a catalyst event (earnings, news), treat thesis as broken regardless of P&L. Document the decision. Do not hold waiting for a recovery that contradicts the tape's verdict.
-- **Good print, bad reaction:** if the catalyst beat but price action is negative/flat for 3+ days, exit or set a hard deadline (e.g., "close by Friday if no new HWM by then")
-- **Up >= +20%:** tighten trailing stop to 5%
-- **Up >= +15%:** tighten trailing stop to 7%
-- **Sector has 2 consecutive failed trades:** exit all positions in that sector
-
-## Max Hold Time Rule
-- If unrealized P&L < +5% after 30 calendar days → mandatory reassessment
-- Write decision: either close, tighten stop, or document specific forward catalyst with target date
-- "Thesis still intact" is not sufficient — must name a specific upcoming event or price level
-- If unrealized P&L < 0% after 30 calendar days → close unless actively in a defined recovery setup
-
-## Post-Catalyst Action Rule
-- After any major sector catalyst (earnings beat + raise from a sector leader), by next session:
-  - Write a decision on adding ONE correlated but non-duplicate position
-  - Default is no longer "pass" — it is "size or document why not"
-  - Example: NVDA blowout → written decision on AVGO / MU / semis ETF next morning
-
 ## Entry Checklist (document before placing)
-- What is the specific catalyst today?
-- Is the sector in momentum?
-- What is the stop level? `stop_price = entry × 0.90` (10% trail from entry as initial floor)
-- What is the target (minimum 2:1 risk/reward)?
-- What will I do if the position fades 3 sessions after the catalyst?
+- What is the specific catalyst?
+- Is the sector in the leading quadrant?
+- Take profit price: `entry × 1.07`
+- Stop loss price: `entry × 0.96`
+- R:R check: target gain / max loss >= 1.5
 
-## Order Templates
+## Order Sequence (every trade, no exceptions)
 
+**Step 1 — Market buy:**
 ```json
-// Market buy
-{"symbol":"XOM","qty":"12","side":"buy","type":"market","time_in_force":"day"}
-
-// 10% trailing stop (default for every new position)
-{"symbol":"XOM","qty":"12","side":"sell","type":"trailing_stop","trail_percent":"10","time_in_force":"gtc"}
-
-// Fixed stop (fallback when PDT rules block trailing stop)
-{"symbol":"XOM","qty":"12","side":"sell","type":"stop","stop_price":"140.00","time_in_force":"gtc"}
+{"symbol":"SYM","qty":"N","side":"buy","type":"market","time_in_force":"day"}
 ```
 
-Fixed stop price calculation: `stop_price = entry_price × 0.90` (round to 2 decimal places)
+**Step 2 — Limit sell at +7% (take profit):**
+```json
+{"symbol":"SYM","qty":"N","side":"sell","type":"limit","limit_price":"X.XX","time_in_force":"gtc"}
+```
+
+**Step 3 — Stop loss at -4%:**
+```json
+{"symbol":"SYM","qty":"N","side":"sell","type":"stop","stop_price":"X.XX","time_in_force":"gtc"}
+```
+
+Wait for Step 1 fill before placing Steps 2 and 3.
+When one of Steps 2/3 fills → **immediately cancel the other**.
+
+## Price Calculations
+```
+take_profit  = round(entry × 1.07, 2)
+stop_loss    = round(entry × 0.96, 2)
+position_size = floor(equity × 0.20 / ask_price)
+```
+
+## Example
+- Equity: $100,000 | Buy NVDA @ $200 | Size: 100 shares ($20,000)
+- Limit sell GTC @ $214.00 (+7%)
+- Stop loss GTC @ $192.00 (-4%)
+- If target hits → +$1,400 profit (+7%)
+- If stop hits → -$800 loss (-4%)
+
+## Sell-Side Rules
+- **Take profit hit (+7%):** limit order fills automatically → cancel the stop immediately
+- **Stop loss hit (-4%):** stop order fills automatically → cancel the limit immediately
+- **Thesis broken before either level:** close at market, cancel both orders
+- **Sector has 2 consecutive losing trades:** exit all positions in that sector
+
+## Deployment Target
+- Target: 60-100% deployed across 3-5 positions
+- If deployed < 40% with no setup in research → mandatory scan next pre-market
 
 ## Alpaca Notes
-- `trail_percent` and `qty` must be strings in JSON, not numbers
-- Market data: data.alpaca.markets | Trading: api.alpaca.markets (or paper-api)
-- quote.ap = ask, quote.bp = bid. Wide spread or zero = halted/illiquid — skip
-- Trailing stops only work during market hours
+- `qty`, `limit_price`, `stop_price` must be strings in JSON, not numbers
+- Market data: data.alpaca.markets | Trading: paper-api.alpaca.markets
+- quote.ap = ask, quote.bp = bid. Zero bid or wide spread = skip
+- Limit and stop orders only work during market hours for most stocks
 - Env var ALPACA_API_KEY → HTTP header APCA-API-KEY-ID (wrapper handles this)
-- Trailing stop orders require an open position to exist — never place before fill confirms
+- After a take-profit or stop fills, cancel the other order immediately: `bash scripts/alpaca.sh cancel ORDER_ID`

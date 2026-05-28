@@ -477,3 +477,73 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 **HOLD.** No new trades. No NVDA management (under +15% threshold AND inside no-tighten buffer). MRVL beat is bullish AI-infra confirmation but **chasing it = wrong asymmetry into PCE**; documented SKIP on all AI-infra adds (NVDA correlated, XLK still lagging, T-1 to macro pivot). Industrials remain passive; energy off. Cash preserved into Friday. Trades this week: 0/3. Next decision point: Friday pre-market with PCE preview and NVDA trail status; if NVDA gaps below $207 overnight or intraday, trail handles exit and we reset from cash. Patience > activity remains the right answer with the binary thesis effectively played out and a macro print 24-30 hours away.
+
+
+---
+
+## 2026-05-28 — Pre-market Research (Thursday — PCE day, mid-session run)
+
+*Note: Routine ran mid-session (~12:22pm ET). PCE already printed at 8:30am ET. NVDA position closed earlier this session at $212.51 (+2.48%). Portfolio is 100% cash. Mandatory deployment scan required (0% deployed, new Rule #2).*
+
+### Account
+- Equity: $100,494.40 | Cash: $100,494.40 (100%) | Buying power: $200,988.80
+- Daytrade count: 0 | PDT: false | Positions: 0
+- Last equity: $100,503.04 | Day P&L: -$8.64 (-0.01%)
+
+### Market Context
+- **WTI: ~$90.12** (+1.62% today, Investing.com) — modest bounce from Wed; still ~15% off May highs. Energy thesis remains dead.
+- **Brent: ~$96** (stale; directionally softer)
+- **ESM26: +0.36%** premarket (Barchart) / US500 at 7,522 +0.02% (Trading Economics) — modestly green, near record highs
+- **VIX: 16.59** (May 28, Investing.com) — calm regime, no fear premium
+- **PCE April (8:30am ET — ALREADY RELEASED, BEAT):**
+  - Headline PCE: **+0.4% m/m** (vs +0.53% consensus) ✓ softer
+  - Headline PCE YoY: **+3.8%** (vs +3.9% consensus) ✓ softer
+  - Core PCE: **+0.24% m/m** (vs +0.30% consensus) ✓ softer
+  - Core PCE YoY: **+3.3%** (in line) — **net BULLISH print, below expectations across the board**
+- **Q1 GDP second estimate** also released today at 8:30am ET
+- **Earnings AMC today:** COST (Costco, 5pm ET call), DELL (Dell Technologies, EPS cons $2.93), MDB (MongoDB)
+- **Sector momentum YTD:** Energy +34% #1 | Tech +19.3% (recovering) | Industrials +11.5% | Staples +10.7% | Materials +10.5% | Health Care -2.4% | Financials -4.0%
+
+### Live Quotes (12:22pm ET)
+| Ticker | Bid | Ask | Spread | Notes |
+|--------|-----|-----|--------|-------|
+| DELL | $315 | $330 | $15 (4.5%) | **SKIP — spread too wide, violates liquidity rule** |
+| ARM | $344.19 | $348.50 | $4.31 (1.24%) | Tradeable, AI/chip momentum |
+| COST | $995 | $1,002.92 | $7.92 (0.79%) | Tradeable, but AMC binary tonight |
+
+### Trade Ideas (new strategy: +7% target / -4% stop)
+
+1. **ARM (Arm Holdings) — PRIMARY CANDIDATE**
+   - Catalyst: PCE softer-than-expected = rate-relief bid on growth/tech; AI chip demand confirmed by MRVL +7% AH Wed; sector YTD +19.3% recovering
+   - Entry: ~$348.50 (ask) | Size: `floor(100,494 × 0.20 / 348.50)` = **57 shares = $19,865 (19.8%)**
+   - Take profit: $348.50 × 1.07 = **$372.90** (limit GTC)
+   - Stop loss: $348.50 × 0.96 = **$334.56** (stop GTC)
+   - R:R: +$1,390 / -$794 = **1.75:1** ✓
+   - Risk: spread 1.24% eats into initial cushion; PCE reaction may be partially priced (entered 3.5hrs post-print); no ARM-specific catalyst today
+
+2. **COST (Costco) — WATCHLIST ONLY**
+   - Catalyst: PCE softer + consumer spending tailwind + AMC earnings tonight
+   - Problem: AMC binary risk — stop at $962.80 may GAP THROUGH on a bad print; Alpaca stops don't execute in after-hours. **Risk of >-4% overnight loss.** Skip today; reconsider if reports beat tonight.
+   - Entry: post-earnings reaction tomorrow if beat + raise
+
+3. **DELL — SKIP**
+   - Spread $15 (4.5%) = immediate >4% cost, violates liquidity rule. Skip.
+
+### Risk Factors
+- **PCE already in price** — 3.5hrs of market have traded the reaction; ARM may have already moved. Check if ARM is up >3% from open before entering — if so, risk/reward compressed.
+- **AMC earnings tonight (COST/DELL/MDB)** — creates tape risk into close; any negative surprise could reverse the morning bid
+- **PCE YoY still 3.8%** — softer than consensus but still elevated; Fed is NOT cutting; this is a "less bad" print, not a "green light" print
+- **Spread on ARM (1.24%)** — reduces effective stop from -4% to ~-2.8% buffer before stop price
+- **Trades this week: 1/3** (NVDA sold today). Two trade slots remain.
+
+### Decision
+**TRADE — ARM if still near ask $348.50 (PCE catalyst, leading sector, deployment scan required).**
+- Buy 57 shares ARM at market
+- Immediately place limit sell GTC @ $372.90 (+7%)
+- Immediately place stop loss GTC @ $334.56 (-4%)
+- Cancel whichever order doesn't fill first
+
+**SKIP COST** (AMC binary gap risk through stop tonight). Re-evaluate post-earnings tomorrow.
+**SKIP DELL** (wide spread).
+
+Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
