@@ -143,3 +143,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Net day -$619.03 (-0.62%); NVDA win of $494 partially offset ARM stop-out of -$610. Both trades were rule-compliant: NVDA exit was a thesis-driven manual close pre-PCE; ARM was a fully-rules-compliant entry (PCE catalyst, leading-sector momentum read, 19.6% sizing, 4% stop in place immediately) that simply didn't work. **Trades this week: 2/3** (NVDA close + ARM round-trip). Daytrade count: 1 (ARM same-day). Portfolio 100% cash heading into Friday's session. Phase P&L now negative for the first time at -0.12%. Next decision point: Friday pre-market — clean slate, full $99,884 dry powder, deployment scan required per Rule #2. PCE already digested; watch for follow-through reads on leading sectors (XLI Industrials, XLE recovery), avoid revenge-trading into another AI/semi name after ARM stop. Patience.
+
+
+### May 28 — EOD Snapshot (Thursday)
+**Portfolio:** $99,884.01 | **Cash:** $99,884.01 (100%) | **Day P&L:** -$619.03 (-0.62%) | **Phase P&L:** -$115.99 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Two-trade day: NVDA 21-day swing closed at +$494.40 (+2.48%) on thesis fade / pre-PCE risk management; ARM same-day round-trip -$610.47 (-3.09%) on 4% trailing stop triggered ~3hrs after entry (HWM $349.42 → stop $335.44). PCE came in soft (+0.4% m/m vs +0.53% cons) triggering AI/growth rotation bid — ARM ran to $349 then faded on profit-taking. Net day: -$619.03. Portfolio 100% cash ($99,884.01), phase P&L flipped to -0.12%. Trades this week: 2/3 (cap intact for one more). No open positions, no open orders. Tomorrow: Friday pre-market deployment scan per Rule #2 — clean slate, watch XLI/XLE follow-through on rate-relief; no revenge-trading AI/semi. Alpaca API note: live account query blocked from cloud environment (host-not-allowlisted); EOD figures sourced from today's confirmed fill records in TRADE-LOG.
