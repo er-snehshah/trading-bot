@@ -160,3 +160,65 @@ Solid risk management and rule adherence; flat performance vs. flat market is th
 ### Overall Grade: C+
 
 Capital preserved (-0.67% on a binary-event week is fine on absolute terms), all rules followed cleanly, logging discipline restored. But relative performance lagged (-1.17% vs SPX) because concentration without diversification + post-catalyst paralysis = predictable underperformance when the binary fades. Process: B+. Outcome: C. Net: C+.
+
+
+---
+
+## Week ending 2026-05-29
+
+*Mon was Memorial Day (closed); 4-session week. Two trades closed: NVDA swing (21-day hold) exited at +2.48%, ARM same-day round-trip stopped at -3.09%. New +7%/-4% framework debuted on ARM.*
+
+### Stats
+| Metric           | Value         |
+|------------------|---------------|
+| Starting portfolio | $100,765.12 (Mon May 25 EOD — holiday, flat from Fri close) |
+| Ending portfolio   | $99,883.98 (Fri May 29 EOD) |
+| Week return        | -$881.14 (-0.87%) |
+| S&P 500 week       | +0.4% (Bloomberg recap; 8th straight up week) |
+| Bot vs S&P         | -1.27% |
+| Trades             | 2 (W:1 / L:1 / open:0) |
+| Win rate           | 50% (1 of 2 closed) |
+| Best trade         | NVDA +2.48% (+$494.40, 21-day hold) |
+| Worst trade        | ARM -3.09% (-$610.47, same-day) |
+| Profit factor      | 0.81 ($494.40 / $610.47) |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| NVDA (96 sh) | $207.36 (May 7) | $212.51 (May 28, 11:39am) | +$494.40 (+2.48%) | Manual close — thesis review pre-PCE; post-print fade pattern (5 down sessions); peaked at +7.79% Wed May 20 |
+| ARM (57 sh)  | $346.09 (May 28, 12:25pm) | $335.38 (May 28, 3:30pm) | -$610.47 (-3.09%) | 4% trailing stop GTC fired — HWM $349.42 → trail $335.44; PCE-beat AI-rotation thesis didn't follow through |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| — | — | — | — | None — 100% cash |
+
+### What Worked
+- **NVDA exit discipline.** Closed manually at +2.48% rather than ride a compressed cushion (2.6% above $207 trail) into a hot-PCE binary. Locked $494 profit; the alternative was triggering trail at breakeven.
+- **PCE softer-than-cons read traded correctly.** Recognized rate-relief setup, sized within rules (19.6% ARM), placed stop immediately — process was clean even though the outcome was a stop-out.
+- **Trail-stop on ARM did its job.** 4% trail off HWM $349.42 fired at $335.38 (-3.09% realized) — stop took us out before the position could bleed to the -4% hard floor or worse into the close.
+- **Friday revenge-trade was resisted.** With 1 trade slot remaining and behavioral pressure to "make ARM back," documented SKIPs on DELL (chase), MDB (falling knife), and immediate energy entry. Patience > activity.
+- **Daily logging + EOD snapshots clean all 5 sessions** (incl. Memorial Day flat-mark). Process discipline from last week's adjustment held.
+
+### What Didn't Work
+- **ARM entered into strength, not breakout.** Bought at $346.09 after the name was already +14% on the day (vs prior $302.71 close). Same chase-pattern flagged in past reviews — PCE catalyst was 3.5hrs old at entry, the move was largely priced. Exit was clean; entry asymmetry was wrong.
+- **Profit factor < 1.** Winners ($494) didn't cover losers ($610) — first negative-P&L week of the phase. The bot's -0.87% vs SPX +0.4% = -1.27% relative.
+- **Left ~$1,057 on the table from NVDA peak.** Held from +7.79% Wed May 20 down to +2.48% exit — the trail-tightening rule never triggered (under +15%), and the manual review came after 5 fade sessions, not after the 1st-2nd. A tighter post-print review cadence would have captured more.
+- **Two strategy frameworks ran in parallel.** NVDA was on the old 10% trailing-stop regime; ARM was the new +7%/-4% regime. Mental overhead managing both creates decision lag.
+- **Phase P&L flipped negative for the first time** (-0.12% vs $100k baseline). Absolute capital still preserved, but the cushion built across May is gone after one bad entry.
+
+### Key Lessons
+- **Catalyst-aware entries beat catalyst-old entries.** ARM at +14% on a 3.5hr-old PCE print = chasing. If the move is already 50%+ priced, the asymmetry has shifted from "+7% likely, -4% unlikely" to roughly even or worse. Codify: don't enter on a single-day move >5% from prior close unless the breakout itself is the catalyst (volume + structure).
+- **Manual thesis-review cadence matters.** NVDA stayed open 5 days after the post-print top because the rules only triggered on +15% or -10% boundaries. A documented "review on day 2 of post-catalyst fade" would have exited closer to peak.
+- **Same-day round-trips burn PDT budget AND signal.** ARM consumed 1 of 3 daytrades AND removed any chance to let the thesis breathe overnight. The new +7%/-4% framework with intraday entries is mechanically a higher-frequency setup — need to be selective about which entries deserve the slot.
+- **A losing week with 50% win rate but profit factor <1 is exactly the math the rules predicted.** Break-even win rate is ~37% at 1.75:1 R:R; at 50% you should bank money. We didn't because ARM was a -3% loss (stop fired before -4%) — closer to a 1.25:1 realized R:R on the loss. Tighter entries = closer to spec R:R.
+
+### Adjustments for Next Week
+- **Entry filter:** No new entry on a name already up >5% on the day from prior close unless the catalyst IS the breakout (clean structure + volume confirmation). Codify in TRADING-STRATEGY.md (new behavioral rule).
+- **Post-catalyst hold review:** When holding a position past a binary print, force a written hold-or-trim decision on day 2 of any consecutive fade off post-catalyst peak. Currently rules wait for stop or +15% trigger; this captures the gap.
+- **Monday force-decision on energy.** WTI bounced $90→$97 on Gulf hostility headlines into the weekend; if it holds >$95 Monday, force a written add-or-skip on OXY or XLE — first re-test of the dead-then-revived sector thesis.
+- **TRADING-STRATEGY.md change:** Add an "entry-day move filter" rule. Two weeks of evidence (this week's ARM, prior period's chase patterns) justify codification.
+
+### Overall Grade: C
+
+Capital still preserved on absolute terms (-0.87% week, -0.12% phase), full rule compliance on both trades. But: first losing week, profit factor <1, lagged SPX by 1.27%, and the loss came from a known anti-pattern (entering into strength on an already-digested catalyst). Discipline on the Friday no-trade was excellent — kept the loss to one bad entry, not two. Net: a learning week. Adjustment codified for next week.

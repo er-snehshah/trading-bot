@@ -22,6 +22,8 @@ Approach: high-frequency swing trades targeting +7% profit per trade with a hard
 7. **Only buy in leading sectors** — check sector momentum before every entry.
 8. **Exit a sector after 2 consecutive losing trades in it**
 9. **No averaging down** — if a position is losing, the stop handles it. Never add to a loser.
+10. **Entry-day move filter (NEW — added Week ending 2026-05-29):** No new entry on a name already up **>5%** intraday from prior close UNLESS the breakout itself is the catalyst (clean structure + confirming volume). Rationale: catalysts that have already moved >5% are largely priced — asymmetry has shifted from "+7% likely, -4% unlikely" to roughly even. Evidence: ARM 2026-05-28 entered at +14% on a 3.5hr-old PCE print → stopped same day -3.09%.
+11. **Post-catalyst hold review (NEW — added Week ending 2026-05-29):** When holding a position past a binary catalyst (earnings, macro print), force a written hold-or-trim decision on **day 2 of consecutive fade off the post-catalyst peak**. The +15% trail-tighten and -4% stop rules can leave too much room on a "good print, bad reaction" pattern. Evidence: NVDA peaked +7.79% on May 20 print day; manual exit didn't happen until May 28 after 5 fade sessions — gave back ~$1,057 of unrealized.
 
 ## Exit Math
 | Parameter | Value |
@@ -39,12 +41,14 @@ Approach: high-frequency swing trades targeting +7% profit per trade with a hard
 - Position cost <= available cash
 - daytrade_count leaves room (under 3 on sub-$25k account)
 - Specific catalyst documented in today's research log
+- **Name is not already up >5% intraday from prior close (unless the breakout is the catalyst)**
 - Instrument is a stock (not an option, not anything else)
 - Size calc: `shares = floor(equity × 0.20 / ask_price)` — never exceed 20%
 
 ## Entry Checklist (document before placing)
 - What is the specific catalyst?
 - Is the sector in the leading quadrant?
+- **Intraday move from prior close: is it <5%? (If >5%, is the breakout itself the catalyst with volume?)**
 - Take profit price: `entry × 1.07`
 - Stop loss price: `entry × 0.96`
 - R:R check: target gain / max loss >= 1.5
@@ -88,6 +92,7 @@ position_size = floor(equity × 0.20 / ask_price)
 - **Stop loss hit (-4%):** stop order fills automatically → cancel the limit immediately
 - **Thesis broken before either level:** close at market, cancel both orders
 - **Sector has 2 consecutive losing trades:** exit all positions in that sector
+- **Post-catalyst hold review:** on day 2 of consecutive fade off a post-catalyst peak, force a written hold-or-trim decision (don't wait for stop/trail to do it)
 
 ## Deployment Target
 - Target: 60-100% deployed across 3-5 positions
