@@ -596,3 +596,41 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIP on DELL (chase), MDB (falling knife), and immediate energy entry (Friday/weekend gap risk into Gulf news). Energy reactivated to active watchlist for Monday force-decision; OXY and XLE are the clean expressions if WTI holds >$95 over the weekend. Trades this week: 2/3 — one slot held in reserve. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand.
+
+---
+
+### 2026-05-29 — Refresh (Second Pre-market Pass, WebSearch fallback — Alpaca + Perplexity blocked by sandbox network policy)
+
+**Account (last known — API unavailable):** $99,883.98 cash (100%) | 0 positions | 0 open orders | Daytrade count: 1 | Trades this week: 2/3
+
+**Corrected Oil Prices (prior entry had stale FRED data):**
+- WTI: **$89.53** (May 28, +0.96%) — NOT $97.63; that was a stale Brent print
+- Brent: **$96.57** (May 28, +2.41%)
+- Driver: US strikes on Iran confirmed; Strait of Hormuz disruption fears escalating
+- **Energy thesis status: UNCHANGED — WTI $89.53 is BELOW the $95 reactivation threshold set in prior entry. SKIP.**
+
+**Updated Market Context:**
+- **ESM26: 7,585.50 (+0.33%)** — S&P 500 and Dow Jones hitting **new all-time highs** today (prior entry had ES -0.13%; tape reversed)
+- **VIX: 16.29** — unchanged from May 28 close, calm regime confirmed
+- **Manufacturing PMI:** 4-year high reading; Services PMI still expansionary (>50)
+- **Consumer confidence:** UMich 44.8 (below 48.0 consensus) — structural drag, not a market-mover today
+- **Today's calendar:** Advanced Trade in Goods + Retail/Wholesale Inventories 8:30am ET; Chicago PMI ~9:45am ET — all mid-tier; PCE + GDP 2nd estimate already released May 28
+- **Earnings before open:** ~4 companies reporting; no major names (DELL/COST/MDB/SNOW already printed Thu)
+
+**ARM Update:**
+- ARM trading ~$335.27 today; prior close $302.71 (May 27 — pre-PCE rally close)
+- Yesterday's stop at $335.38 confirmed correct: avoided further downside below stop
+- Mizuho PT raised to $360; Evercore Outperform on +140bps server CPU share gain
+- Market cap $358B; 1-year gain +151%
+- **Re-entry decision: SKIP** — same name, same week, $335 is our stop-out price = revenge trade. Preserve the 1 remaining slot.
+
+**Energy Detail (OXY/XLE):**
+- OXY: $60.58 (~10% off 52-week high $67.45); up 58% YTD 2026 before giving back; mean PT ~$64
+- XLE: near 52-week high ~$93; top holdings XOM (22%), CVX (17%), COP (8%)
+- Iran re-escalation (US strikes confirmed today) = Brent could push toward $105+ again
+- BUT: Friday + three-day weekend + binary Iran ceasefire/escalation risk = wrong day
+- WTI $89.53 < $95 threshold → no trigger met → **SKIP per rules**
+
+**Sector Momentum (confirmed):** Energy (leading — Iran/oil bid) | Semiconductors/AI (leading — SPMO +21.8% YTD) | Healthcare (strong May) | Industrials (watchlist) | Tech/Financials (lagging)
+
+**Decision: HOLD — confirmed.** Fresh data reinforces earlier conclusion. WTI below threshold, ARM is revenge-trade territory, markets at ATH, Friday + weekend binary Iran risk. One trade slot preserved for Monday clean setup. Force-decision on OXY/XLE Monday 2026-06-01 pre-market: add if WTI >$95 + Iran sustained escalation confirmed; skip if ceasefire resumed.
