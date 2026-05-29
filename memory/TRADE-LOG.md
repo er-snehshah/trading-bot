@@ -143,3 +143,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Net day -$619.03 (-0.62%); NVDA win of $494 partially offset ARM stop-out of -$610. Both trades were rule-compliant: NVDA exit was a thesis-driven manual close pre-PCE; ARM was a fully-rules-compliant entry (PCE catalyst, leading-sector momentum read, 19.6% sizing, 4% stop in place immediately) that simply didn't work. **Trades this week: 2/3** (NVDA close + ARM round-trip). Daytrade count: 1 (ARM same-day). Portfolio 100% cash heading into Friday's session. Phase P&L now negative for the first time at -0.12%. Next decision point: Friday pre-market — clean slate, full $99,884 dry powder, deployment scan required per Rule #2. PCE already digested; watch for follow-through reads on leading sectors (XLI Industrials, XLE recovery), avoid revenge-trading into another AI/semi name after ARM stop. Patience.
+
+
+### May 29 — EOD Snapshot (Friday)
+**Portfolio:** $99,883.98 | **Cash:** $99,883.98 (100%) | **Day P&L:** -$0.03 (-0.00%) | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Quiet Friday — 100% cash all session, zero activity. Equity essentially unchanged at $99,883.98 (last_equity matched, ~3¢ of rounding). The day was the documented behavioral test after yesterday's ARM same-day stop-out: resist revenge-trading into Friday + weekend gap risk. Pre-market scan produced documented SKIPs on DELL (chase risk after +10%+ AH beat), MDB ("good print, bad reaction" falling knife at -8% AH), and immediate energy entry despite WTI bouncing $90→$97 on renewed Persian Gulf hostility headlines (Friday-into-weekend Mid-East news = wrong day to commit). Energy reactivated to active watchlist for Monday force-decision. VIX 16.29 calm; PCE already digested (softer-than-cons across the board). **Trades this week: 2/3** — one slot held in reserve, correctly. Daytrade count 1 in rolling 5-day window. Closes the week at -0.12% phase (first negative reading post-ARM stop). Weekly review routine will run separately. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand; if WTI holds >$95, force a written add-or-skip on OXY/XLE.
