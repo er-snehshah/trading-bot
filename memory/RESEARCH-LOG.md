@@ -547,3 +547,52 @@ TRADE or HOLD (default HOLD if no clear edge)
 **SKIP DELL** (wide spread).
 
 Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
+
+
+---
+
+## 2026-05-29 — Pre-market Research (Friday — clean slate, 100% cash)
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $199,767.96
+- Daytrade count: 1 | PDT: false | Positions: 0 | Open orders: 0
+- Last equity: $99,883.98 (flat — no holdings to mark)
+- **Trades this week: 2/3** (NVDA close + ARM round-trip yesterday); 1 slot remaining
+
+### Market Context
+- **WTI ~$97.63** (FRED, 5/26 last print); intraday Schwab notes WTI **rising** on **renewed Persian Gulf hostilities** — meaningful bounce from $90.49 low Thu. Brent: stale ($106.52 May 6). **Energy thesis potentially reactivating** after two-week decay.
+- **ESM26: ~7,576** (Investing.com 5/29 print, ‑0.13%) — modestly soft after eight straight up sessions; tape extended near record highs (S&P closed April 7,209 ATH).
+- **VIX: 16.29** (YCharts), -4.23% vs prior day — calm regime, no fear premium.
+- Today's catalysts (light Friday — Schwab: *"May 29: No major data or earnings expected"*):
+  - **Econ:** Advance Economic Indicators 8:30am, Jobless Claims, Fed Hammack 12:55pm — mid-tier reads (PCE printed yesterday, already digested)
+  - **Earnings:** none of consequence pre-open; post-close yesterday saw DELL/COST/MDB
+- **AMC earnings reactions (last night):**
+  - **DELL:** massive beat (rev $43.8B vs $35.4B est) → AH rally, AI server demand confirmed
+  - **COST:** EPS $4.93 in-line, rev beat ~$1B → soft AH despite beat
+  - **MDB:** beat EPS/rev but guide in-line → **-8% AH**
+  - **SNOW:** earlier beat + AWS expansion → strong follow-through
+- **Sector momentum (refresh):** XLE Energy + XLI Industrials = **Leading**; XLK Tech + XLF Financials = **Lagging**. Consistent multi-day read. Energy bid back on Gulf hostility headlines may be the cleanest emerging setup.
+
+### Trade Ideas (new framework: +7% target / -4% hard stop)
+
+1. **DELL — DOCUMENTED SKIP (chase risk).** Huge beat is real (AI server demand thesis confirmed), but entering after a +10%+ AH gap = chasing into strength, identical setup to ARM yesterday (PCE bid → entered after the move → stopped on the fade). Same-day stop-out scar tissue is fresh. **Pass.** Reconsider only if it bases for 2-3 sessions and offers a clean breakout entry.
+
+2. **Energy (OXY / XLE) — REACTIVATING WATCHLIST (no entry today).** WTI bounce $90→$97 (+8%) + Schwab citing "renewed Persian Gulf hostilities" = the thesis that died two weeks ago is showing signs of life. **But:**
+   - Friday + weekend gap risk into Middle East news cycle = wrong day to initiate
+   - Need to see at least one more session of confirmation (price + flow) before committing 20% capital
+   - **Decision:** put OXY and XLE back on active watchlist; force a written add-or-skip on **Monday** if WTI holds >$95.
+
+3. **MDB -8% AH "good print, bad reaction" — SKIP.** Same trap pattern as NVDA post-print fade; chasing a falling knife on guide-in-line is not edge. Pass.
+
+4. **No trade today.** Trades-this-week is 2/3, leaving one slot. Burning it on a Friday-into-weekend entry with no clean catalyst = wrong asymmetry. Save the slot for Monday if energy confirms or a clean setup emerges.
+
+### Risk Factors
+- **Revenge-trade risk** after yesterday's ARM -3.09% stop-out is the #1 behavioral risk today. The body is itching to "make it back" — that is precisely the wrong reason to size. Patience.
+- **Friday + weekend gap risk** on any fresh entry — Mid-East headlines move oil and stocks overnight; no stop fills outside RTH.
+- **Daytrade count 1 of 3** in rolling 5-day window — sub-$25k account discipline; another same-day round-trip is still possible but uses up PDT budget unnecessarily.
+- **Trade slot scarcity:** 1 of 3 weekly trades left. Spending it on a low-conviction Friday setup leaves zero ammunition for Mon-Wed if a real catalyst arises.
+- **Tape extended:** SPX near ATH with ES futures finally rolling -0.13% after 8 up days; a small mean-revert session is more likely than a breakout.
+- **100% cash, 0% deployed** — Rule #2 deployment-scan triggered; this entry **is** the documented scan, and the documented answer is "no qualifying setup today, monitor energy into Monday."
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved. Documented SKIP on DELL (chase), MDB (falling knife), and immediate energy entry (Friday/weekend gap risk into Gulf news). Energy reactivated to active watchlist for Monday force-decision; OXY and XLE are the clean expressions if WTI holds >$95 over the weekend. Trades this week: 2/3 — one slot held in reserve. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand.
