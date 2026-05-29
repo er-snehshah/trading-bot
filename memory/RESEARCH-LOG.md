@@ -551,6 +551,58 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ---
 
+## 2026-05-29 — Pre-market Research (Friday — Session 2, 100% cash, post-ARM stop-out)
+
+> **API NOTE:** Alpaca API returned 403 `host_not_allowed` (remote container IP not in allowlist) — live account state unavailable. Using last-known from trade log. Perplexity also 403 — fell back to WebSearch for all research queries.
+
+### Account (last-known — cannot verify live)
+- **Equity:** ~$99,884 | **Cash:** ~$99,884 (100%) | **Deployed:** 0%
+- **Daytrade count:** 1 | **PDT:** false | **Positions:** 0 | **Open orders:** 0
+- **Trades this week:** 2/3 (NVDA close + ARM round-trip May 28) — **1 slot remaining**
+
+### Market Context
+- **Oil:** WTI $89.53 (May 28 close) | Brent $96.57 — softer than Gulf-hostilities spike earlier cited; ceasefire still in place per news, ongoing Iran negotiations
+- **ES Futures:** ESM26 ~7,585 (+0.33% pre-market) — S&P Equal Weight and DJIA hitting fresh ATH
+- **VIX:** 15.74 (-3.38%) — calm regime, very low fear; 52-wk range 13.38–35.30
+- **Today's data (Friday):** Advanced Trade in Goods, Retail/Wholesale Inventories, Chicago PMI (all mid-tier); PCE already printed yesterday (digested) — no major macro pivot today
+- **PMI read (May):** Manufacturing PMI 55.3 (highest since May 2022, beat 53.8) — BULLISH for industrials; BUT prices paid 79.5 (highest since Jun 2022) — input cost inflation risk
+- **UMich Sentiment:** 44.8 (3rd straight miss, vs 48.0 est) — consumer unease on cost of living
+- **Geopolitics:** US/Iran exchanged fire overnight but ceasefire holding; S&P holding at ATH despite event risk
+- **ARM (held yesterday, stopped out):** Trading ~$335.27 pre-market (effectively flat from our $335.38 stop-out fill). Snowflake $6B AWS deal (Graviton/ARM royalty catalyst), Mizuho raised target $290→$360. Thesis intact; timing was the problem.
+- **Sector momentum:** Healthcare, Communication Services, Industrials leading May 2026 YTD; XLK (Tech) lagging per rotation read
+
+### Trade Ideas
+
+1. **ARM re-entry — SKIP (revenge-trade risk, 0% confirmation day).**
+   - ARM ~$335 = same price we just exited. Thesis valid (Mizuho $360 target, Snowflake/AWS catalyst), but entering the same day we were stopped out at this exact level is textbook revenge-trade. No incremental confirmation. Pass. Revisit Monday if ARM holds $335 and shows accumulation.
+
+2. **XLI Industrials (CAT / XLI ETF) — WATCHLIST, no entry today.**
+   - PMI 55.3 (4-yr high) is a genuine XLI catalyst. Manufacturing expansion is real. BUT prices-paid 79.5 = margin compression risk. Friday tape + no specific company-level catalyst = wrong day to size. **Force decision Monday** with specific ticker and entry level.
+   - If CAT or DE breaks out on volume pre-open Monday → actionable with +7%/−4% structure.
+
+3. **Energy (OXY/XLE) — DOWNGRADED back to passive watchlist.**
+   - WTI $89.53 (vs $97 reading from earlier data) — Gulf ceasefire holding, Iran negotiations ongoing; oil can't sustain the spike. Energy thesis needs WTI to hold >$92 before capital commitment. Pass.
+
+### Risk Factors
+- **Behavioral:** 1 weekly trade slot remaining + ARM stop-out scar = prime revenge-trade setup. This is the #1 risk today.
+- **Geopolitics:** Iran talks could break down over weekend → Monday gap risk in either direction
+- **Inflation:** Prices-paid PMI 79.5 is a hot number — could reignite rate-hike fears if it shows in PCE follow-through
+- **Tape extended:** SPX near ATH after 8+ consecutive up sessions; Friday mean-reversion is more likely than breakout
+- **Daytrade budget:** 1 of 3 used in rolling 5-day window — remain disciplined, don't burn on low-conviction setup
+- **Alpaca API blocked:** Remote container IP not on allowlist; cannot verify live account state or place orders this session. Monitor from local machine.
+
+### Decision
+**HOLD.** Patience > activity. No qualifying setup today:
+- ARM = revenge-trade trap at same exit level
+- XLI = right sector, wrong entry (no company catalyst, Friday tape)
+- Energy = thesis weakened ($89 WTI, ceasefire holding)
+
+1 trade slot held in reserve for Mon–Wed. **Monday force-decision:** ARM support confirmation OR XLI breakout with specific catalyst. Weekend geopolitical developments (Iran) will inform energy re-assessment.
+
+**Next action:** Fix Alpaca API allowlist (add remote container IP or run workflows locally). Mon pre-market: XLI specific ticker setup + ARM $335 support check.
+
+---
+
 ## 2026-05-29 — Pre-market Research (Friday — clean slate, 100% cash)
 
 ### Account
