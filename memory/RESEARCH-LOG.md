@@ -596,3 +596,57 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIP on DELL (chase), MDB (falling knife), and immediate energy entry (Friday/weekend gap risk into Gulf news). Energy reactivated to active watchlist for Monday force-decision; OXY and XLE are the clean expressions if WTI holds >$95 over the weekend. Trades this week: 2/3 — one slot held in reserve. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand.
+
+---
+
+## 2026-05-30 — Pre-market Research (Saturday — preparing for Monday June 1 open)
+
+> **API note:** Alpaca and Perplexity both returned 403 (host not in allowlist from remote container). Account state from trade log; market data via WebSearch fallback.
+
+### Account (last known — May 29 EOD)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Positions: 0 | Open orders: 0 | Daytrade count (rolling 5-day): 1 (ARM May 28)
+- **Weekly trades: 0/3 (new week Jun 1–5)**
+- Phase P&L: -$116.02 (-0.12% vs $100k baseline)
+
+### Market Context
+- **WTI: $87.51** (-1.57% Fri); **Brent: $91.37** (-1.43% Fri) — Oil -20% from 2026 highs, worst month since COVID; Iran ceasefire MOU "mostly agreed," awaits Trump sign-off. Strait of Hormuz reopening thesis driving selling.
+- **ES Futures: ~7,595** (range 7,573–7,612 Saturday); 9th straight week of S&P gains; market near ATH.
+- **VIX: 15.74** (May 29 close) — calm regime, no fear premium.
+- **Key catalyst — DELL earnings (May 29 AMC):** Revenue +88% YoY; AI server rev +757% YoY to $16.1B; FY27 AI server guidance raised to $60B. DELL +32.9% Friday ($317 → $421.51) — best day ever. SMCI sympathy +16% to ~$48. VRT essentially flat (~$312).
+- **Sector momentum (updated):**
+  - Leading: Materials (XLB) +22% YTD, Industrials (XLI), Energy (XLE) nominally leading YTD but -2% Q2, whipsawed by Iran.
+  - Lagging: Tech (XLK), Comms (XLC), Financials (XLF), Consumer Discretionary.
+- **Jun 1 econ calendar:** ISM Manufacturing PMI (10am ET) — first major read of June; no PCE or CPI due.
+
+### Energy Thesis — Force Decision (from May 29 log)
+**SKIP OXY and XLE.** Force-decision threshold was "WTI holds >$95 over the weekend." WTI closed $87.51 — $7.50 below threshold. Iran ceasefire deal is the catalyst that killed the thesis. Energy reactivation **cancelled**. Do not re-enter until WTI stabilizes with a new confirmed catalyst.
+
+### Trade Ideas
+
+**1. VRT (Vertiv Holdings) — CONDITIONAL BUY Monday if ≤5% above $312**
+- **Catalyst:** DELL AI server rev +757% YoY; guidance raised to $60B FY27. Vertiv makes thermal/power distribution for AI data centers — direct demand pull. VRT was flat Friday while DELL +33% and SMCI +16% = potential lagged read-through as weekend analysis catches up.
+- **Sector:** XLI Industrials — leading per strategy. Fits buy-side gate.
+- **Entry gate:** Only enter if Monday open ≤ $327.60 (<5% from $312 Friday close). If VRT gaps >5% pre-market → **skip** (entry-day move filter).
+- **Entry:** Market buy Monday open if gate clears (~$312–$327)
+- **Size:** floor($99,884 × 0.20 / $312) = **64 shares** (~$19,968, 20% of equity)
+- **Take profit:** $312 × 1.07 = **$333.84** (limit GTC immediately after fill)
+- **Stop loss:** $312 × 0.96 = **$299.52** (stop GTC immediately after fill)
+- **R:R:** $21.84 gain / $12.48 loss = **1.75:1** ✓
+
+**2. DELL — SKIP** (opens Monday ~$421 after +33% Friday; entry-day move filter clearly violated)
+
+**3. SMCI — SKIP** (+16% Friday sympathy; chase; wait for pullback and base)
+
+### Risk Factors
+- **VRT gap risk:** Weekend AI/DELL analysis may push VRT >5% pre-market → entry-day move filter triggers → skip. Check pre-market quote before placing order.
+- **Iran deal resolution:** If Trump signs Monday morning, another oil leg down + defensive rotation possible. Unlikely to affect XLI directly but watch tape tone.
+- **Tape extended:** 9th straight up week, SPX near ATH. ISM Manufacturing miss = broad profit-taking risk.
+- **Daytrade budget:** 1/3 used (ARM May 28, rolling window). No constraint for Monday.
+
+### Decision
+**CONDITIONAL TRADE — VRT on Monday if pre-market price ≤ $327.60 (<5% above $312 Friday close).**
+- If VRT gaps >5% → HOLD, 100% cash, no trade.
+- At fill: place limit GTC at $333.84 (+7%) and stop GTC at $299.52 (-4%) immediately.
+- All other candidates SKIP: DELL (extreme chase), SMCI (sympathy run), OXY/XLE (energy thesis dead — WTI $87.51 < $95 threshold).
+- **Trades this week after VRT: 1/3.** Two slots preserved for higher-conviction setups.
