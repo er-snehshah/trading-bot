@@ -596,3 +596,64 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIP on DELL (chase), MDB (falling knife), and immediate energy entry (Friday/weekend gap risk into Gulf news). Energy reactivated to active watchlist for Monday force-decision; OXY and XLE are the clean expressions if WTI holds >$95 over the weekend. Trades this week: 2/3 — one slot held in reserve. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand.
+
+
+---
+
+## 2026-05-31 — Pre-market Research (Sunday — new week, 100% cash)
+
+> **API NOTE:** Alpaca and Perplexity both blocked (`x-deny-reason: host_not_allowed` — cloud container IP not in allowlist). Account snapshot from last-known May 29 EOD. Market research via WebSearch fallback (all queries noted below).
+
+### Account (last known — May 29 EOD)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $199,767.96
+- Positions: 0 | Open orders: 0 | Daytrade count: 1 (rolling 5-day)
+- **Trades this week: 0/3** (new week — June 1 resets the counter; prior week closed at 2/3)
+
+### Market Context
+- **WTI: ~$87.20** (-2% today, **-17% in May**) — US–Iran preliminary ceasefire + Strait of Hormuz reopening has crushed the geopolitical oil premium. Well below the $95 force-decision threshold. **Energy thesis DEAD.** OXY force-decision from Friday = SKIP.
+- **Brent: ~$91.12** (May 29 close, down 1.70% d/d); also in hard decline.
+- **ES (S&P 500 futures): ~7,595** (range 7,572–7,611 today). S&P closed at record high Friday: SPX +0.22%, DJIA +0.72%, NDX +0.36%. Tape extended but not cracking.
+- **VIX: ~16.33** (May 29, -4%) — calm regime, no fear premium.
+- **Monday June 1 economic releases:**
+  - **ISM Manufacturing PMI 10am ET** — April print was 52.7% (expansion, slight miss vs 53.0 cons); May read the key intraday catalyst of the day.
+  - No major Fed speakers, no CPI/PPI/FOMC.
+- **Key earnings (May 29 AMC reaction carrying into June 1 open):**
+  - **DELL: +32% Friday** (record single-day gain, up 234% YTD) — revenue $43.84B (+88% YoY), AI server revenue $16.1B, backlog $51.3B, FY27 guide raised to $165–169B. JPM raised PT to $500.
+  - **CRDO (Credo Technology): reports AMC June 1** — Q4 FY26; consensus: $1.03 EPS (+194% YoY), $430M revenue (+153%). 4-quarter avg beat = 31.6%. AI active electrical cables / hyperscaler connectivity. **Watch for June 2 reaction.**
+  - **HPE and SAIC**: also report June 1, less catalyst-rich.
+- **Sector momentum (refreshed):**
+  - XLE Energy: +27.47% YTD but reversing HARD on oil crash → INACTIVE until WTI reclaims $95
+  - XLK Tech: leading YTD (AI hardware cycle intact; DELL confirms demand)
+  - XLI Industrials: +10.4% YTD, ISM PMI-sensitive on June 1
+
+### Trade Ideas
+
+1. **CRDO — WATCHLIST only (no entry today; watch June 2)**
+   - Catalyst: Q4 FY26 AMC earnings tonight — expected blowout (+194% EPS, +153% rev, 4Q avg +31.6% surprise). Hyperscaler AI connectivity demand read-through.
+   - Do NOT enter ahead of binary event tonight. If it gaps +5–15% at open June 2 and consolidates (intraday move filter), assess a Day 2 entry.
+   - Entry zone: post-gap consolidation Day 2 (June 2); skip if already up >5% at open
+   - Stop: entry × 0.96 | Target: entry × 1.07 | R:R: 1.75:1
+   - Risk: beat already priced into recent run; high-multiple growth stock fades like NVDA post-print possible.
+
+2. **XLI (Industrials) / HON or CAT — conditional on ISM beat 10am June 1**
+   - Catalyst: ISM Manufacturing PMI June 1 10am ET. If print >53 (vs 52.7 April), sector bid likely in leading industrials.
+   - Entry: only if a leading XLI name (HON / CAT / GE Aerospace) breaks prior-day high on confirming volume within 30 min of the 10am ISM release
+   - Stop: entry × 0.96 | Target: entry × 1.07 | R:R: 1.75:1
+   - Risk: PMI miss reverses the thesis; tariff-sensitive names carry global demand risk.
+
+3. **DELL — DOCUMENTED SKIP (chase risk)**
+   - +32% Friday, +234% YTD. Identical dynamic to ARM on May 28 (chasing strength, asymmetry already exhausted). Pass. Re-evaluate only if it bases 2-3 sessions below $300 or wherever the next clean consolidation forms.
+
+4. **OXY / XLE — FORCE-DECISION = SKIP**
+   - Friday threshold: "if WTI holds >$95." WTI now $87 (-17% in May, US–Iran deal). Thesis dead. Remove from active watchlist; reactivate only on WTI reclaim of $95 with fresh catalyst.
+
+### Risk Factors
+- **Oil crash collateral damage:** Energy sector and commodity-sensitive industrials face headwinds if WTI continues to decline.
+- **Record-high tape:** SPX at ATH with a 17% monthly oil crash suggests divergence; macro cross-currents elevated.
+- **CRDO binary tonight:** entering before or immediately after a large earnings gap violates the intraday-move filter. Must wait for Day 2 setup.
+- **ISM PMI risk:** a miss (<50) would flip manufacturing back into contraction — potential broad sell-off in cyclicals.
+- **Daytrade budget:** 1 used in rolling 5-day (ARM May 28). 2 remaining; guard carefully on June 2 if CRDO and ISM both set up same day.
+- **0% deployed, deployment scan required:** Rule #2 triggered again. This scan documents the answer: no qualifying setup Monday open; conditional setups exist for June 1 (ISM beat → XLI) and June 2 (CRDO Day 2 reaction).
+
+### Decision
+**HOLD for Monday open.** Patience > activity. Energy thesis dead (WTI $87, force-decision = skip OXY/XLE). DELL is a chase. CRDO is AMC-binary tonight — watch for June 2 Day 2 setup. ISM PMI at 10am is the only intraday catalyst worth tracking; conditional XLI entry only on a clean beat + confirming volume breakout. **Trades this week: 0/3 — all 3 slots preserved.** Next decision: June 1 10am ISM print + CRDO AMC reaction tonight.
