@@ -653,3 +653,57 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Energy force-decision = documented SKIP (WTI $89.75 below $95 trigger). No qualifying Buy-Side Gate pass in the universe today. CRDO on passive watchlist for Tuesday post-print only. Trades this week: 0/3 — all three slots intact heading into NFP Friday. Next decision point: Tuesday pre-market with CRDO/HPE prints + JOLTS + ISM Services in hand; re-check WTI for >$95 close as energy re-trigger.
+
+
+---
+
+## 2026-06-01 — Pre-market Research (refresh — US-Iran escalation + Computex)
+
+*Perplexity 403 → WebSearch fallback. Alpaca API 403 — account state unverifiable; using last known values.*
+
+### Account (last known — Alpaca API unavailable)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Daytrade count: 1 (rolling 5-day) | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** (fresh weekly counter)
+
+### Market Context
+- **WTI: ~$90.63 (+3.74%)** | **Brent: ~$94.15 (+3.33%)** — surge driven by **US-Iran fresh military strikes**: US bombed Iranian command-and-control sites after Iran shot down US drone over the weekend; Iran vowing retaliation; Hormuz risk fully back on the table. Geopolitical premium re-ignited.
+- **S&P 500 futures: +0.3%** (Nasdaq +0.5%, Dow/Russell +0.1%) — markets bid despite escalation; AI optimism offsetting geopolitical risk
+- **VIX: ~15.32** (May 29 close, -2.67%) — calm regime; no fear premium despite military strikes
+- **NVDA: +2.3% premarket** — Jensen Huang GTC Taipei keynote at Computex: (1) RTX Spark all-in-one Windows-on-Arm chip with MediaTek + Microsoft; (2) Vera Rubin AI DC chips entered **"full production"**; (3) DELL delivered Vera Rubin NVL72 racks to CoreWeave; (4) Spectrum-X Ethernet fabric for AI. NVDA + MSFT +2.3% premarket.
+- **Earnings BMO today:** SAIC ($2.28e) — light; no mega-cap. **CRDO AMC tonight**: Q4 FY26, EPS $1.03e (+194% YoY), rev $433M (+155% YoY), 4-qtr avg beat surprise +31.6%. **HPE AMC tonight**: Q2 FY26, rev $9.82B est (+29% YoY), EPS $0.54e (+42% YoY).
+- **Economic calendar:** ISM Manufacturing PMI 10am ET (May data; prior 52.7 expansion — new orders growing, employment 46.4 still contracting); Construction Spending 10am ET. Week ahead: ISM Services/JOLTS Tue, ADP Wed, Claims Thu, **NFP Friday** (THE macro pivot; prior +115k weak trend).
+- **DELL: +3% premarket** on new XPS/AI laptop launches (RTX Spark partnership with NVDA).
+- **RVMD: +16% premarket** — Daraxonrasib pancreatic cancer phase data. (Biotech/XLV; not in strategy universe.)
+- **OXY: ~$56.55–56.67** | **XLE: ~$56.29–56.67** premarket.
+- **Sector momentum:** XLE + XLI + XLB + XLP = Leading; XLK + XLC + XLY + XLF = Lagging per last read. Note: NVDA Computex + fresh Hormuz risk may be shifting near-term leadership back toward both tech and energy simultaneously.
+
+### Energy Force-Decision (refresh — new catalyst)
+- **Prior threshold:** WTI close >$95 → re-test add-or-skip.
+- **Actual:** WTI $90.63 (+3.74%); **still below $95 threshold**. However, the catalyst is qualitatively new — direct US military strikes on Iranian infrastructure (not just "Gulf tension headlines"). Negotiations ongoing (Hegseth "good place," ceasefire talks), which is the primary reversal risk.
+- **Decision: CONDITIONAL WATCHLIST.** Do not enter pre-market. If WTI confirms >$92 at cash open and holds intraday, assess OXY entry live with updated quote. If WTI reverses on ceasefire headline, skip entirely. Thesis re-armed but not yet triggered.
+  - OXY entry math (indicative): ~$56.67 ask | 352 sh | TP $60.64 (+7%) | SL $54.40 (-4%) | R:R 1.75:1
+
+### Trade Ideas
+
+1. **CRDO (tomorrow — AMC tonight)** — PRIORITY watchlist. Q4 FY26 AMC tonight. Revenue +154.8% YoY consensus, 4-qtr avg beat +31.6%. AI-infra connectivity (high-speed DC links). If beat + raise + clean open tomorrow (≤5% gap), force add-or-skip Tuesday pre-market. Do NOT enter today ahead of binary. Entry math tomorrow: check ask at open, floor(99,884 × 0.20 / ask) shares, TP = ask × 1.07, SL = ask × 0.96.
+
+2. **OXY (conditional today)** — Energy re-trigger on genuine US-Iran military escalation. WTI $90.63 vs $95 threshold — below rule, but catalyst is real. Entry only if: (a) WTI holds above $92 at cash open, (b) OXY is ≤5% up from prior close, (c) live quote confirms tight spread. Ceasefire-deal headlines remain the #1 reversal risk; trail at -4% handles exit if thesis breaks.
+
+3. **NVDA (watchlist — cautious)** — Computex Vera Rubin "full production" + RTX Spark are genuine positive catalysts, +2.3% premarket. BUT: XLK still in lagging quadrant; ARM stop-out scar (same setup — strong catalyst + bought into the move → stopped out). Only consider if NVDA breaks above premarket high on volume with clean structure; intraday move filter applies (if already >5% up from prior ~$215, skip).
+
+### Risk Factors
+- **Ceasefire whipsaw:** Pete Hegseth "productive talks" → a deal headline reverses oil -5-10% instantly; OXY/XLE would gap down through stop
+- **NFP Friday:** jobs data in 4 days (prior +115k, weak) — any new position must survive a potential shock Friday AM
+- **Alpaca API 403:** cannot verify account state, positions, or place orders programmatically. **MANUAL verification required before any trade.**
+- **VIX paradox:** 15.32 calm despite active military strikes = complacency risk; surprise escalation (missile/drone attack on tanker) hits harder from low VIX
+- **ISM Manufacturing 10am:** a miss (below 50 = contraction) could reverse the morning bid quickly
+- **AI follow-on trap:** NVDA premarket pop on keynote; ARM showed catalyst already in price → bought and stopped same day
+
+### Decision
+**HOLD** (with two active watch setups for potential same-day entry).
+- CRDO: force add-or-skip **Tuesday June 2** pre-market after tonight's print. This is the cleanest AI-infra setup of the week.
+- OXY: conditional entry at cash open only if WTI holds >$92 and OXY is ≤5% from prior close. Needs manual Alpaca verification first.
+- NVDA: watchlist only; skip unless >5% premarket filter doesn't trigger and XLK rotation status improves.
+- Trades this week: 0/3 — all slots intact.
+- **URGENT: Alpaca API 403 blocks all order placement. Resolve before attempting any trade.**
