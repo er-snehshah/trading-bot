@@ -596,3 +596,60 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIP on DELL (chase), MDB (falling knife), and immediate energy entry (Friday/weekend gap risk into Gulf news). Energy reactivated to active watchlist for Monday force-decision; OXY and XLE are the clean expressions if WTI holds >$95 over the weekend. Trades this week: 2/3 — one slot held in reserve. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand.
+
+
+---
+
+## 2026-06-01 — Pre-market Research (Monday — clean slate, 100% cash; energy force-decision day)
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $199,767.96
+- Daytrade count: 1 (rolling 5d) | PDT: false | Positions: 0 | Open orders: 0
+- Last equity: $99,883.98 (flat — no holdings)
+- **Trades this week: 0/3** (fresh weekly counter)
+
+### Market Context
+- **WTI ~$89.75** (Twelve Data spot snapshot 6/1) — *DID NOT HOLD >$95 over the weekend.* Friday's $97 print was a headline-driven spike that bled out; Daily Forex calling $100 pivot / $85 support; Polymarket centered $86–89 range; Iran tentative-deal talk has softened the geopolitical premium. **Weekend Gulf bid faded.**
+- **Brent ~$92–96** (TradingEconomics 5/28 ref; no clean live print) — softer alongside WTI
+- **ESM26: ~7,590.75 -0.07%** premarket (Markets Insider) — modestly soft after last week's grind to ATHs; June seasonality ~+0.6% avg, 64% positive
+- **VIX: 15.74 last** (FRED 5/28 close, -4.23% trend) — calm regime, no fear premium
+- Today's catalysts:
+  - **ISM Manufacturing PMI 10am ET** — key reads: prices paid (inflation), new orders (demand), employment (prior 46.4 = contracting). The day's only macro print.
+  - **Earnings BMO:** SAIC ($2.28e), CRDO ($1.02e — AI infra adjacent), HPE ($0.53e — AMC actually), VSCO, SIG — no mega-cap movers
+- **Week ahead macro:**
+  - Tue: ISM Services PMI 10am, JOLTS 10am
+  - Wed/Thu: ADP, Initial Claims
+  - **Fri: Nonfarm Payrolls** — THE pivot of the week (prior +115k, weak trend)
+- **AMC last week recap:** DELL massive beat (rev $43.8B), COST in-line, MDB -8% on guide; AI-infra demand still confirming.
+- **Sector momentum:** XLE + XLI + XLB + XLP = **Leading** | XLK + XLC + XLY + XLF = **Lagging** | XLV Weakening | XLRE/XLU Improving. Energy still YTD leader (+26% through March) but momentum has cooled with oil pullback.
+
+### Force-Decision: Energy (OXY / XLE) — per Friday's flag
+- **Trigger condition:** WTI holds >$95 over the weekend → force written add-or-skip.
+- **Actual:** WTI at ~$89.75 this morning, well **below** the $95 threshold. The Gulf-hostility bid that pushed WTI $90→$97 last Friday did not hold; Iran-deal talk + Israel/Lebanon headlines have cross-cancelled.
+- **Decision: DOCUMENTED SKIP on OXY/XLE entry today.**
+  - Condition failed; thesis trigger not met
+  - Rule #9: don't force on a fading/whipsaw sector
+  - Re-arm: if WTI **closes** above $95 on any single session this week, re-test the decision
+
+### Trade Ideas
+
+1. **OXY / XLE — DOCUMENTED SKIP (energy thesis not confirmed).** WTI back below $90; force-decision condition failed. Pass.
+
+2. **CRDO (Credo Technology) — WATCHLIST ONLY, no chase.** AMC print tonight; AI infra adjacent (high-speed connectivity for AI DC). If beat + raise + clean structure with reasonable open (not >5% up on print), it's a candidate Tuesday — but only with a real catalyst confirmation, not a chase. Default: pass today; reassess Tuesday with print in hand.
+
+3. **No new entry today.** Asymmetry is wrong:
+   - 100% cash with 0% deployed (Rule #2 mandates a scan, which this entry IS — and the answer is "no qualifying setup")
+   - ISM Manufacturing 10am is mid-tier; NFP Friday is THE macro print of the week — preserve sizing flexibility
+   - June seasonality positive but modest; not enough alone to override "no specific catalyst"
+   - Buy-Side Gate fails on every name in the universe today (no documented catalyst + leading sector + intraday <5% + clean spread combo)
+
+### Risk Factors
+- **NFP Friday** is the macro pivot; entering on a Mon/Tue catalyst with binary jobs data 3-4 days out = compressed thesis time
+- **ISM Manufacturing prior 46.4 (contracting)** — a deeper miss today could spark sector rotation noise; a beat could lift XLI further
+- **Energy whipsaw risk** — every Mid-East headline moves WTI ±5%; entering OXY would be trading geopolitics, not edge
+- **AI-infra concentration trap** — CRDO/DELL/MRVL all post-print; chasing any of them stacks correlated semi exposure with no fresh catalyst
+- **Behavioral risk:** 0% deployed for 4 sessions running (since NVDA/ARM closed Thu); itch to "get back in" is real — the right answer remains "wait for a real setup," not "force one"
+- Daytrade count 1 of 3 in rolling 5-day window — PDT budget intact
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved. Energy force-decision = documented SKIP (WTI $89.75 below $95 trigger). No qualifying Buy-Side Gate pass in the universe today. CRDO on passive watchlist for Tuesday post-print only. Trades this week: 0/3 — all three slots intact heading into NFP Friday. Next decision point: Tuesday pre-market with CRDO/HPE prints + JOLTS + ISM Services in hand; re-check WTI for >$95 close as energy re-trigger.
