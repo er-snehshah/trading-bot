@@ -153,3 +153,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Quiet Friday — 100% cash all session, zero activity. Equity essentially unchanged at $99,883.98 (last_equity matched, ~3¢ of rounding). The day was the documented behavioral test after yesterday's ARM same-day stop-out: resist revenge-trading into Friday + weekend gap risk. Pre-market scan produced documented SKIPs on DELL (chase risk after +10%+ AH beat), MDB ("good print, bad reaction" falling knife at -8% AH), and immediate energy entry despite WTI bouncing $90→$97 on renewed Persian Gulf hostility headlines (Friday-into-weekend Mid-East news = wrong day to commit). Energy reactivated to active watchlist for Monday force-decision. VIX 16.29 calm; PCE already digested (softer-than-cons across the board). **Trades this week: 2/3** — one slot held in reserve, correctly. Daytrade count 1 in rolling 5-day window. Closes the week at -0.12% phase (first negative reading post-ARM stop). Weekly review routine will run separately. Next decision point: Monday 2026-06-01 pre-market with weekend Gulf headlines + WTI close in hand; if WTI holds >$95, force a written add-or-skip on OXY/XLE.
+
+
+### Jun 01 — EOD Snapshot (Monday)
+**Portfolio:** $99,883.98 | **Cash:** $99,883.98 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Quiet Monday — 100% cash all session, zero activity, equity unchanged from Friday close ($99,883.98 flat). Pre-market energy force-decision per Friday's flag = documented SKIP: WTI ~$89.75 failed the >$95 trigger, weekend Gulf-hostility bid faded on Iran-deal talk. ISM Manufacturing PMI 10am was the only macro print, no single-name catalysts BMO (CRDO/HPE AMC informational only). No Buy-Side Gate pass anywhere in the universe today. Behavioral test (4 sessions running at 0% deployed after NVDA/ARM closed Thu) held — no forced entry. **Trades this week: 0/3** — all three slots intact heading into NFP Friday. Daytrade count 1 in rolling 5-day window. Phase P&L still negative at -0.12% (first week of June opens flat from where the ARM stop left things). Next decision point: Tuesday pre-market with CRDO/HPE post-prints + JOLTS + ISM Services in hand; re-check WTI for any >$95 close as energy re-trigger.
