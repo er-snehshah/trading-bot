@@ -653,3 +653,67 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Energy force-decision = documented SKIP (WTI $89.75 below $95 trigger). No qualifying Buy-Side Gate pass in the universe today. CRDO on passive watchlist for Tuesday post-print only. Trades this week: 0/3 — all three slots intact heading into NFP Friday. Next decision point: Tuesday pre-market with CRDO/HPE prints + JOLTS + ISM Services in hand; re-check WTI for >$95 close as energy re-trigger.
+
+---
+
+### Addendum — Second Pre-market Pass (WebSearch fallback; Alpaca + Perplexity API blocked by network policy)
+
+**Data sources:** WebSearch (Perplexity API returned HTTP 403 — network policy; same for Alpaca. All data via native WebSearch. Noted as fallback per workflow instructions.)
+
+**Account snapshot (last known — Alpaca API unavailable):**
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Positions: 0 | Open orders: 0
+- Daytrade count: 1 rolling 5d | Trades this week: 0/3
+
+**Updated market context:**
+- **WTI: ~$87–89** (futures range $86.35–$89.02 today; Brent fell ~2% to $91.2 Friday on US-Iran ceasefire extension + Strait of Hormuz shipping easing — Gulf premium fading further). Well below $95 energy trigger.
+- **S&P 500 futures: +0.3%** premarket (as of 4am ET) — positive open expected; momentum continuing from May ATH run.
+- **VIX: 15.32** (May 29 close, -2.67%) — calm regime, no fear premium.
+- **ISM Manufacturing: 10am ET** — prior 52.7 (April, expansion; prior log erroneously cited 46.4 — corrected here). Consensus ~52–53. A beat lifts XLI names; a miss creates rotation noise.
+
+**NEW CATALYST — NVDA Computex / GTC Taipei (June 1):**
+Jensen Huang keynote delivered overnight (Taipei time = Sunday night ET). Major announcements:
+- **Vera Rubin AI platform (VR200):** Next-gen DC chip rack; mass production H2; early customers: Anthropic, OpenAI, xAI/SpaceX, Dell, Oracle, CoreWeave.
+- **RTX Spark PC chip:** N1X CPU (co-developed with Microsoft + MediaTek ARM); integrated Blackwell GPU; 128GB unified memory; debuting fall on PCs from Dell, HP, ASUS, Lenovo, MSI.
+- **Agentic AI era declared.** Huang positions NVDA as "infrastructure company."
+- Market reaction: NVDA set for strong open; DELL +3% premarket on RTX Spark partnership.
+
+**CRDO (Credo Technology):** Reports Q4 earnings **after close tonight** (confirmed AMC). Consensus: EPS $1.03, rev $431.8M. AI-infra connectivity play. Evaluate Tuesday pre-market only — no pre-print entry.
+
+**Sector momentum (confirmed):** XLI + XLB + XLP + XLE = **Leading** | XLK + XLC + XLY + XLF = **Lagging** | XLV Weakening | XLRE/XLU Improving.
+
+### Updated Trade Idea Analysis
+
+**1. NVDA — DOCUMENTED SKIP (sector gate + chase risk)**
+- Catalyst: Computex product launches (Vera Rubin, RTX Spark) — genuine, specific ✓
+- BUT sector XLK = **Lagging** → gate fail per Rule #7
+- AND NVDA likely opens >5% from prior close (~$211–214 May 31 close) on overnight news → intraday filter triggers; ARM precedent shows same-day catalyst entries at >5% carry high reversal risk (-3.09% realized May 28)
+- Decision: documented skip. If XLK rotates to Leading, re-evaluate with a fresh entry at a clean level.
+
+**2. CRWV (CoreWeave) — DOCUMENTED SKIP (sector gate)**
+- Catalyst: Vera Rubin early customer confirmed at Computex ✓; stock up ~2.5% ($106.86→$109.53)
+- BUT sector XLK = **Lagging** → same gate fail
+- 52-week range $63.80–$187.00 = extreme volatility; no defined structure for clean entry
+- Skip.
+
+**3. XLI names on ISM beat — WATCHLIST ONLY (pre-market; print unknown)**
+- Macro catalyst: ISM Manufacturing 10am ET. If >52.7 print = beat → XLI justification.
+- Candidates if beat: CAT, ETN, GE (aerospace), HON — evaluate intraday after print.
+- Pre-market gate: catalyst not yet confirmed (unknown ISM direction). Do NOT enter ahead of print.
+- If ISM beats at 10am: force a written intraday entry decision within 10 minutes of print.
+
+**4. Energy (OXY/XLE) — SKIP (condition not met)**
+- WTI $87–89, well below $95 force-trigger. Persian Gulf ceasefire extension softening geopolitical premium. Re-arm if WTI closes >$95 any session.
+
+### Risk Factors (updated)
+- **NFP Friday Jun 5** is THE macro pivot of the week (prior +115k, weak trend); limits thesis time for any Mon/Tue entry
+- **ISM 10am today** — unknown direction; trading ahead is speculation
+- **NVDA Computex already priced:** keynote happened overnight; open gap likely fully bakes in the news (ARM lesson)
+- **XLK Lagging gate** blocks the two clearest catalysts (NVDA, CRWV); no leading-sector name has a specific catalyst today pre-print
+- **Behavioral risk:** 0% deployed 4+ sessions; urgency to deploy is real but "patience > activity" holds
+- Daytrade count 1/3 rolling 5d — budget intact
+
+### Decision (updated)
+**HOLD pre-market.** No leading-sector name clears all Buy-Side Gate conditions before the open. Two event flags:
+1. **10:00am ET — ISM Manufacturing:** if beat (>52.7), execute written XLI entry scan within 10 minutes; top candidates CAT / ETN / GE.
+2. **Tonight AMC — CRDO print:** if beat + guide, evaluate Tuesday pre-market entry (still subject to sector gate at time of evaluation).
+Trades this week: 0/3. All slots preserved heading into NFP Friday.
