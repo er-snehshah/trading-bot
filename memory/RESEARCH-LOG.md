@@ -717,3 +717,52 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIPs: CRDO (Rule #10 chase + ARM pattern), energy (WTI $87.76 fails $95 re-trigger), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact. Next decision point: Wednesday pre-market with JOLTS print + CRDO Day-2 structure + WTI mark in hand; if CRDO bases cleanly Day 1, reassess; if WTI closes >$95, re-trigger energy force-decision.
+
+---
+
+### 2026-06-02 — UPDATE (pre-open, ~9:00am ET) — Iran War / Oil Surge / New Catalysts
+*(Alpaca API blocked — host not in allowlist; account state from Jun 1 EOD log. Perplexity blocked same reason. All research via WebSearch fallback.)*
+
+**Account (from log — API unreachable):**
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Positions: 0 | Orders: 0
+- Daytrade count: 1 (rolling 5d) | Trades this week: 0/3
+
+**Material changes since original entry above:**
+
+#### Macro / Oil — CRITICAL UPDATE
+- **Iran War context (ongoing since 2026-02-28):** US/Israel conducted coordinated airstrikes on Iran; Iran closed Strait of Hormuz → largest oil supply disruption since 1970s. Strait traffic now ~10% of pre-war levels. Two-week provisional ceasefire announced 2026-04-08; Strait reopened then closed again after continued attacks. Fragile partial reopening ongoing.
+- **WTI**: ~$91.51–92.64 today (up ~5.93% Monday from $87.76 → ~$93). **Brent: $94.58** — *Brent essentially at the $95 re-trigger threshold.*
+- S&P 500 futures: **-0.07%** premarket (modest geopolitical drag)
+- VIX: **16.05** (Jun 1 close) — still calm regime
+
+#### New Catalysts Today
+- **NVDA RTX Spark (AI PC chip):** Jensen Huang unveiled ARM-based RTX Spark superchip at Computex (Taiwan) June 1. Partners: MSFT, Dell (+10%), HP, ASUS, Lenovo, MSI. NVDA up ~6% Monday. **→ SKIP: >5% intraday violates Rule #10; XLK sector lagging.**
+- **PANW AMC today:** Q3 FY26 results. Guided $2.941–2.945B revenue (+28–29% YoY), EPS $0.78–$0.80. Stock at ATH ~$271–273. NATO cyber partnership. **→ Binary event today; assess Wednesday. XLK lagging disqualifies per Rule #7 regardless.**
+- **CRDO Day 1 actual:** Opened $239.01 (gap down from pre-earnings close ~$251+, -12%+ open). Trading $234 (-0.86% intraday). AH whiplash (-12% → +25%) settled into a real gap-down open. Q1 guide disappointed despite massive Q4 beat. **→ Day 1 post-catalyst fade = Rule #11 watch. No clean structure. SKIP.**
+- **ISM Services also today** (alongside JOLTS 10am ET): Market expects slight MoM decline + very elevated prices component; services employment expected <50.
+
+#### Updated Trade Ideas
+
+1. **OXY / Energy — ELEVATED WATCH (re-trigger approaching).**
+   - WTI $91-92, Brent $94.58 — Brent at $95 threshold, WTI $2-3 below
+   - Iran war is STRUCTURAL catalyst (10% Strait traffic, largest disruption since 1970s), not a one-day headline
+   - XLE up 26–27% YTD, still leading quadrant; OXY at $58 (off 60% YTD peak high, new CEO transition)
+   - Maintaining hard trigger: WTI close **≥$95** on any session → force OXY/XLE decision
+   - If WTI closes ≥$95 today → OXY force-decision Wednesday pre-market
+
+2. **NVDA (RTX Spark) — SKIP.** +6% intraday Monday = Rule #10 violation. XLK lagging = Rule #7. Pass.
+
+3. **PANW post-print (Wednesday) — WATCHLIST.** Report AMC today. If strong beat + positive reaction tomorrow, reassess — but XLK sector lagging is a structural headwind per Rule #7. Default: likely skip even on beat.
+
+4. **CRDO Day 2–3 (Thu/Fri) — CONDITIONAL WATCHLIST.** If CRDO forms a clean base (2 sessions of declining volume + price stabilization $230–240 area), may qualify as a setup by Thu/Fri. Day 1 messy = no entry today.
+
+#### Updated Risk Factors
+- **Iran war tail risk:** Strait re-closure = WTI spike >$100+ possible; upside for energy, downside for everything else
+- **JOLTS + ISM Services double-print 10am ET:** Soft readings → "labor cracking" narrative, boosts rate-cut bets; hot → pressure on growth/tech
+- **NFP Friday** remains THE week pivot — avoid locking into a new position that expires into it
+- **PANW binary tonight:** If PANW beats huge + reacts well, creates pressure to chase tech despite XLK lagging
+- **OXY new CEO (Richard Jackson):** Hollub retired June 1; leadership transition = short-term uncertainty at OXY
+- Daytrade count 1 of 3 (rolling 5-day) — budget intact
+
+#### Updated Decision
+**HOLD.** All original SKIPs stand. Energy re-trigger upgraded from SKIP to ELEVATED WATCH given Iran war structural context and Brent $94.58. Hard trigger remains WTI ≥$95 close. If triggered → OXY force-decision Wednesday. PANW and CRDO both on watchlist but neither actionable today. Watch JOLTS + ISM 10am. Trades this week: 0/3 — all slots intact. Next decision point: Wednesday pre-market with (a) WTI close + energy trigger check, (b) PANW post-print reaction, (c) CRDO Day-2 structure, (d) JOLTS + ISM prints in hand.
