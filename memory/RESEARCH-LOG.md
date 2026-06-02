@@ -717,3 +717,81 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIPs: CRDO (Rule #10 chase + ARM pattern), energy (WTI $87.76 fails $95 re-trigger), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact. Next decision point: Wednesday pre-market with JOLTS print + CRDO Day-2 structure + WTI mark in hand; if CRDO bases cleanly Day 1, reassess; if WTI closes >$95, re-trigger energy force-decision.
+
+---
+
+## 2026-06-02 — Pre-market Research Update (Run 2 — post-BMO data)
+*(Alpaca + Perplexity network-blocked; full WebSearch fallback)*
+
+### Account (last known — Jun 01 EOD)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Positions: 0 | Open orders: 0 | Daytrade count: 1 (rolling 5d) | PDT: false
+- **Trades this week: 0/3** — all three slots intact
+
+### Market Context (updated post-BMO)
+- **WTI ~$91.51–92.64** (pulled back from ~$95 spike Monday June 1 driven by Iran/Hormuz news); **Brent ~$94.58** (-0.42%)
+- **Iran/Hormuz crisis** (ongoing since March 4, 2026): IEA calls it "largest supply disruption in history"; OPEC+ experts say disruption persists through year-end even if Strait reopens; WTI spiked 5.93% Monday on renewed Hormuz blockade threat, now pulling back
+- **S&P 500**: Jun 1 close ~7,600; futures -0.07% Tue premarket; Polymarket 48% prob opens higher today
+- **VIX: ~16.05** (Jun 1 close) — calm, no fear premium
+- **NVDA: +2.57% premarket** ($229.72 vs $223.97 Jun 1 close) on RTX Spark/N1X PC chip announcement at Computex (ARM-based, co-designed with MSFT/MediaTek; debuts fall in Dell/HP/ASUS/Lenovo/MSI laptops)
+- **ARM: +14.5% premarket** (again — second >5% move in a week; we stopped out -3.09% last week)
+- **DG (Dollar General) BMO results:**
+  - EPS: $2.00 vs $1.89 est → **BEAT +$0.11 (+5.8%)** | Rev: $10.8B vs $10.82B → slight miss
+  - Same-store sales +2.0%; operating profit +10.8% YoY; CEO cited margin expansion vs weather headwind
+  - Stock headline: "Shares Skyrocket" — expected ±8.5% swing per options; 82% beat probability was priced in; stock was already +5% from DollarTree sympathy trade last session
+- **AVGO (Broadcom)**: ~$456.50 premarket (+2.03%); reports **Wednesday June 3 AMC**; Q2 FY26 cons $22.08B rev / $2.39 EPS; AI rev expectation $5B (vs $4.1B Q1); 10/11 analysts Buy; beaten 9 consecutive quarters
+- **Today's macro:** JOLTS Apr + ISM Services both 10:00am ET
+- **Week ahead:** ADP Wed, Initial Claims Thu, **NFP Friday** (prior +115k, trend weak)
+- **Sector momentum:** XLP (Staples), XLI (Industrials), XLB (Materials), XLE (Energy) = **Leading**; XLK (Technology) = **Lagging** (despite individual AI names outperforming); XLK +32–33% YTD but capital rotating to real-economy sectors
+
+### Trade Ideas
+
+1. **DG — DOCUMENTED SKIP (Rule #10 + priced-in catalyst).**
+   - Catalyst: real EPS beat (+5.8%), margin expansion, XLP = Leading sector ✓
+   - But: stock "skyrockets" premarket → expected >5% intraday from prior close
+   - 82% beat probability was already priced; stock +5% from DollarTree sympathy pre-entry
+   - Prior quarter DG: stock -9.36% premarket even on a beat → "sell the news" risk is known
+   - Asymmetry: entering at +8% means target (+7%) requires total +15-17% from prior close — high bar
+   - **SKIP per Rule #10.** Flag: DG Day 2/3 watchlist if stock holds and sets up clean base before NFP.
+
+2. **Energy/OXY — DOCUMENTED SKIP (trigger failed, pulling back).**
+   - WTI $91–92 — **below $95 weekly close re-trigger** despite Monday spike
+   - OXY premarket: $57.86, **-2.17%** — energy PULLING BACK today
+   - Hormuz structural bullish case intact but daily momentum reversed; wrong session to enter
+   - **SKIP.** Re-arm: WTI single-session close >$95 → force-decision next morning.
+
+3. **NVDA — DOCUMENTED SKIP (Rule #7 sector).**
+   - Catalyst: real (RTX Spark/N1X at Computex, MSFT PC partnership, new TAM)
+   - Intraday move +2.57% < 5% threshold → Rule #10 passes ✓
+   - BUT: XLK = **Lagging sector** → Rule #7 hard violation
+   - Also: we closed NVDA 21-day swing May 28; re-entering same name one week later requires fresh thesis
+   - **SKIP.**
+
+4. **ARM — DOCUMENTED SKIP (Rule #10 + prior stop-out).**
+   - +14.5% premarket → Rule #10 violation (>5% intraday from prior close)
+   - Same pattern as May 28 entry (+14.33%) that stopped -3.09% same day
+   - No re-entry on ARM until 2–3 sessions of base formation
+   - **SKIP.**
+
+5. **AVGO pre-earnings — DOCUMENTED SKIP (Rule #7 + binary event).**
+   - Massive AI catalyst incoming Wednesday
+   - XLK = **Lagging sector** → Rule #7 hard violation
+   - Pre-earnings binary event risk (NFP Friday also looming = two binaries same week)
+   - **SKIP today.** Watchlist: if AVGO reports massive beat Wed and intraday move Thu is <5%, reassess Rule #7 sector classification vs. breakout strength.
+
+6. **No new entry today.** Buy-Side Gate fails on all names:
+   - DG: Rule #10; Energy: below trigger; NVDA/AVGO/ARM: Rule #7 or #10
+   - Preserve all 3 slots for NFP Friday catalyst window (Fri + next Mon)
+   - 6 consecutive sessions 0% deployed — documented. Answer remains HOLD. Patience > activity.
+
+### Risk Factors
+- **Iran/Hormuz structural**: oil disruption persists through year-end; inflation risk + supply shock
+- **ISM Services 10am**: if prices-paid component spikes → stagflationary read, pressures XLK, supports energy
+- **JOLTS weak read**: "labor cracking" narrative could spark defensive rotation
+- **AVGO Wednesday binary**: most-watched AI semi print; market will pivot direction based on AI rev guidance
+- **NFP Friday**: THE macro pivot for week — preserving all trade slots is correct
+- **Behavioral pressure**: 6 sessions 0% deployed + negative phase P&L (-0.12%) = strongest urge to force. Rules are the answer.
+- **Tape extended**: SPX at ATHs, June seasonality positive but modest; elevated mean-revert risk
+
+### Decision
+**HOLD.** Buy-Side Gate fails universe-wide. Documented SKIPs: DG (Rule #10, >5% premarket / priced-in), energy (WTI $91-92 below $95 trigger, OXY -2.17% pulling back), NVDA/AVGO (XLK Lagging — Rule #7), ARM (Rule #10 + prior stop-out pattern). **Trades this week: 0/3.** Watchlist: DG Day 2/3 base for Thu/Fri window; energy if WTI closes >$95; post-AVGO Thu if print is massive. Next decision point: Wednesday pre-market with JOLTS/ISM Services results in hand + AVGO earnings catalyst on deck.
