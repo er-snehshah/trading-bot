@@ -653,3 +653,67 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Energy force-decision = documented SKIP (WTI $89.75 below $95 trigger). No qualifying Buy-Side Gate pass in the universe today. CRDO on passive watchlist for Tuesday post-print only. Trades this week: 0/3 — all three slots intact heading into NFP Friday. Next decision point: Tuesday pre-market with CRDO/HPE prints + JOLTS + ISM Services in hand; re-check WTI for >$95 close as energy re-trigger.
+
+
+---
+
+## 2026-06-02 — Pre-market Research (Tuesday — JOLTS day, CRDO post-print)
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $199,767.96
+- Daytrade count: 1 (rolling 5d) | PDT: false | Positions: 0 | Open orders: 0
+- Last equity: $99,883.98 (flat — no holdings)
+- **Trades this week: 0/3** (all slots intact)
+
+### Market Context
+- **WTI ~$87.76** (CME CLN6 -1.28%) | **Brent ~$89.48** — *still well below the $95 energy re-trigger threshold.* Polymarket 97% on WTI closing above $85. Iran-deal talk + softer demand keeping prices capped despite intermittent Gulf headlines.
+- **ESM26: ~7,595–7,604** premarket; Mon closed +0.32% (recovered from early weakness). NQM26 +0.61% Mon close. Tape extended near ATHs into June (seasonality +0.6% avg, 64% positive).
+- **VIX: 15.32** (FRED 5/29 close) — calm regime, no fear premium; VIX Jun futures 17.95 backwardation modest
+- Today's catalysts:
+  - **JOLTS Apr data 10:00am ET** — the day's macro print (prior 6.87M openings, hires rate 3.5%, quits 2%, layoffs 1.2%)
+  - **MDT (Medtronic) BMO** — only confirmed mega-cap pre-open print today
+  - **Earnings AMC:** light docket
+- **CRDO AMC last night — MASSIVE beat:**
+  - Q4 FY26 rev **$437M** (+157% YoY, beat $432M cons) | GAAP EPS $0.88 | GAAP NI $169.1M
+  - Q1 FY27 guide **$465–475M** vs cons (well above)
+  - FY26 rev $1.34B; tripled YoY
+  - **Stock reaction: ~+25% AH after initial -12% knee-jerk** — high volatility, double-digit gap
+- **HPE AMC last night** — also reported (informational)
+- **Week macro ahead:** ISM Services Tue/Wed area, ADP Wed, Initial Claims Thu, **NFP Friday** (THE pivot — prior +115k weak trend)
+- **Sector momentum (consistent multi-day):** **Leading**: XLE, XLP, XLI, XLB. **Lagging**: XLK, XLC, XLY, XLF. **Improving**: XLRE, XLU. **Weakening**: XLV. Morningstar/Investing.com both confirm: industrials + consumer defensive + energy lead 2026, tech faltering.
+
+### Trade Ideas
+
+1. **CRDO — DOCUMENTED SKIP (chase risk, repeat of ARM pattern).**
+   - Catalyst is real: tripled revenue, massive Q1 guide raise, AI-infra confirmation
+   - But: +25% AH gap = enters at >5% intraday move from prior close → **violates Rule #10** (entry-day move filter) unless breakout itself is the catalyst with clean structure
+   - AH +25% with initial -12% whiplash = NOT clean structure
+   - Same chase asymmetry as ARM 2026-05-28 (entered +14% post-PCE → stopped -3% same day)
+   - **Pass.** If CRDO bases for 2-3 sessions, reconsider on a clean breakout entry.
+
+2. **Energy (OXY / XLE) — DOCUMENTED SKIP (trigger still failed).**
+   - WTI $87.76, Brent $89.48 — both *well below* the $95 weekly close re-trigger
+   - Gulf premium fully bled out; Iran-deal headlines dominate
+   - Rule #9: don't force on a fading sector
+   - **Pass.** Re-arm condition: WTI close >$95 on any single session.
+
+3. **MDT BMO — WATCHLIST ONLY.** Healthcare in Weakening quadrant; reaction trades aren't my edge; no clear catalyst-driven momentum read in MDT. Default pass.
+
+4. **Industrials (XLI / CAT / DE / ETN) — passive watchlist.** Leading quadrant persists. No specific single-name catalyst today → Buy-Side Gate fails. Pass; keep watching for a clean catalyst-driven breakout.
+
+5. **No new entry today.** Buy-Side Gate fails on every name in the universe:
+   - 100% cash, 0% deployed (Rule #2 scan = this entry; documented answer = no qualifying setup)
+   - JOLTS 10am is mid-tier; NFP Friday is THE macro pivot — preserve sizing flexibility 3 days out
+   - CRDO chases violate Rule #10; energy fails its re-trigger
+   - 5 sessions running at 0% deployed — itch is real, but the rules are the answer
+
+### Risk Factors
+- **NFP Friday** is the pivot; entering Tue/Wed on a weak catalyst = compressed thesis time, binary risk into the print
+- **JOLTS surprise risk:** a soft openings read (sub-6.5M) could spark "labor cracking" rotation; a hot read could pressure rate-cut hopes and hit XLK/XLC further
+- **CRDO whipsaw signal:** AH -12%→+25% on a triple-beat = positioning was offsides and tape is reactive; not a regime where chasing pays
+- **Behavioral risk:** 5 sessions of 0% deployment + last week's negative phase P&L = pressure to "do something." Documented answer: no setup, no trade. Patience > activity.
+- **Tape extended:** SPX near ATH, June seasonality positive but modest; mean-revert sessions get more likely the longer the grind extends
+- Daytrade count 1 of 3 in rolling 5-day window — PDT budget intact
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved. Documented SKIPs: CRDO (Rule #10 chase + ARM pattern), energy (WTI $87.76 fails $95 re-trigger), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact. Next decision point: Wednesday pre-market with JOLTS print + CRDO Day-2 structure + WTI mark in hand; if CRDO bases cleanly Day 1, reassess; if WTI closes >$95, re-trigger energy force-decision.
