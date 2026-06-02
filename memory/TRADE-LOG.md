@@ -163,3 +163,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Quiet Monday — 100% cash all session, zero activity, equity unchanged from Friday close ($99,883.98 flat). Pre-market energy force-decision per Friday's flag = documented SKIP: WTI ~$89.75 failed the >$95 trigger, weekend Gulf-hostility bid faded on Iran-deal talk. ISM Manufacturing PMI 10am was the only macro print, no single-name catalysts BMO (CRDO/HPE AMC informational only). No Buy-Side Gate pass anywhere in the universe today. Behavioral test (4 sessions running at 0% deployed after NVDA/ARM closed Thu) held — no forced entry. **Trades this week: 0/3** — all three slots intact heading into NFP Friday. Daytrade count 1 in rolling 5-day window. Phase P&L still negative at -0.12% (first week of June opens flat from where the ARM stop left things). Next decision point: Tuesday pre-market with CRDO/HPE post-prints + JOLTS + ISM Services in hand; re-check WTI for any >$95 close as energy re-trigger.
+
+
+### Jun 02 — EOD Snapshot (Tuesday)
+**Portfolio:** $99,883.98 | **Cash:** $99,883.98 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Fifth consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98. Pre-market scan documented SKIPs across the board: CRDO (Rule #10 violation — AH +25% gap after triple-beat = chase pattern identical to ARM 5/28); energy (WTI $87.76, fails $95 re-trigger from Friday's flag); MDT/industrials (no specific catalyst). JOLTS 10am was the only macro print today, non-market-moving. Behavioral test held: 5 sessions at 0% deployed since NVDA/ARM closed Thu 5/28, with phase P&L still negative — pressure to "do something" is real but the documented answer remains "no qualifying setup." **Trades this week: 0/3** — all slots intact 3 days from NFP Friday. Daytrade count 1 in rolling 5-day window. Sector regime unchanged: XLE/XLI/XLP/XLB leading, XLK/XLC/XLY/XLF lagging. Next decision point: Wednesday pre-market with CRDO Day-2 structure read + ADP + WTI mark; if CRDO bases cleanly Day 1 it becomes a real Day-2 breakout candidate; if WTI closes >$95 anywhere this week, energy re-triggers.
