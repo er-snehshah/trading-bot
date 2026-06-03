@@ -39,7 +39,7 @@ ENV_VARS_REQUIRED = [
 ALLOWED_BASH_PREFIXES = (
     "bash scripts/alpaca.sh ",
     "bash scripts/perplexity.sh ",
-    "bash scripts/clickup.sh ",
+    "bash scripts/telegram.sh ",
     "git add ",
     "git commit ",
     "git push ",
