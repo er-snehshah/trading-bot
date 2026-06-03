@@ -773,3 +773,60 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIPs: MRVL (+27.87% Rule #10 chase), CRDO (Day-2 not yet readable, still chase), AVGO (binary AMC tonight), energy (WTI $89.39 fails $95 re-trigger), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact 2 days from NFP Friday. Next decision point: Thursday pre-market with ADP/ISM/Beige Book digested + AVGO post-print reaction in hand + MRVL/CRDO Day-2 (or Day-3) structure readable; if AVGO confirms AI-infra theme without a >5% gap, the cleanest second-leg setup of the week becomes available.
+
+
+---
+
+## 2026-06-03 — Pre-market Research (Wednesday — ADP/ISM Services/Beige Book + AVGO AMC)
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $199,767.96
+- Daytrade count: 1 (rolling 5d) | PDT: false | Positions: 0 | Open orders: 0
+- Last equity: $99,883.98 (flat — no holdings)
+- **Trades this week: 0/3** (all slots intact, 2 days to NFP Friday)
+
+### Market Context
+- **WTI ~$87.76** (CME CLN6 Jul'26 last) | Brent: no clean live print; directionally low-$90s. **Well below the $95 weekly-close re-trigger** for energy thesis. Kalshi market shows daily settle >$95.99 as low-probability.
+- **ESM26 ~7,619–7,620** premarket, -0.05% to -0.10%; one YouTube preview describes futures "flashing red, S&P at 7617" with oil and bond yields ticking up. Tape extended near ATHs; June started at record highs (NDX +8% May, SPX +5% May).
+- **VIX:** not directly returned by Perplexity; given multi-day calm tape and no shock catalyst, presumed ~16-17 (in line with last week's 15.32-16.59 prints).
+- Today's catalysts:
+  - **8:15am ET ADP private payrolls** — NFP preview, prior 109k Apr
+  - **10:00am ET ISM Services PMI** — services demand read
+  - **2:00pm ET Fed Beige Book** — qualitative conditions
+  - **AMC: AVGO (Broadcom)** — mega-cap AI-infra binary; key read-through to MRVL/CRDO/NVDA complex
+  - Earnings BMO: Macy's (M), Medtronic (MDT), Brown-Forman (BF.B), Ollie's (OLLI), Toro (TTC) — no mega-caps
+- **MRVL Day-2:** TheStreet snapshot has MRVL **+7% today** (after Tue's +27.87% close to $290.79) — continuation, not a base; still in chase zone per Rule #10.
+- **AVGO Day-of:** binary tonight — wrong asymmetry to pre-position into earnings.
+- **Sector momentum (refresh):** **Leading**: Energy, Consumer Staples, Industrials, Materials. **Lagging**: Technology, Communications, Consumer Discretionary, Financials. **Improving**: Real Estate, Utilities. **Weakening**: Health Care. (Investing.com sector-rotation map, consistent multi-week read.) *Note:* yesterday's log flagged a possible XLK leadership shift on the MRVL print; today's broader rotation sources don't confirm that yet — keeping tech in Lagging until a multi-source confirmation appears.
+
+### Trade Ideas
+
+1. **MRVL — DOCUMENTED SKIP (Rule #10).** Day-2 continuation +7% on top of Tue's +27.87% = pure chase. No clean base, no breakout structure. Pass; reconsider only after 2-3 sessions of basing with a real breakout entry on volume.
+
+2. **CRDO — DOCUMENTED SKIP.** Day-3 of the +25% AH gap; no clean structure visible in research. Same chase asymmetry. Pass.
+
+3. **AVGO AMC tonight — WATCHLIST, no pre-position.** Mega-cap binary; sizing into earnings = rules violation on a binary. If beat + raise + reasonable open (<5% gap) tomorrow, real Buy-Side Gate evaluation. **No entry today.**
+
+4. **Energy (OXY/XLE) — DOCUMENTED SKIP.** WTI $87.76, fails $95 re-trigger. Iran-deal talk + soft demand keep cap. Rule #9 enforced. Re-arm: any single-session close >$95.
+
+5. **MDT BMO — SKIP.** Healthcare in Weakening; no thesis edge.
+
+6. **Industrials (XLI / CAT / DE / ETN) — passive watchlist.** Leading quadrant persists; no specific single-name catalyst → Buy-Side Gate fails on the "documented catalyst" requirement.
+
+7. **No new entry today.** Buy-Side Gate fails universe-wide:
+   - 6 sessions running at 0% deployed (since NVDA/ARM closed Thu 5/28)
+   - Triple intraday macro (ADP / ISM Svc / Beige Book) + AVGO AMC binary = high event-density; reaction quality > entry timing
+   - NFP Friday is THE pivot; preserve sizing flexibility 2 days out
+   - Every clean AI-infra expression (MRVL, CRDO) is +25-28% post-print → chasing wrong, basing/breakout reentry right
+
+### Risk Factors
+- **ADP downside surprise** (cons ~65k vs prior 109k) could spark labor-cracking rotation; cool ADP + soft ISM Services = bear case for tech/discretionary into NFP Friday
+- **AVGO AMC binary** swings tape Thursday open; pre-position = wrong asymmetry
+- **NFP Friday** is the pivot; Wed entry on stale catalyst = compressed thesis time
+- **Chase pressure on MRVL/CRDO** is the #1 behavioral risk — ARM 5/28 scar tissue (+14% chase → -3% same-day stop) is fresh; Rule #10 holds
+- **Tape extended** at ATHs; mean-revert sessions get more likely the longer the grind extends
+- **6 sessions of 0% deployment + negative phase P&L (-0.12%)** = real itch to "do something." Rules ARE the answer. Patience > activity.
+- Daytrade count 1 of 3 in rolling 5-day window — PDT budget intact
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved ($99,883.98). Documented SKIPs: MRVL (Rule #10 chase, Day-2 continuation), CRDO (Day-3 no clean base), AVGO (binary AMC tonight), energy (WTI $87.76 fails $95), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact. Next decision point: Thursday pre-market with ADP/ISM/Beige Book digested + AVGO post-print reaction in hand; if AVGO beats + raises with a reasonable open (<5% gap) AND any AI-infra leader bases cleanly, the cleanest second-leg setup of the week becomes available.
