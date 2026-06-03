@@ -773,3 +773,92 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved. Documented SKIPs: MRVL (+27.87% Rule #10 chase), CRDO (Day-2 not yet readable, still chase), AVGO (binary AMC tonight), energy (WTI $89.39 fails $95 re-trigger), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact 2 days from NFP Friday. Next decision point: Thursday pre-market with ADP/ISM/Beige Book digested + AVGO post-print reaction in hand + MRVL/CRDO Day-2 (or Day-3) structure readable; if AVGO confirms AI-infra theme without a >5% gap, the cleanest second-leg setup of the week becomes available.
+
+---
+
+## 2026-06-03 — Pre-market Research (Wednesday — ADP/ISM Services/Beige Book/AVGO AMC)
+
+### Account Snapshot
+- **Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,767.96**
+- Positions: 0 | Open orders: 0 | Daytrade count: 1 (rolling 5d) | PDT: false
+- **Trades this week: 0/3** — all slots intact (Wednesday, 2 sessions before NFP Friday)
+- Phase P&L: -$116.02 (-0.12% vs $100k baseline)
+- Note: Alpaca API returned 403 (host_not_allowlisted — container IP blocked). Account snapshot from TRADE-LOG last known state. Perplexity also blocked (same network policy). All research via WebSearch fallback.
+
+### Market Context
+- **WTI ~$95+ (confirmed above re-trigger threshold)** — gained for 3rd straight session; Brent $96.89. Iran conflict escalation: US CENTCOM intercepted Iranian ballistic missiles + drones. Trump stated US would end Iran war "very quickly" = tail-risk of sudden reversal. First WTI close >$95 this week.
+- **SPX futures pre-market: ~-0.10%** after SPX hit record 7,609.78 (+0.13%) Tuesday. Near ATH, RSI elevated.
+- **VIX: 15.77** (June 2 close) — calm regime, modest uptick from last week's 15-16.
+- **Today's catalysts:**
+  - 8:15am ET ADP private payrolls May (prior 109k, weekly prelim pace ~140k+, consensus 110k — actual not yet in hand at workflow time)
+  - 10:00am ET ISM Services PMI May (April was 53.6% — 22nd straight expansion month)
+  - 2:00pm ET Fed Beige Book
+  - **AMC: AVGO Broadcom Q2 FY2026** — mega-cap AI-infra; Q1 was $19.3B +29%, Q2 guide $22B +47% YoY. This is the biggest print of the week. Do NOT pre-position.
+- **MRVL Day 2 — explosive continuation:** Closed +32.52% to $290.79 on June 2; pre-market June 3 at $323 (+11.08%). Jensen Huang at Computex called MRVL "Next Trillion-Dollar Company." Two-day total gain enormous. Rule #10 absolute block — not even a discussion.
+- **NVDA:** $221.79 (+$220.80-$232.28 range June 3), essentially flat from $222.81 Tuesday. $5T market cap. Calm despite MRVL/Jensen catalyst.
+- **CRDO Day 3:** June 3 ~$234.00 (-0.86%). ATH $243.21 on June 1; June 1 close $226.10 (-4.21% on day). June 2 estimated close ~$236. Basing constructively in $226-$236 range after the earnings gap. Analyst consensus: Buy, PT $238.31. Day 3 structure readable.
+- **ISM Manufacturing PMI May: 54%** (released June 2, expansion territory — healthy macro backdrop).
+- **Sector regime:** XLE Energy + XLP Staples + XLI Industrials + XLB Materials = Leading. XLK Tech elevated YTD returns but some sources note rotation into cyclicals. MRVL/AI catalyst may re-accelerate XLK bid.
+
+### ⚡ ENERGY FORCE-DECISION — WTI >$95 RE-TRIGGER CONFIRMED
+
+Condition from Friday 5/29 + Monday 6/1 flags: "If WTI closes >$95 anywhere this week → force written add-or-skip on OXY/XLE."
+
+**WTI status: $95+ ✓ — re-trigger activated.**
+
+**Rule #10 check (OXY/XLE today):**
+- XLE: prior close ~$57.96; June 3 range $57.03-$58.20. Intraday gain from prior close: ~+0.4% or less.
+- OXY: ~$59.71 (June 1-2 data; roughly flat given XLE is flat).
+- Today's move ≪ 5% threshold — Rule #10 does NOT block.
+
+**Buy-Side Gate (OXY):**
+- Positions after fill ≤ 5: ✓ (0 → 1)
+- Trades this week ≤ 3: ✓ (0/3)
+- Position cost ≤ 20% equity: ✓ (~$59.71 × 335 shares = $19,993 ≈ 20%)
+- Position cost ≤ cash: ✓ ($99,884 available)
+- Daytrade count leaves room: ✓ (1 of 3 used)
+- Specific catalyst: Iran conflict + WTI supply tightness + 3-day oil rally ✓
+- Name ≤ 5% intraday: ✓ (XLE/OXY essentially flat today)
+- Instrument is a stock: ✓
+
+**ALL GATE CONDITIONS PASS.** This is a legitimate trade setup.
+
+**Sizing decision: 15% (not full 20%).** Rationale: preserve dry powder for post-AVGO AI-infra entry tomorrow; NFP Friday binary 48 hours away; Trump Iran "end quickly" reversal risk is real.
+- OXY shares: `floor($99,884 × 0.15 / $59.71)` = floor($14,983 / $59.71) = **250 shares (~$14,928)**
+- Take profit: $59.71 × 1.07 = **$63.89**
+- Stop loss: $59.71 × 0.96 = **$57.32**
+- R:R: $4.18 gain / $2.39 loss = **1.75:1** ✓
+
+**RISK FACTORS FOR OXY:**
+- Trump "end Iran war quickly" comment = headline risk, oil could reverse 5-8% in one session if peace talks concretize
+- NFP Friday: weak jobs = demand destruction narrative = oil down
+- OXY already +58% YTD — mean reversion risk
+- Today is Day 1 of WTI >$95; could be 1-day spike rather than sustained move
+
+### Trade Ideas
+
+1. **OXY — FORCE-DECISION: TRADE** (entry contingent on 9:30am price check ≤ 5% from prior close)
+   - Entry: market buy ~$59.71; TP: $63.89 GTC; Stop: $57.32 GTC
+   - Sizing: 250 shares (~$14,928 = 15% equity)
+   - Catalyst: WTI >$95 re-trigger, Iran conflict escalation, 3-day oil rally, leading sector
+   - If open price is >5% above yesterday's close at 9:30am → SKIP, reassess Thursday
+   - Trades this week after fill: 1/3
+
+2. **MRVL — SKIP** (Rule #10 absolute block; +32.52% Day 1 + +11% pre-market Day 2 = Chase)
+
+3. **CRDO Day 3 — WATCHLIST (passive):** Basing at $234, analyst PT $238. The Day-3 structure is clean but the post-earnings total move from pre-earnings levels is still >20%+. The +7% TP from $234 = $250.38 vs analyst PT $238.31 = analyst target is below our TP. Skip; revisit if it breaks above $243 ATH on volume with a new catalyst.
+
+4. **AVGO AMC tonight — WATCHLIST (no pre-position):** If Q2 beats the $22B guide + raises, tomorrow's reaction matters. If reaction gap is <5%, Thursday entry becomes the week's cleanest AI-infra trade. Don't buy into the binary.
+
+5. **NVDA — passive watchlist.** Flat today despite MRVL/Jensen catalyst suggests limited upside pull-through. Not a setup today.
+
+### Risk Factors
+- Iran reversal on Trump "end quickly" comments = energy whipsaw risk
+- ADP miss (weak jobs) → recession narrative → energy demand destruction
+- AVGO AMC miss → AI-infra complex craters → broad tech/risk selloff Thursday
+- NFP Friday (2 days): binary macro; holding OXY through it = deliberate choice
+- OXY extended YTD; Iran premium already partially priced at $95 oil
+- Daytrade count at 1 — if OXY gets stopped same day, count goes to 2 (still under 3 limit)
+
+### Decision
+**CONDITIONAL TRADE: OXY (energy force-decision).** At 9:30am open, verify OXY is ≤ 5% above Tuesday's close. If so: market buy 250 shares, immediately place TP limit $63.89 GTC + stop $57.32 GTC. If open gap >5% → skip and flag Thursday re-entry. All other names: HOLD/watchlist. Trades this week after OXY: 1/3. AVGO AMC tonight is the next major catalyst; no additional entries until post-AVGO reaction is readable tomorrow pre-market.
