@@ -33,7 +33,7 @@ MEMORY_FILES = [
 
 ENV_VARS_REQUIRED = [
     "ALPACA_API_KEY", "ALPACA_SECRET_KEY", "PERPLEXITY_API_KEY",
-    "CLICKUP_API_KEY", "CLICKUP_WORKSPACE_ID", "CLICKUP_CHANNEL_ID",
+    "CLICKUP_API_KEY", "CLICKUP_WORKSPACE_ID", "CLICKUP_CHANNEL_ID","TELEGRAM_BOT_TOKEN"
 ]
 
 ALLOWED_BASH_PREFIXES = (
@@ -56,7 +56,7 @@ TOOLS = [
         "description": (
             "Run an allowed shell command from the repo root. "
             "Allowed prefixes: bash scripts/alpaca.sh, bash scripts/perplexity.sh, "
-            "bash scripts/clickup.sh, git add/commit/push/pull/log/status, date, echo."
+            "bash scripts/telegram.sh, git add/commit/push/pull/log/status, date, echo."
         ),
         "input_schema": {
             "type": "object",
