@@ -847,3 +847,89 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 **Action required (operator):** restore `TELEGRAM_BOT_TOKEN` (and verify `TELEGRAM_CHAT_ID`) in the runtime environment. Once restored, the next pre-market routine will execute normally. No rule changes, no positions at risk — clean halt.
 
 **Decision: HOLD (forced — no research performed).**
+
+---
+
+## 2026-06-04 — Pre-market Research (COMPLETED — supersedes aborted entry above)
+
+**API status:** Alpaca and Perplexity both returning HTTP 403 (network policy). Account state from prior EOD log. Research via WebSearch fallback — noted per workflow.
+
+### Account Snapshot
+- **Equity:** $99,883.98 (from 2026-06-03 EOD log; Alpaca API unavailable)
+- **Cash:** $99,883.98 (100%)
+- **Deployed:** 0%
+- **Positions:** 0
+- **Trades this week:** 0/3 — all slots intact
+- **Daytrade count:** 1 of 3 in rolling 5-day window
+
+### Market Context
+
+| Item | Value | Notes |
+|------|-------|-------|
+| WTI crude | ~$95.00 | +2% on US-Iran overnight exchange; third session of gains |
+| Brent crude | ~$96.97 | -0.86% from prior session |
+| ESM26 futures | ~7,571 (-0.43%) | Risk-off; Iran war fears + AVGO guidance miss |
+| S&P 500 Wed close | -0.74% | Second down session |
+| VIX | ~15.81 open | Range 15.22–15.88; calm relative to Feb-Apr (>30) spike |
+
+**Iran conflict update:** US-Israeli strikes on Iranian leadership began Feb 28; Strait of Hormuz closed briefly in March (Brent >$120 peak). Most recent: US struck Iranian military site near Hormuz overnight (Jun 3–4 ET), triggering fresh oil spike. A 60-day MOU ceasefire extension is still technically in place but fresh exchange occurred. WTI $95 is a war-spike, not a demand/OPEC-driven recovery.
+
+**AVGO AMC (Jun 3) — key read-through:**
+- Q2 EPS: $2.44 vs $2.32 est (+5% beat)
+- Q2 Revenue: $22.2B +48% YoY; AI semiconductor: $10.8B (record)
+- Q3 guidance: $29.4B +84% YoY; AI Q3: ~$16.0B (+200% YoY)
+- Software revenue: missed whisper
+- AH reaction: **-8%** ("good print, bad reaction" — software miss + "sell the news" on AI guidance already priced)
+- Premarket: ~$495 (stabilizing but still -8% vs prior close)
+
+**Today's macro:**
+- **8:30am ET:** Initial Jobless Claims (forecast 211K, prior 215K); Continuing Claims; Productivity Revised
+- **12:10pm ET:** Fed's Mary Daly speaks
+- **Friday Jun 5:** NFP — the week's pivot
+
+**AI-infra complex read-through from AVGO:**
+- CRDO: -5% premarket (sympathy selling despite own beat Jun 2)
+- MRVL: still extended after +27.87% Tue + continuation Wed; no clean base
+- NVDA: likely under pressure from AVGO read-through; no specific print
+
+**Sector momentum (updated):**
+- **Leading:** Materials (XLB +22% YTD), Industrials (XLI), Consumer Staples (XLP), Energy (XLE)
+- **Lagging:** Technology (XLK), Communications (XLC), Consumer Discretionary (XLY), Financials (XLF)
+- **Improving:** Real Estate (XLRE), Utilities (XLU), Healthcare (XLV)
+- Note: Tech leading by revenue-growth story but lagging on price rotation
+
+### Trade Ideas
+
+1. **AVGO — DOCUMENTED SKIP.** "Good print, bad reaction" pattern — explicit in Post-catalyst hold review rule. Software miss triggered -8% AH despite best-in-class AI print. Falling knife into risk-off market. No entry.
+
+2. **Energy (OXY / XLE) — DOCUMENTED SKIP (force-decision per May 29 flag).** WTI $95 technically hits the re-trigger threshold. BUT the catalyst is an Iran war spike, not the demand/OPEC-driven $95 close we were targeting. A 60-day MOU ceasefire is in place — any diplomatic progress reverts this spike immediately. Rule #6 requires a specific, stable catalyst; geopolitical war spikes are high-reversal. Buying OXY into a fresh Iran exchange = chasing the wrong catalyst type. Re-arm: $95 close driven by OPEC cut or demand data, not active hostilities.
+
+3. **AI-infra complex (CRDO / MRVL / NVDA) — DOCUMENTED SKIP.**
+   - CRDO: -5% premarket despite own beat; AVGO software miss is the overhang. No clean base
+   - MRVL: Rule #10 — still in chase territory; no Day-2 base yet
+   - NVDA: uncertain, likely -2% to -4% with AVGO read-through; no specific catalyst
+   - Overall: wrong day for AI-infra with AVGO creating sector-wide pressure
+
+4. **Industrials (XLI / CAT / DE / ETN) — passive watchlist.** Leading sector persists but no specific single-name catalyst today. Buy-Side Gate fails on catalyst requirement.
+
+5. **SpaceX Nasdaq debut:** Jun 12 — not yet tradeable.
+
+### Risk Factors
+- **Active Iran conflict** — WTI $95 war spike; Strait of Hormuz risk; any ceasefire news = sharp oil reversal; energy longs lose fast
+- **AVGO "sell the news"** — AI-infra complex (-5% CRDO, MRVL/NVDA uncertain) despite objectively great AI numbers; "priced in" dynamic real
+- **Claims + NFP two-day sequence** — Jobless Claims 8:30am today; NFP Friday; entering new position on Thursday pre-NFP = compressed thesis time + double macro risk
+- **Market risk-off** — ESM26 -0.43%, S&P Wednesday -0.74%; tape no longer in grind-to-ATH mode
+- **7 consecutive flat sessions / 0% deployed / -0.12% phase P&L** — behavioral pressure to trade is real; rules hold: patience > activity
+- **Daytrade budget:** 1/3 used — intact, but NFP Friday could require flexibility
+
+### Decision
+**HOLD.** No qualifying setup clears the Buy-Side Gate:
+- AVGO: falling knife post "good print, bad reaction"
+- Energy: WTI $95 triggered but wrong catalyst type (war spike, not demand)
+- AI-infra: complex under AVGO pressure, chase rules apply
+- Industrials: no catalyst
+- Macro: Claims today + NFP tomorrow = preserve full flexibility
+
+100% cash ($99,883.98). Trades this week: 0/3. All slots intact heading into NFP Friday.
+
+**Next decision point:** Friday Jun 5 NFP (8:30am ET). If NFP is Goldilocks (jobs ~150-200K, wages cool), watch for: (1) Energy OXY/XLE if WTI holds $95 on demand-read not war-read; (2) AVGO Day-2 structure if it finds a floor (not a Day-1 falling knife); (3) any AI-infra name that bases cleanly off AVGO overhang with a catalyst. If NFP is hot (wages spike) or cold (<100K), stay cash through the reaction.
