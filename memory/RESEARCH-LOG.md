@@ -847,3 +847,69 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 **Action required (operator):** restore `TELEGRAM_BOT_TOKEN` (and verify `TELEGRAM_CHAT_ID`) in the runtime environment. Once restored, the next pre-market routine will execute normally. No rule changes, no positions at risk — clean halt.
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-04 — Pre-market Research (Thursday — AVGO reaction + Iran escalation + T-1 to NFP)
+
+*(Perplexity fallback → WebSearch. Alpaca API blocked by network policy: `host_not_allowed` on paper-api.alpaca.markets. Account state from last known EOD.)*
+
+### Account
+- Equity: **$99,883.98** (assumed; Alpaca unreachable) | Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Daytrade count: 1 (rolling 5d) | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** — all slots intact heading into NFP Friday
+
+### Market Context
+- **WTI**: ~$93.64–$96.04 (range today); climbed above **$95 on Wednesday** (third consecutive session of gains) → **energy re-trigger condition MET**. Brent: $96.97, -0.86% today.
+- **ES futures (ESM26)**: **7,571.75, −0.43 to −0.54%** premarket. Prediction market 86% probability of down open. Nasdaq futures "sliding" on Iran war concerns.
+- **VIX**: ~16.05 (June 1 last print); likely ticking up today given Iran escalation and broad tech headwind.
+- **Dominant catalysts today:**
+  - **US-Iran fresh military exchanges overnight** — US struck Iranian military sites; House passed resolution limiting Trump's authority to continue operations; Hormuz closure fears revived. Oil and bond yields bid higher; equities risk-off.
+  - **AVGO (Broadcom) AMC − −14% AH** — Q2 FY26: Rev $22.19B (missed $22.27B est), adj EPS $2.44 (beat $2.40 est); AI revenue +143% YoY ($10.8B). But: CEO did NOT raise full-year $100B AI target, infrastructure software fell short. "Good print, bad reaction" — same pattern as NVDA 5/20. Cascading: CRWD −11% AH (soft guidance), ARM −4.3%, AMD −2.9%, NVDA/MRVL/CRDO all expected soft open.
+  - **CRWD −11% AH** — soft Q2 sales guidance.
+- **Earnings BMO today**: CIEN, Planet Labs (PL), Lululemon (LULU); no mega-cap movers.
+- **Economic data today**: Q1 Nonfarm Productivity, Challenger May Job Cuts (8:30am ET). **No CPI/FOMC/NFP today.**
+- **NFP TOMORROW — Friday June 5** (first Friday of June) — THE macro pivot of the week. Prior: +115k (weak trend).
+- **Sector momentum (June 2026 refresh):** Leading: XLP, XLI, XLB, XLE. Lagging: XLK, XLC, XLY, XLF. XLK +32–33% YTD (strong absolute) but still in rotation Lagging quadrant; AVGO −14% will hammer AI-infra names at open, reinforcing XLK lagging read.
+
+### Force-Decision: Energy (OXY / XLE)
+- **Trigger condition:** WTI closes >$95 on any single session → force written add-or-skip.
+- **Actual:** WTI confirmed above $95 on Wednesday June 3 (third consecutive session gain). **Condition MET.**
+- **Force-decision evaluation:**
+  - Catalyst is geopolitical (Iran Hormuz fears), NOT fundamental momentum → same trap as prior whipsaw cycles
+  - WTI trajectory: $103→$90→$97→$87→$96→$93 over 3 weeks = extreme volatility, not a trend
+  - Iran-war peace-deal signals flip daily; oil can give back 5–10% intraday on a single Trump tweet
+  - Today's tape is risk-off (ES −0.5%, 86% prob down open); entering energy in a down tape compounds entry risk
+  - **NFP tomorrow** — carrying an energy position overnight into binary jobs data is wrong asymmetry
+  - Rule #9 reinforced: each geopolitical bid has reversed within 48–72 hrs this cycle
+  - **DOCUMENTED SKIP — energy trigger met but risk context too poor to execute.**
+  - Re-arm: let WTI hold >$95 for 2+ consecutive closes AND confirm a stable geopolitical backdrop (no active US-Iran strikes in the prior 24 hrs) before re-triggering.
+
+### Trade Ideas
+
+1. **Energy (OXY / XLE) — DOCUMENTED SKIP (see force-decision above).** Trigger met; decision = pass. Reasons: geopolitical-only bid with active military exchanges, extreme WTI volatility, risk-off tape, NFP tomorrow. Trading news is not edge.
+
+2. **LULU BMO — DOCUMENTED SKIP.** Consumer discretionary in Lagging quadrant. Retail reaction trades are not my edge. No buy-side gate pass.
+
+3. **AI-infra follow-on (AVGO/ARM/NVDA/MRVL/CRDO) — ALL SKIPPED.**
+   - AVGO −14% = "good print, bad reaction"; entering a falling knife is the opposite of edge.
+   - ARM, MRVL, CRDO: sympathy selling from AVGO; AI-infra tape is risk-off today.
+   - CRDO would need 2+ sessions of basing after this flush before a clean breakout entry is possible.
+
+4. **No new entry today.** Buy-Side Gate fails universe-wide:
+   - Risk-off tape (ES −0.5%), Iran escalation headline risk
+   - AVGO/CRWD headwinds crush AI-infra names at open
+   - NFP tomorrow = entering today = unacceptable binary overnight risk
+   - 7 consecutive sessions at 0% deployed; the rules hold
+
+### Risk Factors
+- **US-Iran escalation**: active military exchanges overnight → Hormuz closure tail risk. Any escalation headline spikes oil; any peace signal crashes it. Not a tradeable regime.
+- **AVGO −14% cascade**: NVDA, ARM, MRVL, CRDO expected soft open; XLK lagging read amplified. "Expectations bar now impossibly high" is the new AI-infra narrative.
+- **NFP tomorrow (June 5)**: prior +115k (soft trend). A miss = labor-cracking narrative, risk-off; a beat = rate-cut pushback. Either direction creates tape volatility — wrong week to hold an overnight position added today.
+- **Risk-off tape**: ES −0.5%, 86% down-open probability → entries in this tape start with negative momentum, stop gets tested faster.
+- **7 sessions of 0% deployment + negative phase P&L (−0.12%)**: pressure to "do something" is maximal. Rules are the answer. Patience > activity.
+- **Daytrade count 1/3 (rolling 5d)**: PDT budget intact.
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved ($99,883.98). Documented SKIPs: energy (trigger met, risk context fails — active Iran strikes, WTI volatility, risk-off tape, T-1 to NFP); AVGO/AI-infra complex (falling knife + CRWD cascade); LULU (lagging sector, no edge). Buy-Side Gate fails universe-wide. Trades this week: **0/3** — all slots intact heading into NFP Friday. Tomorrow's print is the cleanest pivot of the week; preserving dry powder and daytrade budget for a post-NFP setup is the right asymmetry. Next decision point: Friday June 5 pre-market with NFP in hand; if a clean catalyst emerges with sector-leading confirmation and sub-5% intraday move, the buy-side gate will have its first real candidate in 9 sessions.
