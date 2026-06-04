@@ -864,3 +864,45 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 **Action required (operator):** restore `TELEGRAM_BOT_TOKEN` (and verify `TELEGRAM_CHAT_ID`) in the runtime environment, OR add `scripts/clickup.sh` to the bash_exec allowlist so the documented escalation path actually works when Telegram is down. Until then, every routine will short-circuit at the env check.
 
 **Decision: HOLD (forced — no execution performed).**
+
+
+---
+
+## 2026-06-04 — Market-open routine (ABORTED — third consecutive)
+
+**Status: HALTED. All external APIs blocked by container network policy.**
+
+### Env Check
+- ALPACA_API_KEY: SET | ALPACA_SECRET_KEY: SET | ALPACA_ENDPOINT: SET | ALPACA_DATA_ENDPOINT: SET
+- CLICKUP_API_KEY: SET | CLICKUP_WORKSPACE_ID: SET | CLICKUP_CHANNEL_ID: SET
+- TELEGRAM_BOT_TOKEN: **MISSING** | TELEGRAM_CHAT_ID: **MISSING**
+
+### Network Block (new finding — root cause)
+All three API targets returned `HTTP 403 x-deny-reason: host_not_allowed`:
+- `paper-api.alpaca.markets` — BLOCKED (cannot get account, positions, or place orders)
+- `data.alpaca.markets` — BLOCKED (cannot get live quotes)
+- `api.perplexity.ai` — BLOCKED (cannot run pre-market research)
+- `api.clickup.com` — BLOCKED (cannot send ClickUp alert)
+
+This is a **container network policy** issue, not a credentials issue. The Alpaca keys are valid; the container's outbound allowlist does not include the required hosts.
+
+### Previous halt root cause (corrected)
+The two previous 2026-06-04 aborts attributed the halt to TELEGRAM_BOT_TOKEN missing. That was a contributing factor, but even if the token were present, the Alpaca and Perplexity wrappers would have failed at the same network layer. The ClickUp escalation path also fails for the same reason — `api.clickup.com` is not in the allowlist.
+
+### Action required (operator)
+Two fixes needed — both required for normal operation:
+1. **Network policy:** Add to container outbound allowlist:
+   - `paper-api.alpaca.markets`
+   - `data.alpaca.markets`
+   - `api.perplexity.ai`
+   - `api.clickup.com`
+2. **Env vars:** Restore `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`
+
+Until both are resolved, every routine will produce a forced HOLD with no external calls.
+
+### Account state (assumed unchanged)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Positions: 0 | Open orders: 0
+- Trades this week: 0/3 | Daytrade count: 1 (rolling 5d)
+- Pending context: AVGO AMC Wed 6/3 reaction unknown; NFP Friday 6/5 is the week's macro pivot
+
+**Decision: HOLD (forced — no research performed, no orders possible).**
