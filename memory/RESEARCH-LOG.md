@@ -847,3 +847,20 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 **Action required (operator):** restore `TELEGRAM_BOT_TOKEN` (and verify `TELEGRAM_CHAT_ID`) in the runtime environment. Once restored, the next pre-market routine will execute normally. No rule changes, no positions at risk — clean halt.
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-04 — Market-open routine (ABORTED)
+
+**Status: HALTED before any wrapper calls.**
+
+- Env pre-check flagged **TELEGRAM_BOT_TOKEN: MISSING** (second consecutive routine).
+- System prompt directive: "If any var shows MISSING above: send one ClickUp alert naming the missing var, then stop."
+- ClickUp wrapper (`scripts/clickup.sh`) is NOT in the bash_exec allowlist this session (allowlist: alpaca.sh, perplexity.sh, telegram.sh, git, date, echo). Cannot send the alert.
+- Telegram wrapper unusable (token is the missing var).
+- Per stop directive: no Alpaca calls, no Perplexity queries, no orders placed. Account assumed unchanged from 2026-06-03 EOD ($99,883.98, 100% cash, 0 positions, trades this week 0/3, daytrade count 1).
+
+**Action required (operator):** restore `TELEGRAM_BOT_TOKEN` (and verify `TELEGRAM_CHAT_ID`) in the runtime environment, OR add `scripts/clickup.sh` to the bash_exec allowlist so the documented escalation path actually works when Telegram is down. Until then, every routine will short-circuit at the env check.
+
+**Decision: HOLD (forced — no execution performed).**
