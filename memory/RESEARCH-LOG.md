@@ -830,3 +830,20 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 
 ### Decision
 **HOLD.** Patience > activity. 100% cash preserved ($99,883.98). Documented SKIPs: MRVL (Rule #10 chase, Day-2 continuation), CRDO (Day-3 no clean base), AVGO (binary AMC tonight), energy (WTI $87.76 fails $95), MDT/industrials (no specific catalyst). Buy-Side Gate fails universe-wide. Trades this week: 0/3 — all slots intact. Next decision point: Thursday pre-market with ADP/ISM/Beige Book digested + AVGO post-print reaction in hand; if AVGO beats + raises with a reasonable open (<5% gap) AND any AI-infra leader bases cleanly, the cleanest second-leg setup of the week becomes available.
+
+
+---
+
+## 2026-06-04 — Pre-market Research (ABORTED)
+
+**Status: HALTED before any wrapper calls.**
+
+- Env pre-check flagged **TELEGRAM_BOT_TOKEN: MISSING**.
+- System prompt directive: "If any var shows MISSING above: send one ClickUp alert naming the missing var, then stop."
+- ClickUp wrapper (`scripts/clickup.sh`) is **not in the bash_exec allowlist** for this session (allowlist: alpaca.sh, perplexity.sh, telegram.sh, git, date, echo). Could not send the ClickUp alert.
+- Telegram wrapper also unusable (token is the missing var).
+- Per the stop directive: no Alpaca calls, no Perplexity queries, no positions touched. Account assumed unchanged from 2026-06-03 EOD ($99,883.98, 100% cash, 0 positions, trades this week 0/3, daytrade count 1).
+
+**Action required (operator):** restore `TELEGRAM_BOT_TOKEN` (and verify `TELEGRAM_CHAT_ID`) in the runtime environment. Once restored, the next pre-market routine will execute normally. No rule changes, no positions at risk — clean halt.
+
+**Decision: HOLD (forced — no research performed).**
