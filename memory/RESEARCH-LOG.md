@@ -950,3 +950,28 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (currently listed in TOOL USAGE RULES but rejected by executor).
 
 **Decision: HOLD (forced — no execution performed).**
+
+---
+
+## 2026-06-05 — Midday routine ADDENDUM (7th attempt, ~12pm ET)
+
+**Root-cause update — network policy confirmed as the blocker:**
+
+This session has all ClickUp env vars set (`CLICKUP_API_KEY`, `CLICKUP_WORKSPACE_ID`, `CLICKUP_CHANNEL_ID`) — the allowlist issue from prior sessions is resolved. However:
+
+- `bash scripts/alpaca.sh positions` → **403 "Host not in allowlist"** (paper-api.alpaca.markets)
+- `bash scripts/alpaca.sh orders` → **403 "Host not in allowlist"**
+- `bash scripts/alpaca.sh account` → **403 "Host not in allowlist"**
+- `bash scripts/clickup.sh ...` → **403** (api.clickup.com also blocked)
+
+The execution environment's **network egress policy** is blocking ALL outbound API calls to third-party hosts. This is not a credential failure (API keys are valid; HTTP header contains correct key ID). The error is the gateway returning `x-deny-reason: host_not_allowed`.
+
+**Midday scan result (trading perspective):** true no-op regardless. Account is 100% cash (7 consecutive flat sessions since ARM stop 5/28). Zero positions → Steps 3, 4, 5 are vacuously passing. Nothing to cut, no stops to tighten, no thesis to check.
+
+**Action required (operator — 7th escalation):**
+1. **Whitelist in network egress policy:** `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.clickup.com`
+2. OR provision a different execution environment with unrestricted outbound access to those hosts.
+
+Until the network policy is fixed, no API wrapper can execute regardless of which credentials are set.
+
+**Decision: HOLD (forced — network policy blocks all API egress).**
