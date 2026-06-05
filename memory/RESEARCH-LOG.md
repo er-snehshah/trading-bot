@@ -905,3 +905,70 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 Until then every routine short-circuits at the env check and no research/trading can occur.
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-05 — Pre-market Research (COMPLETED — WebSearch fallback)
+
+**Note:** Alpaca API (403 host-not-in-allowlist) and Perplexity API (403 host-not-in-allowlist) both blocked by network policy this session. Account state from last memory snapshot. Market research via native WebSearch (fallback per workflow).
+
+### Account Snapshot
+- **Equity:** $99,883.98 | **Cash:** $99,883.98 (100%) | **Positions:** 0 | **Open orders:** 0
+- **Trades this week:** 0/3 (all slots intact) | **Daytrade count:** 0/3 (clean PDT)
+- **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+### Market Context
+| Item | Level | Notes |
+|------|-------|-------|
+| Brent crude | ~$95.25/bbl | Iran war / Strait of Hormuz supply crunch; IEA flagged 14M bpd removed at peak |
+| WTI crude | ~$89–94/bbl | Below $95 re-trigger level from prior flags |
+| S&P 500 futures | -0.61% premarket | Weak NFP expectations + AVGO -15% overhang |
+| VIX | 15.40 (Jun 4 close) | Low/calm — well off the 30+ spike from late March |
+| NFP (8:30am ET today) | Exp: +80–85k | Down from +115k April; weak read = rate-cut bid likely |
+| 10-yr yield | Falling | Lebanon ceasefire bid; rate-sensitive names lifting premarket |
+
+### Macro / News Highlights
+- **NFP is the day's only catalyst** — release 8:30am ET. Consensus ~80–85k (well below 2-mo avg). Weak = Fed cut expectations rise → yields fall → growth/rate-sensitive bid.
+- **AVGO -15% Thursday** — Q2 beat on EPS ($2.44 vs $2.40e) and revenue slightly missed; AI revenue +2x YoY to $10.8B. CEO Hock Tan did NOT raise full-year AI chip sales target ($100B). Market punished the omission. Weight on tech/semis sector heading into Friday.
+- **CRDO** — Q4 revenue +157% YoY ($437M vs $431.8M est), EPS $1.16 vs $1.02e. Stock -13% AH despite the beat; sky-high expectations not cleared. Day 4–5 post-print.
+- **Homebuilders (KBH/DHI/LEN)** — Rising premarket on Lebanon ceasefire → falling yields → mortgage rate relief bid. Berkshire acquiring TMHC ($8.5B) adds sector focus.
+- **Iran war / Strait of Hormuz** — Ongoing supply risk; Brent near $95, Motley Fool piece on OXY as "domestic safe-haven" energy play.
+
+### Sector Regime (unchanged)
+| Quadrant | Sectors |
+|----------|---------|
+| Leading | XLE (Energy), XLI (Industrials), XLP (Staples), XLB (Materials) |
+| Lagging | XLK (Tech), XLC (Comm), XLY (Disc), XLF (Financials) |
+
+### Trade Ideas
+**1. OXY / XLE — Energy breakout (WATCHLIST, not actionable pre-NFP)**
+- Catalyst: Iran war → Strait of Hormuz supply crunch → Brent $95+ sustained
+- Sector: XLE = leading ✓
+- OXY up 58.8% YTD; domestic Permian/GoM assets insulated from conflict
+- Gate concern: WTI ~$89–94, just below the prior $95 re-trigger flag; Brent $95.25 is right at the level
+- Rule #10 risk: if WTI/OXY already gapped on any pre-NFP bid, intraday move check required at open
+- **Action:** Watch post-NFP reaction. If weak NFP → yields fall but risk-off → energy could dip. If NFP weak + geopolitical bid holds → OXY clean entry window may open. Require WTI >$95 close confirmation and <5% intraday move filter before any order.
+
+**2. DHI / KBH — Homebuilder rate play (SKIP — wrong sector quadrant)**
+- Catalyst: Weak NFP → Fed cut expectations → mortgage rates fall → housing demand
+- Problem: XLY (Homebuilders sector) = lagging quadrant per strategy. Rule requires leading sectors only.
+- SKIP per Rule #7. Monitor XLY for rotation to leading before reconsidering.
+
+**3. AVGO Day-2 / CRDO basing (SKIP)**
+- AVGO: -15% single-day drop = falling knife. Tech lagging quadrant. No strategy entry here.
+- CRDO: Day 4–5 post-print -13% AH gap. No clean basing structure confirmed. Same sector concern.
+- Both SKIP per Rule #10 / sector rule.
+
+### Risk Factors
+1. NFP binary — do NOT pre-position; wait for 8:30am print + 15-min reaction read
+2. AVGO -15% → tech sentiment drag; could pull broader semis down at open
+3. Iran/Hormuz escalation wildcard — could spike or crash markets depending on headline
+4. 7 consecutive flat sessions — behavioral pressure to "do something" is real; resist
+5. PDT: 0/3 clean — preserve for a high-conviction post-NFP same-day setup if one emerges
+
+### Decision: **HOLD**
+- 100% cash, all 3 weekly trade slots intact, clean PDT — best position we can be in on an NFP Friday.
+- Post-NFP reaction window (8:30–10:00am) is the only actionable zone.
+- If OXY / XLE sets up cleanly post-print with WTI >$95, Brent holding, and <5% intraday move: document and execute per strategy rules.
+- Default: patience > activity. Do not chase AVGO, CRDO, or any homebuilder into the lagging sector.
