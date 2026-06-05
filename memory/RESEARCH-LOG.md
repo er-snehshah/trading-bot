@@ -928,3 +928,32 @@ Until then every routine short-circuits at the env check and no research/trading
 Until then every routine short-circuits at the env check and no trading can occur.
 
 **Decision: HOLD (forced — no execution performed).**
+
+
+---
+
+## 2026-06-05 — Market-open routine (ABORTED — 2nd attempt, network policy block)
+
+**Status: HALTED. 6th consecutive aborted routine.**
+
+- Env pre-check **PASSED** this session: ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID all **SET**.
+- `bash scripts/alpaca.sh account` → `curl: (22) 403 — "Host not in allowlist"` (paper-api.alpaca.markets blocked by environment network policy)
+- `bash scripts/alpaca.sh positions` → same 403
+- `bash scripts/clickup.sh` → same 403 (api.clickup.com also blocked)
+- Cannot fetch account state, positions, or live quotes. Cannot send alert notification.
+- Account assumed unchanged from 2026-06-04 EOD: **$99,883.98, 100% cash, 0 positions, trades this week 0/3, daytrade count 0**.
+
+**Today is NFP Friday — THE macro pivot of the week.** With 100% cash, 0/3 trades this week, and clean PDT budget (0/3), the post-print setup is the cleanest entry opportunity of the phase. The routine cannot execute because the environment network policy does not allowlist the trading API endpoints.
+
+**Two separate blockers now identified:**
+1. **Sessions prior to today:** `TELEGRAM_BOT_TOKEN` missing → stopped at env check
+2. **Today's current session:** Env vars present, but **outbound network to paper-api.alpaca.markets and api.clickup.com is blocked by environment allowlist**
+
+**Action required (operator — 6th consecutive aborted routine, now a network-level issue):**
+1. Add `paper-api.alpaca.markets` and `data.alpaca.markets` to the environment's outbound network allowlist, AND
+2. Add `api.clickup.com` (or the ClickUp API domain) to the allowlist, AND/OR
+3. Restore `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` if Telegram is the preferred notification path.
+
+Until the network policy is corrected, every routine will fail at the first Alpaca API call regardless of env var status.
+
+**Decision: HOLD (forced — no execution performed).**
