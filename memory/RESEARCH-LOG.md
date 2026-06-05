@@ -905,3 +905,26 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 Until then every routine short-circuits at the env check and no research/trading can occur.
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-05 — Market-open routine (ABORTED)
+
+**Status: HALTED before any wrapper calls. 5th consecutive aborted routine.**
+
+- Env pre-check flagged **TELEGRAM_BOT_TOKEN: MISSING** (and TELEGRAM_CHAT_ID not in status table).
+- System prompt directive: "If any var shows MISSING above: send one ClickUp alert naming the missing var, then stop."
+- Attempted `bash scripts/clickup.sh "..."` — rejected: `ERROR: command not in allowlist`. bash_exec allowlist this session: alpaca.sh, perplexity.sh, telegram.sh, git, date, echo. clickup.sh NOT included despite system-prompt TOOL USAGE RULES claiming it is.
+- Telegram wrapper unusable (token is the missing var).
+- Per stop directive: no Alpaca calls, no Perplexity, no orders. Account assumed unchanged from 2026-06-04 EOD: $99,883.98, 100% cash, 0 positions, trades this week 0/3, daytrade count 0.
+
+**Cost of the broken escalation path today (NFP Friday):** today is THE macro pivot of the week. With 100% cash, fresh weekly slot count, and clean PDT budget, the asymmetric post-print setup may be the cleanest entry opportunity of the phase. The routine cannot execute research or place orders. Opportunity cost is now compounding — 5 consecutive routines short-circuited at the env check while the market traded.
+
+**Action required (operator — escalating, this is now the 5th aborted routine):**
+1. Restore `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the runtime environment, OR
+2. Whitelist `scripts/clickup.sh` in bash_exec so the documented escalation path actually works when Telegram is down.
+
+Until then every routine short-circuits at the env check and no trading can occur.
+
+**Decision: HOLD (forced — no execution performed).**
