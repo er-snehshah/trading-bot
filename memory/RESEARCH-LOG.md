@@ -905,3 +905,65 @@ Trades this week after ARM: 2/3. Cash after ARM: ~$80,629.
 Until then every routine short-circuits at the env check and no research/trading can occur.
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-05 — Pre-market Research (NFP Friday)
+*(Perplexity fallback → WebSearch; Alpaca API 403 — network policy blocks outbound curl; last-known state used)*
+
+### Account
+- Equity: ~$99,883.98 (last known) | Cash: 100% | Buying power: ~$199,768
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- Trades this week: 0/3 — all slots intact | Phase P&L: -$116.02 (-0.12%)
+- *Note: Alpaca API returning HTTP 403 — cloud network policy blocks outbound curl. Broker state estimated from 2026-06-04 EOD snapshot.*
+
+### Market Context
+- **WTI ~$90–92 / Brent $95.25** (+0.23% today) — Brent now AT the $95 threshold; WTI still sub-$95. Iran-deal talk weighing on geopolitical premium despite Brent bounce.
+- **ES futures: -0.61% premarket** — gap-down open likely. SPX closed Thu $7,584.31 (+0.41%). Polymarket 21% probability of positive open.
+- **VIX: ~15.66–16.05** (+1.69%) — calm regime, slight uptick ahead of NFP.
+- **NFP today 8:30am ET** — consensus 80–90k jobs added in May; unemployment rate 4.3% steady. Prior month (April) was 115k. Weak trend. A miss (<70k) = labor cracking read; beat (>110k) = hawkish bias.
+- **Earnings BMO today:** None of consequence (BMO Bank of Montreal printed May 27; no mega-caps pre-open today).
+- **AVGO Q2 FY26 (AMC Wed June 3 / reaction Thu June 4):** Beat on EPS ($2.44 vs $2.39e) and rev ($22.19B vs $22.13B). BUT Q3 AI chip guide $16B vs $17.2B est = guide miss → stock -13–15% Thu June 4. Partially recovered +6% on Alphabet $80B AI capex raise announcement. **Net: negative AI-infra read-through — guide disappointment dominates.**
+- **MRVL (June 4–5):** Jensen Huang endorsed Marvell as "next $1 trillion company" at Computex → stock +32% premarket June 5 on top of prior week's +28%+7% run. Now tracking toward ~$380–400 area.
+- **CRDO:** -5% premarket June 5 after the post-earnings +25% AH surge. Day 5 of the post-print move; fading.
+- **Sector momentum YTD:** Leading: XLE (+26–27%), XLP, XLI, XLB | Lagging: XLK (+32–33% YTD but in lagging rotation quadrant), XLC, XLY, XLF. Consistent multi-week read.
+
+### Trade Ideas
+
+1. **MRVL — DOCUMENTED SKIP (Rule #10 hard violation).**
+   - Catalyst is real: Jensen Huang $1T endorsement at Computex. Confirmed AI-infra demand.
+   - But: +32% premarket on top of +28%+7% prior two sessions = pure chase. Stock has tripled in one week from ~$220 base.
+   - Rule #10: no entry on name already up >5% intraday from prior close unless breakout IS the catalyst with clean structure. +32% premarket ≠ clean structure.
+   - Same asymmetry trap as ARM May 28 (entered +14% post-PCE → stopped -3% same day).
+   - **Pass.** Needs 2–3 sessions of basing and a clean breakout from consolidation before this becomes a real setup.
+
+2. **Energy (OXY / XLE) — CONDITIONAL WATCHLIST (near-trigger, not yet fired).**
+   - Brent $95.25 = AT threshold; WTI ~$90–92 = still below the $95 WTI re-trigger condition.
+   - Rule: re-trigger fires on WTI close >$95, not Brent.
+   - NFP day = wrong day to initiate (binary print at 8:30am, oil reacts to dollar/yields).
+   - If WTI closes >$95 today on a soft NFP / weak-dollar reaction → force-decision OXY/XLE on **Monday**.
+   - **No entry today.** Keep watching the close.
+
+3. **AVGO dip — DOCUMENTED SKIP (falling knife).**
+   - Down 13–15% on guide miss then partial recovery on Alphabet news. Volatile, uncertain direction.
+   - "Good print, bad reaction" pattern — same as NVDA post-May-20 print.
+   - Not a momentum setup; thesis requires more sessions to stabilize.
+   - **Pass.**
+
+4. **Post-NFP reaction — wait-and-see.**
+   - Soft print (<80k): rate-cut expectations rise → growth/tech bid, but AVGO overhang limits AI-infra upside; energy may pop (soft dollar).
+   - Beat (>100k): hawkish bias → yields up, dollar up, equities gap extends down, XLK/XLC under more pressure.
+   - Either path: no clean entry before the print and first 30-min volatility settles.
+   - **Best play: watch, don't act today; reassess Monday with full-day reaction digested.**
+
+### Risk Factors
+- **NFP binary (8:30am ET)** — consensus 80–90k; reaction could go either direction. -0.61% ES pre-open = market already bracing for a soft print.
+- **AVGO guide miss** — AI-infra complex headwind. MRVL's Computex pop and AVGO's guide miss are pulling in opposite directions; sector signal is noisy.
+- **MRVL +32% premarket** — chase risk is the #1 behavioral pressure today. The stock is up 80%+ in one week. Rule #10 holds regardless of how real the catalyst is.
+- **Friday + weekend gap risk** — Middle East / Iran headlines move oil and equities over the weekend; stops don't fill AH.
+- **0% deployed for 8 sessions running** — itch to "do something" is real. Rules are the answer. Patience > activity.
+- **Alpaca API unavailable** — cannot verify account state or place orders via script; operator must restore API access before any live trade execution is possible.
+
+### Decision
+**HOLD.** No qualifying setup today. Documented SKIPs: MRVL (Rule #10, +32% chase), AVGO (falling knife post-guide-miss), energy (WTI sub-$95 trigger). Monitor WTI at close — if >$95 today, energy force-decision on Monday. Trades this week: 0/3. Next decision point: Monday pre-market with NFP reaction digested + WTI close + MRVL Day-2 structure in hand. Patience > activity.
