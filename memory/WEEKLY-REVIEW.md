@@ -222,3 +222,67 @@ Capital preserved (-0.67% on a binary-event week is fine on absolute terms), all
 ### Overall Grade: C
 
 Capital still preserved on absolute terms (-0.87% week, -0.12% phase), full rule compliance on both trades. But: first losing week, profit factor <1, lagged SPX by 1.27%, and the loss came from a known anti-pattern (entering into strength on an already-digested catalyst). Discipline on the Friday no-trade was excellent — kept the loss to one bad entry, not two. Net: a learning week. Adjustment codified for next week.
+
+
+---
+
+## Week ending 2026-06-05
+
+*Full Mon→Fri week. Zero trades, zero positions, 100% cash all 5 sessions. Routine-level breakage: 6 of 15 scheduled routines aborted at TELEGRAM_BOT_TOKEN env-check. NFP Friday (THE pivot) traded without any bot participation. Coincidentally — and importantly — being flat saved the week vs a -2.3% SPX.*
+
+### Stats
+| Metric           | Value         |
+|------------------|---------------|
+| Starting portfolio | $99,883.98 (Fri May 29 EOD) |
+| Ending portfolio   | $99,883.98 (Fri Jun 5 EOD) |
+| Week return        | $0.00 (0.00%) |
+| S&P 500 week       | ~-2.34% (May 29 close 7,579.33 → Jun 5 close ~7,402; Fri NFP-reaction -2.39%) |
+| Bot vs S&P         | +2.34% |
+| Trades             | 0 (W:0 / L:0 / open:0) |
+| Win rate           | N/A (no closed trades) |
+| Best trade         | — |
+| Worst trade        | — |
+| Profit factor      | N/A |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| — | — | — | — | None — 100% cash ($99,883.98) |
+
+### What Worked
+- **Pre-market discipline (Mon-Wed).** Three sessions of documented force-decision skips — energy (WTI $89.75 / $87.76 / $89.39 failed $95 weekly-close re-trigger), MRVL (+27.87% Day-1 chase), CRDO (+25% AH gap), AVGO (binary AMC pre-position), MDT (no edge). Rule #10 entry-day move filter (codified last week) prevented at least two textbook chase entries.
+- **Cash preservation accidentally turned out to be the trade of the week.** SPX fell ~2.34% on the NFP "good news is bad news" reaction; bot at 100% cash banked +2.34% relative on a 0.00% absolute week. First positive vs-SPX week of the phase.
+- **Behavioral test held under pressure.** 8 consecutive sessions at 0% deployed with negative phase P&L was real itch-territory; every session documented "no qualifying setup" rather than forcing one. Patience > activity validated in retrospect.
+- **Rule #10 (entry-day move filter) proved itself in its first live week.** MRVL/CRDO post-print gaps were exactly the pattern the rule was written for. Documented skips, not forced entries. Anti-ARM-pattern discipline.
+
+### What Didn't Work
+- **6 of 15 routines aborted on TELEGRAM_BOT_TOKEN env-check (Thu 6/4 + Fri 6/5).** NFP Friday — the highest-asymmetry setup of the phase, with 100% cash, fresh weekly slots, and clean PDT — traded entirely without bot participation. Pre-market, market-open, and midday routines all halted before any wrapper call. Cost in opportunity terms is real even though luck (SPX -2.39% on the day) meant inaction was correct ex-post.
+- **ClickUp escalation path is documented but non-functional.** TOOL USAGE RULES says scripts/clickup.sh is allowed; bash_exec rejects it as "command not in allowlist". Operator escalation has now been unattainable for 4 calendar days. Documented in 6 successive log entries without resolution.
+- **Zero trades = zero learning.** A week of pure observation banks no execution data. The +7%/-4% framework still has exactly one live data point (ARM 5/28 same-day -3.09%). Statistical power is approximately nil.
+- **Confirmation bias risk on Rule #10.** Skipping MRVL/CRDO felt right and the chase logic is sound — but MRVL closed the week at $290.79 base with continued strength; the basing/breakout reentry the log keeps promising never got executed either. The rule prevents chases but the bot also failed to capture the follow-on.
+- **Phase P&L still negative (-0.12%).** Six trading sessions of preserved capital don't undo the ARM stop-out from 5/28. Beating SPX by 2.34% on a 0.00% absolute week is great relative, but the cushion remains red.
+
+### Key Lessons
+- **Being flat is a position. On a -2.34% SPX week with no edge available, being flat is the highest-EV "trade" possible.** The phase-to-date data now shows that Rule #10 + "no catalyst = no trade" combined with macro-pivot avoidance generates positive relative returns even on zero activity, *when the market is rolling*. Different question on a +2% SPX week.
+- **The infrastructure gap is now the binding constraint, not strategy.** 6 of 15 routines this week did literally nothing because of one missing env var. The rules and process are working when they get to run; the environment isn't letting them run consistently.
+- **A "basing/breakout reentry" plan is a plan only if it's mechanical.** Saying "if MRVL bases for 2-3 sessions, reconsider" produces zero entries because there's no defined trigger for "based." Either codify the trigger (e.g., "5-day high after 3 consecutive inside days at <2% range") or stop writing it as if it's actionable.
+- **TELEGRAM_BOT_TOKEN MISSING + ClickUp not in allowlist = silent operational failure.** Without an operator-side dashboard showing routine completion, this state could persist indefinitely. Memory file logs are the only signal currently reaching the operator.
+
+### Adjustments for Next Week
+- **No TRADING-STRATEGY.md rule changes.** Rule #10 (entry-day move filter) had its first clean win — keep it. Rule #11 (post-catalyst hold review) wasn't exercised this week (no positions). No two-week evidence base for any new rule yet.
+- **Operator escalation (top priority, again):** restore TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID, OR actually whitelist scripts/clickup.sh in bash_exec. Until then, 33-40% of routines short-circuit silently.
+- **If Monday opens with markets digesting the NFP-reaction selloff:** SPX -2.34% week creates the cleanest cash-deployment opportunity of the phase. Watchlist priority: (1) MRVL Day-7 / Day-8 — is it basing or rolling? Define base mechanically (5-day range <3%, holding 20-DMA); (2) AVGO post-print structure (printed Wed AMC); (3) any oversold leader in XLE/XLP/XLI that held up better than the index. **Buy-Side Gate still applies — catalyst-driven only.**
+- **Mechanical reentry trigger (provisional, not codified):** for any post-print gap winner on Rule #10 skip-list, only consider reentry on **5-day base** (high-low range ≤3% over 5 sessions) **plus a new 5-day-high breakout on >1.5x avg volume**. If MRVL or CRDO produce that setup, the entry is auto-qualified. If not, pass.
+- **Routine telemetry:** every aborted routine writes to RESEARCH-LOG with timestamp + reason. This week proved that's already happening, but the noise is now substantial — consider a single AGENT-STATUS.md file the next prompt directive can update, so 6 abort entries don't drown the actual research signal.
+
+### Overall Grade: B
+
+Process under-load: A — every executable session documented a clean, rule-compliant skip; Rule #10 had its first live win; no chase entries forced under pressure. Outcome: A on a relative basis (+2.34% vs SPX), N/A on absolute (0.00%). Infrastructure: D — 40% of routines failed to execute, including NFP Friday. Net: B. The bot did what it was supposed to do when it was allowed to run; what it wasn't allowed to do nearly cost the most asymmetric setup of the phase, but ex-post the inaction was also correct. Process integrity preserved; system reliability is now the highest-priority adjustment.
+
+### Step 6 (Telegram send) — NOT EXECUTED
+TELEGRAM_BOT_TOKEN MISSING. Wrapper unusable. ClickUp escalation rejected (`scripts/clickup.sh` not in bash_exec allowlist). Notification step skipped; this review file is the only delivered artifact for the week. Operator action required to restore alerting before the next routine.
