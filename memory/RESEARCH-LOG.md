@@ -950,3 +950,69 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (currently listed in TOOL USAGE RULES but rejected by executor).
 
 **Decision: HOLD (forced — no execution performed).**
+
+
+---
+
+## 2026-06-06 — Pre-market Research
+*(Perplexity fallback → WebSearch. Alpaca API blocked by network policy — 403 "Host not in allowlist" on paper-api.alpaca.markets; api.perplexity.ai also blocked. Account state from Jun 05 EOD snapshot.)*
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,768 (est.)
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- Last known equity: $99,883.98 (flat — no holdings since ARM/NVDA closed 2026-05-28)
+- **Trades this week: 0/3** — all slots intact
+
+### Market Context
+- **WTI: $89.69–93.62** (intraday range Jun 6) | **Brent: ~$97.44** (Jun 5 ref) — oil higher on renewed US-Iran military clashes in Hormuz; WTI still **below $95 weekly-close re-trigger** for energy thesis
+- **ESM26: -0.31%** premarket — continuing yesterday's selloff; S&P closed at 7,383.74 Thu
+- **VIX: ~15.96** (opened 15.87, range 15.56–16.04) — recovered from Thu's ~28% spike; calm pre-open
+- **Yesterday (Jun 5) — MAJOR SELLOFF:**
+  - Nasdaq -4.18% (1,121 pts; worst since Apr 2025; biggest point drop on record)
+  - S&P 500 -2.64% (200 pts; worst since Oct 2025); closed 7,383.74
+  - Philadelphia Semiconductor Index: largest single-day % drop since March 2020
+  - Root cause 1: **AVGO earnings miss** — beat revenue but did NOT raise AI chip outlook, resetting hyperscaler AI-spend pace. AVGO -7%+ Thu. MRVL -8%, MU -13%, AMD -6.3%.
+  - Root cause 2: **NFP May +172k** (vs ~65k cons) — eliminates rate-cut hopes; 10yr yield jumped to 4.54%; CME FedWatch introduced rate hike risk by year-end
+- **Today's catalysts:** Light Friday. No major earnings BMO confirmed.
+- **Upcoming events:**
+  - Mon Jun 8: **Apple WWDC keynote 1pm ET** — major AI/Siri update (iOS 27 features)
+  - Next week: CPI + PPI reports
+  - Fri Jun 13: **SpaceX IPO** (highest-valued IPO in history) — ongoing tech selling as funds raised
+- **Sector momentum:** XLE Energy + XLI Industrials = **Leading** | XLK Tech = **Lagging** (hammered by semi selloff)
+
+### Trade Ideas
+
+1. **AI/Semi complex (AVGO/MRVL/MU/AMD) — HARD PASS (falling knives).**
+   - AVGO not raising AI outlook = structural guidance reset for the complex
+   - MRVL: +27.87% Tue → +7% Wed → -8% Thu; parabolic and broken
+   - MU -13%, AMD -6.3% in one session; no floor visible
+   - Broken catalyst + >5% downside move = Rule #10 equivalent on the downside. No entry.
+
+2. **Energy (OXY / XLE) — WATCHLIST, no entry today.**
+   - Catalyst: US-Iran forces clashing, Brent ~$97, but WTI $89–93 still below $95 weekly-close re-trigger
+   - Friday + weekend geopolitical headline risk = wrong asymmetry (same logic as May 29 skip)
+   - Re-arm: WTI single-session close above $95 → force written add-or-skip
+
+3. **Apple (AAPL) — SKIP (WWDC binary Mon Jun 8).**
+   - Keynote Mon 1pm ET; AI/Siri announcement expected; binary event
+   - Entering Friday = holding over weekend into binary Monday event; stops don't fill overnight
+   - Pass; reassess post-keynote reaction Mon/Tue if structure is clean and not >5% gap
+
+4. **No new entry today.** Buy-Side Gate fails universe-wide:
+   - Semi/AI: falling knives, broken catalyst
+   - Energy: WTI below $95, Friday/weekend gap risk
+   - AAPL: binary weekend event
+   - XLI Industrials: Leading quadrant but no single-name catalyst with documented edge today
+   - SpaceX IPO overhang next week: ongoing tech selling pressure
+
+### Risk Factors
+- **Regime shift confirmed:** NFP +172k + AVGO reset = "AI-infra supercycle" thesis now in question; rate cuts off the table; rate hike risk by year-end reintroduced. Most significant macro shift since the bot launched.
+- **10yr yield 4.54%:** structural growth/tech headwind; CPI next week is the next pivot
+- **SpaceX IPO (Jun 13):** ongoing capital rotation out of tech into the IPO
+- **ES -0.31% premarket:** modest continuation of selling; no clear floor
+- **VIX ~16:** recovered from Thursday spike but still above the 13-15 calm-baseline of prior weeks
+- **Behavioral risk:** 9 sessions at 0% deployed, phase P&L negative, AND a massive selloff = dual pressure (bounce-FOMO + revenge). Both wrong reasons to trade. 100% cash is the correct position.
+- **Alpaca/Perplexity APIs blocked this session (network policy 403):** no live quotes or order placement possible regardless of thesis — hard operational blocker for any trade today
+
+### Decision
+**HOLD.** 100% cash preserved ($99,883.98). Documented SKIPs: AI/semi (falling knives, AVGO guidance reset), energy (WTI $89–93 below $95; Friday/weekend gap risk), AAPL (WWDC binary Mon Jun 8), industrials (no specific catalyst). Alpaca/Perplexity API blocked this session — no live trading possible regardless. Trades this week: 0/3. Next decision point: Monday Jun 8 pre-market — Apple WWDC keynote reaction, weekend oil/geopolitical developments, CPI/PPI week context. If WTI closes above $95 on any session this week, energy force-decision re-triggers; if AAPL reacts cleanly post-keynote (not >5% gap, clean structure), it becomes a real candidate Mon/Tue.
