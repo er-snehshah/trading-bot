@@ -950,3 +950,30 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (currently listed in TOOL USAGE RULES but rejected by executor).
 
 **Decision: HOLD (forced — no execution performed).**
+
+
+---
+
+## 2026-06-07 — Pre-market Research (ABORTED — network policy blocks all required API hosts)
+
+**Status: HALTED after env pre-check passed but every external API call failed.**
+
+- Env pre-check: ALL six required vars present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID all `set`). This is the first clean env-check in 4 routines — the TELEGRAM_BOT_TOKEN issue from 6/04–6/05 is moot for this routine (it doesn't use Telegram).
+- **New, more severe blocker: every external API host returns HTTP 403 "Host not in allowlist" at the network-proxy layer** — this is the remote environment's network policy rejecting the connection before it ever reaches Alpaca/Perplexity/ClickUp (confirmed via raw `curl` with `-w` showing the literal body `Host not in allowlist`, not an Alpaca/Perplexity/ClickUp auth error):
+  - `bash scripts/alpaca.sh account` → curl exit 22 / HTTP 403 / "Host not in allowlist" (paper-api.alpaca.markets)
+  - `bash scripts/alpaca.sh positions` / `orders` → same
+  - Direct test of `data.alpaca.markets` → same 403 / "Host not in allowlist"
+  - Direct test of `api.perplexity.ai` → HTTP 403 / "Host not in allowlist"
+  - Direct test of `api.clickup.com` → HTTP 403 / "Host not in allowlist"
+- This is **not** an auth/key problem (keys are present and well-formed) and **not** a missing-var problem — it's the environment's outbound network allowlist not including any of the three required API hosts.
+- **Escalation path is also blocked**: cannot send the documented ClickUp alert (api.clickup.com itself returns "Host not in allowlist"). Same dead-end as the 6/04–6/05 TELEGRAM_BOT_TOKEN incidents, different root cause — this time the notification channel itself is network-blocked, not just the wrapper/allowlist mismatch.
+- **Fallback check**: native `WebSearch` (routes through different infra than sandboxed bash/curl) IS reachable — confirmed with a live query. This could substitute for Perplexity per the routine's documented fallback clause ("If Perplexity exits 3, fall back to native WebSearch"), but **Alpaca has no fallback** — without live account/positions/orders data, the Buy-Side Gate cannot be evaluated and no order could be placed even if a setup were found (trading API is the same blocked host).
+- Additional note: `date` resolves to **2026-06-07, a Sunday** — markets closed, no live premarket session exists for this date regardless of the network issue.
+
+**Account state:** UNAVAILABLE (Alpaca blocked). Last known from 6/05 EOD: equity $99,883.98, cash 100%, 0 positions, 0 open orders, daytrade_count 0, trades this week 0/3 (new week resets Monday 6/08).
+
+**Action required (operator — NEW issue, distinct from the resolved-looking TELEGRAM gap):**
+1. Add `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` to this remote environment's outbound network allowlist/policy (Settings → network policy for this environment). Until these four hosts are allowlisted, **no routine in this repo can pull account state, research, place orders, or notify** — every scheduled run will fail identically regardless of which keys are present.
+2. Re-verify TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID separately (still not visible in this routine's var set, but moot until network access is restored).
+
+**Decision: HOLD (forced — no account access, no research capability, no notification capability, and today is a non-trading Sunday in any case).**
