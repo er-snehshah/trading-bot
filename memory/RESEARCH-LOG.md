@@ -991,3 +991,104 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor).
 
 **Decision: HOLD (forced — no execution performed). No trades to commit; logging abort entry only.**
+
+
+---
+
+## 2026-06-08 — Pre-market Research (Inline — via WebSearch)
+
+*Note: prior pre-market session aborted (TELEGRAM missing). This entry reconstructed inline during market-open routine using WebSearch tools.*
+
+### Account
+- Equity: $99,883.98 (assumed — Alpaca blocked, cannot verify) | Cash: $99,883.98 (100%)
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** (fresh week)
+
+### Market Context
+- **WTI: ~$93.63** (+3.41% today) — Iran/Israel strikes re-escalating, Strait of Hormuz near-closure, energy supply premium re-emerging. Below $95 weekly-close re-trigger but rising.
+- **Brent:** directionally elevated alongside WTI; geopolitical premium re-building
+- **ESM26 / SPX futures:** edging higher today (55% probability up open per prediction markets); recovering from Friday's -2.34% weekly loss
+- **VIX: ~21.51** (Friday close after +39.7% spike on NFP shock). Today likely settling from that spike as geopolitical bid offset rate-hike fear
+- **NFP context (Friday June 5):** payrolls +172k vs +80k expected (doubled consensus). Nasdaq -4.18%, S&P -1.2%. 10yr yield >4.5%. Killed rate-cut hopes; added rate-hike probability. "Good news is bad news" selloff — worst Nasdaq day since April 2025 tariffs.
+- **Today's catalysts:**
+  - **GLW (Corning):** +9-10% premarket on Amazon multibillion-dollar multiyear optical fiber/AI data center deal. NEW fundamental catalyst today. Also NVDA $3.2B investment deal in May. Fiber essential for AI DC connectivity.
+  - **MRVL:** +8.8-9% premarket — announced as new S&P 500 addition (effective June 22). Passive-buying catalyst.
+  - **MU:** +7.1% premarket — tech bounce from Friday's semiconductor slide
+  - **Iran-Israel strikes:** geopolitical re-escalation overnight; energy/defense bid
+- **Earnings BMO:** no mega-cap prints
+- **Sector momentum:**
+  - **XLK Tech: +32-33% YTD** — leading (confirmed multi-source; MRVL/AI theme driving)
+  - **XLE Energy: +26-27% YTD** — leading; geopolitical re-acceleration today
+  - **XLI Industrials:** constructive; AI buildout (data centers, power, fiber) supporting
+  - **Financials/Healthcare:** lagging
+
+### Trade Ideas
+
+1. **GLW (Corning) — CONDITIONAL CANDIDATE (cannot verify quotes, blocked)**
+   - Catalyst: Amazon multibillion-dollar AI fiber/DC deal announced TODAY (fresh, not pre-priced). Secondary: NVDA $3.2B investment May. Fundamental demand catalyst, not a momentum chase.
+   - Rule #10 check: +9-10% premarket gap. Technically >5% intraday — BUT the deal itself IS the catalyst (new contract, announced today). Rule #10 exception applies if "breakout itself is the catalyst (clean structure + confirming volume)."
+   - Risk: same gap-chase dynamic as ARM 5/28 (+14% entry → -3% stop same day). ARM's PCE catalyst was 3.5hrs old; GLW's Amazon deal is just released → better asymmetry, but gap still ~10%.
+   - **Verdict: WATCHLIST — re-evaluate at open. If gap compresses to <5% from prior close on volume, clean entry with Buy-Side Gate eval. If still >10% at open bell, Rule #10 applies → SKIP.**
+   - Entry (conditional): ask price at open | Size: floor($99,884 × 0.20 / ask) shares
+   - Take profit: entry × 1.07 | Stop: entry × 0.96 | R:R: 1.75:1
+
+2. **Energy (OXY / XLE) — BORDERLINE WATCHLIST**
+   - WTI $93.63 — below the $95 weekly-close re-trigger but rising fast on Iran/Israel strikes
+   - Geopolitical catalyst IS fresh today (overnight exchange of strikes)
+   - **Verdict: CONDITIONAL — if WTI crosses $95 intraday today, force-decision on OXY. Otherwise hold the $95 trigger standard.**
+
+3. **MRVL — DOCUMENTED SKIP (Rule #10).** +9% premarket on S&P addition = index-rebalancing catalyst, not a business catalyst. Passive buy pressure → real but mechanical. Gap >5% = skip unless bases cleanly. Pass.
+
+4. **MU — DOCUMENTED SKIP.** No specific catalyst; bounce from Friday's semiconductor slide isn't a thesis. Pass.
+
+### Risk Factors
+- **Rate hike risk re-priced Friday:** 10yr >4.5%, VIX 21.51. Rate-sensitive tech / AI names most exposed if yields stay elevated. GLW is AI-infra fiber — less rate-sensitive than pure-growth tech.
+- **Geopolitical binary:** Iran/Israel de-escalation headline would crater WTI 5-10% instantly. Any energy position exposed overnight.
+- **VIX 21.51 → elevated volatility regime.** Wider intraday swings; -4% stops can fill faster.
+- **NFP aftermath:** "good news = bad news" regime means strong macro data → higher yields → tech pressure. Watch 10yr.
+- **Alpaca network blocked** — cannot execute any orders this session.
+
+### Decision
+**HOLD (execution blocked — network policy).** If Alpaca were accessible:
+- GLW entry conditional on open price <5% above prior close (Rule #10 border case requiring clean structure + volume confirmation).
+- Energy re-trigger if WTI crosses $95 intraday.
+- MRVL, MU = skip (Rule #10 chase).
+- Trades this week: 0/3 — all slots intact.
+
+
+---
+
+## 2026-06-08 — Market-open execution (ABORTED — network policy)
+
+**Status: HALTED at STEP 2. All external API endpoints blocked by environment network policy.**
+
+### Env Pre-Check (this session — new failure mode)
+- ALPACA_API_KEY: **set** ✓
+- ALPACA_SECRET_KEY: **set** ✓
+- CLICKUP_API_KEY: **set** ✓
+- CLICKUP_WORKSPACE_ID: **set** ✓
+- CLICKUP_CHANNEL_ID: **set** ✓
+
+All vars present — env check passed. Scripts are executable. **But network policy blocks all outbound API calls:**
+
+- `bash scripts/alpaca.sh account` → `HTTP/2 403 | x-deny-reason: host_not_allowed | "Host not in allowlist"`
+- `bash scripts/alpaca.sh positions` → same 403
+- `bash scripts/clickup.sh "..."` → `curl: (22) 403` (api.clickup.com also blocked)
+
+This is a **different failure mode** from the prior 8 aborted routines (those failed on TELEGRAM_BOT_TOKEN missing + clickup.sh not in bash allowlist). **This session has ClickUp vars set, but the outbound network policy blocks the api.clickup.com endpoint.**
+
+### Execution Impact
+- STEP 2 (account/positions/quotes): **BLOCKED**
+- STEP 4 (buy orders): **BLOCKED**
+- STEP 5 (stop orders): **BLOCKED**
+- STEP 7 (ClickUp notification): **BLOCKED**
+
+Inline pre-market research was completed using WebSearch tools (see entry above). Trade candidates identified: GLW (conditional), OXY/XLE (conditional on WTI $95). Cannot execute.
+
+**Operator action required:**
+1. Add `paper-api.alpaca.markets` and `data.alpaca.markets` to outbound network allowlist, AND
+2. Add `api.clickup.com` to outbound network allowlist (or restore TELEGRAM_BOT_TOKEN for fallback notification path).
+
+**Account assumed unchanged:** $99,883.98 | 100% cash | 0 positions | daytrade count 0 | trades this week 0/3.
+
+**Decision: HOLD (forced — network policy blocking all API execution). 9th consecutive routine unable to execute trades.**
