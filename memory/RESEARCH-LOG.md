@@ -971,3 +971,23 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor for 4+ calendar days).
 
 **Decision: HOLD (forced — no research performed).**
+
+---
+
+## 2026-06-08 — Market-open routine (ABORTED)
+
+**Status: HALTED at env pre-check. 8th consecutive aborted routine.**
+
+- Env pre-check flagged **TELEGRAM_BOT_TOKEN: MISSING**.
+- System prompt directive: "If any var shows MISSING above: send one ClickUp alert naming the missing var, then stop."
+- Attempted `bash scripts/clickup.sh "..."` — rejected: `ERROR: command not in allowlist`. bash_exec allowlist this session: alpaca.sh, perplexity.sh, telegram.sh, git, date, echo. clickup.sh listed in TOOL USAGE RULES but NOT actually allowed by executor (same broken state as 6/4, 6/5, and 6/8 pre-market).
+- Telegram wrapper unusable (token is the missing var).
+- Per stop directive: no Alpaca calls, no order placement. Account assumed unchanged from 2026-06-05 EOD: $99,883.98, 100% cash, 0 positions, 0 open orders, daytrade count 0, trades this week 0/3.
+
+**Cost context — Monday post-NFP-week reopen:** SPX -2.34% last week on NFP "good news is bad news"; today is potentially the cleanest cash-deployment setup of the phase. Bot positioned correctly (100% cash, fresh slots, clean PDT) but cannot execute. 8th consecutive routine short-circuited.
+
+**Action required (operator — BINDING CONSTRAINT, 4+ calendar days unresolved):**
+1. Restore `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the runtime environment, OR
+2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor).
+
+**Decision: HOLD (forced — no execution performed). No trades to commit; logging abort entry only.**
