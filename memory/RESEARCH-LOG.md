@@ -954,7 +954,7 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ---
 
-## 2026-06-08 — Pre-market Research (ABORTED)
+## 2026-06-08 — Pre-market Research (ABORTED — session 1)
 
 **Status: HALTED at env pre-check. 7th consecutive aborted routine.**
 
@@ -971,3 +971,89 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor for 4+ calendar days).
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-08 — Pre-market Research
+*(WebSearch fallback — Perplexity 403/network restricted; Alpaca API 403 — using last-known account state)*
+
+### Account
+- Equity: $99,883.98 (last-known) | Cash: $99,883.98 (100%) | Buying power: $199,767.96
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- **Alpaca API returning HTTP 403** — keys are set but API is rejecting. Cannot pull live state or place orders. Operator action required to restore API access.
+- Trades this week: 0/3 (fresh weekly counter)
+
+### Market Context
+- **WTI: ~$93.63–94.39 (+3.4–4.25%)** — Iran/Israel direct missile exchange overnight. Israel struck military targets in 4 Iranian cities (Tehran, Isfahan, Karaj, Tabriz) following Iran's missile salvo. First direct exchange since April ceasefire. Oil is the primary market mover today.
+- **Brent: ~$97.14–97.68 (+4.35–4.93%)** — same catalyst; approaching $100 psychological level
+- **ES Futures: ~7,419.75 (+0.22%)** — modestly bid premarket despite SPX -2.39% Fri; prediction markets show 55% prob of up open
+- **VIX: ~15.77** (June 2026, FRED) — calm regime for now; geopolitical escalation creates spike risk
+- **NFP May (released Fri 6/5):** +172k vs 85k consensus; unemployment 4.3% unchanged; wages +0.3% m/m / +3.4% YoY. "Good news is bad news" — rate hike odds climbed to ~60% chance of 25bp hike by end-2026 (Fed Chair Warsh). SPX -2.39% Friday on the print.
+- **AVGO Q2 FY26 (reported Wed 6/3):** Beat EPS/rev but Q3 AI chip revenue guided $16B vs $17.2B expected; didn't raise $100B full-year AI target → stock -15% on 6/4. AI-infra complex under pressure.
+- **Earnings BMO today:** Campbell's (CPB) — no mega-cap movers (51 total reports)
+- **Economic calendar today (6/8):** Light — no major US releases. **CPI = Wed June 10** (next macro pivot); **FOMC meeting = June 16–17**
+- **OPEC+:** Approved 4th consecutive output hike (+188k bpd from July) — incremental bearish supply headwind
+
+### Sector Momentum
+| Sector | Quadrant | YTD Est. |
+|--------|----------|----------|
+| XLK Technology | Lagging | +32–33% |
+| XLE Energy | **Leading** | +26–27% |
+| XLI Industrials | **Leading** | +12% |
+| XLP Consumer Staples | **Leading** | — |
+| XLB Materials | **Leading** | — |
+| XLF Financials | Lagging | ~-5% |
+| XLC Comm Svcs | Lagging | — |
+| XLY Consumer Disc | Lagging | — |
+
+Energy re-accelerating sharply today (+4% oil). Tech leadership weakening on AVGO guidance miss + NFP-driven rate-hike repricing. Rotation into real-economy/defensive sectors confirmed multi-week.
+
+### Trade Ideas
+
+1. **OXY (Occidental Petroleum) — PRIMARY CANDIDATE (conditional)**
+   - **Catalyst:** Iran/Israel direct missile exchange (structural escalation, not just "Gulf hostility headlines") — Israel struck 4 Iranian cities including Tehran. Qualitatively more severe than the May 29 Gulf-hostility spike that faded. WTI $94.39 approaching/at historical $95 re-trigger threshold.
+   - **Sector:** XLE in Leading quadrant; OXY = highest operating leverage to oil price in US E&P
+   - **OXY prior close:** ~$57.04 (6/7). Rule #10 threshold = $57.04 × 1.05 = **$59.89**. Oil +4.25% → OXY likely opens ~+4% (~$59.32). PASSES Rule #10 at 4% open; FAILS at >5% ($59.89+). **Must verify at execution.**
+   - **Sizing (est.):** `floor($99,883.98 × 0.20 / ~$59.50)` = ~335 shares (~$19,933 / 19.9% of equity)
+   - **Take profit:** ~$59.50 × 1.07 = **$63.67** (+7%)
+   - **Stop loss:** ~$59.50 × 0.96 = **$57.12** (-4%)
+   - **R:R:** +$1,395 / -$800 = **1.74:1** ✓
+   - **Gate blocker:** Alpaca API 403 — cannot execute until API restored
+
+2. **XOM (ExxonMobil) — BACKUP (same thesis, more liquid)**
+   - Same oil catalyst, lower beta than OXY, tighter spread expected
+   - Use only if OXY spread is wide or if OXY violates Rule #10 at open
+
+3. **AI-infra complex (MRVL/CRDO/NVDA) — HARD SKIP**
+   - AVGO -15% guidance miss = ceiling on AI chip revenue expectations reset lower
+   - NFP-driven rate-hike odds rising = growth repricing
+   - MRVL/CRDO are weeks post-catalyst with no clean base
+   - Pass — no edge; energy is the leading sector, not tech
+
+4. **Campbell's (CPB) post-print — SKIP**
+   - Consumer Staples leading but CPB is not a momentum trade; reaction-trade asymmetry unclear without seeing the print
+
+### Risk Factors
+- **Geopolitical de-escalation:** Ceasefire talks ongoing; a deal or de-escalation announcement could wipe 5–10% off oil instantly. This has happened twice before (April ceasefire; May 29 fade). NOT a reason to skip — the escalation is at a new level — but the exit trigger (stop at -4% / $57.12 on OXY) is the protection.
+- **OPEC+ supply hike:** +188k bpd from July (4th consecutive increase) — incremental headwind to oil price; structurally limits upside above $100 near-term
+- **CPI Wednesday June 10:** Hot print = rate-hike odds spike further → broad market de-risk. Oil stocks have dual sensitivity (oil price up on inflation = good; but rate hike = dollar strength = some oil pressure)
+- **Alpaca API 403 (CRITICAL):** Cannot pull live account state, cannot place orders. Trade thesis is actionable but execution is blocked. Operator must restore API access.
+- **Rule #10 risk:** OXY may gap above 5% from prior close at 9:30am open. Must check OXY vs. $59.89 threshold before entry — if above, pass (use XOM as alternative check).
+- **Rate hike environment:** NFP +172k + Warsh hawkishness = Fed not cutting. Less of a concern for energy (oil price > rate sensitivity for OXY) but creates broad market headwind.
+
+### Decision
+**CONDITIONAL TRADE — OXY if Alpaca API is restored before market open.**
+
+Execute sequence if API restored:
+1. Verify OXY ask < $59.89 at entry (Rule #10 — if ask ≥ $59.89, switch to XOM check)
+2. Market buy OXY (est. ~335 shares)
+3. Limit sell GTC @ $63.67 (+7% take profit)
+4. Stop loss GTC @ $57.12 (-4%)
+5. Cancel whichever order doesn't trigger
+
+If Alpaca remains 403 → **HOLD (forced)**. The setup is the cleanest energy entry since the thesis launched on 5/4: Iran/Israel direct exchange, WTI $94, Energy leading sector, 100% cash, 0/3 weekly trades, 0 PDT used, fresh week.
+
+**Trades this week (if OXY executes): 1/3.** Next decision point: market open with live OXY quote and Alpaca API status.
+
+**⚠ OPERATOR ALERT:** Alpaca API returning HTTP 403. All wrappers (alpaca.sh, perplexity.sh) blocked. Cannot execute any trades. ClickUp notification attempted below.
