@@ -971,3 +971,39 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor for 4+ calendar days).
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-08 — Pre-market Research (Monday — Alpaca/Perplexity/ClickUp network-blocked at egress layer; WebSearch fallback used)
+
+### Account
+- **LIVE PULL FAILED.** `alpaca.sh account/positions/orders` all returned `curl: (22) ... HTTP 403` body **"Host not in allowlist"** — a network egress block, NOT a credential problem (keys verified present and correctly shaped: ALPACA_API_KEY 26 chars, ALPACA_SECRET_KEY 44 chars; same 403 on both `paper-api.alpaca.markets` and `data.alpaca.markets`).
+- Last confirmed state (2026-06-05 EOD snapshot): Equity $99,883.98 | Cash $99,883.98 (100%) | 0 positions | 0 open orders | Daytrade count 0
+- New trading week → Trades this week: 0/3 (assumed unchanged from Friday close; cannot verify live)
+
+### Market Context (WebSearch fallback — Perplexity also network-blocked: wrapper exits 22/"Host not in allowlist", not the documented exit-3 fallback trigger, so this is a different failure mode than prior routines)
+- **WTI/Brent:** WTI ~$93.63 (+3.4%), Brent ~$96.30–97.68 (+3.4–4.9%) — spiking on a weekend Iran–Israel missile exchange; Strait of Hormuz supply risk back in focus, oil up for the session
+- **S&P 500 futures:** ESM26 ~-0.31% premarket — soft open expected
+- **VIX:** ~19 (futures), up from 16.29 a week ago — vol regime stepping up
+- **Today's catalysts:** (1) Iran–Israel escalation driving a risk-off/oil bid; (2) NFP hangover — Friday's jobs beat (+172K vs +85K forecast) triggered a "good news = bad news" -2.39% SPX selloff on rate-hike-odds repricing (week -2.34%); (3) ongoing AI-chip selloff (AVGO -13% on light AI-revenue guidance Thu/Fri, SOX -6%, Nasdaq -1.8%, AMD/INTC/MU all down)
+- **Earnings before open:** Campbell's (CPB) BMO; ~51 names report today per earnings calendars (full BMO list not resolved via search)
+- **Economic calendar:** No FOMC this week (Fed on hold at 3.50–3.75%, third straight pause). May CPI Wed 6/10 (Wells Fargo est. +0.5% m/m / +4.2% y/y) — THE pivot print; May PPI + ECB decision Thu 6/11. ORCL/CHWY report Wed, ADBE/LEN Thu
+- **Sector momentum:** Energy/Industrials/Staples/Materials remain in the leading quadrant (oil spike reinforces Energy's bid); Tech/Comm/Discretionary/Financials lagging — chip selloff deepens tech's lagging-quadrant read; regime unchanged from the multi-week pattern in the trade log
+
+### Trade Ideas
+1. **Energy (XLE/OXY) — WATCHLIST, not actionable today.** Catalyst: Iran–Israel missile exchange reignited the Hormuz oil-supply premium (WTI +3.4% to $93.63, Brent +4.9% to $97.68). Documented re-trigger level is a **WTI weekly close >$95**; today's print is close but hasn't cleared it, and the move is a live geopolitical headline — fast-reversing on any ceasefire/de-escalation news (same risk flagged 5/19 and 5/29). Action: track WTI through the week; only force an add/skip on OXY/XLE if it clears $95 on durable structure (not a single-session spike). Don't chase today's gap — energy names are likely already up >5% intraday (Rule #10 fail unless the breakout itself is the catalyst with confirming volume, which a geopolitical gap is not).
+2. **AI/semis (AVGO/MU/AMD) — SKIP, not a long setup.** Catalyst here is bearish (AVGO's light AI-revenue guide triggered a sector-wide derate: SOX -6%, AMD/INTC/MU down) — a falling-knife pattern, structurally identical to the MDB SKIP on 5/29, not a basing breakout. No long entry until a clean Day-1/Day-2 base prints post-capitulation.
+3. **No new entries pre-CPI (Wed 6/10).** VIX stepping up to ~19, oil spiking on a live geopolitical shock, and the week's real pivot (CPI) still two sessions out — today is a "let the dust settle" day. Entering now on a stale/in-flux catalyst compresses thesis time into the print, the same mistake flagged on 6/3 re: pre-NFP positioning.
+
+### Risk Factors
+- **Cannot verify live account, positions, or open orders.** Alpaca is fully network-blocked (403 "Host not in allowlist" on both trading and data endpoints). Any previously-placed GTC orders cannot be confirmed or managed today. This is materially worse than the prior TELEGRAM_BOT_TOKEN gap — that blocked notifications only; this blocks trading and account visibility entirely.
+- Geopolitical headline risk (Iran–Israel) can reverse the oil bid within hours on any ceasefire signal — chasing energy today risks an ARM-5/28-style same-day round trip
+- VIX ~19 + SPX -2.39% Friday = elevated-volatility regime; wider intraday swings raise stop-out odds on any fresh entry
+- AI/semis derate (AVGO -13%, SOX -6%) risks spilling into broader Nasdaq sentiment, compounding any oil/CPI-driven risk-off move
+- CPI Wednesday is the actual pivot — positioning today on today's headlines compresses thesis time exactly as warned on 6/3
+
+### Decision
+**HOLD (forced).** Cannot pull live equity/cash/positions/orders, cannot verify the Buy-Side Gate (position count, cash, sizing all require live data), and cannot place or manage any order — Alpaca returns 403 "Host not in allowlist" at the network layer on both endpoints (confirmed at the curl level with correctly-shaped credentials; this is an egress-allowlist problem, not an auth problem). Perplexity (`api.perplexity.ai`) and ClickUp (`api.clickup.com`) are blocked the identical way — wrapper exits 22 ("Host not in allowlist"), not the documented exit-3 fallback trigger, so native WebSearch was used for all market-context research per the spirit (not the letter) of the fallback rule. The mandated urgent-alert escalation (`scripts/clickup.sh`) was attempted and **also failed at the network layer** — the escalation path itself is unreachable. No trade can be safely placed without live account confirmation, regardless of setup quality; per "patience > activity," HOLD is the only responsible call.
+
+**Operator action required — NEW issue, distinct from and more severe than the multi-day TELEGRAM_BOT_TOKEN gap (which only blocked notifications):** the network egress allowlist for this session blocks `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, AND `api.clickup.com`. Until these hosts are allowlisted, no pre-market/market-open/midday/daily-summary routine can execute end-to-end — research can be patched with WebSearch, but trading and account verification cannot.
