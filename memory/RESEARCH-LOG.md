@@ -1051,3 +1051,34 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec.
 
 **Decision: HOLD (forced — no execution performed). No trades placed; no TRADE-LOG commit required.**
+
+
+---
+
+## 2026-06-09 — Market-open execution (ABORTED)
+
+**Status: HALTED — network policy blocks all external API endpoints. 12th consecutive aborted routine since 2026-06-04 pre-market.**
+
+### Env Pre-Check
+- ALPACA_API_KEY: set ✓
+- ALPACA_SECRET_KEY: set ✓
+- CLICKUP_API_KEY: set ✓
+- CLICKUP_WORKSPACE_ID: set ✓
+- CLICKUP_CHANNEL_ID: set ✓
+
+### Failure
+- `bash scripts/alpaca.sh account` → `403 Host not in allowlist` (network-level block)
+- `bash scripts/clickup.sh "..."` → `403 Host not in allowlist` (same policy)
+- Root cause: remote execution environment network policy does NOT whitelist `paper-api.alpaca.markets`, `data.alpaca.markets`, or `api.clickup.com`.
+- This is different from prior session failures (which cited TELEGRAM_BOT_TOKEN missing). The underlying network blockage was always present but masked by the earlier TELEGRAM env-check halt.
+
+### Account State (assumed from last known — 2026-06-08 EOD)
+- Equity: $99,883.98 | Cash: 100% | Positions: 0 | Open orders: 0
+- Daytrade count: 0 | Trades this week: 0/3
+
+### Action Required (OPERATOR — BINDING CONSTRAINT)
+1. **Whitelist in environment network policy:** `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.clickup.com`
+2. Optionally restore `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` for Telegram alerts (secondary path)
+3. Until network access is restored, zero trading execution is possible from this environment.
+
+**Decision: HOLD (forced). No trades placed.**
