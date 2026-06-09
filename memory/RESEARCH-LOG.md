@@ -1032,3 +1032,66 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor for 6 calendar days).
 
 **Decision: HOLD (forced — no research performed).**
+
+
+---
+
+## 2026-06-09 — Pre-market Research
+*(WebSearch fallback — Perplexity blocked by network policy; Alpaca API also blocked (403 — host not in allowlist); last-known account state from 2026-06-08 EOD used)*
+
+### Account
+- Equity: ~$99,883.98 (last confirmed 6/8 EOD; Alpaca returns 403 — host not in allowlist)
+- Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** — fresh week, all slots intact (Tuesday)
+
+### Market Context
+- **WTI:** ~$90–91 (pulled back Tuesday from Monday's +4% spike to $94; Israel-Iran ceasefire talks erasing geopolitical premium) | **Brent:** ~$93–94 (prev close $94.25, range $93.12–$94.43)
+- **ESM26:** +0.71% premarket — rebounding from Friday's -2.39% NFP-reaction selloff; Polymarket 89% implied probability SPX opens higher
+- **VIX:** 18.56 closed, opened today at 20.29, intraday low 17.94 — elevated vs last week's 15–17 band; some fear premium from Friday's drop unwinding
+- **AVGO post-print (6/3 AMC):** AI rev +143% YoY but guided next-quarter AI chips ~$16B vs $17.2B expected; kept full-year $100B AI target unchanged → stock -14–15%. Punished for no guide raise on sky-high expectations.
+- **MRVL S&P 500 inclusion (announced 6/5):** Effective 6/22; +10.4% on announcement; NVDA invested $2B; Jensen Huang called it potentially "next trillion-dollar company"; up ~210% YTD
+- **Apple WWDC (6/8):** AI-powered Siri ("Siri AI") unveiled — positive AI hardware/ecosystem demand signal
+- **Alphabet $85B equity raise** for AI infrastructure — confirms hyper-scaler AI capex cycle intact
+- **Earnings BMO today:** 22 reports total; no mega-cap BMO prints identified
+- **Economic calendar this week:**
+  - Today 6/9: Light — no major prints
+  - **Wed 6/10: CPI** — THE macro pivot this week
+  - **Wed 6/10 AMC: Oracle earnings** — AI capex read-through
+  - Thu 6/11: PPI + Continuing Claims
+  - Fri 6/12: University of Michigan Consumer Sentiment
+- **Sector momentum (consistent multi-week):** **Leading**: XLB (+22% YTD, #1 on sticky-inflation hedge), XLP, XLI, XLE | **Lagging**: XLK, XLC, XLY, XLF
+
+### Trade Ideas
+
+1. **Energy (OXY / XLE) — WATCHLIST, no entry.**
+   - WTI hit $94 Monday (above $95 weekly-close re-trigger threshold by proximity) but Israel-Iran ceasefire talk pulled it back to ~$91 Tuesday.
+   - Rule #9: don't force on a whipsaw sector. The trigger is a weekly **close** >$95, not an intraday spike.
+   - **SKIP.** Re-arm: WTI weekly close >$95.
+
+2. **MRVL — DOCUMENTED SKIP (Rule #9).**
+   - Compelling story: S&P 500 inclusion 6/22 + NVDA $2B investment + Jensen endorsement + AI bookings + base forming since 6/3 close.
+   - **Fatal flaw:** XLK = Lagging sector per every multi-week rotation read. Rule #9: only buy in leading sectors. Cannot override.
+   - **SKIP.** Re-evaluate only if XLK rotation confirms to leading (multi-source required).
+
+3. **Oracle (ORCL) — WATCHLIST for Thursday post-print only.**
+   - Reports AMC Wednesday 6/10 (same night as CPI reaction digestion). AI capex commentary is key variable.
+   - If beat + raise + <5% gap Thursday → evaluate Buy-Side Gate. XLK lagging sector constraint still applies unless regime shifts.
+   - **Do NOT pre-position into binary.**
+
+4. **No new entry today.**
+   - CPI Wednesday 24 hours away = wrong day to commit fresh capital
+   - Energy failed weekly-close re-trigger
+   - MRVL / ORCL = XLK lagging sector (Rule #9 hard block)
+   - Materials (XLB): leading sector, no specific single-name catalyst → Buy-Side Gate fails
+
+### Risk Factors
+- **CPI Wed (6/10) is the week's binary.** Hot print = XLK pressure, energy potential bid; cool print = growth bid, Thursday entry window opens
+- **VIX 18.56** (elevated from 15–17) — Friday's NFP selloff not fully resolved; mean-revert regime, not breakout regime
+- **AVGO's "no raise" punishment** (-15%) sets a very high bar for Oracle Wed; any miss or inline guide = tape risk Thursday
+- **Geopolitical whipsaw:** Israel-Iran ceasefire moved WTI ±5% in 48 hrs; energy entries remain noise-dominated
+- **MRVL temptation:** 210% YTD + S&P inclusion + NVDA backing = massive narrative pull → Rule #9 is the hard stop
+- **10+ consecutive no-trade sessions** (since NVDA/ARM closed 5/28); itch to deploy is real, CPI is the right next inflection
+
+### Decision
+**HOLD.** Patience > activity. 100% cash ($99,883.98) preserved into CPI Wednesday. Documented SKIPs: energy (WTI $91, fails $95 weekly-close re-trigger), MRVL (Rule #9 — XLK lagging), ORCL (binary AMC Wed — no pre-position), materials (no specific catalyst). **Next high-conviction setup: Thursday morning if CPI prints cool + Oracle beats tonight** → post-CPI entry window with AI/growth bid and potentially XLK rotation. Trades this week: 0/3. Next decision point: Wednesday pre-market with CPI positioning in hand.
