@@ -1032,3 +1032,77 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES but rejected by executor for 6 calendar days).
 
 **Decision: HOLD (forced — no research performed).**
+
+---
+
+## 2026-06-09 — Pre-market Research
+*(Perplexity blocked — network sandbox. WebSearch fallback. Alpaca blocked — network sandbox; account state from 2026-06-08 EOD snapshot.)*
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Daytrade count: 0 | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** — all slots intact (Tuesday, fresh week)
+
+### Market Context
+- **Oil:** WTI trading range $91.09–$95.38; Brent $94.48 (+1.49% on 6/8). Israel-Iran fragile ceasefire → bid fading slightly; still elevated vs. pre-tension levels.
+- **S&P 500 futures:** ES +0.35–0.71% premarket; Polymarket 89% probability of up open. Recovering from SPX -2.34% last week (NFP "good news = bad news").
+- **VIX:** 18.92 on 6/8 close (down 12.04% from 21.51 prior close). Fear fading but not complacent; still above 18 = caution.
+- **Catalysts today:**
+  - Apple WWDC ongoing — AI-powered Siri ("Siri AI") showcase continues
+  - Alphabet: $85B equity raise for AI infrastructure buildout
+  - MRVL: S&P 500 addition effective this week; already surged +27.87% on print — extended
+  - AVGO: -20% post-earnings (cautious AI revenue guidance — dragged sector Friday)
+  - NVDA + SK Hynix: multi-year AI memory partnership (announced Sunday 6/7) → MU recovery catalyst
+  - SpaceX IPO next Friday — market attention magnet all week
+- **Earnings BMO today (6/9):** ~22 reports; no mega-cap confirmed; no single-name setup identified BMO
+- **Economic calendar — CRITICAL:**
+  - **CPI (May) → Wednesday June 10, 8:30 AM ET** — consensus core ~2.8% YoY; March was 3.3%. Binary risk event.
+  - PPI → Thursday June 12
+  - Initial Claims → Thursday June 12
+  - UMich Consumer Sentiment → Friday June 13
+  - No FOMC this week
+- **Sector momentum YTD (as of early June 2026):**
+  - XLK (Tech): +32–33% — LEADING (regime shift from prior log entries showing XLK lagging)
+  - XLE (Energy): +26–27% — STRONG
+  - XLI (Industrials): +12%
+  - XLF (Financials): -5% — lagging
+  - XLY: low single digits — lagging
+
+### Ticker Watch: MU (Micron Technology)
+*(No positions held; research for potential entry)*
+- Friday 6/6: MU -13% (AVGO cautious guidance + NFP rate-spike = sector flush)
+- Sunday 6/7: NVDA + SK Hynix multi-year AI memory partnership announced → MU oversold bounce catalyst
+- Tuesday 6/9 premarket: MU +6.9–10% recovery
+- Upcoming: MU Q3 FY2026 earnings **June 24** — structural DRAM tailwind (prices forecast +58–63% Q2 2026)
+- **Rule #10 check:** MU premarket +7–10% → likely >5% from prior close at open. FAILS Rule #10 at market open. Entry requires Day-1 base formation and a sub-5% intraday entry trigger.
+
+### Trade Ideas
+
+1. **MU (Micron Technology) — Day-2 base entry post-CPI**
+   - Catalyst: NVDA-SK Hynix AI memory partnership + DRAM pricing tailwind + June 24 earnings setup
+   - Problem today: Gap open >5% violates Rule #10. CPI tomorrow = binary hold-through risk.
+   - Plan: SKIP today. Watch Day-1 close structure. If CPI prints benign Wednesday → evaluate Day-2 breakout entry Thursday morning.
+   - Entry (hypothetical, post-CPI): Day-2 base breakout level
+   - Stop: entry × 0.96 (-4%); Target: entry × 1.07 (+7%)
+   - Size: floor($99,884 × 0.20 / ask) shares
+
+2. **XLK / tech continuation — post-AVGO-reset setup**
+   - Catalyst: Sector absorbed AVGO -20% shock; NVDA/MU recovering + Apple WWDC + Alphabet $85B AI capex
+   - Problem today: CPI tomorrow; entering tech day before CPI print = wrong asymmetry (hot CPI = rate-spike = tech selloff)
+   - Plan: SKIP today. Re-evaluate Thursday if CPI benign; identify best-structured name with Day-2 base (NVDA, AMAT, or similar)
+
+3. **OXY / XLE energy — WTI proximity to $95 re-trigger**
+   - WTI at $91–95, approaching the $95 re-trigger documented from prior sessions
+   - Headwind: fragile ceasefire narrative reducing geopolitical premium
+   - Plan: SKIP unless WTI closes above $95 today; re-evaluate Thursday
+
+### Risk Factors
+- **CPI Wednesday 8:30 AM** — hot print (>+0.3% MoM) = tech/semis flush; single largest near-term risk
+- VIX 18.92 — elevated; CPI shock can spike to 25+ fast from here
+- MU Rule #10 violation at open — chasing +10% bounce = the ARM pattern (5/28)
+- AVGO -20% guidance miss signals AI capex cycle may be pausing near-term
+- SpaceX IPO next Friday = capital diversion risk from other tech names
+- Alpaca + Perplexity still blocked by network sandbox — cannot verify live quotes or place orders this session
+
+### Decision
+**HOLD** — CPI tomorrow is the veto. MU is the best-identified setup of the week but Rule #10 blocks a today-entry and the binary macro risk makes hold-through wrong. Preserve all 3 weekly slots. Re-evaluate Thursday post-CPI for MU Day-2 or XLK continuation. Patience > activity.
