@@ -1092,3 +1092,39 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES + stop-directive fallback but rejected by executor).
 
 **Decision: HOLD (forced — no research performed).**
+
+---
+
+## 2026-06-10 — Pre-market Research (re-run, NEW BLOCKER: network host allowlist)
+
+**Status: Env var pre-check PASSED (different from prior aborted runs), but ALL external API calls now blocked by network policy ("Host not in allowlist", HTTP 403).**
+
+- Env pre-check (this session's required vars): ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all SET. (TELEGRAM_BOT_TOKEN not part of this session's gate.)
+- `bash scripts/alpaca.sh account` / `positions` / `orders` → all fail: `curl: (22) The requested URL returned error: 403`, body `Host not in allowlist`. Direct curl to `$ALPACA_ENDPOINT/account` confirms same — paper-api.alpaca.markets is not on the egress allowlist.
+- `bash scripts/perplexity.sh` → same `Host not in allowlist` 403 (exit 22, not the documented exit 3 for missing key — api.perplexity.ai not allowlisted).
+- `bash scripts/clickup.sh` → same `Host not in allowlist` 403 (api.clickup.com not allowlisted). Script's local-fallback branch only triggers when creds are unset, so it hard-fails instead of writing DAILY-SUMMARY.md; logging this alert here + manually appending DAILY-SUMMARY.md instead.
+- **This is a NEW and DIFFERENT blocker than the 13 prior aborted routines** (those failed on TELEGRAM_BOT_TOKEN/clickup.sh-not-in-bash-allowlist). This time the env vars are correct but the network egress allowlist for this session excludes paper-api.alpaca.markets, data.alpaca.markets, api.perplexity.ai, and api.clickup.com.
+- Fell back to native WebSearch for market context per Step 3 fallback instructions (noting fallback as required).
+
+**Account state:** UNKNOWN — cannot query Alpaca. Last known (2026-06-09 EOD): equity $99,883.98, 100% cash, 0 positions, 0 open orders, daytrade count 0, trades this week 0/3 (Wed of new week, fresh slots intact).
+
+**Market context (via WebSearch, 2026-06-10 pre-market):**
+- **CPI (May) due 8:30am ET TODAY — not yet printed at routine time.** Consensus: headline +0.5% m/m / 4.2% y/y (3-yr high), core +0.3% m/m / 2.9% y/y. Market expects zero rate cuts in 2026; hawkish surprise risk is real.
+- **VIX ~20.45** intraday 6/9 (up +8% from 6/8 close of 18.92) — elevated vs. last week's ~16.
+- **Oil:** Brent ~$91.96 (range $89.61-$94.43), WTI range $86-$91.54. Spiked toward $94+ on renewed Iran-Israel strikes (first since April ceasefire), then faded back below $92 on Trump ceasefire comments / Iran statement it ended operations against Israel (conditional on Israel not hitting Lebanon). Fragile, headline-driven — re-escalation risk into the print.
+- **SPX futures ~-0.47% premarket**; Polymarket implies only 22% odds of a green open today — bearish positioning ahead of CPI.
+- **Sector regime:** Energy, Defense (LMT-led, multi-yr budget cycle), Semis (NVDA/AVGO), Industrials (CAT-led reshoring) still leading; Consumer Discretionary, REITs, Utilities lagging (rate-sensitive). Consistent with prior weeks' read.
+- **Earnings:** ORCL reports this week (AMC, date TBD this week); CHWY, SMCI, CASY, DKNG, AAL also on this week's calendar — none confirmed BMO today as a clean single-name catalyst.
+
+**Trade ideas (documented for record only — NOT executable, see below):**
+1. **Energy (XLE/XOM/OXY)** — catalyst: Iran-Israel re-escalation risk premium in oil + CPI. SKIP pre-print: oil already faded off its spike, ceasefire-talk whipsaw = exactly the "wrong day to commit" pattern flagged 5/29. Re-evaluate post-CPI if Brent reclaims >$94 on confirmed escalation.
+2. **Defense (LMT/RTX)** — catalyst: multi-year budget cycle + active Iran-Israel conflict tailwind. No fresh single-day catalyst today; would need a specific news trigger (contract award, escalation headline) to qualify under Rule #6.
+3. **Semis (NVDA/AVGO)** — leading sector, but per Rule #10 several names (MRVL, CRDO) are already extended +25-28% post-print from last week — chasing risk remains high. No new catalyst today.
+
+**Decision: HOLD (forced).** Two independent reasons: (1) network allowlist blocks all order placement/account verification — Buy-Side Gate cannot even be checked; (2) substantively, CPI (today's binary macro catalyst) has not yet printed — pre-positioning ahead of it violates "reaction quality > entry timing" precedent from NFP Friday and AVGO-AMC days. Even if execution were possible, today's correct action is to wait for the 8:30am CPI print and read sector reaction before any entry.
+
+**Action required (operator — NEW escalation, separate from TELEGRAM_BOT_TOKEN issue):**
+1. Add `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` to this session's network egress allowlist — without these, NO routine (research, trading, or notification) can function regardless of env-var/credential state.
+2. TELEGRAM_BOT_TOKEN issue from prior 13 routines may now be moot for this task variant (its env-check doesn't gate on Telegram), but still unresolved for routines that do check it.
+
+**Next decision point:** If network access is restored intraday, re-run market-open/midday routines to read CPI reaction across Energy/Defense/Semis before any entry — full $99,883.98 dry powder and clean weekly slots (0/3) remain available once execution is possible.
