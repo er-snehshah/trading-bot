@@ -1177,3 +1177,24 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-CPI. Documented SKIPs: pre-CPI entry (binary macro), energy (WTI $89 fails $95 re-trigger despite Iran headlines — curve says contained), CHWY/LOVE (no edge). Watchlist for midday/post-CPI: NVDA/MRVL/AVGO on soft-CPI rate-relief, XLE only if WTI breaks $95 intraday on real escalation. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with CPI print digested and post-reaction tape readable.
+
+
+---
+
+## 2026-06-10 — Market-open routine
+
+**Env: all keys present. Account verified live.**
+
+### State
+- Equity $99,883.98 | Cash $99,883.98 (100%) | 0 positions | 0 open orders | daytrade_count 0 | trades this week 0/3
+
+### Plan from pre-market
+- Pre-market documented HOLD pre-CPI; explicit deferral to midday routine for post-CPI reaction read.
+- No planned tickers to validate; no entries staged.
+
+### Action
+- No orders placed. No quote checks needed (no candidates).
+- Patience > activity holds: CPI 8:30am ET + US/Iran strike-exchange overnight = binary macro day; pre-positioning into a 1hr-old print on a fluid geopolitical tape is the wrong asymmetry.
+- Midday routine will read post-CPI tape + reaction quality, then evaluate Buy-Side Gate on any qualifying setup.
+
+**Decision: HOLD (per pre-market plan). No TRADE-LOG changes, no Telegram, no commit.**
