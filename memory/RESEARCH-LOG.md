@@ -1198,3 +1198,34 @@ Until then every routine short-circuits at the env check and no trading can occu
 - Midday routine will read post-CPI tape + reaction quality, then evaluate Buy-Side Gate on any qualifying setup.
 
 **Decision: HOLD (per pre-market plan). No TRADE-LOG changes, no Telegram, no commit.**
+
+
+---
+
+## 2026-06-10 — Midday routine
+
+**Env: all keys present. Account verified live.**
+
+### State
+- Equity $99,883.98 | Cash $99,883.98 (100%) | 0 positions | 0 open orders | daytrade_count 0 | trades this week 0/3
+- `positions` and `orders` both return `[]` — confirmed flat
+
+### Position management (Steps 3–5)
+- No losers to cut (no positions)
+- No winners to tighten (no positions)
+- No thesis to review (no positions)
+- True no-op on portfolio side
+
+### Post-CPI read (Step 6 — Perplexity)
+- **May CPI HOT:** headline **+0.5% m/m / +4.2% y/y** (vs ~3.7% y/y cons); core **+0.2% m/m / +2.9% y/y** (vs ~2.7% cons). Beat consensus on both measures — inflation re-acceleration print.
+- Implication: rate-cut hopes pushed further out; growth/tech rate-relief trade off the table for now; defensive/value rotation favored. ESM26 was already -0.31% to -1.1% premarket; a hot CPI on top of US/Iran strike-exchange headlines = risk-off tape continuation, not a buyable reaction.
+- Energy: WTI midday quote not surfaced cleanly, but pre-market $89.05 + curve in steep backwardation + hot CPI (USD bid) = oil unlikely to clear $95 weekly-close re-trigger today. Energy thesis still on hold.
+
+### Buy-Side Gate evaluation
+- Tech leaders (NVDA/MRVL/AVGO) — no edge into a hot CPI; rate-sensitive names get hit hardest. Skip.
+- Energy (XLE/OXY) — re-trigger condition still failed. Skip.
+- Defensives (XLP/XLU) — leading on momentum but no specific single-name catalyst today. Skip.
+- No qualifying catalyst-driven setup. Buy-Side Gate fails universe-wide on a hot-CPI risk-off day.
+
+### Decision
+**HOLD.** No action taken. Cash 100% preserved into a risk-off tape post-hot-CPI. Trades this week: 0/3 — all slots intact. Step 7 (Telegram) skipped — no action to notify. Next decision point: Thursday pre-market with CPI fully digested, PPI 8:30am, and post-CPI sector damage assessable.
