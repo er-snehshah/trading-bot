@@ -1091,4 +1091,56 @@ Until then every routine short-circuits at the env check and no trading can occu
 1. Restore `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` in the runtime environment, OR
 2. Actually whitelist `scripts/clickup.sh` in bash_exec (listed in TOOL USAGE RULES + stop-directive fallback but rejected by executor).
 
+---
+
+## 2026-06-10 — Pre-market Research (COMPLETED — WebSearch fallback)
+
+**Env check:** ALPACA_API_KEY ✓ ALPACA_SECRET_KEY ✓ PERPLEXITY_API_KEY ✓ CLICKUP_API_KEY ✓ CLICKUP_WORKSPACE_ID ✓ CLICKUP_CHANNEL_ID ✓ — all set. Previous ABORTED entry was from a prior session that required TELEGRAM_BOT_TOKEN; this session's workflow does not.
+**API status:** Alpaca 403 (network policy — outbound blocked in this container). Perplexity 403 (same). WebSearch fallback used for all research. Account state from last known EOD (2026-06-09).
+
+### Account Snapshot (last known — 2026-06-09 EOD)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Phase P&L: -$116.02 (-0.12%)
+- Positions: 0 | Open orders: 0 | Daytrade count: 0
+- Trades this week: 0/3 (Wed — all slots intact)
+
+### Market Context
+- **Oil:** WTI fell below $90 post Iran-Israel ceasefire (weekend). Brent ~$91.96 (range $89.61–$94.43 today). Strait of Hormuz still effectively closed under dual US/Iran blockade — supply disruption ongoing despite ceasefire. WTI fails $95 re-trigger (energy watchlist still off).
+- **SPX futures:** Down ~0.47% premarket. CPI print due this morning (~8:30am ET) — primary driver.
+- **VIX:** ~20.18 (+6.68%). Day range 17.52–23.34. Elevated into CPI; 52-week range 13.38–35.30.
+- **Macro today — CPI (HIGH IMPACT):** May CPI expected at 4.2% annual. Strong May NFP (+172k, doubled estimates) + April JOLTS 2-yr high → rate hike expectations building, yields rising. CPI print is the binary event of the session.
+- **Earnings BMO today:** No major market-movers before open. ORCL (Oracle) and CHWY (Chewy) report AMC.
+- **Other catalysts:** SpaceX IPO slated for next Friday — investors may be raising cash now. SPX rallied 20.6% from Mar 30 to Tue Jun 9 without meaningful pullback → correction risk real.
+- **FOMC:** No meeting today; next rate decision TBD but rate hike expectations gaining traction per NFP/JOLTS data.
+
+### Sector Momentum (YTD 2026 — updated, regime shift from prior log)
+| Sector | ETF | YTD |
+|--------|-----|-----|
+| Technology | XLK | +32–33% ← **NEW LEADER** |
+| Energy | XLE | +26–27% (fading, WTI <$90) |
+| Industrials | XLI | +12% |
+| Materials | XLB | +13% |
+| Financials | XLF | -5% ← laggard |
+| Health Care | XLV | -3% ← laggard |
+
+**Regime shift noted:** Prior log showed XLK lagging; YTD data shows XLK is now the top sector. AI-infra demand (NVDA, AVGO post-prints) has driven tech back to leadership. Energy leading YTD but momentum fading on ceasefire.
+
+### Trade Ideas
+1. **ORCL (Oracle) — Day-1 post-earnings Thursday** — Reports AMC tonight. Oracle is the next AI-cloud spend barometer (after AVGO disappointed on outlook). If beat+raise: clean Day-1 breakout setup Thursday morning IF open <5% from close. Catalyst: AI cloud revenue acceleration. Entry/stop/target: entry ~open print Thu, stop -4%, target +7%. **Do NOT pre-position today (binary catalyst tonight).**
+2. **XLK / AI-infra name (MSFT, META, AMZN)** — If CPI prints cool (<4.0%), rate hike fears abate, tech sector gets relief rally. XLK now YTD leader — momentum is real. Watch for a clean setup in a large-cap AI name on CPI reaction if there's no gap >5%. Sector: leading (XLK). Catalyst: CPI miss + AI infrastructure spend.
+3. **Energy (XLE/OXY) — SKIP** — WTI <$90, ceasefire removing premium, fails $95 re-trigger. No energy entry until WTI >$95 on a close basis.
+
+### Risk Factors
+- CPI 4.2% expected → if hotter, rate hike probability spikes → market selloff, yields up, tech down
+- VIX 20+ with intraday spike to 23.34 → elevated uncertainty
+- SPX up 20.6% without pullback → mean-reversion risk
+- SpaceX IPO next Friday → potential cash-raising pressure on market this week
+- Hormuz blockade ongoing → supply disruption tail risk
+- Network policy (Alpaca 403) → cannot confirm live positions or place orders; **operator must verify network allowlist for outbound API calls**
+
+### Decision: HOLD
+- CPI print is binary — wrong asymmetry to enter into the number
+- Best setup of the week is ORCL Day-1 Thursday IF tonight's print beats+raises with clean open
+- 100% cash, all 3 weekly slots intact, PDT budget 0/3 — fully positioned to strike Thursday
+- Patience > activity; wait for CPI reaction and ORCL post-print before committing capital
+
 **Decision: HOLD (forced — no research performed).**
