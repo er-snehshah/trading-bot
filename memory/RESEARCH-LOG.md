@@ -1130,3 +1130,50 @@ Until then every routine short-circuits at the env check and no trading can occu
 2. Actually whitelist `scripts/clickup.sh` in bash_exec.
 
 **Decision: HOLD (forced — no execution performed). No TRADE-LOG changes; no Telegram send.**
+
+
+---
+
+## 2026-06-10 — Pre-market Research (Wednesday — CPI day + US/Iran strikes headline)
+
+*Env restored — all required keys present this session. First successful pre-market run since 2026-06-03.*
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $399,535.92
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- Last equity: $99,883.98 (flat — no holdings)
+- **Trades this week: 0/3** — all slots intact (Wed of new week)
+
+### Market Context
+- **WTI ~$89.05** (CME Jun'26 futures) | Brent: no clean live print in results; directionally low-$90s. Despite headline of US/Iran strike exchange, front-month is **still below the $95 weekly-close re-trigger** for the energy thesis. Polymarket strikes bracket $89.99-$91.99. Backwardation: Jul $85.91 → Sep $82.48 → Oct $80.91 (deep curve roll-down, demand concerns persist).
+- **ESM26: -0.31% to -1.1%** premarket (Markets Insider -0.31% at boot; Bloomberg cited -1.1% by 7:45am NY on "weakness in technology continues and the US and Iran exchanged strikes"). Yesterday's range 7,247-7,491 (wide) — vol is back. SPX closed Mon at 7,405.73 (YTD +8.18%, MTD -2.30%). Tape rolling off last week's NFP-reaction selloff.
+- **VIX:** not directly surfaced; given ES -1.1% + active geopolitical headline + CPI in 1hr, presumed mid-to-high teens / low 20s. Calm regime is broken.
+- **Today's catalysts (THIS IS THE MACRO PIVOT):**
+  - **8:30am ET — May CPI release** — the day's #1 driver
+  - **US/Iran strike exchange overnight** — geopolitical re-escalation, oil's response so far muted (curve says supply not yet impaired)
+  - **Earnings BMO:** Chewy (CHWY, cons $0.24), Lovesac (LOVE, cons -$1.05) — neither is a mega-cap or sector mover
+- **Week ahead:** PPI Thu 8:30am, Real Earnings Fri. No FOMC this week.
+- **Sector momentum (YTD-into-June):** **XLK +32-33%** leads on absolute YTD basis though its recent momentum has cooled (some screens place it in Lagging quadrant on relative-strength terms); **XLE +26-27%** still strong; **XLI +12-13%** trails both. Multi-source consensus: cyclicals/defensives (XLE, XLI, XLP, XLB) leading on momentum; tech mixed; XLF/XLV laggards.
+
+### Trade Ideas
+
+1. **NO ENTRY pre-CPI.** CPI prints at 8:30am ET — 1hr from now. Buying anything pre-print = position-sizing violation on a binary macro event (same logic as never adding pre-NVDA-earnings). The Buy-Side Gate fails on every name in the universe because the dominant catalyst is unresolved.
+
+2. **Energy (OXY / XLE) — DOCUMENTED SKIP (re-trigger still failed).** US/Iran strike headlines should have spiked WTI; instead WTI is **flat at $89** with the curve still in steep backwardation. That tells us the market is reading the strike exchange as contained, not escalatory. Rule #9 enforced — re-trigger condition (>$95 weekly close) not met. Re-arm if WTI closes >$95 any single session.
+
+3. **CHWY / LOVE BMO — SKIP.** Neither is a leading-sector catalyst-rich entry. Chewy is a discretionary pet retailer (XLY lagging); Lovesac is a small-cap consumer name. No edge here.
+
+4. **Post-CPI reaction (watchlist only):** If CPI comes in **soft** → growth/tech rate-relief bid possible (XLK leaders re-test highs); look at NVDA, MRVL, AVGO for clean follow-through (NOT chases). If CPI **hot** → defensive bid + dollar up + tech rolls; the SPX -2.3% MTD trade continues; nothing to chase, energy may re-bid if geopolitical premium adds. **In-line** = most likely (per recent prints' modest beats); muted reaction either way. **Decision deferred to midday routine** once the print + market reaction are visible.
+
+5. **No mechanical reentry trigger met yet on prior skip-list (MRVL, CRDO, AVGO).** Last week's adjustment defined: "5-day range ≤3% + new 5-day high breakout on >1.5x avg volume" as the auto-qualify trigger. Need actual mid-week data on those names to evaluate — not surfaced in pre-market research today. Defer to midday.
+
+### Risk Factors
+- **CPI 8:30am ET is THE event.** Pre-positioning into it = sizing violation on a binary. Post-print direction is unknown; default action remains HOLD.
+- **US/Iran strike escalation risk.** Headline is overnight; if strikes intensify intraday, WTI snaps and the tape risks-off further. Energy adds today still wrong (Friday-into-weekend gap risk argument applies — wrong day to commit on a geopolitically fluid macro day).
+- **Tech in mixed momentum state.** YTD leader (XLK +32%) but some screens have it in lagging quadrant on recent relative strength. CPI determines which framing dominates.
+- **Bot has been inactive 7+ trading days.** Behavioral pressure to "do something now that env is restored" is real. The correct answer remains: no qualifying setup pre-CPI = no trade. Patience > activity.
+- **Tape volatility expanding:** ES intraday range 7,247-7,491 yesterday = 3.3% range. Single-session whipsaw risk is back. Sizing flexibility matters more than entry timing.
+- Daytrade count 0/3, weekly trades 0/3 — full PDT and slot budget intact.
+
+### Decision
+**HOLD.** No new trades pre-CPI. Documented SKIPs: pre-CPI entry (binary macro), energy (WTI $89 fails $95 re-trigger despite Iran headlines — curve says contained), CHWY/LOVE (no edge). Watchlist for midday/post-CPI: NVDA/MRVL/AVGO on soft-CPI rate-relief, XLE only if WTI breaks $95 intraday on real escalation. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with CPI print digested and post-reaction tape readable.
