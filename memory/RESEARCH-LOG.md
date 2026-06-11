@@ -1277,3 +1277,22 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-11 — Market-open routine (ABORTED — network policy)
+
+**Status: HALTED at Alpaca API call. Cannot execute routine.**
+
+- Env pre-check: all vars set (ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID ✓).
+- `bash scripts/alpaca.sh account` → HTTP 403 / body "Host not in allowlist" — network egress policy in this session's container blocks `paper-api.alpaca.markets`.
+- `bash scripts/alpaca.sh positions` → same 403.
+- `bash scripts/clickup.sh "..."` → HTTP 403 — network policy also blocks ClickUp endpoint.
+- Cannot get live account state, quotes, or place orders. Cannot send alert.
+- Per pre-market plan: no trades staged (HOLD pre-PPI; all decisions deferred to midday).
+- Account assumed unchanged from pre-market: $99,883.98, 100% cash, 0 positions, 0 open orders, daytrade_count 0, trades this week 0/3.
+
+**Operator action required (escalating):** whitelist `paper-api.alpaca.markets` and `data.alpaca.markets` (and ClickUp endpoint) in the session's network egress policy. Jun 10 routines executed successfully (same branch/env vars) — network policy must have changed or this session was created with a more restrictive policy. Until resolved, all intraday routines will abort at the first API call.
+
+**Decision: HOLD (forced — no execution performed). No trades placed; no TRADE-LOG changes; no commit required.**
