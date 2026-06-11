@@ -1277,3 +1277,49 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-11 — Pre-market Research (refresh — Iran Hormuz closure + API fallback)
+
+*Second pre-market run. Perplexity exit 22 (403) → WebSearch fallback noted. Alpaca exit 22 (403) → account state from last confirmed read (2026-06-10 midday). Prior entry above was written before Hormuz closure declared.*
+
+### Account (last confirmed — Alpaca returning 403)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$399,535.92
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** — all slots intact (Thu)
+- **OPERATOR NOTE: Alpaca API returning HTTP 403 — trading is operationally blocked until credentials are restored.**
+
+### Market Context
+- **WTI: $91.74 (+1.90%)** | **Brent: $94.58 (+1.59%)** — significant jump from prior-entry $89 estimate. **Iran declared Strait of Hormuz CLOSED** (day-2 US strikes). Traders still pricing buffers (WTI sub-$100), but front-month is +$2-3 on the session already. Both contracts now <$3 from the $95 energy re-trigger threshold.
+- **ESM26: +0.78% premarket** — dip-buying after SPX's -1.62% close Wed ($7,266.99). Polymarket 95% probability of a green open. Markets "pare losses" on dip-buy interest despite fresh geopolitical headlines.
+- **VIX: 22.22** (Jun 10 close, +11.83% on the day) — elevated; prior phase range was 15-17. Whipsaw risk is real. Monthly range 15.18–23.34.
+- **PPI 8:30am ET — STILL PENDING.** Cons: headline +0.7% m/m / +6.4% y/y; core +0.4% m/m. A hot print = second consecutive inflation shock (CPI +0.5% m/m / +4.2% y/y Wed). In-line or below = relief rally possible.
+- **Initial Jobless Claims 8:30am ET** (concurrent with PPI). Prior 225k (week ending May 30).
+- **Earnings AMC: ADBE (Adobe Q2)** — cons EPS $5.82 / rev $6.46B; implied ±9.47% move. Binary tonight.
+- **ECB rate decision today** — low direct US impact but signals global rate trajectory.
+- **AI chip complex:** AVGO printed massive Q2 beat but guided Q3 rev $29.4B (below "upper end" $37.5B analyst range) → stock sold off from yearly high ~$495. MRVL fell ~8% in AVGO spillover after reaching ATH $324.20 (NVDA invested $2B / Jensen called it "next $1T company"). NVDA -7% on high-rate / AI-spend reassessment. Semiconductor sector lost ~$1T in market cap late May/early June.
+- **Sector momentum YTD:** XLK Tech +26% YTD (absolute leader); however relative-rotation screens still show: **Leading** — Staples, Industrials, Materials, Energy; **Lagging** — Tech, Comm Svcs, Consumer Discretionary, Financials; **Improving** — Real Estate, Utilities; **Weakening** — Health Care. Consistent with multi-week framework.
+
+### Trade Ideas
+
+1. **NO ENTRY pre-PPI.** PPI 8:30am ET — binary macro, same logic as pre-CPI yesterday. Buy-Side Gate fails on every name pre-print. Default: HOLD.
+
+2. **Energy (OXY / XLE) — THRESHOLD WATCH (closest since May).** WTI $91.74, Brent $94.58. Iran Hormuz closure is the most significant oil supply catalyst since May's Hormuz-premium peak. **Energy thesis re-trigger condition: WTI single-session close >$95.** We are $3.26 away. If WTI holds above $95 at today's close (4pm ET), the energy thesis FORMALLY RE-TRIGGERS and OXY/XLE becomes a real Buy-Side Gate candidate for the next session. BUT: operationally blocked today (Alpaca 403). Watch and document; enter tomorrow if close >$95 AND Alpaca credentials restored. Note: do not enter on a single-day geopolitical spike without 1 session of confirmation — same rule as the May $90→$97 Gulf-headline spike that faded.
+
+3. **AI chips (NVDA / AVGO / MRVL) — SKIP.** AVGO disappointed on Q3 guide despite beating Q2 (same "good print, bad reaction" trap as NVDA post 5/20). MRVL -8% from ATH in AVGO spillover. NVDA -7% on rate/AI-spend reassessment. Semiconductor sector ~$1T wipeout in progress. All three violate Rule #10 (Chase), Rule #11 (Post-catalyst fade), and are rate-sensitive into a hot-inflation tape. Pass.
+
+4. **ADBE AMC tonight — WATCHLIST, no pre-position.** Binary; wrong asymmetry to size into. Cons: EPS $5.82 / rev $6.46B; ±9.47% implied move. If beat + raise + reasonable open (<5% gap) Friday, evaluate Buy-Side Gate with post-print structure in hand.
+
+### Risk Factors
+- **PPI 8:30am binary** — second inflation print in 24hrs; hot read = risk-off amplification; in-line = relief bounce from 7,267 SPX
+- **Hormuz closure headline whipsaw** — any de-escalation/peace-talk reversal = oil -10% instantly (same pattern as May's $103→$92 bleed); do not enter energy on today's spike alone
+- **Alpaca API 403** — trading is operationally blocked; even if a perfect setup triggers today, orders cannot be placed until credentials are restored
+- **VIX 22.22** — elevated; wide intraday ranges expected (ES range yesterday was 7,247–7,491 = 3.3%)
+- **Double-hot inflation** (CPI +4.2% y/y + PPI pending) = rate-cut hopes fully shelved for 2026; rate-sensitive growth names (XLK) stay under pressure
+- **Behavioral pressure** — 14+ sessions at 0% deployed; env restored last session; pressure to "do something" is high. Rules override.
+- Daytrade count 0/3, weekly trades 0/3 — full budget intact (but operationally blocked)
+
+### Decision
+**HOLD** — operationally forced (Alpaca 403) and strategically correct (PPI binary pending). Closest energy setup in 6 weeks: WTI $91.74 vs $95 re-trigger; monitor WTI close today. If WTI closes >$95 AND Alpaca is restored → energy (OXY/XLE) enters active Buy-Side Gate evaluation for Friday. Tech/AI chips: documented SKIP (AVGO fade, MRVL bleed, NVDA selloff). ADBE: no pre-position. Trades this week: 0/3. **Operator action required: restore Alpaca API credentials (HTTP 403).**
