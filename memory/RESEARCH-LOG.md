@@ -1229,3 +1229,51 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No action taken. Cash 100% preserved into a risk-off tape post-hot-CPI. Trades this week: 0/3 — all slots intact. Step 7 (Telegram) skipped — no action to notify. Next decision point: Thursday pre-market with CPI fully digested, PPI 8:30am, and post-CPI sector damage assessable.
+
+
+---
+
+## 2026-06-11 — Pre-market Research (Thursday — PPI day, T+1 to hot CPI)
+
+### Account
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: $399,535.92
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- Last equity: $99,883.98 (flat — no holdings)
+- **Trades this week: 0/3** — all slots intact (Thu)
+
+### Market Context
+- **WTI ~$88-91 zone** (Robinhood prediction-market brackets above $87.99/$88.99). SunSirs cites $65 reference (stale/regional). Directionally low-$90s, **still well below the $95 weekly-close re-trigger** for the energy thesis despite ongoing US/Iran strike-exchange headlines. Curve in backwardation = market reading geopolitics as contained.
+- **ESM26: ~7,302–7,305** premarket (Markets Insider 7,304.75, CME 7,301.75). Modestly soft continuation of yesterday's hot-CPI risk-off tape. SPX rolled hard from May ATH zone (~7,580) to mid-7,300s.
+- **VIX:** not surfaced; given ES soft + 2nd inflation print in 24hrs + geopolitical overhang, presumed high-teens / low-20s. Calm regime broken.
+- **Today's catalysts:**
+  - **8:30am ET — May PPI** (the day's #1 driver). Consensus: **+0.7% m/m headline, +0.5% m/m core, +6.4% y/y** vs prior +6.0% y/y. Hot read expected; bar is whether it confirms or amplifies yesterday's hot CPI (+0.5% m/m, +4.2% y/y).
+  - **8:30am ET — Initial Jobless Claims** (mid-tier)
+  - **Earnings AMC: ADBE (Adobe)** — AI monetization read. No major BMO catalysts (Oracle reported AMC yesterday, beat $2.11 vs $1.96).
+- **Sector momentum (refresh):** XLK +15.99% May / XLE ~+20% YTD / XLI ~+12% / XLB ~+15% / XLP ~+12% leading; **XLF + XLV laggards**. Tech still on a YTD-absolute basis is among leaders despite the recent rate-driven roll.
+- **Yesterday's tape (CPI day):** Hot CPI confirmed; risk-off; no buyable setup emerged. Documented HOLD held.
+
+### Trade Ideas
+
+1. **NO ENTRY pre-PPI.** Second binary macro print in 24hrs (8:30am ET). Buying anything pre-print = position-sizing violation on a binary. Same logic as pre-CPI yesterday. The Buy-Side Gate fails universe-wide because the dominant catalyst is unresolved.
+
+2. **Energy (OXY/XLE) — DOCUMENTED SKIP.** WTI ~$89, fails $95 weekly-close re-trigger for the 3rd consecutive week. US/Iran strike exchange ongoing but curve in backwardation = market discounts escalation. Rule #9 enforced.
+
+3. **Tech leaders (NVDA/AVGO/MRVL) — SKIP pre-PPI.** Rate-sensitive on a hot inflation print risk; chase setups still violate Rule #10 even on yesterday's selloff (need 5-day base + breakout, none yet visible). Defer to midday post-PPI read.
+
+4. **ADBE AMC tonight — WATCHLIST, no pre-position.** Binary AMC = wrong asymmetry to size into.
+
+5. **Post-PPI watchlist (decision deferred to midday):**
+   - **Soft PPI** → rate-relief reversal of yesterday's selloff; XLK leaders re-test highs; look for clean follow-through (not chase).
+   - **Hot PPI** → second day of risk-off; rate-cut hopes pushed further out; defensive bid; nothing to chase — energy may re-bid IF coincident WTI breakout >$95 (still unlikely).
+   - **In-line** → muted reaction; sideways consolidation; no edge.
+
+### Risk Factors
+- **PPI 8:30am ET binary.** Hot consensus already bakes in concern; an in-line print could be a relief rally; a hotter-than-cons print compounds yesterday's CPI selloff. Either way, pre-positioning is wrong.
+- **Two-day inflation window** (CPI Wed + PPI Thu) raises whipsaw risk into Friday.
+- **US/Iran escalation latent.** Strike-exchange headlines ongoing; one real escalation = oil snaps + risk-off intensifies. Front-month WTI not yet pricing it.
+- **Behavioral pressure to "do something" after 2 weeks of inactivity + restored env.** Documented answer: no qualifying setup pre-print = no trade. Patience > activity.
+- **Vol expanding:** wide intraday ES ranges this week (yesterday 7,247–7,491 = 3.3%). Single-session whipsaw risk elevated.
+- Daytrade count 0/3, weekly trades 0/3 — full PDT and slot budget intact.
+
+### Decision
+**HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
