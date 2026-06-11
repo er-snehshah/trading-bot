@@ -1277,3 +1277,37 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+### Jun 11 — Midday Addendum (post-PPI)
+
+**Alpaca API:** 403 `host_not_allowed` — network policy blocks paper-api.alpaca.markets from this environment. Confirmed 0 positions / 0 open orders from Jun 10 EOD snapshot (equity $99,883.98 unchanged). Steps 3/4/5 N/A.
+
+**May PPI (8:30am ET):**
+- Headline: **+1.1% m/m** (vs +0.7% cons) — HOT, worst beat since recent prints
+- YoY: **+6.5%** (highest since Nov 2022; cons +6.4%)
+- Core ex-food/energy: **+0.4% m/m** (vs +0.5% cons) — BELOW consensus; energy-driven distortion
+- Goods +2.8% (gasoline +23.4% the primary driver); services +0.3%
+
+**Iran escalation (updated from pre-market):** Not concluded — Trump announced US will seize **Kharg Island** (Iran's primary oil export hub) + other oil infrastructure. Explosions across Iran near Strait of Hormuz. Strike-exchange ongoing and intensifying.
+
+**Market reaction (midday):**
+- SPX, Nasdaq RISING despite second consecutive hot inflation print — apparent risk-on driven by Iran narrative confusion (market initially read "strike conclusion," then Kharg Island seized)
+- Russell 2000 +1.44%, Dow +0.66%
+- NVDA +1% (muted)
+- Oracle -9% (flat sales + debt issuance for data centers — thesis broken for holders; not in our book)
+- Financials lower (yields rising on hot PPI)
+
+**WTI:** ~$90-93 range intraday — **still below $95 weekly-close re-trigger**. Kharg Island threat is supply-disruption risk but market pricing it as ~$91, not panic-bid. Energy thesis re-trigger remains $95 weekly CLOSE only.
+
+**Energy (OXY/XLE):** OXY +1.3%, XLE +1% intraday — modest, not a breakout. No Rule-#10-clean entry (not >5% either way). Energy trigger not fired.
+
+**SpaceX IPO:** Priced at $135/share, begins trading Friday on Nasdaq — pre-IPO hype may be supporting tech sentiment today. Not directly actionable (IPO day = wrong asymmetry, Rule #10 likely violated).
+
+**Post-PPI scan — all gates FAIL:**
+- Energy: WTI $91 < $95 re-trigger. SKIP.
+- Tech (NVDA/AVGO/MRVL): No clean base post-CPI selloff; relief rally without catalyst = chase. SKIP.
+- Oracle: -9% on bad prints — against thesis, not a buy-the-dip setup. SKIP.
+- ADBE: AMC tonight — binary, wrong asymmetry. SKIP.
+- SpaceX: IPO not yet trading. SKIP.
+
+**Decision: HOLD.** No trades. Hot PPI second day (CPI +0.5% Wed, PPI +1.1% Thu) = rate-hike regime worsening; relief rally driven by geopolitical confusion + SpaceX IPO hype, not clean catalyst. No setup passes Buy-Side Gate. Trades this week: 0/3. Next: ADBE post-print Friday + SpaceX IPO reaction + WTI weekly close vs $95.
