@@ -233,3 +233,33 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Eleventh consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98 (last_equity matches). **Env restored today — all keys present; first successful executable routine since 6/3.** Pre-market, market-open, and midday all ran cleanly. **May CPI HOT** (8:30am ET): headline +0.5% m/m / +4.2% y/y vs ~3.7% cons; core +0.2% m/m / +2.9% y/y vs ~2.7% cons — inflation re-acceleration print. Pre-CPI documented SKIPs (binary macro = wrong asymmetry); post-CPI documented SKIPs across NVDA/MRVL/AVGO (rate-sensitive into hot print), XLE/OXY (WTI $89 fails $95 re-trigger despite overnight US/Iran strike-exchange headlines — curve in steep backwardation says contained), defensives (no specific catalyst). Buy-Side Gate failed universe-wide on a hot-CPI risk-off tape. **Trades this week: 0/3** (Wed of new week, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12% — no incremental damage; ex-post, cash on a hot-CPI day was the right side. Next decision point: Thu pre-market with CPI digested, PPI 8:30am ET, and sector damage from hot CPI assessable.
+
+
+### Jun 11 — EOD Snapshot (Thursday — PPI day, Alpaca unreachable)
+**Portfolio:** $99,883.98 (inferred) | **Cash:** $99,883.98 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Twelfth consecutive flat session — 100% cash, zero activity, equity inferred unchanged at $99,883.98. All three intraday routines today (market-open, midday, daily-summary) could not confirm broker state: **paper-api.alpaca.markets not in network egress allowlist** — broker API calls returned HTTP 403 / "Host not in allowlist" at every attempt. Pre-market routine ran cleanly from yesterday's commit (read-only). Account state is inferred from Jun 10 EOD (0 positions, 0 orders, 100% cash) — no mechanism to confirm actual equity without broker access. **Trades this week: 0/3** (Thu, all slots intact). Daytrade count 0/3, full PDT budget. **May PPI result unknown to bot** (8:30am ET, mid-tier print day — could not access Perplexity or any data feed). ADBE AMC result also unknown. Phase P&L still -0.12% — no incremental damage from another flat day. **Operator action ESCALATING (2nd new egress issue):** add paper-api.alpaca.markets AND data.alpaca.markets AND api.clickup.com to network egress allowlist; ClickUp notification also blocked today. Next decision point: Friday 2026-06-12 pre-market — same egress block will short-circuit unless allowlist is updated.
+
+
+### Jun 12 — Midday Scan (Friday — network egress blocked)
+**Portfolio:** $99,883.98 (inferred) | **Cash:** $99,883.98 (100%) | **Day P&L:** unknown | **Phase P&L:** -$116.02 (inferred)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Midday scan steps attempted:**
+- **Env check:** PASS — ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID all set.
+- **Step 2 (positions/orders):** FAIL — `paper-api.alpaca.markets` not in network egress allowlist. HTTP 403 "Host not in allowlist." Cannot read positions or orders.
+- **Step 3 (cut losers):** SKIPPED — no broker data. Last known state: 0 positions → nothing to cut.
+- **Step 4 (tighten stops):** SKIPPED — 0 positions known.
+- **Step 5 (thesis check):** SKIPPED — 0 positions known.
+- **Step 6 (Perplexity):** NOT ATTEMPTED — would also fail egress block.
+- **Step 7 (ClickUp alert):** FAIL — `api.clickup.com` also not in egress allowlist (TLS connects but HTTP returns "Host not in allowlist").
+- **Action:** No trades executed. Memory files updated. Commit + push to branch.
+
+**OPERATOR ACTION REQUIRED (third egress-blocked session):** Add to network egress allowlist: `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.clickup.com`, `api.perplexity.ai`. Without these, every intraday routine is blind and mute.

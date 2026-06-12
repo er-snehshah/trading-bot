@@ -1277,3 +1277,39 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-12 — Midday Scan (Friday — network egress blocked)
+
+### Account (inferred — broker unreachable)
+- Equity: $99,883.98 (inferred from Jun 10 EOD, no change expected — 0 positions)
+- Cash: 100% | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** (all slots intact)
+- Daytrade count: 0 | PDT: false
+
+### Env Check
+- ALPACA_API_KEY: ✓ | ALPACA_SECRET_KEY: ✓ | CLICKUP_API_KEY: ✓ | CLICKUP_WORKSPACE_ID: ✓ | CLICKUP_CHANNEL_ID: ✓
+- **Network egress:** paper-api.alpaca.markets BLOCKED (HTTP 403, "Host not in allowlist")
+- **Network egress:** api.clickup.com BLOCKED (same error)
+- Cannot pull positions, orders, quotes, or send notifications.
+
+### Position Management (Steps 3–5)
+- Last known state: 0 positions, 0 open orders → Steps 3/4/5 are no-ops.
+- No losers to cut, no stops to tighten, no thesis to check.
+
+### Intraday Research (Step 6)
+- Perplexity API also expected to be egress-blocked — not attempted.
+- **PPI result (6/11, 8:30am ET):** Unknown to bot — could not access any data feed.
+- **ADBE AMC result (6/11):** Unknown.
+- **Today's tape (6/12):** Unknown — no quote access.
+
+### Decision
+**HOLD** (forced — no broker access). With 0 known positions and 100% cash, there is nothing to manage. No trades possible. Memory files updated and committed as the only executable action. Step 7 (ClickUp) skipped — api.clickup.com also blocked.
+
+**OPERATOR ACTION REQUIRED:** Add to remote execution environment egress allowlist:
+- `paper-api.alpaca.markets` (Alpaca trading API)
+- `data.alpaca.markets` (Alpaca market data)
+- `api.clickup.com` (notification channel)
+- `api.perplexity.ai` (research)
