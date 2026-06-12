@@ -1277,3 +1277,29 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-12 — Pre-market Research (Friday)
+
+*Run aborted at Step 2 — broker connectivity unavailable. See blocker below.*
+
+### Account
+- **UNAVAILABLE.** `bash scripts/alpaca.sh account/positions/orders` all returned `curl: (22) ... 403`.
+- Verbose curl shows TLS connects fine to `paper-api.alpaca.markets` (35.194.67.18), then the sandbox network proxy returns: `Host not in allowlist: paper-api.alpaca.markets. Add this host to your network egress settings to allow access.`
+- Same result for `api.perplexity.ai` and `api.clickup.com` — **all three external API hosts (Alpaca, Perplexity, ClickUp) are blocked by this environment's network egress allowlist.** This is new today; 6/11 ran cleanly with all keys present.
+- All required env vars ARE set (ALPACA_API_KEY/SECRET, PERPLEXITY_API_KEY, CLICKUP_API_KEY/WORKSPACE_ID/CHANNEL_ID) — this is a network policy issue, not a missing-key issue.
+
+### Market Context
+- Not gathered — Perplexity and WebSearch fallback both blocked at the network layer (WebSearch untested but Perplexity host itself is rejected by the proxy allowlist, same class of block).
+
+### Trade Ideas
+- None — no account state, no market data, no research possible this session.
+
+### Risk Factors
+- **Total external API outage.** No visibility into account state, open positions/orders, or market conditions. Cannot validate the Buy-Side Gate (position count, weekly trade count, cash) for any hypothetical trade.
+- Per 6/4–6/9 precedent (TELEGRAM_BOT_TOKEN outage), this class of environment-config issue requires operator action on the network egress allowlist, not a code fix.
+
+### Decision
+**HOLD (forced — no execution possible).** ClickUp alert attempt also failed (`curl: (22)`, same allowlist block) — no notification sent; documenting here instead. No TRADE-LOG changes (state unknown, last known: 100% cash, 0 positions, 0 open orders as of 6/11). **Operator action required:** add `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` to this environment's network egress allowlist (see https://code.claude.com/docs/en/claude-code-on-the-web for environment network policy config). Next decision point: re-run pre-market once connectivity is confirmed restored.
