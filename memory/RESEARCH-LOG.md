@@ -1277,3 +1277,43 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-12 — Market-open routine (ABORTED — network egress block)
+
+**Status: HALTED at Step 2. All external API calls blocked by network egress policy.**
+
+### Env pre-check
+- ALPACA_API_KEY: set | ALPACA_SECRET_KEY: set | CLICKUP_API_KEY: set | CLICKUP_WORKSPACE_ID: set | CLICKUP_CHANNEL_ID: set
+- All keys present — env check passed. Abort reason is NOT a missing env var.
+
+### Failure
+- `bash scripts/alpaca.sh account` → HTTP 403 — `x-deny-reason: host_not_allowed` — "Host not in allowlist: paper-api.alpaca.markets. Add this host to your network egress settings to allow access."
+- `bash scripts/alpaca.sh positions` → same HTTP 403 (host_not_allowed)
+- `bash scripts/alpaca.sh quote <any>` → HTTP 403 (host_not_allowed: data.alpaca.markets)
+- `bash scripts/clickup.sh "..."` → HTTP 403 (host_not_allowed: api.clickup.com)
+- Perplexity API (api.perplexity.ai) → HTTP 403 (host_not_allowed)
+- TELEGRAM_BOT_TOKEN: MISSING (secondary; moot since network is blocked anyway)
+
+### State assumed (last known — 2026-06-11 pre-market, from last commit af5cfcd)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Positions: 0 | Open orders: 0
+- Daytrade count: 0 | Trades this week: 0/3
+
+### Today's research
+- No pre-market entry for 2026-06-12 exists (last entry: 2026-06-11 pre-market HOLD pre-PPI).
+- Cannot run inline pre-market research — Perplexity blocked by network egress.
+- Cannot fetch live quotes — Alpaca data endpoint blocked.
+- Cannot place any orders — Alpaca trading endpoint blocked.
+
+**Decision: HOLD (forced — network egress blocks all external API access). No trades placed. No TRADE-LOG changes. No notification sent (all channels blocked).**
+
+**Action required (operator — BINDING CONSTRAINT):**
+- Add the following hosts to the session's network egress allowlist:
+  1. `paper-api.alpaca.markets` (trading API)
+  2. `data.alpaca.markets` (market data)
+  3. `api.clickup.com` (notifications)
+  4. `api.perplexity.ai` (research)
+- OR switch to a network policy that allows outbound access to these hosts.
+- Until resolved, every market routine will abort here with no trading activity possible.
