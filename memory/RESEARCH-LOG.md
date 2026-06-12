@@ -1277,3 +1277,51 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-12 — Pre-market Research (Friday — SpaceX IPO day, Iran deal weekend)
+
+### Account
+- **API STATUS: BLOCKED** — Alpaca + Perplexity both returning HTTP 403 from Anthropic egress gateway (TLS intercept confirms network policy blocking external APIs). Last confirmed state used.
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$399,535 (est.)
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** — all slots intact (Fri, last session of week)
+- Research source: WebSearch fallback (Perplexity API blocked)
+
+### Market Context
+- **WTI ~$86** (intraday low ~$86, range $86–$91.54) | **Brent ~$89.25** (-1.25% on day) — **DECLINING on Iran peace deal optimism; well below $95 re-trigger threshold**
+- **SPX futures: +0.18% pre-market** (~7,318 est.) — muted open after SPX +1.8% / NDX +2.5% / DJIA +930pts yesterday (Thu) on Iran-deal de-escalation bid
+- **VIX: 19.44** (-12.51% on the session) — fear subsiding; vol regime compressing from high-20s to upper-teens
+- **May PPI (released yesterday, Jun 11):** VERY HOT — headline **+1.1% m/m** (vs +0.7% cons), **+6.5% y/y** (largest since Nov 2022). Energy drove: +10.7% final-demand energy, +23.4% gasoline. Core PPI +0.4% m/m / +4.9% y/y — also hot. Now have CPI (+0.5%/+4.2%) AND PPI (+1.1%/+6.5%) both printing hot in the same week.
+- **Iran/US deal:** Trump said permanent peace deal possible "this weekend." Brent fell ~$5-9% on deal optimism. Strait of Hormuz expected to reopen → 100M+ barrels of stranded oil set to flood market → energy sector BEARISH near-term on deal confirmation.
+- **SpaceX IPO (SPCX):** Debuting today on Nasdaq at $135/share ($1.77T market cap) — largest IPO in history. Multiple times oversubscribed. Market sentiment driver.
+- **Michigan Consumer Sentiment (9am ET):** Final June prelim. Forecast 46.6 vs prior 44.8 — modest rebound. Low-tier catalyst.
+- **ADBE (reported AMC yesterday):** Q2 beat ($5.96 vs $5.94 EPS est.), revenue +13% YoY to $6.62B. Stock -5.5% AH despite beat — classic "good print, bad reaction" pattern.
+- **Sector momentum (June 2026 update):** XLK +32-33% YTD, XLE +26-27% YTD, XLI +12%, XLB +13%, XLP +7%. XLV -3%, XLF -5% (laggards). Rotation: Tech regained leadership in June recovery off May CPI/Iran lows.
+
+### Trade Ideas
+
+1. **SPCX (SpaceX) — SKIP.** IPO day = extreme binary volatility, no clean entry structure. First-day move from $135 unpredictable; Rule #10 violation risk (could gap 5%+ on open). New issue allocation via Alpaca paper account not guaranteed. No edge in day-1 IPO trading.
+
+2. **Energy (OXY/XLE) — DOCUMENTED SKIP.** Iran peace deal is actively BEARISH for energy: WTI declining to $86, Strait of Hormuz reopening expected → massive supply overhang. $95 weekly-close re-trigger now even further away. Energy thesis reversed near-term.
+
+3. **ADBE — SKIP.** Beat but -5.5% AH = bad reaction pattern. Rule #11 applies: good print, bad reaction → no pre-position. Stock may gap down at open.
+
+4. **Tech leaders (NVDA/AVGO/MRVL):** Risk-on recovery underway but hot CPI + hot PPI double-print this week = macro uncertainty. These names already +25-30% off May catalysts; no clean base + catalyst entry setup visible. Chasing into a Friday +0.18% open after +1.8% yesterday = wrong asymmetry.
+
+5. **Watchlist for next week:**
+   - **SPCX Day-2 breakout (Mon Jun 15):** If SPCX closes Day 1 at or above IPO price with clean structure + volume, Day-2 base/breakout becomes a legitimate catalyst (IPO breakout = the catalyst). Monitor Mon pre-market.
+   - **Iran deal confirmed this weekend:** If deal signed → energy sell-off accelerates, defense names may sell off; growth/tech rate-relief trade re-accelerates (lower oil = lower input costs = lower CPI forward). Re-evaluate sector regime Mon.
+   - **AI infra (NVDA/MRVL/AVGO):** Need 3-5 day clean base off May highs before any re-entry. Earliest viable window: week of Jun 15 if macro stabilizes.
+
+### Risk Factors
+- **Double hot inflation print (CPI Wed + PPI Thu):** Core PPI +4.9% y/y largest since 2022. Rate-cut probability near zero near-term; rate-sensitive growth names face headwind if market re-prices cuts out.
+- **Iran deal binary this weekend:** Permanent deal = oil supply gush → energy deflation → market re-prices inflation lower → potential growth/tech relief rally Mon. No deal / breakdown = oil spikes back up → energy bid returns.
+- **SPCX IPO liquidity vacuum:** Largest IPO in history sucks institutional capital; may create dislocation elsewhere in the market on/around debut.
+- **Behavioral pressure:** 12th consecutive flat session. All weekly slots intact (0/3) going into final session of week. Documented answer: no qualifying setup = no trade. Patience > activity.
+- **API infrastructure:** Alpaca and Perplexity APIs blocked by egress network policy. Cannot confirm live account state or place trades in current environment state. Operator must resolve network policy to restore trading capability.
+
+### Decision
+**HOLD.** No qualifying catalyst-driven setup passes the full Buy-Side Gate today. Documented SKIPs: SPCX (IPO day binary), energy (Iran deal = supply bearish, WTI $86 far below $95 trigger), ADBE (good print/bad reaction, -5.5% AH), tech leaders (no clean base post-May moves, chasing Friday). **API BLOCKER:** Alpaca/Perplexity APIs blocked by network egress policy — cannot confirm live state or execute trades even if a setup emerged. Trades this week: 0/3 — all slots preserved. **Operator action required:** resolve network egress policy blocking external API calls to restore bot trading functionality.
