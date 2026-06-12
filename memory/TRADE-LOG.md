@@ -233,3 +233,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Eleventh consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98 (last_equity matches). **Env restored today — all keys present; first successful executable routine since 6/3.** Pre-market, market-open, and midday all ran cleanly. **May CPI HOT** (8:30am ET): headline +0.5% m/m / +4.2% y/y vs ~3.7% cons; core +0.2% m/m / +2.9% y/y vs ~2.7% cons — inflation re-acceleration print. Pre-CPI documented SKIPs (binary macro = wrong asymmetry); post-CPI documented SKIPs across NVDA/MRVL/AVGO (rate-sensitive into hot print), XLE/OXY (WTI $89 fails $95 re-trigger despite overnight US/Iran strike-exchange headlines — curve in steep backwardation says contained), defensives (no specific catalyst). Buy-Side Gate failed universe-wide on a hot-CPI risk-off tape. **Trades this week: 0/3** (Wed of new week, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12% — no incremental damage; ex-post, cash on a hot-CPI day was the right side. Next decision point: Thu pre-market with CPI digested, PPI 8:30am ET, and sector damage from hot CPI assessable.
+
+
+### Jun 12 — EOD Snapshot (Friday)
+**Portfolio:** $99,883.98 | **Cash:** $99,883.98 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Thirteenth consecutive flat session (Jun 11 Thu was the 12th — pre-market research committed but EOD snapshot was not recorded; equity assumed unchanged at $99,883.98). Today's Alpaca API calls returned `403 x-deny-reason: host_not_allowed` — `paper-api.alpaca.markets` is blocked by the remote execution environment's network egress policy, same restriction pattern seen in prior sessions. Account state unconfirmable from broker; equity shown is last known from Jun 10 snapshot. **Trades this week: 0/3** (week of Jun 8-12, all slots intact). Daytrade count 0/3, full PDT budget. Telegram not configured (TELEGRAM_BOT_TOKEN missing) — notification delivered to DAILY-SUMMARY.md fallback. Phase P&L still -0.12% — no incremental damage. PPI (Jun 11, 8:30am ET) was the key macro print this week post-CPI; outcome unknown to this session. **Operator action required:** (1) whitelist `paper-api.alpaca.markets` in network egress policy so Alpaca reads can execute; (2) restore TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID for notifications. Next decision point: Monday 2026-06-16 pre-market — new week, all 3 trade slots intact, 0/3 PDT, 100% cash.
