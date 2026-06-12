@@ -286,3 +286,64 @@ Process under-load: A — every executable session documented a clean, rule-comp
 
 ### Step 6 (Telegram send) — NOT EXECUTED
 TELEGRAM_BOT_TOKEN MISSING. Wrapper unusable. ClickUp escalation rejected (`scripts/clickup.sh` not in bash_exec allowlist). Notification step skipped; this review file is the only delivered artifact for the week. Operator action required to restore alerting before the next routine.
+
+
+---
+
+## Week ending 2026-06-12
+
+*Full Mon→Fri window. Zero trades, zero positions, 100% cash all 5 sessions. Mon-Tue (Jun 8-9) env still broken (TELEGRAM_BOT_TOKEN missing) — 6 more routines aborted, cumulative 15 since Jun 4. Env restored Wed-Thu; CPI hot print (Wed) and PPI binary (Thu) blocked entries per the pre-print sizing rule. Fri rally on Iran/Hormuz peace deal news. SPX ~+0.6% while bot flat. Energy thesis formally retired — Iran reopening supply backdrop removes the Hormuz premium permanently.*
+
+### Stats
+| Metric           | Value         |
+|------------------|---------------|
+| Starting portfolio | $99,883.98 (Mon Jun 8 = Fri Jun 5 close; flat — no holdings to mark) |
+| Ending portfolio   | $99,883.98 (last verified Jun 10 EOD; Alpaca API 403 on review day; 100% cash + 0 positions = no mark change) |
+| Week return        | $0.00 (0.00%) |
+| S&P 500 week       | ~+0.6% (SPX ~7,402 → ~7,449; Fri rally on Iran/Hormuz peace deal; ninth consecutive weekly gain) |
+| Bot vs S&P         | -0.6% |
+| Trades             | 0 (W:0 / L:0 / open:0) |
+| Win rate           | N/A (no closed trades) |
+| Best trade         | — |
+| Worst trade        | — |
+| Profit factor      | N/A |
+
+### Closed Trades
+| Ticker | Entry | Exit | P&L | Notes |
+|--------|-------|------|-----|-------|
+| — | — | — | — | No trades closed this week |
+
+### Open Positions at Week End
+| Ticker | Entry | Close | Unrealized | Stop |
+|--------|-------|-------|------------|------|
+| — | — | — | — | None — 100% cash ($99,883.98) |
+
+### What Worked
+- **CPI-day hold (Wed Jun 10) correct ex-post.** May CPI +0.5% m/m / +4.2% y/y — materially above consensus. Bot flat avoided losses on a hot-inflation risk-off session (ES was -0.31% to -1.1% premarket); rate-sensitive tech rolled. Being in 100% cash was correct on the session.
+- **Pre-PPI discipline (Thu Jun 11).** Documented HOLD before the second binary macro print in 24hrs — consistent with pre-earnings binary avoidance logic. No position-sizing violation on a day when another hot read was base-case.
+- **Env restored Wed-Thu; routines ran cleanly.** After 15 consecutive aborts (Jun 4-9), Wednesday CPI day and Thursday PPI day routines executed normally. The core strategy process works when infrastructure works.
+- **Energy thesis discipline held.** WTI ~$89, well below $95 re-trigger. Iran peace deal / Hormuz reopening news this week confirmed what the WTI curve had been signaling for weeks — supply coming back = thesis dead. Zero capital wasted on a decaying sector idea.
+- **No chase on post-CPI oversold names.** Rule #10 and Buy-Side Gate held; no panic buy into the CPI dip on NVDA/MRVL/AVGO.
+
+### What Didn't Work
+- **Bot 0.00% vs SPX ~+0.6% = -0.6% relative.** Third consecutive zero-trade, zero-return week while the S&P 500 extended its nine-week winning streak. Phase P&L: -$116.02 (-0.12%) absolute, widening relative gap.
+- **Mon-Tue STILL lost to env failure.** TELEGRAM_BOT_TOKEN still missing on Jun 8-9 — 6 more routines aborted, total now 15 across 12 calendar days. Last week's review named this "top-priority adjustment" — still unresolved entering week 3.
+- **Missed Iran/Hormuz peace deal rally.** Friday's +0.74% SPX move — the week's largest single-day gain — came on Iran diplomacy headlines not predictable from fundamentals. Being flat cost participation in a geopolitical-driven surge.
+- **Alpaca API returned 403 on weekly review day.** Live equity and position verification unavailable. Extrapolating from Jun 10 EOD ($99,883.98, 100% cash, 0 positions) — reliable given no trades, but unverified.
+- **Three 0-trade weeks accumulating.** The +7%/-4% framework has exactly 1 live win and 1 live loss (profit factor 0.81). No statistical validation of the new strategy is possible at this execution rate. Six weeks into the phase; only 2 trades ever placed.
+
+### Key Lessons
+- **Iran/Hormuz peace deal fundamentally retires the energy thesis.** Iran re-entering global oil markets = supply surge → WTI heading to $70-80s range, not $95+. The Hormuz closure premium that seeded the original OXY/XOM thesis in May is gone. The $95 re-trigger is structurally unachievable under a peace scenario. Don't wait for the trigger to fail a fifth week — retire it.
+- **Hot CPI + hot PPI back-to-back = correct to stay flat.** Pre-print sizing-violation rule applied correctly both days. Even if the market subsequently rallied (it did, on an unrelated catalyst Friday), the logic held: you cannot know the print direction before the release.
+- **Geopolitical-driven rallies are structurally uncapturable by a catalyst-driven system.** The Iran peace deal news drove Friday's move. There is no pre-defined catalyst-entry rule that captures a diplomatic headline — nor should there be. This is an expected miss, not a strategy failure.
+- **A 403 from Alpaca on review day with live capital is an infrastructure risk.** If the API goes down during a forced-exit scenario (stop triggered on a live position), there is no fallback. Alpaca web UI is the manual backup; must be confirmed accessible by the operator.
+
+### Adjustments for Next Week
+- **Formally retire the energy (XLE/OXY/XOM) thesis.** Iran Hormuz reopening changes the supply backdrop indefinitely. Remove from watchlist entirely. Only revisit if WTI closes above $100 on a new, documented supply disruption unrelated to Hormuz.
+- **Operator escalation — week 3, URGENT.** TELEGRAM_BOT_TOKEN still missing. Suggest designating ClickUp as the primary notification path (env vars are set ✓; the Jun 12 403 from ClickUp API may be transient). If neither path works, write all notification content to DAILY-SUMMARY.md as the standing fallback and document that outcome in each review.
+- **Watchlist for next week:** (1) MRVL — evaluate 5-day base condition (range ≤3% over 5 sessions + new 5-day high on >1.5x volume) from the earlier skip-list mechanical reentry trigger; (2) AVGO — same post-print base check; (3) XLI industrials — Hormuz reopening = lower energy costs = margin expansion for manufacturers/transport; one clean catalyst-driven name here could pass the Buy-Side Gate; (4) With 100% cash and all 3 weekly slots open, the first qualifying setup next week should be taken — 3 consecutive 0-trade weeks is approaching the boundary where "patience" becomes "paralysis."
+- **No TRADING-STRATEGY.md rule changes.** Rules #10 and #11 performed correctly. Infrastructure and macro-timing account for all this week's friction.
+
+### Overall Grade: C
+
+Process: B+ (CPI/PPI binary discipline applied correctly; Rule #10 held on all post-print candidates; no revenge trades; env restored mid-week). Outcome: D (0.00% absolute; -0.6% vs SPX; third consecutive zero-trade week; strategy under-sampled). Infrastructure: D (15 cumulative aborted routines, Alpaca 403 on review day, Telegram token still missing week 3). The rules work; the environment and geopolitical timing continue to prevent them from running. Net: C.
