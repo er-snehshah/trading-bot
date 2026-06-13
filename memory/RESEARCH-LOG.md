@@ -1277,3 +1277,32 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-13 — Pre-market Research (Saturday — non-trading day, critical env blocker)
+
+### Critical Env Blocker (NEW — escalating)
+- **All three external API hosts are blocked by the environment's network egress allowlist**: `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` all return `Host not in allowlist: ... Add this host to your network egress settings to allow access.`
+- `scripts/alpaca.sh`, `scripts/perplexity.sh`, and `scripts/clickup.sh` are all non-functional as a result. `clickup.sh` cannot even fall back gracefully (creds are present, so it attempts the curl, which fails under `set -e`).
+- This is a **new and more severe failure mode** than the 6/4–6/10 `TELEGRAM_BOT_TOKEN` gap, which blocked notifications only. This blocks **broker access (account/positions/orders), research, AND notifications simultaneously**, on every routine, regardless of day.
+
+### Non-trading day
+- 2026-06-13 is a **Saturday**. Markets closed regardless of env state.
+
+### Market Context (WebSearch fallback — weekend snapshot for Monday continuity only; Perplexity unreachable)
+- **Oil:** WTI ~$84.29 (Fri, -3.90%), Brent ~$87.40 — sharp pullback on US-Iran peace-deal hopes / potential Strait of Hormuz reopening. Still fails the $95 weekly-close energy re-trigger; the gap down makes near-term re-trigger less likely.
+- **VIX:** ~19.44 as of 6/11 close — elevated vs. the prior calm regime, consistent with this week's CPI/PPI + geopolitical whipsaw.
+- **Sector rotation (past week):** Materials (XLB) +3.02% and Staples (XLP) +2.86% led; Tech (XLK) +2.56%; Financials (XLF) +1.97%; Discretionary/Real Estate/Industrials mid-pack (+1.0-1.5%); Energy (XLE) -0.33% lagged on the oil selloff; Health Care/Utilities/Comms flat-to-down.
+- **Macro:** Inflation (CPI/PPI digestion) remains the dominant theme into next week; 2026 S&P 500 earnings growth estimates raised to ~25%, but leadership narrow (AI + energy).
+
+### Decision
+**HOLD (forced).** No execution possible — Alpaca API unreachable (network egress block) means no account verification, no order placement, no position management even if a qualifying setup existed. Also a non-trading day. No TRADE-LOG changes.
+
+### Operator action required (ESCALATING — top priority)
+- Add `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` to the environment's network egress allowlist.
+- Until resolved, every routine (pre-market, market-open, midday, daily-summary, weekly-review) will fail at Step 2 (Alpaca account pull) regardless of day of week.
+- Notification sent via `DAILY-SUMMARY.md` fallback since `clickup.sh` itself is unreachable.
+
+Next decision point: Monday 2026-06-15 pre-market — if env restored, fresh week with 0/3 trades used (per 6/11 entry), re-verify equity/positions/daytrade_count once Alpaca is reachable.
