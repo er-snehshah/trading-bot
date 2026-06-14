@@ -1277,3 +1277,37 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-14 — Pre-market Research (Sunday — no trading session)
+
+### Env Check
+- All required keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID).
+- **CRITICAL — full network egress block on all trading/research API hosts.** Every external API call returns `403 "Host not in allowlist"` from the local proxy:
+  - `paper-api.alpaca.markets` (account/positions/orders) — blocked
+  - `data.alpaca.markets` (quotes) — blocked
+  - `api.perplexity.ai` (research) — blocked
+  - `api.clickup.com` (notification) — blocked
+  - `api.telegram.org` — blocked
+- This is a network egress allowlist issue, distinct from the prior TELEGRAM_BOT_TOKEN/key-missing failures (6/4–6/10). Keys are valid; the proxy is rejecting the destination hosts outright.
+- `clickup.sh` cannot even reach its local-fallback branch — `set -euo pipefail` + `curl -f` exits the script on the 403 before the fallback append runs. Manually appending escalation note to DAILY-SUMMARY.md below in clickup-fallback format.
+- WebSearch (native tool) works and was used as a partial Step 3 fallback, but with no Alpaca access there is no account snapshot, no positions/orders check, and no Buy-Side Gate evaluation possible.
+
+### Account
+- **UNAVAILABLE.** Cannot pull equity/cash/buying power/positions/orders — both Alpaca hosts blocked. Last known state (2026-06-11 EOD): equity $99,883.98, 100% cash, 0 positions, 0 open orders, daytrade_count 0, trades this week 0/3.
+
+### Market Context (WebSearch, partial)
+- Today is **Sunday 2026-06-14** — no trading session. Even with full API access, this routine would have nothing actionable until Monday's open.
+- WebSearch for premarket S&P 500 futures returned only generic source links (Investing.com, CNBC, TradingView), no live data point — expected for a weekend query.
+
+### Trade Ideas
+- None — no trading session today, and no account/market data access regardless.
+
+### Risk Factors
+- **Operator action required (NEW, escalating):** Network egress allowlist needs `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` (and/or `api.telegram.org`) added. Until resolved, every routine (pre-market, market-open, midday, daily-summary, weekly-review) is non-functional for its core job (account state, research, notifications) regardless of key status.
+- Monday 2026-06-15 pre-market will hit the same wall unless the allowlist is fixed before then.
+
+### Decision
+**HOLD** — forced (no trading session today; no account/broker access even if there were). Next decision point: Monday 2026-06-15 pre-market, contingent on network egress allowlist fix.
