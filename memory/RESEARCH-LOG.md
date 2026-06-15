@@ -1277,3 +1277,38 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-15 — Market-open routine (ABORTED — network egress block)
+
+**Status: HALTED at STEP 2. All external API calls returning 403.**
+
+### Env check
+- ALPACA_API_KEY: set | ALPACA_SECRET_KEY: set | ALPACA_ENDPOINT: set
+- CLICKUP_API_KEY: set | CLICKUP_WORKSPACE_ID: set | CLICKUP_CHANNEL_ID: set
+- TELEGRAM_BOT_TOKEN: **MISSING** | TELEGRAM_CHAT_ID: **MISSING**
+- PERPLEXITY_API_KEY: set
+
+### Failure
+- `bash scripts/alpaca.sh account` → **403 `x-deny-reason: host_not_allowed`**
+- `bash scripts/alpaca.sh positions` → **403 host_not_allowed**
+- `bash scripts/perplexity.sh` → **403**
+- `bash scripts/clickup.sh` → **403**
+- `bash scripts/telegram.sh` → fallback (MISSING token, no send)
+- Root cause: **network egress policy for this session denies `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com`.**
+
+### State assumed (from last persisted snapshot — Jun 10 EOD)
+- Equity: $99,883.98 | Cash: 100% | Positions: 0 | Open orders: 0
+- Daytrade count: 0 | Trades this week: 0/3 (fresh weekly counter)
+
+### Action
+- No Alpaca calls. No Perplexity research. No orders placed. No notification sent.
+- Per strategy: "never trade without documented research" — no trade possible or appropriate.
+
+### Operator action required (escalating)
+1. **Add to network egress allowlist:** `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com`
+2. **Restore** `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` in the runtime environment
+
+**Decision: HOLD (forced — all APIs unreachable). No trades placed. No commit.**
