@@ -233,3 +233,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Eleventh consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98 (last_equity matches). **Env restored today — all keys present; first successful executable routine since 6/3.** Pre-market, market-open, and midday all ran cleanly. **May CPI HOT** (8:30am ET): headline +0.5% m/m / +4.2% y/y vs ~3.7% cons; core +0.2% m/m / +2.9% y/y vs ~2.7% cons — inflation re-acceleration print. Pre-CPI documented SKIPs (binary macro = wrong asymmetry); post-CPI documented SKIPs across NVDA/MRVL/AVGO (rate-sensitive into hot print), XLE/OXY (WTI $89 fails $95 re-trigger despite overnight US/Iran strike-exchange headlines — curve in steep backwardation says contained), defensives (no specific catalyst). Buy-Side Gate failed universe-wide on a hot-CPI risk-off tape. **Trades this week: 0/3** (Wed of new week, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12% — no incremental damage; ex-post, cash on a hot-CPI day was the right side. Next decision point: Thu pre-market with CPI digested, PPI 8:30am ET, and sector damage from hot CPI assessable.
+
+
+### Jun 15 — EOD Snapshot (Monday)
+**Portfolio:** $99,883.98 | **Cash:** $99,883.98 (100%) | **Day P&L:** $0.00 (0.00%) | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Assumed-flat session — Alpaca API (`paper-api.alpaca.markets`) blocked by network egress policy; live account state unverifiable. Last committed equity $99,883.98 from Jun 10 snapshot used as basis; no positions open since May 28 stop-out so zero market P&L exposure. Jun 11 (Thu) and Jun 12 (Fri) EOD snapshots were not committed (last committed activity was pre-market research 2026-06-11). Telegram also blocked (`api.telegram.org` not in egress allowlist) + TELEGRAM_BOT_TOKEN unset — notification fell back to DAILY-SUMMARY.md. **Trades this week: 0/3** (fresh Monday, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12%; no exposure, no incremental damage, but cumulative opportunity cost from bot inactivity since 6/3 (14+ sessions without a trade) is now substantial. **Operator action REQUIRED:** Add `paper-api.alpaca.markets` and `api.telegram.org` to network egress allowlist to restore full bot functionality. Next decision point: Tue 2026-06-16 pre-market — if network egress is restored, clean weekly slate with all 3 trade slots intact.
