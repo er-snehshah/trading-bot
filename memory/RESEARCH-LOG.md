@@ -1277,3 +1277,40 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-15 — Midday routine (Monday — ABORTED: API network block)
+
+**Env: all required keys present.** ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID, PERPLEXITY_API_KEY all confirmed set.
+
+### Critical Blocker
+- `bash scripts/alpaca.sh positions` → **403 Forbidden**
+- `bash scripts/alpaca.sh orders` → **403 Forbidden**
+- `bash scripts/alpaca.sh account` → **403 Forbidden**
+- **Root cause identified:** TLS inspection via verbose curl confirms SSL certificate issuer `O=Anthropic; CN=Egress Gateway SDS Issuing CA (production)` — Anthropic's remote execution environment **egress gateway is intercepting and blocking outbound connections to `paper-api.alpaca.markets` and `data.alpaca.markets`**. This is a network policy restriction, NOT an API key problem.
+- ClickUp also blocked (same 403 from egress gateway) — escalation path via `scripts/clickup.sh` unavailable.
+- Telegram not configured (TELEGRAM_BOT_TOKEN missing) — wrote to DAILY-SUMMARY.md fallback.
+
+### Steps Completed
+- Step 1 (memory read): ✅ — Strategy, Trade Log, Research Log all read. Last TRADE-LOG entry: Jun 10 EOD. Last RESEARCH-LOG entry: Jun 11 pre-market. Entries for Jun 11 midday, Jun 12 (Fri), Jun 13-14 (weekend), Jun 15 (today) are absent — routines likely also blocked or skipped.
+- Step 2 (positions/orders): ❌ BLOCKED — 403 from egress gateway. Cannot read live account state.
+- Steps 3-6 (cut/tighten/thesis/research): ❌ SKIPPED — no account state readable.
+- Step 7 (notification): ❌ ClickUp blocked, Telegram not configured. PushNotification via Claude tool sent.
+- Step 8 (commit): ✅ — documenting this entry, committing, and pushing.
+
+### State Estimate (from last readable snapshot — Jun 10 EOD)
+- Equity: $99,883.98 | Cash: 100% | Positions: 0 | Open orders: 0
+- Trades this week (Jun 9 week): 0/3 — slots likely reset for new week (Jun 15)
+- Daytrade count: 0 — full PDT budget
+- Phase P&L: -$116.02 (-0.12%)
+- **Note:** Account state above is 5 calendar days stale. No trades are assumed open based on the consistent 100%-cash state through Jun 10; however, this cannot be verified today.
+
+### Operator Action Required (URGENT — ESCALATING)
+1. **Add `paper-api.alpaca.markets` and `data.alpaca.markets` to the network egress allowlist** in the Claude Code remote execution environment settings. This is the root cause blocking ALL Alpaca API calls.
+2. Add `api.clickup.com` to the egress allowlist (ClickUp also 403).
+3. Configure TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID so the Telegram fallback notification path works.
+4. Until fixed: **every intraday routine (pre-market, market-open, midday, daily-summary) will abort at Step 2** — the bot cannot read account state, place orders, or cut losers.
+
+**No TRADE-LOG changes (no executable portfolio actions). Commit includes only this RESEARCH-LOG entry.**
