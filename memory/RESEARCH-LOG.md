@@ -1277,3 +1277,67 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-15 — Pre-market Research (Monday — US/Iran peace deal day)
+
+*WebSearch fallback — Perplexity and Alpaca both blocked by network egress policy (paper-api.alpaca.markets and api.perplexity.ai not in allowlist). Account state from last known (Jun 11 research log; no positions have been held since May 28 and account has been flat for 3+ weeks).*
+
+### Account (last known — Alpaca API unreachable)
+- Equity: ~$99,883.98 | Cash: ~$99,883.98 (100%) | Buying power: ~$199,767.96
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- **Trades this week: 0/3** — fresh Monday, all slots intact
+- ⚠️ INFRA: paper-api.alpaca.markets returns 403 "Host not in allowlist" — operator must add to egress policy
+
+### Market Context
+- **WTI: ~$80.83** (-4.77% today) | **Brent: ~$83.77** (-4% today) — **oil crashing on US-Iran peace deal**. Brent hit lowest since March. Analysts project Brent ~$80 by year-end assuming Strait remains open.
+- **US-Iran deal confirmed today (THE dominant catalyst):** Trump authorized toll-free reopening of Strait of Hormuz + removal of US naval blockade of Iranian ports. Iran's Supreme National Security Council confirmed MOU. Official signing ceremony in Switzerland on Friday.
+- **S&P 500 futures: +1-2% premarket** (S&P +~1%, Nasdaq +~1.8%). Asia: Nikkei +5.5%, Kospi +5.7%, Taiwan Taiex +2.7%. Broad risk-on surge.
+- **VIX: ~19.44** at Jun 11 close; likely declining materially today on geopolitical de-escalation. Calm regime returning.
+- **FOMC June 16–17** — starts TOMORROW, decision Wednesday 2pm ET. 99.6% market probability of NO change. SEP/dot plot = wildcard (hot CPI+PPI backdrop may trigger hawkish bias shift from Fed).
+- **Today's economic data:** Empire State Manufacturing (8:30am ET), Industrial Production + Capacity Utilization (9:15am ET), NAHB Housing Market Index (10am ET) — all mid-tier; Iran deal dominates.
+- **Earnings BMO today:** None of consequence (Bank of Montreal Q2 already reported; no US mega-cap prints today).
+- **AI chips surging in premarket:** MU +8%+, AMD +4%+, NVDA +2%+, AVGO up. Rally driven by risk-off removal (Iran deal) + rate-cut hopes (~77% probability at least one cut in 2026) + ongoing AI demand thesis.
+- **Sector momentum (refresh):** XLE Energy + XLI Industrials in **Leading** quadrant YTD (XLE +26-27%, XLK +32-33%); however energy **crashing today** on Iran deal supply-surge fears. XLK (tech/AI) benefiting from geopolitical de-risk and rate-relief narrative. Leadership may rotate further from energy into tech today.
+
+### Trade Ideas
+
+1. **MU (Micron) — DOCUMENTED SKIP TODAY (Rule #10), WATCHLIST for post-FOMC.**
+   - Catalyst: AI chip demand confirmed (CRDO, MRVL, AVGO all beat), MU earnings June 24 is a real upcoming catalyst, Iran deal removes geopolitical overhang on AI infra buildout.
+   - Problem: MU premarket **+8%+** from prior close → **violates Rule #10** (>5% intraday filter). Asymmetry already shifted.
+   - Post-FOMC watchlist: if MU consolidates into a 2-3 session base (Thu/Fri this week) with earnings June 24 as the forward catalyst, re-evaluate. Entry zone ~prior session close ±2%, stop -4%, target +7%.
+   - Size: `floor(99,884 × 0.20 / price)` at time of entry.
+
+2. **NVDA — DOCUMENTED SKIP (pre-FOMC binary T-1).**
+   - Catalyst: Iran deal + AI chip rally, premarket +2% (within Rule #10 filter). AI demand intact.
+   - Problem: **FOMC starts TOMORROW (June 16).** Entering today = T-1 to a 2-day binary event. Same logic that flagged pre-NVDA-earnings entry as wrong asymmetry. SEP/dot plot on hot CPI/PPI backdrop could be hawkish surprise → rate-sensitive tech names get hit. Skip.
+   - Post-FOMC watchlist (Thu open): if NVDA holds structure through Fed decision, re-evaluate with 2026-era earnings catalyst timeline in view.
+
+3. **AMD — DOCUMENTED SKIP (pre-FOMC binary + Rule #10 borderline).**
+   - Premarket +4%+ (borderline Rule #10 territory from prior close). FOMC binary starting tomorrow = same issue as NVDA. Skip.
+
+4. **Energy (XLE / OXY) — HARD SKIP (thesis reversed).**
+   - WTI -4.77% to $80.83 today. Oil was already below the $95 re-trigger; now it's crashing further. The geopolitical premium that once justified energy exposure is GONE — Strait of Hormuz reopening = structural supply increase. Rule #9 enforced: sector momentum fully degraded. XLE likely opens down 4-5%.
+   - **Do not add energy at any price today.** Thesis is now directionally opposed to position intent.
+
+### Risk Factors
+- **FOMC June 16-17 (binary starting TOMORROW):** Hot CPI (+4.2% y/y) + hot PPI environment → Fed holds at 99.6% probability, but SEP dot plot could signal hawkish bias shift or delay rate cuts into 2027. Tech/AI names (NVDA, MU) are rate-sensitive. Any hawkish surprise = headwind after today's Iran-deal pop.
+- **Iran deal "sell the news" risk:** Markets surged on the deal announcement; if the Friday signing ceremony hits snags or details disappoint, the oil spike reversal and stock rally could partially unwind.
+- **MU earnings June 24 (1.5 weeks out):** Any entry this week carries MU earnings binary risk at the 7-day horizon. -4% stop would need to be managed carefully before the report.
+- **Alpaca API unavailable:** Cannot pull live account state or place orders. Network egress policy must be resolved before any trading is possible. **This is a BLOCKING operational constraint.**
+- **Behavioral pressure:** 18+ calendar days at 100% cash since May 28. Iran deal + chip rally creates acute pressure to chase. Rules are the answer.
+- **Vol expanding post-CPI/PPI:** ES intraday ranges were 3%+ last week. Whipsaw risk elevated even on today's gap-up open.
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved. Iran deal is a real and significant macro catalyst — but FOMC starts TOMORROW (June 16), making today T-1 to a 2-day binary event. Same asymmetric logic that has governed every pre-binary HOLD applies. Documented SKIPs: MU (Rule #10 violation, +8% premarket), NVDA (pre-FOMC T-1, same logic as pre-earnings hold), AMD (pre-FOMC T-1 + Rule #10 borderline), energy (thesis fully reversed — oil crashing on Iran deal).
+
+**Post-FOMC plan (Thursday June 18):** If FOMC Wednesday decision is no-change (as expected) without a major hawkish dot-plot surprise, Thursday open is the cleanest potential entry point of the week:
+- MU: evaluate if it has consolidated from today's +8% gap; earnings June 24 = real specific catalyst
+- NVDA/AVGO: evaluate if AI chip rally has a base structure; need sector back in Leading quadrant
+- All three require: (1) price within 5% of prior close at entry time, (2) sector rotation confirming XLK leadership, (3) Buy-Side Gate pass including 0 positions → slots clear
+
+**Trades this week: 0/3.** Daytrade count: 0/3. Full budget intact.
+
+**Operator action still required:** Restore Alpaca API egress (paper-api.alpaca.markets must be added to network allowlist) and Perplexity egress (api.perplexity.ai). Both returned 403 "Host not in allowlist" today. Without Alpaca, no positions can be monitored or orders placed. Without Perplexity, research falls back to WebSearch (functional but slower).
