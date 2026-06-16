@@ -233,3 +233,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Eleventh consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98 (last_equity matches). **Env restored today — all keys present; first successful executable routine since 6/3.** Pre-market, market-open, and midday all ran cleanly. **May CPI HOT** (8:30am ET): headline +0.5% m/m / +4.2% y/y vs ~3.7% cons; core +0.2% m/m / +2.9% y/y vs ~2.7% cons — inflation re-acceleration print. Pre-CPI documented SKIPs (binary macro = wrong asymmetry); post-CPI documented SKIPs across NVDA/MRVL/AVGO (rate-sensitive into hot print), XLE/OXY (WTI $89 fails $95 re-trigger despite overnight US/Iran strike-exchange headlines — curve in steep backwardation says contained), defensives (no specific catalyst). Buy-Side Gate failed universe-wide on a hot-CPI risk-off tape. **Trades this week: 0/3** (Wed of new week, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12% — no incremental damage; ex-post, cash on a hot-CPI day was the right side. Next decision point: Thu pre-market with CPI digested, PPI 8:30am ET, and sector damage from hot CPI assessable.
+
+
+### Jun 16 — EOD Snapshot (Monday — network egress blocked)
+**Portfolio:** $99,883.98 (last known) | **Cash:** $99,883.98 (100%) | **Day P&L:** unknown | **Phase P&L:** -$116.02 (-0.12% vs $100k baseline)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Routine ran but ALL external APIs are blocked at network egress layer — `host_not_allowed` for both `paper-api.alpaca.markets` and `api.clickup.com`; TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID missing. No live equity, positions, or orders data retrievable. Last confirmed equity $99,883.98 (Jun 10 — 100% cash, 0 positions). Snapshots for Jun 11, Jun 12, and Jun 15 are also absent from the log (those routines likely suffered the same egress block or were not scheduled). **Trades this week: 0/3** (assumed — no broker data). Day P&L and Phase P&L cannot be computed without broker data. **OPERATOR ACTION CRITICAL:** (1) Whitelist `paper-api.alpaca.markets` in network egress settings so the broker API is reachable; (2) restore TELEGRAM_BOT_TOKEN + TELEGRAM_CHAT_ID env vars; (3) whitelist `api.clickup.com` if ClickUp notifications are expected to work. Until egress is fixed the bot is completely blind — cannot read account state, cannot trade, cannot notify. PushNotification tool (phone notification) is the only escalation path that worked in this session.
