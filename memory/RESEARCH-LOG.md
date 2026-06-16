@@ -1277,3 +1277,37 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+---
+
+## 2026-06-16 — Market-open routine (Monday)
+
+**ABORT — Network egress blocked.**
+
+### State (last known — from 2026-06-10 EOD)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | 0 positions | 0 open orders
+- Daytrade count: 0/3 | Trades this week: 0/3 (fresh Monday, new week)
+
+### Blocker
+All external API hosts blocked by Claude Code remote environment egress policy:
+- `paper-api.alpaca.markets` → 403 / "Host not in allowlist"
+- `data.alpaca.markets` → blocked
+- `api.clickup.com` → blocked
+- `api.perplexity.ai` → blocked (assumed)
+
+Cannot fetch live account state, cannot run research, cannot place orders, cannot send ClickUp/Telegram notifications.
+
+### Action
+- No trades placed.
+- PushNotification sent to operator phone (Claude Code native tool — not egress-blocked).
+- This entry documents the abort for continuity.
+
+### Required operator action
+Add these hosts to the network egress allowlist in Claude Code on the Web session settings:
+- `paper-api.alpaca.markets`
+- `data.alpaca.markets`
+- `api.clickup.com`
+- `api.perplexity.ai`
+- `api.telegram.org` (if Telegram still in use)
+
+**Decision: ABORT. No TRADE-LOG changes. No orders. No notifications (all notification APIs also blocked).**
