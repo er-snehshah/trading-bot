@@ -1277,3 +1277,33 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-16 — Midday routine (ABORTED — network egress blocked)
+
+**Status: HALTED at Alpaca API call. All external API endpoints unreachable.**
+
+- Env pre-check: ALL keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID set). Env is healthy.
+- `bash scripts/alpaca.sh positions` → HTTP 403 `x-deny-reason: host_not_allowed` — "Host not in allowlist: paper-api.alpaca.markets. Add this host to your network egress settings to allow access."
+- `bash scripts/alpaca.sh orders` → same 403.
+- `bash scripts/clickup.sh "..."` → 403 (network blocked; local fallback only).
+- `bash scripts/telegram.sh "..."` → 403 (network blocked; local fallback only).
+- **Root cause:** Cloud execution environment network egress policy does not include `paper-api.alpaca.markets` or notification endpoints. This is an infrastructure configuration issue, not a credentials issue.
+
+**Last known account state (2026-06-10 EOD / confirmed 2026-06-11 pre-market):**
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Positions: 0 | Open orders: 0 | Daytrade count: 0
+- Phase P&L: -$116.02 (-0.12% vs $100k baseline)
+- Trades this week: unknown (5 trading days since last confirmed state; 0/3 as of Jun 11 Thu pre-market)
+
+**Position management assessment (from memory):**
+- No open positions as of last confirmed state → no losers to cut, no stops to tighten, no thesis to review.
+- CRITICAL UNKNOWN: cannot confirm whether trades were placed in the June 11–16 window (5 trading days unaccounted for). If new positions exist, they may require action.
+
+**Action required (operator — BLOCKING):**
+1. Add `paper-api.alpaca.markets` to the network egress allowlist in the cloud execution environment settings, AND
+2. Add notification endpoints (ClickUp, Telegram) to the egress allowlist, OR restore the local fallback path.
+- Reference: https://code.claude.com/docs/en/claude-code-on-the-web for environment egress settings.
+
+**Decision: HOLD (forced — no position data accessible). No TRADE-LOG changes. Push this abort entry so operator sees the state.**
