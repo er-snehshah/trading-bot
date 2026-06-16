@@ -1277,3 +1277,70 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-16 — Pre-market Research (Monday — FOMC week, US-Iran peace deal)
+
+*(Perplexity fallback → WebSearch. Alpaca API blocked by network egress — account state from last known snapshot. ClickUp blocked — no notification sent.)*
+
+### Account (last known — Alpaca paper-api.alpaca.markets blocked by network egress)
+- Equity: $99,883.98 | Cash: $99,883.98 (100%) | Buying power: ~$199,768
+- Daytrade count: 0 | PDT: false | Positions: 0 | Open orders: 0
+- Last confirmed equity: 2026-06-11 (Thu) — $99,883.98, flat since ARM stop-out 5/28
+- **Trades this week: 0/3** — fresh Monday, all slots intact
+- Phase P&L: -$116.02 (-0.12% vs $100k baseline)
+
+### Infrastructure Alert
+- **paper-api.alpaca.markets**: blocked by network egress ("Host not in allowlist")
+- **api.perplexity.ai**: blocked by network egress ("Host not in allowlist")
+- **scripts/clickup.sh**: blocked (403 from proxy)
+- All three wrappers non-functional. Operator action required: add both hosts to network egress allowlist.
+
+### Market Context
+- **WTI: ~$80.47** (-5.4% today) | **Brent: ~$83.14** (prior close $87.33) — oil PLUNGING on US-Iran peace agreement. Hormuz reopening end of week removes the geopolitical premium. WTI is now at a two-month low; far below the $95 weekly-close energy re-trigger threshold.
+- **S&P 500 futures: ESM26 +1.22% / NQM26 +1.99%** premarket — strong risk-on bid driven by ceasefire news. Prior session (Monday June 15) SPX closed +1.65% on the peace deal announcement.
+- **VIX: ~16.1–16.2** — calm regime; fear premium not elevated despite macro binary (FOMC).
+- **Today's catalysts:**
+  - May Industrial Production (8:15am ET, today) — recession-risk read
+  - **FOMC June 16–17 meeting begins today** — rate decision announced Wednesday June 18; Kevin Warsh's first meeting as Fed Chair. Fed funds rate currently 3.50–3.75%. Fed funds futures market is showing rate HIKE risk (not cuts). Warsh known to prefer reducing central bank communication footprint.
+  - Earnings BMO: John Wiley & Sons (WLY), La-Z-Boy (LZB) — neither is a mega-cap sector mover
+- **Week ahead macro:** FOMC decision + SEP Wednesday; various data throughout week (CPI already printed June 10 hot, PPI June 11)
+- **Sector momentum YTD (consistent multi-week read):** Leading: XLP, XLI, XLB, XLE | Lagging: XLK, XLC, XLY, XLF | Improving: XLRE, XLU | Weakening: XLV. Energy's YTD lead (~+22%) is intact on a YTD basis but today's -5% oil move will compress relative performance.
+
+### Trade Ideas
+
+1. **Energy (OXY / XLE) — HARD SKIP (thesis definitively dead).**
+   - US-Iran peace deal removes the Hormuz geopolitical premium entirely. WTI $80.47, Brent $83.14 — the entire energy catalyst stack (Gulf hostility + Hormuz closure) has unwound in a single session.
+   - WTI is now $15 below the $95 weekly-close re-trigger threshold. Rule #9 enforced — sector failed, stay out.
+   - **Pass. Energy thesis closed permanently until a new structural catalyst develops.**
+
+2. **Tech (NVDA / MRVL / AVGO) — SKIP pre-FOMC.**
+   - Equity futures +1.2%/+2% on Iran deal = strong tech bid. But FOMC Wednesday (June 18) is the macro pivot.
+   - Rate hike risk is live in futures market — Warsh is hawkish by nature; first meeting could bring a surprise. Hot CPI (+4.2% y/y, June 10) + hot PPI (June 11) support hike thesis.
+   - Entering tech Monday before a potential rate hike Wednesday = same wrong asymmetry as pre-CPI or pre-NVDA-earnings. Let the FOMC print first.
+   - **Pass pre-FOMC. Reconsider Thursday if FOMC is hold/cut + Warsh is benign.**
+
+3. **XLI Industrials (CAT / DE / ETN) — SKIP.**
+   - Leading sector, constructive. But no single-name catalyst today + FOMC binary 2 days out = Buy-Side Gate fails on "specific catalyst documented" requirement.
+   - **Pass.** Keep on watchlist for post-FOMC Thursday setup if rate decision is benign.
+
+4. **WLY / LZB BMO — SKIP.** No mega-cap, no sector-leadership catalyst. Pass.
+
+5. **No new entry today.** Buy-Side Gate fails universe-wide:
+   - FOMC June 18 = binary macro event 2 days out; same pre-event logic as pre-CPI, pre-PPI, pre-NVDA
+   - Every setup that passes sector-momentum filter (XLI names) fails on "specific catalyst" requirement
+   - Iran deal is bullish equity macro news but it's already partially in price (ES +1.65% yesterday + +1.22% futures today)
+   - 100% cash, 0% deployed, trades 0/3 — Rule #2 scan executed; documented answer = no qualifying setup
+
+### Risk Factors
+- **FOMC Wednesday is the binary.** Rate hike vs. hold. Hot CPI (+4.2%) + hot PPI supports hike; Iran-deal oil collapse is disinflationary (supports hold). Two competing macro forces heading into Wed. Entering now = picking a side before the data.
+- **Warsh first meeting risk.** New Fed Chair known as a hawk who wants to tighten communication. Market reaction to his tone/guidance is unknowable pre-event.
+- **Oil -5% today** collapses the energy sector's remaining YTD momentum advantage. Any latent energy add is now definitively dead.
+- **Tech XLK still in Lagging quadrant** despite today's futures bid. One day of risk-on does not change sector regime.
+- **Infrastructure blocked:** Cannot pull live Alpaca account state to confirm no unexpected orders/positions, and cannot send ClickUp notification. Operator must whitelist paper-api.alpaca.markets and api.perplexity.ai in network egress settings.
+- Daytrade count 0/3, weekly trades 0/3 — full PDT and slot budget intact.
+
+### Decision
+**HOLD.** Patience > activity. 100% cash preserved. Documented SKIPs: energy (WTI $80, Iran deal, thesis dead), tech (FOMC Wednesday hawkish binary 2 days out), XLI (no specific catalyst), WLY/LZB (no edge). **FOMC June 18 is the macro pivot of the week.** Pre-positioning Monday = wrong asymmetry. Trades this week: 0/3 — all slots intact. Next decision point: post-FOMC Thursday pre-market; if Warsh holds rates and tone is benign, the cleanest setup emerges with full cash + clean PDT + 3 trade slots into end-of-week.
