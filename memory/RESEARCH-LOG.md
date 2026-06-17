@@ -1277,3 +1277,61 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-17 — Pre-market Research (Wednesday — FOMC Day, Warsh's First Meeting)
+
+### Account
+- **⚠️ ALPACA API RETURNING 403** — cannot pull live equity/cash/positions/orders
+- Last confirmed state (2026-06-11): equity $99,883.98 | Cash 100% | 0 positions | 0 open orders
+- Phase P&L: -$116.02 (-0.12% vs $100k baseline) — last known
+- **⚠️ PERPLEXITY API RETURNING 403** — falling back to WebSearch (documented per workflow)
+- **⚠️ CLICKUP API RETURNING 403** — notifications blocked; PushNotification used for alert
+- All three external APIs inaccessible; likely network policy blocking outbound calls
+- Daytrade count: unknown (last known 0/3 as of Jun 11)
+- **Trades this week: ~0/3** (week of Jun 15 — no log entries Jun 12–16; presumed flat)
+
+### Market Context
+- **WTI crude: ~$75/barrel** — 5th consecutive losing session, lowest since early March 2026. **Brent ~$80.** US-Iran agreement to reopen Strait of Hormuz = structural supply increase. **Energy thesis (OXY/XLE, $95 re-trigger) is officially DEAD.** WTI has crashed ~$14 from $89 (Jun 11) to $75 today. Energy sector likely lagging hard.
+- **S&P 500 futures: +0.28% premarket** — modest green; 78% Polymarket probability of a green open. Easing Middle East tensions + FOMC hold expectation supporting equities.
+- **VIX: ~15.77** — calm, low-vol regime. Vol compression since hot-CPI selloff (Jun 10) has largely recovered.
+- **TODAY'S DOMINANT CATALYST: FOMC 2pm ET** — Kevin Warsh's FIRST meeting as Fed Chair (confirmed May 13, sworn in May 22). Rate decision at 2:00pm ET; press conference 2:30pm ET.
+  - Hold at 3.50–3.75% nearly certain (97% CME FedWatch probability)
+  - **DOT PLOT UPDATE** (quarterly SEP): With May CPI at +4.2% y/y (hot), consensus expects the dot plot to eliminate the last projected rate cut — effectively signaling rates on hold through year-end
+  - **Warsh risk**: Hawkish, "less-is-more" guidance approach → reduced predictability, elevated vol on unclear forward guidance
+  - No major BMO earnings today; earnings season largely over
+
+### Sector Momentum (refreshed)
+- **Leading (hold/watch):** XLP (+7% YTD, rose +1.7% on Jun 12 risk-off), XLI (+12% YTD), XLB (+22% YTD — dominant leader but fell -2.3% on Jun 12 Iran-deal news)
+- **Lagging:** XLK, XLC, XLY, XLF
+- **Formerly-leading now REVERSING:** XLE — oil at $75 from $89 since US-Iran deal; supply surge thesis now in play
+- **Improving:** XLRE, XLU (rate-sensitive recovery if Warsh dovish on dot plot)
+
+### Trade Ideas
+
+1. **NO ENTRY PRE-FOMC.** FOMC 2pm ET is a binary macro event. Warsh's first meeting + dot plot update = maximum uncertainty about communication style. Buy-Side Gate fails universe-wide pre-2pm. Same discipline as pre-CPI (Jun 10) and pre-PPI (Jun 11).
+
+2. **Energy thesis OFFICIALLY CLOSED.** WTI $75 vs $95 weekly-close re-trigger. Iran deal → Strait of Hormuz reopens → structural supply increase. OXY/XLE removed from active watchlist. This thesis is dead.
+
+3. **XLB (Materials) — post-FOMC watchlist.** Dominant YTD leader (+22%). Sold off Jun 12 (-2.3%) on Iran deal. If FOMC in-line or dovish → potential technical bounce. Need a specific single-name catalyst to qualify for Buy-Side Gate — absent today. Sector is valid, ticker TBD.
+
+4. **XLP (Consumer Staples) — post-FOMC watchlist.** True defensive; rose +1.7% on Jun 12 when risk assets sold off. If Warsh hawkish/dot plot removes cuts → XLP bid likely. Need single-name catalyst to qualify.
+
+5. **Post-FOMC decision tree (defer to midday):**
+   - **Hold + dot plot neutral / one cut retained:** mild relief rally; XLK could bounce; watch NVDA/AVGO for 5-day clean base pattern
+   - **Hold + dot plot removes all cuts (hawkish):** defensive/staples/materials bid; rate-sensitives (XLK, XLRE, XLU) pressured
+   - **Warsh surprise (hike signal or ultra-hawkish language):** broad selloff → stay 100% cash; do not chase defensive entries in a spiking-VIX tape
+   - **In-line with market expectation:** muted; consolidation; no edge
+
+### Risk Factors
+- **⚠️ ALPACA API 403 — CRITICAL.** Cannot pull live account state. Cannot place, cancel, or manage orders. Bot is operationally blind and unable to trade. Operator must restore API key access or investigate account status.
+- **⚠️ PERPLEXITY + CLICKUP APIs also 403.** Systemic outbound access issue; research and notification paths both degraded. Three distinct API endpoints all blocked = likely network policy, not individual key expiry.
+- **FOMC Warsh communication risk.** New Fed Chair = unknown communication style under live fire. Dot plot likely hawkish (removes last cut) given May CPI 4.2%. VIX could spike on press conference ambiguity.
+- **Oil crash ($89→$75, -16%).** XLE sector reversal underway. Energy-sector momentum rule effectively invalidated (sector now lagging). Wipes out the energy re-trigger thesis that was the primary candidate trade for weeks.
+- **5+ trading day log gap (Jun 12–Jun 16).** No documented sessions, no equity updates. Phase P&L and daytrade count are estimates.
+- **Behavioral pressure.** 17+ consecutive flat sessions. FOMC day pre-positioning urge is real. Correct answer: no entry pre-binary = no entry.
+
+### Decision
+**HOLD.** No new trades pre-FOMC. Documented SKIPs: FOMC binary macro, energy thesis dead ($75 WTI), no single-name catalysts in XLB/XLP/XLI. **Alpaca API broken (403) — cannot trade regardless.** Watchlist post-2pm ET: XLB/XLP names if specific catalysts surface post-FOMC; NVDA/AVGO if Warsh dovish + 5-day base confirmed. Trades this week: ~0/3. Operator action required: restore Alpaca API access (403), Perplexity API (403), and ClickUp (403). Next decision point: midday routine post-2pm FOMC announcement.
