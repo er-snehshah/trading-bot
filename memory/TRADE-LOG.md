@@ -233,3 +233,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Eleventh consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98 (last_equity matches). **Env restored today — all keys present; first successful executable routine since 6/3.** Pre-market, market-open, and midday all ran cleanly. **May CPI HOT** (8:30am ET): headline +0.5% m/m / +4.2% y/y vs ~3.7% cons; core +0.2% m/m / +2.9% y/y vs ~2.7% cons — inflation re-acceleration print. Pre-CPI documented SKIPs (binary macro = wrong asymmetry); post-CPI documented SKIPs across NVDA/MRVL/AVGO (rate-sensitive into hot print), XLE/OXY (WTI $89 fails $95 re-trigger despite overnight US/Iran strike-exchange headlines — curve in steep backwardation says contained), defensives (no specific catalyst). Buy-Side Gate failed universe-wide on a hot-CPI risk-off tape. **Trades this week: 0/3** (Wed of new week, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12% — no incremental damage; ex-post, cash on a hot-CPI day was the right side. Next decision point: Thu pre-market with CPI digested, PPI 8:30am ET, and sector damage from hot CPI assessable.
+
+
+### Jun 17 — Midday Snapshot (Wednesday — BLOCKED, network egress)
+**Portfolio:** UNKNOWN (API unreachable) | **Last known:** $99,883.98 cash 100% as of Jun 10 EOD
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| UNKNOWN | — | — | — | — | — | — |
+
+**Notes:** Midday scan aborted — **paper-api.alpaca.markets and data.alpaca.markets both blocked by network egress policy**. Cannot verify positions, orders, or P&L. Cannot execute any cuts or stop-tightening. ClickUp and Telegram notification endpoints also blocked. Last verified account state: Jun 10 EOD, 100% cash, 0 positions, 0 open orders. No TRADE-LOG entries exist for Jun 11–16 (gap in record). **If any positions are open and down >7%, they are NOT being cut by the bot — manual intervention required.** PushNotification sent as only available alert. Operator must add Alpaca/notification hosts to egress allowlist to restore bot function.

@@ -1277,3 +1277,29 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-17 — Midday Scan (Wednesday — BLOCKED by network egress policy)
+
+**Env vars:** All API keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID). Keys are set; network is not.
+
+### Network Egress Block — All External APIs Unreachable
+- `paper-api.alpaca.markets` → **Host not in allowlist** (positions/orders/trades all blocked)
+- `data.alpaca.markets` → **Host not in allowlist** (quotes blocked)
+- `api.clickup.com` → **Host not in allowlist** (alert notification blocked)
+- `api.telegram.org` → **Host not in allowlist** (Telegram notification blocked)
+
+### Midday Scan Result
+- **Steps 2-6: ALL BLOCKED.** Cannot pull positions, orders, quotes, or market data. Cannot execute cuts, stop-tightening, or thesis reviews. Cannot run Perplexity research.
+- **Last known state (Jun 10 EOD):** Equity $99,883.98, 100% cash, 0 positions, 0 open orders.
+- **Last documented trades this week (unknown):** No TRADE-LOG entries exist for Jun 11–16. Presumed 0 activity from env/infra issues persisting into this week, but UNVERIFIED.
+
+### Decision
+**BLOCKED.** No action taken — not by choice but by infra constraint. PushNotification sent as only available alert channel.
+
+### Operator Action Required (URGENT)
+1. **Add to network egress allowlist:** `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.clickup.com` (or `api.telegram.org`)
+2. Until fixed, every midday/market-open/pre-market/daily-summary routine is a silent no-op — the bot cannot trade, cannot review positions, cannot notify.
+3. If live positions exist that are down >7%, they are NOT being cut. Manual review required immediately.
