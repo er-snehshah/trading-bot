@@ -1277,3 +1277,29 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-18 — Market-open routine (ABORTED — network egress blocked)
+
+**Status: HALTED at API pre-check. All external endpoints returning 403 "Host not in allowlist."**
+
+- Env pre-check: all keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID, PERPLEXITY_API_KEY all set).
+- Attempted `bash scripts/alpaca.sh account` → HTTP 403: `Host not in allowlist: paper-api.alpaca.markets. Add this host to your network egress settings to allow access.`
+- Attempted `bash scripts/perplexity.sh` → HTTP 403 (same egress block).
+- Attempted `bash scripts/clickup.sh` → HTTP 403 (api.clickup.com also blocked).
+- No research entry exists for today (2026-06-18); last research entry was 2026-06-11. Cannot trade without documented research — per strategy hard rules.
+- PushNotification sent as only available alert path.
+
+**No research available. No account state verifiable. No orders placeable. All trading halted.**
+
+**Action required (operator — CRITICAL):**
+1. Add these hosts to network egress allowlist in Claude Code on the Web environment settings:
+   - `paper-api.alpaca.markets`
+   - `data.alpaca.markets`
+   - `api.perplexity.ai`
+   - `api.clickup.com`
+2. Also verify that pre-market research entries for 2026-06-12 through 2026-06-18 are missing — the bot has no documented research for any of those sessions.
+
+**Decision: HOLD (forced — infrastructure halted, no research, no market access).**

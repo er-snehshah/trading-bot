@@ -233,3 +233,13 @@
 | — | — | — | — | — | — | — |
 
 **Notes:** Eleventh consecutive flat session — 100% cash, zero activity, equity unchanged at $99,883.98 (last_equity matches). **Env restored today — all keys present; first successful executable routine since 6/3.** Pre-market, market-open, and midday all ran cleanly. **May CPI HOT** (8:30am ET): headline +0.5% m/m / +4.2% y/y vs ~3.7% cons; core +0.2% m/m / +2.9% y/y vs ~2.7% cons — inflation re-acceleration print. Pre-CPI documented SKIPs (binary macro = wrong asymmetry); post-CPI documented SKIPs across NVDA/MRVL/AVGO (rate-sensitive into hot print), XLE/OXY (WTI $89 fails $95 re-trigger despite overnight US/Iran strike-exchange headlines — curve in steep backwardation says contained), defensives (no specific catalyst). Buy-Side Gate failed universe-wide on a hot-CPI risk-off tape. **Trades this week: 0/3** (Wed of new week, all slots intact). Daytrade count 0/3, full PDT budget. Phase P&L still -0.12% — no incremental damage; ex-post, cash on a hot-CPI day was the right side. Next decision point: Thu pre-market with CPI digested, PPI 8:30am ET, and sector damage from hot CPI assessable.
+
+
+### Jun 18 — Market-open routine ABORTED (network egress blocked)
+**Portfolio:** $99,883.98 (assumed — Alpaca unreachable) | **Cash:** $99,883.98 (assumed, 100%) | **Day P&L:** unknown | **Phase P&L:** -$116.02 (minimum — no positions to mark)
+
+| Ticker | Shares | Entry | Close | Day Chg | Unrealized P&L | Stop |
+|--------|--------|-------|-------|---------|----------------|------|
+| — | — | — | — | — | — | — |
+
+**Notes:** Market-open routine halted — network egress policy blocking all external hosts (paper-api.alpaca.markets, data.alpaca.markets, api.perplexity.ai, api.clickup.com all return HTTP 403 "Host not in allowlist"). Keys all present in env. Cannot verify live account state, cannot research, cannot quote, cannot place orders. No research entry for today exists (last: 2026-06-11) — never trade without documented research per hard rules. PushNotification sent as only available alert path. **No trades placed. No commits required for trades.** Operator action required: add the four blocked hosts to network egress allowlist. TRADE-LOG is current through Jun 10; Jun 11–Jun 18 state unchanged from Jun 10 (100% cash, 0 positions, 0 open orders assumed). Trades this week: 0/3 (assumed — weekly counter unknown due to missing sessions Jun 11–17).
