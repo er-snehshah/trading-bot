@@ -1277,3 +1277,51 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-06-18 — Pre-market Research (Thursday — T+1 FOMC hawkish surprise; US-Iran deal MOU)
+
+**⚠ INFRA NOTE:** Alpaca API (`paper-api.alpaca.markets`), Perplexity API (`api.perplexity.ai`), and ClickUp API (`api.clickup.com`) all blocked by remote-env network egress policy. Account state = last known (2026-06-10). All research via WebSearch fallback. No log entries Jun 12–17 (routines either did not run or were not pushed). Operator action required: add these three hosts to egress allowlist.
+
+### Account
+- Equity: $99,883.98 (last known 2026-06-10) | Cash: $99,883.98 (100%) | Live pull: BLOCKED
+- Daytrade count: 0 (assumed — no positions since 5/28 ARM close)
+- Open positions: 0 | Open orders: 0
+- **Trades this week (week of Jun 15): 0/3** — all slots assumed intact
+
+### Market Context
+- **WTI: $74.56** (-2.91% today) | **Brent: ~$79.45** (Jun 17 close) — US-Iran MOU signed Jun 16 in Switzerland; oil down ~13% from prior week peak. Supply-return timeline: US Sec Energy says "many months" for full normalization. No sanctions relief activated yet. **Energy thesis TERMINATED — WTI $74.56 far below $95 weekly-close re-trigger.**
+- **SPX futures: +0.81–0.87%** premarket | **Nasdaq 100 futures: +1.32–1.44%** — recovery bounce after yesterday's FOMC-driven selloff ($420B wiped in 30min post-dot-plot, Dow -507pts).
+- **VIX: ~16.41** (Jun 16 close; was 22.22 on Jun 10) — vol compressing; below long-term avg; calmer regime.
+- **FOMC (Jun 17 — yesterday):** Held 3.50–3.75% (4th consecutive pause). **HAWKISH DOT PLOT shock:** median dot moved 3.4% → 3.8%; 9 of 18 officials project ≥1 rate hike in 2026; PCE forecast raised to 3.6% vs 2.7% in March. New Chair Kevin Warsh did not submit personal dot. This eliminates any 2026 cut expectation and introduces hike risk → structural headwind for rate-sensitive growth/tech names.
+- **Today's catalysts (BMO):**
+  - **INTC +8.9–13% premarket** — Trump announced Apple/Intel chip manufacturing partnership (Intel 18A process for Apple devices); WSJ confirmed preliminary agreement. Semiconductor sector broadly higher: NVDA +1.2%, AMD +3%, AVGO +3%, ARM +2.8–5%.
+  - **ACN (Accenture) Q3:** EPS $3.80 vs $3.72 est (**+$0.08 beat**); Rev $18.7B vs $18.78B est (**miss**). FY26 EPS guidance $13.78–$13.90 (in-line). Mixed print.
+  - **KR (Kroger) Q1:** EPS $1.49 vs $1.46 est (**beat**); Rev $45.12B vs $45.31B est (**miss**). Raised identical-sales guidance to 2.25–3.25%. Mixed print.
+- **Sector momentum update:** XLP/XLI/XLB leading by momentum; XLK/XLC/XLY/XLF lagging. Energy (XLE) now contracting (-2.03% YTD) on Iran-deal supply expectations — regime shift from prior weeks. Today's tape: tech/growth leading the bounce (INTC/chips), not defensives — potential early rotation signal but day-1 only, unconfirmed.
+- **Retail sales (May):** +0.9% vs +0.5% est — upside surprise; consumer resilient, adds to inflationary picture.
+
+### Trade Ideas
+
+1. **INTC — DOCUMENTED SKIP (Rule #10 gap violation).** Pre-market +8.9–13% from prior close. Rule: "No new entry on a name already up >5% intraday from prior close UNLESS the breakout itself is the catalyst (clean structure + confirming volume)." This is a pre-market gap on a political announcement (Trump Truth Social post + WSJ report), not a breakout from a clean Day-1 base structure. ARM lesson (2026-05-28): entered at +14% on 3.5hr-old PCE print → stopped same day -3.09%. Asymmetry already unfavorable at open. **Day-1 watchlist only.** If INTC closes in upper half of today's range, holds $125+, volume normalizes and structure is clean → becomes Day-2 breakout candidate for 2026-06-19.
+
+2. **ACN — SKIP.** Mixed print (EPS beat, Rev miss, guidance in-line). No directional catalyst edge. Not a clean beat-and-raise that drives sustained momentum.
+
+3. **KR — SKIP.** Mixed print (EPS beat, Rev miss). Defensive consumer staples — XLP is leading sector by momentum, but KR has no clean catalyst for a 7% move. Store-closure plan (60 stores) adds uncertainty.
+
+4. **Energy (XLE/OXY) — SKIP.** WTI $74.56 — lowest since pre-Iran conflict. Energy thesis fully off the table. Rule #8: exit sector after 2 consecutive losers (ARM was energy-adjacent). Iran deal = supply overhang = structural headwind.
+
+5. **Post-FOMC tech bounce (NVDA/AVGO/MRVL) — SKIP.** Today's pre-market bounce is a relief rally off yesterday's oversold FOMC selloff, not a specific single-name catalyst. No new catalyst since prior chase patterns (MRVL +27%, CRDO +25%, AVGO AMC). Rule #10 would apply to any of these if they gap up.
+
+### Risk Factors
+- **Rate hike priced into 2026 for first time:** FOMC dot plot median 3.8% = structural multiple-compression headwind for high-P/E tech. Not a one-day event.
+- **US-Iran MOU is preliminary only.** No sanctions relief yet; shipping/mine clearance "many months." Any breakdown in talks = oil spikes back, risk-off resumes.
+- **Inflation regime:** CPI +4.2% y/y (Jun 10), PPI elevated, PCE forecast 3.6% — Fed credibility now the issue, not just data.
+- **Behavioral pressure:** 12+ consecutive flat sessions; account never deployed since ARM 5/28 close; documented pattern of "pressure to do something." Answer is unchanged.
+- **INTC Day-1 chase risk:** Gap trades on political announcements have high reversal probability. If Trump walks back or deal terms disappoint → INTC fades hard.
+- Daytrade count 0/3, weekly trades 0/3 — full PDT and slot budget intact.
+
+### Decision
+**HOLD.** No qualifying catalyst-driven setup passes the full Buy-Side Gate today. Documented SKIPs: INTC (Rule #10 gap >5%; political-announcement gap ≠ clean structure breakout), ACN (mixed print), KR (mixed print), energy (WTI $74.56 far below $95 re-trigger; thesis terminated), tech bounce (no single-name catalyst — broad relief rally). **INTC Day-2 watchlist:** if INTC consolidates cleanly today (closes upper-half of range, volume normalizes, structure confirmed), revisit tomorrow as a Day-2 breakout with a specific catalyst. Trades this week: 0/3 — all slots intact. **Operator action required:** restore network egress for paper-api.alpaca.markets, api.perplexity.ai, api.clickup.com before market open; without live account pull, position sizing cannot be verified.
