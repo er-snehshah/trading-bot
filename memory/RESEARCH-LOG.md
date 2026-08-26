@@ -1277,3 +1277,35 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-08-26 — Pre-market Research (Wednesday — PCE day, Nvidia earnings AMC)
+
+### INFRASTRUCTURE FAILURE — Alpaca + Perplexity blocked at network policy layer
+- `scripts/alpaca.sh account/positions/orders` → proxy `CONNECT` to `paper-api.alpaca.markets:443` rejected with 403 (org egress policy denial, not a credentials issue — confirmed via `/__agentproxy/status`).
+- `scripts/perplexity.sh` → same failure, `api.perplexity.ai:443` also denied by the egress gateway.
+- **No live account/position/order data available this session.** Last known state (2026-06-11, ~2.5 months stale): equity $99,883.98, 100% cash, 0 positions, 0 open orders, daytrade_count 0 — **not usable for today's decision** (staleness alone disqualifies it; also note this figure conflicts with CLAUDE.md's "~$10,000 Alpaca account" framing — flagged for operator, not resolved here).
+- Per policy: do not retry or route around a 403 policy denial. Escalating instead.
+- Research below is sourced via native WebSearch fallback (Perplexity unusable) — same fallback path the workflow allows for a Perplexity failure.
+
+### Market Context (WebSearch fallback)
+- **VIX ~14.6** (down ~4.5% on the day) — calm.
+- **ES futures:** flat to slightly down (~-0.1%) premarket, ahead of PCE print and Nvidia earnings.
+- **WTI ~$80-81** / **Brent ~$85-86** — both down on the day (WTI -2.3%).
+- **Today's catalysts:** July PCE + core PCE (core cons. 3.3% y/y, unchanged), personal income/spending, Q2 GDP second estimate, July durable orders — all AM prints. Fed's Jackson Hole symposium context building toward Warsh speech Friday.
+- **Earnings:** NVDA, CRM, CRWD, SNPS, OKTA, A, WSM, HPQ — **NVDA/CRM/CRWD/SNPS/OKTA report AMC today**, not BMO. Chip stocks rallying premarket into NVDA print.
+- **Sector momentum YTD:** Energy (+23%), Materials (+22%), Industrials, Staples leading; Tech, Comm Services, Discretionary, Financials, Healthcare (-5.8%) lagging — same rotation regime as last documented (unchanged for months).
+
+### Trade Ideas
+- **No actionable, catalyst-specific setup identified pre-PCE/pre-NVDA.** Binary macro (PCE) + binary mega-cap earnings (NVDA AMC) both unresolved — pre-positioning into either violates Rule #6/#10 logic (no confirmed catalyst reaction yet).
+- Cannot construct a Buy-Side Gate pass regardless: **no verified account equity, cash, or position count available**, so max-5-positions / 20%-sizing / weekly-trade-count checks cannot be validated even if a setup existed.
+
+### Risk Factors
+- **Account/broker connectivity down at the infrastructure level** — cannot verify capital, existing positions, or open stop orders. Any live position from prior sessions could be unmonitored right now (last confirmed state was flat/0 positions, but that data is 2.5 months old).
+- PCE + NVDA earnings are the day's binary events; do not pre-position into either.
+- Data staleness: this log's last entry before today was 2026-06-11 — a large gap suggests routines were not running for an extended period; needs operator review independent of today's network issue.
+
+### Decision
+**HOLD — forced.** No trade possible or appropriate: broker API unreachable (proxy policy denial), so no position/capital verification exists to satisfy the Buy-Side Gate even if a catalyst were found. Escalating the Alpaca+Perplexity network block to the operator now. Next decision point: whenever broker connectivity is confirmed restored — re-pull account/positions/orders before any other action.
