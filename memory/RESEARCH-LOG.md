@@ -1277,3 +1277,31 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-08-27 — Pre-market Research (Thursday) — ABORTED, total egress outage
+
+### Env check
+All required keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) — env pre-check passed.
+
+### Failure
+**All three external API hosts are blocked at the network/proxy layer (403 on CONNECT), not an auth or key issue:**
+- `paper-api.alpaca.markets:443` — 403 (account/positions/orders unreadable)
+- `api.perplexity.ai:443` — 403 (research unrunnable)
+- `api.clickup.com:443` — 403 (notification wrapper itself unrunnable — no fallback file write reached because `set -e` kills the script before its own local-fallback branch, which only triggers on unset creds, not network failure)
+
+Confirmed via proxy status endpoint (`recentRelayFailures`): each shows `"kind": "connect_rejected"`, `"detail": "gateway answered 403 to CONNECT (policy denial or upstream failure)"`. Per environment policy this is an organization egress-policy denial, not something to retry or route around.
+
+**No live account state could be pulled.** Cannot confirm current equity, open positions, or whether existing GTC stop/limit orders are intact. **No research was run** — Perplexity blocked; did not fall back to WebSearch for full market research since the account-state blackout is the more severe blocker (a HOLD/TRADE decision is meaningless without knowing current exposure), and fabricating an account snapshot from stale (77-day-old) data would be actively misleading.
+
+### Additional finding — stale memory
+Last committed log entry prior to this one: **2026-06-11** (commit `af5cfcd`). That is **77 days** with zero pre-market/market-open/midday/EOD activity recorded — no trades, no snapshots, nothing. Last known state (2026-06-11): equity $99,883.98, 100% cash, 0 positions, 0 open orders. Whether that holds true today is **unverifiable this session** given the outage above. (Note: last known equity figure of ~$99.9k is inconsistent with CLAUDE.md's "~$10,000" account description — flagging the discrepancy for operator review, not resolving it here.)
+
+### Decision
+**HOLD (forced — no execution possible).** No trades. No TRADE-LOG changes. Wrote local fallback file `DAILY-SUMMARY.md` since `scripts/clickup.sh` itself could not reach its API. Committing this entry directly since git push is the only unverified-but-likely-available channel.
+
+**Operator action required:**
+1. Confirm whether `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` are intended to be reachable from this environment's egress policy, and allowlist them if so.
+2. Once connectivity is restored, run an immediate account/positions/orders pull before trusting any stale HOLD assumption — 77 days is long enough that manual intervention outside this bot may have occurred.
