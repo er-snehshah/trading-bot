@@ -1277,3 +1277,39 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-08-28 — Pre-market Research (Friday)
+
+### Env Check
+All required keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) — env-var gate passed.
+
+### CRITICAL: Network-level outage, not a credentials issue
+- `scripts/alpaca.sh account/positions/orders` — all three fail: `curl: (56) CONNECT tunnel failed, response 403`.
+- `scripts/perplexity.sh` — same failure mode, 403 at the CONNECT tunnel.
+- `scripts/clickup.sh` (tested directly) — same failure mode, 403 at the CONNECT tunnel.
+- Confirmed via the session's egress-proxy status endpoint: `recentRelayFailures` shows repeated `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" entries for `paper-api.alpaca.markets:443`. This is a **session network-policy block**, not expired/invalid credentials and not a wrapper bug.
+- Native WebSearch tool (routed outside this proxy) works fine — used it for market-context fallback per the Perplexity-fallback rule, extended to cover the outage generally.
+- **Alpaca account/positions/orders remain completely unreachable.** No live equity, cash, buying power, daytrade count, position, or open-order data could be pulled by any available means.
+
+### Market Context (via WebSearch fallback only — unverified against Alpaca data feed)
+- **Oil:** WTI ~$83.10 (-0.51%), Brent ~$88.22 (-0.34%). Focus shifted from Middle East toward Russia-Ukraine escalation this week; oil on track to end the week lower on Hormuz supply-risk easing.
+- **Futures:** ES -0.12%, NQ -0.30%, Dow futures +0.07%, Russell +0.04% — mixed/soft premarket. Market is in a holding pattern ahead of Fed Chair Kevin Warsh's Jackson Hole speech (the day's dominant catalyst) plus Chicago PMI (9:45am ET) and final UMich consumer sentiment (10:00am ET).
+- **VIX:** ~14.5, calm regime.
+- **Top catalyst:** Warsh Jackson Hole speech — binary rates-path event, wrong asymmetry to pre-position into per Rule #6/standing macro-binary practice. NVDA earnings reaction still working through the tape (strong print, but MRVL fell >7% AH on its own report — mixed semis).
+- **Econ calendar:** Chicago PMI and UMich sentiment today; no CPI/PPI/NFP today per search (search results didn't surface a full BLS-confirmed list — treat as incomplete).
+- **Sector momentum:** Search results conflicting/stale across sources (Energy '+41.7% 12mo' in one screen vs. Energy 'falling from second to sixth' and 'sharpest rotation lower' in another; Tech #1, Financials #2, Healthcare #3, Industrials #4 in the more recent-dated screen). Not reliable enough to act on without Alpaca-side confirmation — flag as low-confidence.
+- **Earnings today:** WebSearch could not surface a specific BMO earnings list for 2026-08-28 (generic calendar-site links only, no names extracted).
+
+### Trade Ideas
+**None generated.** No specific, verifiable catalyst + entry/stop/target can be responsibly written without live price/quote data (Alpaca data endpoint is the same blocked host) and without knowing current account equity, cash, existing positions, or weekly/daytrade budget. Any position size or Buy-Side Gate check would be a guess, which the strategy explicitly prohibits (Rule: no trade without verified gate pass).
+
+### Risk Factors
+- **Total blindness to account state.** Cannot confirm 0 vs. some number of open positions, cannot confirm existing stops are still resting as GTC orders, cannot confirm weekly trade count or daytrade count. If any position is currently open, its protective stop/limit orders are unverifiable from this session.
+- **Jackson Hole speech is a binary macro catalyst today** — even if account access were restored intraday, pre-positioning into the speech would violate the binary-catalyst rule.
+- **Session-level network policy is blocking Alpaca, Perplexity, and ClickUp identically** — this looks like an environment/proxy allowlist gap, not an expired key. Needs operator fix at the environment/network-policy layer (allowlist `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com` for this session), not a code fix in the wrappers.
+
+### Decision
+**HOLD — forced, no execution possible.** Cannot verify account state or place/manage any order; Buy-Side Gate cannot be evaluated. No TRADE-LOG changes. ClickUp alert could not be sent through `scripts/clickup.sh` (same network block) — escalating via the harness-level notification channel instead. Next decision point: next scheduled routine, contingent on network/proxy access being restored to Alpaca and Perplexity endpoints.
