@@ -1277,3 +1277,24 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-08-29 — Pre-market Research (Saturday — market closed, hard infra blocker)
+
+### Environment Check
+- All required keys reported **set**: ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID.
+- **But every outbound call failed at the network layer**, not the credential layer: `scripts/alpaca.sh account`, `scripts/perplexity.sh`, and `scripts/clickup.sh` all returned curl exit 22 / HTTP 403 from the session's egress proxy (`connect_rejected`, "gateway answered 403 to CONNECT — policy denial"). Proxy status endpoint confirms: `paper-api.alpaca.markets:443` rejected 3x; Perplexity and ClickUp hosts rejected identically. Per the proxy's own diagnostics, a 403/407 from the gateway means the destination host is not allowed by this session's egress policy — **not retryable, not routable around**.
+- No wrapper printed "KEY not set" (the documented STOP trigger); this is a distinct failure mode — org-level network policy is blocking Alpaca, Perplexity, and ClickUp for this session. Escalating as a hard blocker regardless.
+
+### What did NOT happen (and why)
+- **No account/positions/orders pull** — Alpaca API unreachable. Cannot confirm equity, cash, buying power, daytrade count, or open positions/orders from this session.
+- **No Perplexity research** — unreachable; did not fall back to native WebSearch because this is a total egress-policy block (same 403 class), not the documented "Perplexity exits 3" case, and with Alpaca also unreachable there is no account state to size or gate a trade against regardless.
+- **No ClickUp alert sent** — also blocked. Using the operator's out-of-band notification channel instead to surface this.
+- **Today is Saturday, market closed** — even if connectivity were restored, no session opens today. This materially lowers urgency but the underlying egress-policy blocker will hit Monday's pre-market run identically unless fixed.
+
+### Decision
+**HOLD (forced — no execution, no research performed). No TRADE-LOG changes. No trades possible even if desired: no live account state available.**
+
+**Operator action required before Monday 2026-08-31 pre-market:** this session's egress/network policy needs `paper-api.alpaca.markets`, `data.alpaca.markets`, the Perplexity API host, and the ClickUp API host allow-listed, or the routine cannot pull account state, research, or notify on any future run. This is a new failure class vs. the prior 6/4–6/10 incidents (those were a missing `TELEGRAM_BOT_TOKEN` credential; this is the transport layer itself refusing all three integrations regardless of credentials present).
