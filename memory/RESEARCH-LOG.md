@@ -1277,3 +1277,18 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+---
+
+## 2026-08-30 — Pre-market Research (ABORTED — network egress blocked)
+
+**All keys present** (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID all `set`), but the sandbox's egress proxy returned **403 connect_rejected ("policy denial")** on every external API this workflow depends on:
+- `paper-api.alpaca.markets:443` — account/positions/orders pull failed
+- `api.perplexity.ai:443` — research queries failed
+- `api.clickup.com:443` — even the escalation-alert channel is unreachable
+
+Confirmed via direct proxy status check (`/__agentproxy/status`), not a single flaky call — all three hosts rejected at CONNECT with identical `gateway answered 403 to CONNECT (policy denial or upstream failure)`. This is a different failure mode than the 6/4–6/10 TELEGRAM_BOT_TOKEN gap: env vars are fine, but the network path to every trading-bot API is currently closed at the proxy/org-policy layer.
+
+**No account state, no market research, and no in-app alert were possible.** Writing a research entry with live data would mean fabricating numbers — not done. No trade evaluation occurred; Buy-Side Gate was never reached.
+
+**Decision: HOLD (forced — no execution performed).** No TRADE-LOG changes. ClickUp alert not sent (channel itself unreachable) — flagging via the operator's out-of-band notification channel instead. **Operator action required:** restore egress-proxy allowlist entries for `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for this environment. Next decision point: next scheduled routine — retry once network path is confirmed restored.
