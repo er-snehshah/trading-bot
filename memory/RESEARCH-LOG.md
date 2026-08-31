@@ -1277,3 +1277,29 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-08-31 — Pre-market Research (Monday) — BLOCKED, no data
+
+**Note:** Log gap since 2026-06-11 — no routine entries recorded between then and today; cause not determinable from this session.
+
+### Environment check
+All required env vars present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID). This is **not** a missing-credential failure.
+
+### Infrastructure blocker
+Session egress policy rejected outbound HTTPS to **all three** required external hosts (confirmed via agent-proxy status, `connect_rejected` / gateway 403 on CONNECT):
+- `paper-api.alpaca.markets` — Step 2 account/positions/orders pull: **failed**
+- `api.perplexity.ai` — Step 3 market research: **failed**
+- `api.clickup.com` — Step 5 notification: **failed**
+
+`TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` are not set either, so the Telegram wrapper only writes to a local (gitignored) fallback file — not a real delivered alert.
+
+### Work not performed
+- No account/position/order state pulled — unknown vs. last known state (2026-06-11: $99,883.98 equity, 100% cash, 0 positions).
+- No market research (oil, futures, VIX, catalysts, econ calendar, sector momentum, held-ticker news) performed — nothing to report, not fabricating placeholder data.
+- No trade ideas evaluated — Buy-Side Gate cannot be checked without live account state (equity, cash, position count).
+
+### Decision
+**HOLD (forced — no execution possible).** No TRADE-LOG changes. No ClickUp/Telegram alert delivered (both channels blocked/unconfigured) — escalating via the operator's out-of-band notification instead. **Operator action required:** allowlist `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` on this session's egress policy, or restore `TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` as an alternate alert path. Next decision point: next scheduled routine, once connectivity is verified.
