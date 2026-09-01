@@ -1277,3 +1277,33 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-09-01 — Pre-market Research (Tuesday) — ROUTINE BLOCKED
+
+### Env pre-check
+- All required keys present: ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID — all set.
+
+### Blocker — total external API access denial
+- `scripts/alpaca.sh account` → curl exit 22, HTTP 403. Agent-proxy status confirms `connect_rejected` / "gateway answered 403 to CONNECT (policy denial)" for **paper-api.alpaca.markets:443**.
+- `data.alpaca.markets:443` → same 403 CONNECT rejection (quotes/market data also unreachable).
+- `scripts/perplexity.sh` → curl exit 22, HTTP 403 (same proxy policy denial).
+- `scripts/clickup.sh` → curl exit 22, HTTP 403 (same proxy policy denial) — the designated urgent-alert channel is itself unreachable.
+- `scripts/telegram.sh` → ran, but `TELEGRAM_BOT_TOKEN` is not part of this session's exported vars, so it silently fell back to a local append in `DAILY-SUMMARY.md` (no external send — not a working escalation path).
+
+**Net effect: every external API this bot depends on (Alpaca trading, Alpaca market data, Perplexity, ClickUp) is blocked at the network-egress layer this session, not by missing credentials.** Per agent-proxy guidance, 403/CONNECT-policy denials are organization-level and must be reported, not retried or routed around.
+
+### Account / positions / orders
+- **Could not verify.** No live account snapshot obtainable this session — equity, cash, buying power, positions, and open orders are all unknown from this session's vantage point. Last known state (memory/TRADE-LOG.md, 2026-06-10): 100% cash, 0 positions, 0 open orders — but that is 2+ months stale and must not be relied on for today's decision.
+
+### Market context / trade ideas
+- Not produced — Perplexity and WebSearch-equivalent research paths are unavailable (Perplexity blocked; no working substitute reachable this session).
+
+### Risk factors
+- Operating blind: cannot confirm whether existing GTC stop/limit orders (if any positions are open) are still in place, since the Alpaca API itself is unreachable.
+- No safe basis exists this session for any BUY or SELL action — the Buy-Side Gate and all sell-side rules require live account/price data that cannot be fetched.
+
+### Decision
+**HOLD (forced — no execution possible, no data available).** No orders placed, no positions touched, no research produced. This is an infrastructure/access failure, not a strategy decision. **Operator action required: restore egress access to paper-api.alpaca.markets, data.alpaca.markets, api.clickup.com, and api.perplexity.ai for this environment** (or explain if this is an intentional policy change). Until resolved, no pre-market/market-open/midday/daily-summary routine can execute meaningfully — all will hit the same wall. Next decision point: next scheduled routine, contingent on network access being restored.
