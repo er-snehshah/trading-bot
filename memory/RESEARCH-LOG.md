@@ -1277,3 +1277,40 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-09-02 — Pre-market Research (Wednesday) — ABORTED, network-blocked
+
+**Gap notice:** No routine has run since 2026-06-11 (this repo's last commit). ~83 calendar days of no bot activity prior to this session — cause unknown from repo history alone.
+
+### Env check
+All required keys present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID) — this is NOT a missing-key abort.
+
+### Network blocker (new failure mode)
+This session's egress proxy rejects all three trading-bot API hosts with 403 `connect_rejected` ("organization policy"):
+- `paper-api.alpaca.markets` — **account/positions/orders pull FAILED**
+- `api.perplexity.ai` — research wrapper FAILED
+- `api.clickup.com` — notification wrapper FAILED (cannot send the escalation alert this same rule would normally require)
+
+Native WebSearch tool still works (routed outside the blocked egress path) and was used as a partial substitute for market-context research only.
+
+### Consequence
+- **Cannot pull live account state.** Last confirmed broker state (2026-06-10 EOD): equity $99,883.98, 100% cash, 0 positions, 0 open orders. Unknown whether this still holds — no way to confirm open positions, live stop orders, or buying power this session.
+- Buy-Side Gate cannot be evaluated (position count / cash / equity inputs unavailable) — no trade can be safely sized or entered regardless of research quality.
+- Orders cannot be placed or managed even if a setup existed (trading API itself unreachable).
+
+### Market context (WebSearch fallback, unverified/lower-confidence)
+- Brent ~$94.86/bbl (WTI figure returned was stale/unreliable, not trusted)
+- VIX ~16.8, up modestly; elevated vs summer calm
+- Recurring theme in search results: US/Iran strike-exchange headlines continuing, keeping oil and risk sentiment jumpy
+- No reliable same-day CPI/PPI/jobs calendar surfaced
+
+### Decision
+**HOLD (forced — no execution possible).** Cannot verify account state or reach the trading API; no order would be placed even if a catalyst existed. No TRADE-LOG changes.
+
+### Operator action required
+1. Egress/network policy for this environment needs to allow `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` (or whatever host set the wrappers target) — all three are currently hard-blocked at the proxy, not just one credential.
+2. Until resolved, verify current live positions/stops directly with the broker out-of-band — this routine could not confirm the account is still flat.
+3. Alert sent to operator directly (push notification) since the normal ClickUp escalation path is itself one of the blocked hosts.
