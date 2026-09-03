@@ -1277,3 +1277,22 @@ Until then every routine short-circuits at the env check and no trading can occu
 
 ### Decision
 **HOLD.** No new trades pre-PPI. Documented SKIPs: pre-PPI entry (binary macro), energy (WTI $89 fails $95 re-trigger), tech leaders (rate-sensitive into hot print), ADBE (AMC binary). Watchlist for midday: post-PPI sector damage/reflation; only consider entry if a leading-sector name produces a real catalyst-driven setup that passes the full Buy-Side Gate. Trades this week: 0/3 — all slots intact. Next decision point: midday routine with PPI digested.
+
+
+---
+
+## 2026-09-03 — Pre-market Research (ABORTED)
+
+**Status: HALTED after env pre-check, before any usable data — all three wrapper API hosts blocked at the network layer.**
+
+- Env pre-check: all six required vars present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID). This is **not** a missing-key halt.
+- `bash scripts/alpaca.sh account` → `curl: (22) 403` — egress proxy rejected the CONNECT to `paper-api.alpaca.markets:443` ("organization policy" / `connect_rejected`). Same result probing `data.alpaca.markets` directly.
+- `bash scripts/perplexity.sh "<query>"` → `curl: (22) 403` on `api.perplexity.ai`. Exit code 22, not the documented exit-3 (missing-key) case, so the WebSearch-fallback rule doesn't formally apply — but used judgment and treated it the same way research-wise (see below).
+- `bash scripts/clickup.sh "<msg>"` → also blocked: `curl: (56) CONNECT tunnel failed, response 403` on `api.clickup.com`. The escalation channel itself is unreachable, so the standard "send one ClickUp alert" step cannot execute this session.
+- Net effect: **no live account/position/order state, no Perplexity research, no ClickUp alert possible.** Did not attempt native WebSearch as a substitute for the missing account-state pull — that data can only come from the broker API (equity, cash, buying power, daytrade_count, open positions/orders/stops), and no trade or research decision can be responsibly made without it. This is a full infrastructure block, not a research-source gap.
+- Per Strategy Hard Rules and the Buy-Side Gate, no catalyst research or position review occurred, so **no order was placed or could have been evaluated**. Last known state (2026-06-11 EOD, unconfirmed today): 100% cash, 0 positions, 0 open orders, trades that week 0/3.
+- Note: this is the first pre-market run logged since 2026-06-11 — a ~3-month gap in this log predates today's session and is unrelated to today's network block.
+
+**Action required (operator):** the sandboxed egress/agent-proxy policy for this environment is currently denying `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com`. None of the wrapper scripts can reach their APIs until this is corrected (allowlist these hosts in the environment's network policy, or fix the proxy config). Flagging directly to the operator since the in-repo ClickUp escalation path is itself blocked.
+
+**Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
