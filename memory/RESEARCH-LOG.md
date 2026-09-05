@@ -1296,3 +1296,21 @@ Until then every routine short-circuits at the env check and no trading can occu
 **Action required (operator):** the sandboxed egress/agent-proxy policy for this environment is currently denying `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com`. None of the wrapper scripts can reach their APIs until this is corrected (allowlist these hosts in the environment's network policy, or fix the proxy config). Flagging directly to the operator since the in-repo ClickUp escalation path is itself blocked.
 
 **Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
+
+---
+
+## 2026-09-05 — Pre-market Research (ABORTED — Saturday, non-trading day)
+
+**Status: HALTED after env pre-check — same infrastructure block as 2026-09-03, now confirmed persistent across 2 sessions.**
+
+- Env pre-check: all six required vars present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID). Not a missing-key halt.
+- `bash scripts/alpaca.sh account` → `curl: (22) 403`. Agent-proxy status endpoint confirms `connect_rejected` / "gateway answered 403 to CONNECT (policy denial or upstream failure)" on `paper-api.alpaca.markets:443`.
+- `bash scripts/perplexity.sh` → same `connect_rejected` 403 on `api.perplexity.ai:443`.
+- `bash scripts/clickup.sh` → same `connect_rejected` 403 on `api.clickup.com:443`. Escalation channel itself still unreachable — no ClickUp alert possible.
+- Net effect: no live account/position/order state, no Perplexity research, no ClickUp alert. Per Strategy Hard Rules, no catalyst research or position review occurred and no order was placed or evaluated. Last confirmed broker state remains 2026-06-11 EOD (100% cash, 0 positions, 0 open orders) — unconfirmed since due to the network block spanning both 09-03 and 09-05 attempts.
+- **Also note: 2026-09-05 is a Saturday** — markets are closed regardless of the infra block, so this specific run carries no lost trading opportunity. The recurring block itself is the actionable issue (it will also hit the next weekday run).
+- Escalating outside the repo via direct operator notification since the in-repo ClickUp path is confirmed blocked for the second consecutive attempt.
+
+**Action required (operator):** organization egress policy is denying CONNECT to `paper-api.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` for at least 2 consecutive scheduled runs (09-03, 09-05). Allowlist these hosts or fix the proxy config — until resolved, every scheduled routine (pre-market, market-open, midday, daily-summary, weekly-review) will abort at the same point on the next trading day.
+
+**Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
