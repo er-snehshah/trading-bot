@@ -1316,3 +1316,21 @@ Until then every routine short-circuits at the env check and no trading can occu
 **Action required (operator) — ESCALATING, 2nd consecutive occurrence:** the sandboxed egress/agent-proxy policy is still denying `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com` three days after first flagged on 09-03. Every wrapper-dependent routine (pre-market, market-open, midday, daily-summary's notification step) will continue to short-circuit until the network policy allowlists these hosts. In-repo ClickUp escalation path remains itself blocked, so this is being flagged directly to the operator outside the repo.
 
 **Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
+
+
+---
+
+## 2026-09-09 — Pre-market Research (ABORTED — Tuesday, 3rd consecutive occurrence)
+
+**Status: HALTED after env pre-check, before any usable data — same three wrapper API hosts blocked at the network layer as 09-03 and 09-06. Now 6 calendar days / 3 consecutive scheduled pre-market attempts unresolved.**
+
+- Env pre-check: all six required vars present (ALPACA_API_KEY, ALPACA_SECRET_KEY, PERPLEXITY_API_KEY, CLICKUP_API_KEY, CLICKUP_WORKSPACE_ID, CLICKUP_CHANNEL_ID). Not a missing-key halt.
+- `bash scripts/alpaca.sh account` → `curl: (22) 403`. Agent-proxy status confirms `connect_rejected` (policy denial) on `paper-api.alpaca.markets:443`.
+- `bash scripts/perplexity.sh "test query"` → `curl: (22) 403` on `api.perplexity.ai`, same `connect_rejected`.
+- `bash scripts/clickup.sh "test"` → `curl: (22) 403` on `api.clickup.com`, same `connect_rejected`. Escalation channel itself unreachable — cannot send the alert Step 5 calls for.
+- Net effect: **no live account/position/order state, no Perplexity research, no ClickUp alert possible.** Did not substitute native WebSearch for the account-state pull — that data only exists at the broker, same reasoning as 09-03/09-06.
+- Per Strategy Hard Rules and the Buy-Side Gate, no catalyst research or position review occurred; **no order was placed or could have been evaluated**. Last confirmed broker state remains 2026-06-11 EOD (100% cash, 0 positions, 0 open orders, trades that week 0/3) — unconfirmed for three months now across three failed pre-market attempts (09-03, 09-06, 09-09).
+
+**Action required (operator) — ESCALATING, 3rd consecutive occurrence, unresolved 6 days:** the sandboxed egress/agent-proxy policy is still denying `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com`. Every wrapper-dependent routine will continue to short-circuit until the network policy allowlists these hosts. Since the in-repo ClickUp escalation path is itself blocked, this is being flagged directly to the operator via push notification outside the repo.
+
+**Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
