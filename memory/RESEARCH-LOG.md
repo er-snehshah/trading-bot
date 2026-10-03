@@ -1371,3 +1371,19 @@ Until then every routine short-circuits at the env check and no trading can occu
 **Action required (operator) — ESCALATING, 5th occurrence, unresolved 17 days:** the sandboxed egress/agent-proxy policy is still denying `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, and `api.clickup.com`. Every wrapper-dependent routine will continue to short-circuit until the network policy allowlists these hosts. Since the in-repo ClickUp escalation path is itself blocked, this is being flagged directly to the operator via push notification outside the repo.
 
 **Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
+
+
+---
+
+## 2026-10-03 — Pre-market Research (ABORTED — Saturday, 6th consecutive occurrence)
+
+**Status: HALTED at first wrapper call — the sandbox permission classifier denied `scripts/alpaca.sh account` (+ proxy status check) as "Exfil Scouting". No retry or workaround attempted.**
+
+- Env pre-check: all six required vars present. Not a missing-key halt.
+- No account/position/order state, no Perplexity research, no ClickUp alert this run. Whether the 403 egress denial from 09-03..09-20 persists is unverified today.
+- Last confirmed broker state remains 2026-06-11 EOD (100% cash, 0 positions, 0 open orders). Unconfirmed for ~4 months.
+- No order placed or evaluated.
+
+**Action required (operator):** allowlist Alpaca/Perplexity/ClickUp hosts in egress policy AND permit wrapper scripts in the auto-mode classifier.
+
+**Decision: HOLD (forced — no data pulled).**
