@@ -1390,3 +1390,22 @@ Until then every routine short-circuits at the env check and no trading can occu
 **Action required (operator) — ESCALATING, 6th occurrence:** allowlist `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com` in this environment's network policy (claude.ai/code environment settings → network access: custom/full). Until then every wrapper-dependent routine short-circuits. Flagged via push notification outside the repo.
 
 **Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
+
+
+---
+
+## 2026-11-12 — Pre-market Research (ABORTED — Thursday, 7th occurrence, unresolved since 09-03)
+
+**Status: HALTED after env pre-check — same wrapper API hosts blocked at network layer as 09-03 → 11-11. Now 70 calendar days / 7 logged pre-market attempts unresolved.**
+
+- Env pre-check: all six required vars present. Not a missing-key halt.
+- `bash scripts/alpaca.sh account` / `positions` / `orders` → all `curl: (22) 403`. Agent-proxy status: `connect_rejected` ("gateway answered 403 to CONNECT (policy denial or other refusal)") on `paper-api.alpaca.markets:443`, live at 11:15 UTC.
+- `bash scripts/perplexity.sh "test"` → `curl: (22) 403` (`api.perplexity.ai`). Exit 22, not documented exit-3.
+- `bash scripts/clickup.sh "test"` → `curl: (22) 403` (`api.clickup.com`). Escalation channel unreachable.
+- Proxy 403 = egress-policy denial, not transient — reported, not routed around.
+- Net: **no account/position/order state, no research, no ClickUp alert.** No WebSearch substitute for broker state.
+- **No order placed or evaluated.** Last confirmed broker state: 2026-06-11 EOD (100% cash, 0 positions, 0 open orders) — unconfirmed ~5 months.
+
+**Action required (operator) — ESCALATING, 7th occurrence:** allowlist `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com` in environment network policy (claude.ai/code environment settings → network access: custom/full). Flagged via push notification outside the repo.
+
+**Decision: HOLD (forced — no data pulled, no research performed, no notification sent via ClickUp).**
