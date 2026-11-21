@@ -1458,3 +1458,21 @@ Until then every routine short-circuits at the env check and no trading can occu
 **Action required (operator) — 10th occurrence:** allowlist `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com` in environment network policy (claude.ai/code env settings → network access: custom/full). Flagged via push notification.
 
 **Decision: HOLD (forced).**
+
+
+---
+
+## 2026-11-21 — Pre-market Research (ABORTED — Saturday, market closed, 11th occurrence, unresolved since 09-03)
+
+**Status: HALTED after env pre-check — same wrapper API hosts blocked at network layer. Now 79 calendar days / 11 logged pre-market attempts unresolved.**
+
+- Env pre-check: all six required vars set. Not a missing-key halt.
+- `alpaca.sh account` → `curl: (22) 403` (`paper-api.alpaca.markets`), live 11:12 UTC.
+- `perplexity.sh "VIX level today"` → `curl: (22) 403` (`api.perplexity.ai`), exit 22. Not exit-3; WebSearch fallback not used — weekend, no session, no broker state.
+- ClickUp not tested (host previously 403).
+- Net: **no account/position/order state, no research, no alert. No order placed or evaluated.** Last confirmed broker state: 2026-06-11 EOD (100% cash, 0 positions).
+- Note: Saturday — routine schedule fires on non-trading days; consider weekday-only cron.
+
+**Action required (operator) — 11th occurrence:** allowlist `paper-api.alpaca.markets`, `data.alpaca.markets`, `api.perplexity.ai`, `api.clickup.com` in environment network policy (claude.ai/code env settings → network access: custom/full).
+
+**Decision: HOLD (forced; market closed).**
